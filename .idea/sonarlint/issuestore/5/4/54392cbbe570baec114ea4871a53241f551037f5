@@ -1,0 +1,5 @@
+
+š	java:S120"ZRename this package name to match the regular expression '^[a-z_]+(\.[a-z_][a-z0-9_]*)*$'.(úÜÕŒÿÿÿÿÿJ$3eb94e8e-373b-42be-a4c7-79dbfaeab25a
+š	java:S115"ZRename this constant name to match the regular expression '^[A-Z][A-Z0-9]*(_[A-Z0-9]+)*$'.(Œí£çýÿÿÿÿJ$bcb9f743-5e15-425f-8ec9-d76ac59144c5
+l
+java:S1128"JRemove this unused import 'org.springframework.data.redis.core.RedisHash'.(É«Š»øÿÿÿÿ8¢”È¿¿2

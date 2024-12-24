@@ -1,0 +1,21 @@
+
+‘	java:S117J"QRename this local variable to match the regular expression '^[a-z][a-zA-Z0-9]*$'.(Ü÷üÇþÿÿÿÿJ$c17188ad-0449-45c0-b150-2143d7f30a0a
+”	java:S120"ZRename this package name to match the regular expression '^[a-z_]+(\.[a-z_][a-z0-9_]*)*$'.(¤ÙÁJ$f00236eb-894b-4391-84c8-1c2e0b11f5bf
+i
+java:S5411/"(Use a primitive boolean expression here.(ÍÉç“ûÿÿÿÿJ$e2fbe533-7b0b-4fb4-a639-ffda74f8a225
+†	java:S112^"FDefine and throw a dedicated exception instead of using a generic one.(Àñã³úÿÿÿÿJ$d626aab7-fd42-4e1a-b338-3f80331e0538
+†	java:S112i"FDefine and throw a dedicated exception instead of using a generic one.(Àñã³úÿÿÿÿJ$725b4f64-fd00-4c40-a12b-ba2a421219c7
+~
+java:S6813"BRemove this field injection and use constructor injection instead.(êæÄÞJ$37a9eb52-c5e0-4d8d-baad-8bb7040cef30
+~
+java:S6813"BRemove this field injection and use constructor injection instead.(êæÄÞJ$84a0e848-ba15-412d-b70d-896330021a03
+}
+java:S1144)"<Remove this unused private "CustomerServiceImp" constructor.(ú´Â¶ÿÿÿÿÿJ$d700605e-fc32-40d5-8eef-271ccd53c3a7
+k	java:S106"+Replace this use of System.out by a logger.(Í½ôûýÿÿÿÿJ$8faa728f-fe7e-4314-80aa-289d8ee1712f
+o
+java:S1172%".Remove this unused method parameter "hashKey".(ä¨¦µüÿÿÿÿJ$263721ef-46f8-45b2-8aae-4d24a2ff2def
+f	java:S1060"+Replace this use of System.out by a logger.(åÃŒâJ$7864e109-073b-49a8-90b2-683be42e9b76
+f	java:S1065"+Replace this use of System.out by a logger.(¾¨Â€J$5a155e56-21d1-4ccb-99e4-4bff67f9c8af
+f	java:S106E"+Replace this use of System.out by a logger.(¦ûÐJ$8aa24018-b4d6-493c-a721-c6159c5345dd
+f	java:S106L"+Replace this use of System.out by a logger.(åÃŒâJ$f36c4fdc-61a6-49b7-906e-3d51e97d4288
+f	java:S106O"+Replace this use of System.out by a logger.(¾¨Â€J$8ea80ae3-602c-4b4a-8fba-ef21ace55caa

@@ -1,0 +1,7 @@
+
+•	java:S120"ZRename this package name to match the regular expression '^[a-z_]+(\.[a-z_][a-z0-9_]*)*$'.(ô¾µžJ$d96984af-e46a-4b0a-8abf-223ede753b06
+“	java:S116"SRename this field "SIGN_KEY" to match the regular expression '^[a-z][a-zA-Z0-9]*$'.(ÀÃå†ýÿÿÿÿJ$5e0751e2-1dd0-480a-95ed-da51293695b8
+~
+java:S6813"BRemove this field injection and use constructor injection instead.(êæÄÞJ$1df0feb0-c724-4f79-8ae7-a7812447e84a
+–
+java:S3305"ZInject this field value directly into "securityFilterChain", the only method that uses it.(†’³ÖJ$023ea94f-a1c0-4e5f-9301-d98a773309c3
