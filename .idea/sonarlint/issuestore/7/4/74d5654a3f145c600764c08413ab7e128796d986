@@ -1,21 +1,29 @@
 
-‘	java:S117J"QRename this local variable to match the regular expression '^[a-z][a-zA-Z0-9]*$'.(Ü÷üÇþÿÿÿÿJ$c17188ad-0449-45c0-b150-2143d7f30a0a
-”	java:S120"ZRename this package name to match the regular expression '^[a-z_]+(\.[a-z_][a-z0-9_]*)*$'.(¤ÙÁJ$f00236eb-894b-4391-84c8-1c2e0b11f5bf
+‘	java:S117J"QRename this local variable to match the regular expression '^[a-z][a-zA-Z0-9]*$'.(Ü÷üÇþÿÿÿÿJ$d60a31f4-a378-4a4b-a7e9-ccd67bcd05e3
+”	java:S120"ZRename this package name to match the regular expression '^[a-z_]+(\.[a-z_][a-z0-9_]*)*$'.(¤ÙÁJ$6a352689-1f1b-438b-b451-638a481e24f0
 i
-java:S5411/"(Use a primitive boolean expression here.(ÍÉç“ûÿÿÿÿJ$e2fbe533-7b0b-4fb4-a639-ffda74f8a225
-†	java:S112^"FDefine and throw a dedicated exception instead of using a generic one.(Àñã³úÿÿÿÿJ$d626aab7-fd42-4e1a-b338-3f80331e0538
-†	java:S112i"FDefine and throw a dedicated exception instead of using a generic one.(Àñã³úÿÿÿÿJ$725b4f64-fd00-4c40-a12b-ba2a421219c7
+java:S5411/"(Use a primitive boolean expression here.(ÍÉç“ûÿÿÿÿJ$65a5cc6d-edb4-4349-8ac5-52ad9a894409
+J
+java:S5411C"(Use a primitive boolean expression here.(­×’Ýúÿÿÿÿ8ý™ÏÀ¿2
+E
+java:S5411K"(Use a primitive boolean expression here.(¦Ò‹—8ý™ÏÀ¿2
+J
+java:S5411X"(Use a primitive boolean expression here.(üºëåúÿÿÿÿ8þ™ÏÀ¿2
+J
+java:S5411c"(Use a primitive boolean expression here.(ú’ªŠþÿÿÿÿ8ÿ™ÏÀ¿2
+†	java:S112^"FDefine and throw a dedicated exception instead of using a generic one.(Àñã³úÿÿÿÿJ$e5c8a9c9-c4d3-4319-8932-2b3bc6a236df
+†	java:S112i"FDefine and throw a dedicated exception instead of using a generic one.(Àñã³úÿÿÿÿJ$5eecf41d-4011-487c-a490-509743d1cbb9
 ~
-java:S6813"BRemove this field injection and use constructor injection instead.(êæÄÞJ$37a9eb52-c5e0-4d8d-baad-8bb7040cef30
+java:S6813"BRemove this field injection and use constructor injection instead.(êæÄÞJ$d0a05d38-cebd-4107-8b75-45b1305c69b6
 ~
-java:S6813"BRemove this field injection and use constructor injection instead.(êæÄÞJ$84a0e848-ba15-412d-b70d-896330021a03
+java:S6813"BRemove this field injection and use constructor injection instead.(êæÄÞJ$23b36f3e-c829-43fc-9f7c-7be67ba20ca9
 }
-java:S1144)"<Remove this unused private "CustomerServiceImp" constructor.(ú´Â¶ÿÿÿÿÿJ$d700605e-fc32-40d5-8eef-271ccd53c3a7
-k	java:S106"+Replace this use of System.out by a logger.(Í½ôûýÿÿÿÿJ$8faa728f-fe7e-4314-80aa-289d8ee1712f
+java:S1144)"<Remove this unused private "CustomerServiceImp" constructor.(ú´Â¶ÿÿÿÿÿJ$11d3cd74-f8bd-44fc-92fd-accbe9a7eff7
+k	java:S106"+Replace this use of System.out by a logger.(Í½ôûýÿÿÿÿJ$401a2f05-180a-4cbd-b5bc-76266eeaf6a4
 o
-java:S1172%".Remove this unused method parameter "hashKey".(ä¨¦µüÿÿÿÿJ$263721ef-46f8-45b2-8aae-4d24a2ff2def
-f	java:S1060"+Replace this use of System.out by a logger.(åÃŒâJ$7864e109-073b-49a8-90b2-683be42e9b76
-f	java:S1065"+Replace this use of System.out by a logger.(¾¨Â€J$5a155e56-21d1-4ccb-99e4-4bff67f9c8af
-f	java:S106E"+Replace this use of System.out by a logger.(¦ûÐJ$8aa24018-b4d6-493c-a721-c6159c5345dd
-f	java:S106L"+Replace this use of System.out by a logger.(åÃŒâJ$f36c4fdc-61a6-49b7-906e-3d51e97d4288
-f	java:S106O"+Replace this use of System.out by a logger.(¾¨Â€J$8ea80ae3-602c-4b4a-8fba-ef21ace55caa
+java:S1172%".Remove this unused method parameter "hashKey".(ä¨¦µüÿÿÿÿJ$94306525-5614-4f40-bdb5-825616df82e9
+f	java:S1060"+Replace this use of System.out by a logger.(åÃŒâJ$4a4ed6c7-481d-4277-b014-fa3636a87d0d
+f	java:S1065"+Replace this use of System.out by a logger.(¾¨Â€J$b1d510d1-3718-4740-ab0c-1617b27329a6
+f	java:S106E"+Replace this use of System.out by a logger.(¦ûÐJ$95628d38-66b1-4131-8497-6351a19bc753
+f	java:S106L"+Replace this use of System.out by a logger.(åÃŒâJ$7284defc-9131-466d-88b2-2fa0110cab35
+f	java:S106O"+Replace this use of System.out by a logger.(¾¨Â€J$0823a7e9-e713-4952-8d69-e62efa5cc137

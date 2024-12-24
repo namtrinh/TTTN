@@ -21,7 +21,4 @@ public class AuthController {
                 .result(authService.generateToken(customer))
                 .build();
     }
-
-
-
 }

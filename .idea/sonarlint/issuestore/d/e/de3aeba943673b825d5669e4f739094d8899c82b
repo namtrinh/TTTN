@@ -1,4 +1,8 @@
 
-š	java:S120"ZRename this package name to match the regular expression '^[a-z_]+(\.[a-z_][a-z0-9_]*)*$'.(Û´¬áÿÿÿÿÿJ$691a0937-3f48-4a66-a7c5-2e6383213e71
+š	java:S120"ZRename this package name to match the regular expression '^[a-z_]+(\.[a-z_][a-z0-9_]*)*$'.(Û´¬áÿÿÿÿÿJ$dd88b6da-b7f0-4761-9427-2a3b36b93d4e
+Q
+java:S3740-"/Provide the parametrized type for this generic.(õÙÕ‹úÿÿÿÿ8¨ÙÒÀ¿2
 ~
-java:S6813"BRemove this field injection and use constructor injection instead.(êæÄÞJ$7e66aba1-dcb9-4fcb-8799-a2da3cf83224
+java:S6813"BRemove this field injection and use constructor injection instead.(êæÄÞJ$6db08cdf-996b-41f1-afe2-d4070142cc28
+Q
+java:S1128"/Remove this unused import 'java.util.Optional'.(¨˜ëÝüÿÿÿÿ8ØÙÒÀ¿2
