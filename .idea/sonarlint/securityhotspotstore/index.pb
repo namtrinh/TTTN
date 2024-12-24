@@ -51,3 +51,7 @@ XIdentityService/src/main/java/org/hotfilm/identityservice/Controller/AuthContro
 \IdentityService/src/main/java/org/hotfilm/identityservice/Controller/CustomerController.java,d\e\de3aeba943673b825d5669e4f739094d8899c82b
 Œ
 \IdentityService/src/main/java/org/hotfilm/identityservice/ModelDTO/Response/ApiResponse.java,8\9\8962f70dda7adf02dc454b29ec816a9e1b29ae5a
+N
+IdentityService/.gitattributes,c\f\cf70ad344497cc8ef50cdbf108629d892a623497
+J
+IdentityService/.gitignore,0\5\05fceeea0f4cfa0bfeea49b0748dadef5c51af36
