@@ -40,7 +40,7 @@ public class SecurityConfig {
                         .authenticated()
         );
         http.oauth2Login(oauth2 -> oauth2
-                .defaultSuccessUrl("/", true)
+                .defaultSuccessUrl("http://localhost:4200/home", true)
                 .failureUrl("/auth/login?error=true")
                 .userInfoEndpoint(userInfo -> userInfo
                         .userService(oauth2Service.oauth2UserService())

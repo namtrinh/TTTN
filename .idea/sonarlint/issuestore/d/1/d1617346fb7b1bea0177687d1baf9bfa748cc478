@@ -1,7 +1,7 @@
 
-•	java:S120"ZRename this package name to match the regular expression '^[a-z_]+(\.[a-z_][a-z0-9_]*)*$'.(ô¾µžJ$88db7aaf-a5c3-4b05-926f-69a3bdc8f5df
-“	java:S116"SRename this field "SIGN_KEY" to match the regular expression '^[a-z][a-zA-Z0-9]*$'.(ÀÃå†ýÿÿÿÿJ$7a48cd45-d2b8-4ee9-a45f-b939508eb798
+•	java:S120"ZRename this package name to match the regular expression '^[a-z_]+(\.[a-z_][a-z0-9_]*)*$'.(ô¾µžJ$0147dee8-476f-4fc6-bc3c-3f7ac7ecd120
+“	java:S116"SRename this field "SIGN_KEY" to match the regular expression '^[a-z][a-zA-Z0-9]*$'.(ÀÃå†ýÿÿÿÿJ$61808350-a99c-4e16-88bf-647f3d0f9279
 ~
-java:S6813"BRemove this field injection and use constructor injection instead.(êæÄÞJ$e067de10-2f31-4fdd-94d2-163e70c86c11
+java:S6813"BRemove this field injection and use constructor injection instead.(êæÄÞJ$e73d4994-862b-4306-b6a6-f9b0a05bea38
 –
-java:S3305"ZInject this field value directly into "securityFilterChain", the only method that uses it.(†’³ÖJ$066bdafd-b6e0-4137-b84b-f00361a06402
+java:S3305"ZInject this field value directly into "securityFilterChain", the only method that uses it.(†’³ÖJ$db0ebe4a-678c-4a8a-8f37-88d3fc0ed1ac
