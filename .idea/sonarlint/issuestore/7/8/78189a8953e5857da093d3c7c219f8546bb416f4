@@ -1,7 +1,8 @@
 
-›	java:S120"ZRename this package name to match the regular expression '^[a-z_]+(\.[a-z_][a-z0-9_]*)*$'.(¤ÙÁ8ÚÆ…À2J$b9067790-7183-4f20-a83b-f666cd317e5b
-	java:S112#"FDefine and throw a dedicated exception instead of using a generic one.(ÚçÁùùÿÿÿÿ8ÜÆ…À2J$1fbf97af-7577-4c07-80ec-afe87368241a
-š	java:S116"SRename this field "SIGN_KEY" to match the regular expression '^[a-z][a-zA-Z0-9]*$'.(Ò¸¥Ìüÿÿÿÿ8İÆ…À2J$e5120d2c-999d-48a2-841b-c161e2c867b3
+›	java:S120"ZRename this package name to match the regular expression '^[a-z_]+(\.[a-z_][a-z0-9_]*)*$'.(¤ÙÁ8Ìäë‘À2J$a5001967-5e5e-4dc0-ae34-0fc0d621b174
+	java:S112"FDefine and throw a dedicated exception instead of using a generic one.(ïİûöûÿÿÿÿ8Ğäë‘À2J$3257f959-03d3-4dd7-be64-fda3272ab530
+	java:S112%"FDefine and throw a dedicated exception instead of using a generic one.(ÚçÁùùÿÿÿÿ8Ğäë‘À2J$aafae1d6-ed16-4736-9938-4b0b3ea35aa4
+š	java:S116"SRename this field "SIGN_KEY" to match the regular expression '^[a-z][a-zA-Z0-9]*$'.(Ò¸¥Ìüÿÿÿÿ8Òäë‘À2J$8b3d135a-853c-4fa2-a504-883c3bef3074
 …
-java:S6813"BRemove this field injection and use constructor injection instead.(êæÄŞ8İÆ…À2J$0591d32d-202c-4801-9228-b4d0135e923c
-m	java:S106&"+Replace this use of System.out by a logger.(Ï˜ø 8åÆ…À2J$2d5355fc-ad88-4f83-8478-515cf0036b8d
+java:S6813"BRemove this field injection and use constructor injection instead.(êæÄŞ8Ôäë‘À2J$814ae053-dfcd-4697-820d-0d41f808dd0d
+m	java:S106("+Replace this use of System.out by a logger.(Ï˜ø 8æäë‘À2J$b7073179-4999-445a-8680-f24a60ddf48e

@@ -1,0 +1,36 @@
+
+“	java:S117["QRename this local variable to match the regular expression '^[a-z][a-zA-Z0-9]*$'.(ê¬½ó8®…úÀ2J$63174084-8b39-4394-8414-5b4b9fe11cfa
+›	java:S120"ZRename this package name to match the regular expression '^[a-z_]+(\.[a-z_][a-z0-9_]*)*$'.(¤ÙÁ8®…úÀ2J$5413da83-1540-4ead-a15b-b94912656303
+p
+java:S54119"(Use a primitive boolean expression here.(ÍÉç“ûÿÿÿÿ8®…úÀ2J$7a887495-d2b1-4f8f-9541-93ef54f9d976
+k
+java:S5411T"(Use a primitive boolean expression here.(‚âÏˆ8®…úÀ2J$b2265c5b-f3ac-4e4d-8e28-c5624383ec85
+p
+java:S5411\"(Use a primitive boolean expression here.(Æ¼…ùÿÿÿÿ8¯…úÀ2J$bd36ad08-4cfa-46f5-ac93-9ffeb05edbff
+p
+java:S5411i"(Use a primitive boolean expression here.(üºëåúÿÿÿÿ8¯…úÀ2J$40d2ea3a-16e5-496e-b43b-1883393c65d5
+p
+java:S5411t"(Use a primitive boolean expression here.(ú’ªŠşÿÿÿÿ8¯…úÀ2J$1a933a3b-541d-4fee-99db-08439843db86
+‡	java:S112M"FDefine and throw a dedicated exception instead of using a generic one.(›™T8±…úÀ2J$fa829fe6-eba9-4454-b2e9-c4f510f4f22f
+	java:S112o"FDefine and throw a dedicated exception instead of using a generic one.(©š´µûÿÿÿÿ8±…úÀ2J$897caa76-02a6-4cde-ba7b-719b536d0ca9
+	java:S112z"FDefine and throw a dedicated exception instead of using a generic one.(©š´µûÿÿÿÿ8±…úÀ2J$3eb751c3-a256-4f68-82bd-b435ec9f4696
+…
+java:S6813"BRemove this field injection and use constructor injection instead.(êæÄŞ8´…úÀ2J$ddef6962-6580-498c-ac86-bdc0b72a3da6
+…
+java:S6813"BRemove this field injection and use constructor injection instead.(êæÄŞ8´…úÀ2J$369e4326-ef7c-4702-bab4-0309cc92c5f3
+…
+java:S6813!"BRemove this field injection and use constructor injection instead.(êæÄŞ8´…úÀ2J$77113b6d-2795-4167-9abf-dbde011efa0c
+€
+java:S11443"8Remove this unused private "UserServiceImp" constructor.(Å‰»øùÿÿÿÿ8·…úÀ2J$c8f99b12-328b-4ee5-9285-31e5a1036bdc
+r	java:S106&"+Replace this use of System.out by a logger.(Í½ôûıÿÿÿÿ8¼…úÀ2J$0dba05a3-1363-4f7e-a203-2012dfb921a7
+v
+java:S1172/".Remove this unused method parameter "hashKey".(ä¨¦µüÿÿÿÿ8½…úÀ2J$1f32ea69-4d30-4f68-b8f8-a1f552de0a47
+m	java:S106:"+Replace this use of System.out by a logger.(åÃŒâ8¿…úÀ2J$1a20d14e-db4a-49fd-9ad9-3d9141e96450
+m	java:S106?"+Replace this use of System.out by a logger.(¾¨Â€8¿…úÀ2J$6c395c2c-f66b-4efc-b13f-4ea1341fbcb9
+½
+java:S6204G"zReplace this usage of 'Stream.collect(Collectors.toList())' with 'Stream.toList()' and ensure that the list is unmodified.(ª™¨¹8À…úÀ2J$a31046c1-ae01-4d0d-a306-64d7e1ab4f37
+m	java:S106V"+Replace this use of System.out by a logger.(¦ûĞ8Å…úÀ2J$bd084fb9-7de8-4176-9993-747fdc3a2a11
+m	java:S106]"+Replace this use of System.out by a logger.(åÃŒâ8Ç…úÀ2J$5aa29bea-3c9e-4017-b0f0-194e3db9f202
+m	java:S106`"+Replace this use of System.out by a logger.(¾¨Â€8Ç…úÀ2J$9b4da1d6-f1b1-4875-9309-cb5e86851375
+s
+java:S1128"+Remove this unused import 'java.util.UUID'.(ÀãÄ£úÿÿÿÿ8Ôêõ‘À2J$7b7dd744-2e46-4acc-a849-3508d652b5bf

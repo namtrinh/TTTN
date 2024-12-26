@@ -1,8 +1,4 @@
 
-œ	java:S120"ZRename this package name to match the regular expression '^[a-z_]+(\.[a-z_][a-z0-9_]*)*$'.(æñòÕ8ü‚Û…À2J$d1b6c102-d9b2-4b4e-b649-c3ab2d762872
-V
-java:S1128"9Remove this unused import 'jakarta.persistence.EnumType'.(…÷Íà8İâÛ…À2
-]
-java:S1128";Remove this unused import 'jakarta.persistence.Enumerated'.(àèòùÿÿÿÿ8İâÛ…À2
-d
-java:S1128"GRemove this unused import 'org.hotfilm.identityservice.Model.Customer'.(ÅÛ§Ô8İâÛ…À2
+œ	java:S120"ZRename this package name to match the regular expression '^[a-z_]+(\.[a-z_][a-z0-9_]*)*$'.(æñòÕ8ü‚Û…À2J$c14a48e8-0438-4c79-91df-86690dbda59d
+|
+java:S1128"4Remove this unused import 'java.time.LocalDateTime'.(æÃ§ƒüÿÿÿÿ8œ¶¶À2J$24927894-a919-4487-b29e-932f6ea5408a

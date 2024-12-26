@@ -1,8 +1,8 @@
 package org.hotfilm.identityservice.ServiceImp;
 
 import com.nimbusds.jose.JOSEException;
-import org.hotfilm.identityservice.Model.Customer;
-import org.hotfilm.identityservice.Repository.CustomerRepository;
+import org.hotfilm.identityservice.Model.User;
+import org.hotfilm.identityservice.Repository.UserRepository;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.security.oauth2.client.userinfo.DefaultOAuth2UserService;
 import org.springframework.security.oauth2.client.userinfo.OAuth2UserRequest;
@@ -14,11 +14,10 @@ import org.springframework.transaction.annotation.Transactional;
 import java.util.UUID;
 
 @Service
-@Transactional
 public class Oauth2Service {
 
     @Autowired
-    private CustomerRepository customerRepository;
+    private UserRepository customerRepository;
 
     @Autowired
     private AuthService authService;
@@ -37,16 +36,13 @@ public class Oauth2Service {
     }
 
     public String responseToken(String email, String registrationId) {
-        Customer customer = new Customer();
-        customer.setCustomerName(email);
-        customer.setOauthId(registrationId);
-        customer.setRoles(Customer.ROLE.USER);
-        customer.setCustomerId(UUID.randomUUID().toString());
-
-        if (!customerRepository.existsByCustomerName(email)) {
+        User customer = new User();
+        customer.setEmail(email);
+        customer.setOauth2Id(registrationId);
+        customer.setRole(User.Role.USER);
+        if (!customerRepository.existsByEmail(email)) {
             customerRepository.save(customer);
         }
-
         try {
             String token = authService.generateToken(customer);
             System.out.println(token);

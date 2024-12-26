@@ -1,7 +1,6 @@
 package org.hotfilm.identityservice.Controller;
 
 import com.nimbusds.jose.JOSEException;
-import org.hotfilm.identityservice.Model.Customer;
 import org.hotfilm.identityservice.ModelDTO.Request.UserRequest;
 import org.hotfilm.identityservice.ModelDTO.Response.ApiResponse;
 import org.hotfilm.identityservice.ServiceImp.AuthService;

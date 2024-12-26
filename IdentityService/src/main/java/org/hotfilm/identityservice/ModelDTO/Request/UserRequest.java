@@ -8,7 +8,7 @@ import lombok.*;
 @RequiredArgsConstructor
 @Builder
 public class UserRequest {
-    private String customerName;
+    private String email;
 
     private String password;
 }

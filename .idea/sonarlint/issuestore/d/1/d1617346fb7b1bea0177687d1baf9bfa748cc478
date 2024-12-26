@@ -1,7 +1,13 @@
 
-•	java:S120"ZRename this package name to match the regular expression '^[a-z_]+(\.[a-z_][a-z0-9_]*)*$'.(ô¾µJ$f12c8eb1-127d-4eb4-9b68-f47c77b7ea37
-“	java:S116"SRename this field "SIGN_KEY" to match the regular expression '^[a-z][a-zA-Z0-9]*$'.(ÀÃå†ıÿÿÿÿJ$ecf4bf51-22eb-41c4-b0dd-12c984ba6e6f
-~
-java:S6813"BRemove this field injection and use constructor injection instead.(êæÄŞJ$c9a44ede-81e2-41df-9319-f742564445ac
-–
-java:S3305"ZInject this field value directly into "securityFilterChain", the only method that uses it.(†’³ÖJ$ed7726cc-b3af-4546-9085-89808a5dc9e4
+œ	java:S120"ZRename this package name to match the regular expression '^[a-z_]+(\.[a-z_][a-z0-9_]*)*$'.(ô¾µ8û×ÀˆÀ2J$21e50962-e791-4d93-a11d-5e9324c03ab1
+š	java:S116!"SRename this field "SIGN_KEY" to match the regular expression '^[a-z][a-zA-Z0-9]*$'.(ÀÃå†ıÿÿÿÿ8´çÀˆÀ2J$2492c565-448b-49a0-a126-0d5516df1d59
+…
+java:S6813#"BRemove this field injection and use constructor injection instead.(êæÄŞ8´çÀˆÀ2J$f5787137-f334-49fd-99fd-a4f2c1285b57
+
+java:S3305$"ZInject this field value directly into "securityFilterChain", the only method that uses it.(†’³Ö8µçÀˆÀ2J$4093d383-4e79-477f-9db9-e5b546186537
+u
+java:S1128"-Remove this unused import 'java.util.Arrays'.(î–˜Éüÿÿÿÿ8ÅçÀˆÀ2J$fd63939c-aad6-405f-860a-8784abbe9c88
+s
+java:S1128"+Remove this unused import 'java.util.List'.(Õë±Äøÿÿÿÿ8ÅçÀˆÀ2J$e249f5df-f31d-4853-8ffd-b5e4115f94b8
+€
+java:S1128"8Remove this unused import 'java.util.stream.Collectors'.(Óóº´úÿÿÿÿ8ÅçÀˆÀ2J$31c61c47-132c-4363-8887-c089683bc0a6

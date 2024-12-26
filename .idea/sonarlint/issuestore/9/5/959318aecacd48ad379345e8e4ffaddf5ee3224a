@@ -1,6 +1,4 @@
 
-š	java:S120"ZRename this package name to match the regular expression '^[a-z_]+(\.[a-z_][a-z0-9_]*)*$'.(Û´¬áÿÿÿÿÿJ$335667da-123c-4e95-89df-2446b031b6d8
+š	java:S120"ZRename this package name to match the regular expression '^[a-z_]+(\.[a-z_][a-z0-9_]*)*$'.(Û´¬áÿÿÿÿÿJ$4a028271-30e8-4915-97cc-f299bbc842c8
 ~
-java:S6813"BRemove this field injection and use constructor injection instead.(êæÄÞJ$6427ae3f-4436-4d6b-9274-ada9809c4337
-Š
-java:S1128"GRemove this unused import 'org.hotfilm.identityservice.Model.Customer'.(ÅÛ§Ô8”ôú„À2J$0e9b9f5b-b955-4da2-a819-f7e8996d5505
+java:S6813"BRemove this field injection and use constructor injection instead.(êæÄÞJ$f42e3a08-e646-47bb-a19c-eb6d378b65e7

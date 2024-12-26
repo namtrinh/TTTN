@@ -1,9 +1,13 @@
 
-”	java:S120"ZRename this package name to match the regular expression '^[a-z_]+(\.[a-z_][a-z0-9_]*)*$'.(¤ÙÁJ$eae97394-829f-4aa8-b085-ced88694a70b
-†	java:S1127"FDefine and throw a dedicated exception instead of using a generic one.(²ïÂ°øÿÿÿÿJ$40069894-ca20-4082-ad62-2524a8ddcd55
+”	java:S120"ZRename this package name to match the regular expression '^[a-z_]+(\.[a-z_][a-z0-9_]*)*$'.(¤ÙÁJ$1ab7da72-6d60-46bc-8579-43a180dcf73b
+†	java:S1123"FDefine and throw a dedicated exception instead of using a generic one.(²ïÂ°øÿÿÿÿJ$fd954f9c-fc3d-4f06-b46f-402fbb2afa05
 ~
-java:S6813"BRemove this field injection and use constructor injection instead.(êæÄŞJ$630d0f27-11a4-43ee-acad-28d75cbb5b9e
+java:S6813"BRemove this field injection and use constructor injection instead.(êæÄŞJ$32994e4e-ddde-46bc-b237-197035000880
 ~
-java:S6813"BRemove this field injection and use constructor injection instead.(êæÄŞJ$377978a3-eb65-471a-932f-14c1a2c19137
-k	java:S106""+Replace this use of System.out by a logger.(¤ÅÓåıÿÿÿÿJ$e23152ab-abc3-4626-869d-597adca5e48b
-f	java:S1064"+Replace this use of System.out by a logger.(ñšÔJ$ad061cea-e1b8-4855-a69a-700ea5a8c04b
+java:S6813"BRemove this field injection and use constructor injection instead.(êæÄŞJ$21449001-7875-482d-a76b-47f0510850a5
+k	java:S106!"+Replace this use of System.out by a logger.(¤ÅÓåıÿÿÿÿJ$67027516-6137-4c0c-8255-a6d433270e6a
+f	java:S1060"+Replace this use of System.out by a logger.(ñšÔJ$a258e99d-a65c-4b02-851b-31d650355431
+
+java:S1128"URemove this unused import 'org.springframework.transaction.annotation.Transactional'.(ğùçøùÿÿÿÿ8¨ûÛÀ2J$34775488-73d6-4e24-830b-2820b682d52a
+s
+java:S1128"+Remove this unused import 'java.util.UUID'.(ÀãÄ£úÿÿÿÿ8³ş¸’À2J$6167490a-f360-45ca-932a-383f845e4bd5
