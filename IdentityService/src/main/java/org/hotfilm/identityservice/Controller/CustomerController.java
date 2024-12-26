@@ -3,6 +3,7 @@ package org.hotfilm.identityservice.Controller;
 
 import org.hotfilm.identityservice.Model.Customer;
 import org.hotfilm.identityservice.ModelDTO.Response.ApiResponse;
+import org.hotfilm.identityservice.ModelDTO.Response.UserResponse;
 import org.hotfilm.identityservice.Service.CustomerService;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.web.bind.annotation.*;
@@ -18,8 +19,8 @@ public class CustomerController {
     private CustomerService customerService;
 
     @GetMapping
-    public ApiResponse<List<Customer>> getAll() {
-        return ApiResponse.<List<Customer>>builder()
+    public ApiResponse<List<UserResponse>> getAll() {
+        return ApiResponse.<List<UserResponse>>builder()
                 .code(200)
                 .result(customerService.findAll())
                 .build();
@@ -34,8 +35,8 @@ public class CustomerController {
     }
 
     @GetMapping(value = "/{customerId}")
-    public ApiResponse<Customer> getById(@PathVariable String customerId) {
-        return ApiResponse.<Customer>builder()
+    public ApiResponse<UserResponse> getById(@PathVariable String customerId) {
+        return ApiResponse.<UserResponse>builder()
                 .code(200)
                 .result(customerService.findById(customerId))
                 .build();
@@ -51,8 +52,8 @@ public class CustomerController {
     }
 
     @PutMapping(value = "/{customerId}")
-    public ApiResponse<Customer> updateById(@PathVariable String customerId, @RequestBody Customer customer){
-        return ApiResponse.<Customer>builder()
+    public ApiResponse<UserResponse> updateById(@PathVariable String customerId, @RequestBody Customer customer){
+        return ApiResponse.<UserResponse>builder()
                 .code(200)
                 .result(customerService.updateById(customerId, customer))
                 .build();

@@ -35,9 +35,9 @@ public class SecurityConfig {
     public SecurityFilterChain securityFilterChain(HttpSecurity http) throws Exception {
         http.csrf(AbstractHttpConfigurer::disable).authorizeHttpRequests(
                 request -> request
-                        .requestMatchers("/auth/login").hasAuthority("ADMIN")
+                        .requestMatchers("/auth/login").hasAnyRole("ADMIN", "USER")
                         .anyRequest()
-                        .authenticated()
+                        .permitAll()
         );
         http.oauth2Login(oauth2 -> oauth2
                 .defaultSuccessUrl("http://localhost:4200/home", true)

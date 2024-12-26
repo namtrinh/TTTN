@@ -40,7 +40,7 @@ public class Oauth2Service {
         Customer customer = new Customer();
         customer.setCustomerName(email);
         customer.setOauthId(registrationId);
-        customer.setRoles(Customer.ROLE.ADMIN);
+        customer.setRoles(Customer.ROLE.USER);
         customer.setCustomerId(UUID.randomUUID().toString());
 
         if (!customerRepository.existsByCustomerName(email)) {

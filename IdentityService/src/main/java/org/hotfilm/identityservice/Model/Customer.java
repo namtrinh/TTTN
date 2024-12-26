@@ -24,6 +24,8 @@ public class Customer implements Serializable {
 
     private String customerName;
 
+    private String password;
+
     private String customerAge;
 
     @Enumerated(EnumType.STRING)

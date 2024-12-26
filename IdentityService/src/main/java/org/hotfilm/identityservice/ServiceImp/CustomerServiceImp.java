@@ -1,16 +1,21 @@
 package org.hotfilm.identityservice.ServiceImp;
 
+import org.hotfilm.identityservice.Mapper.UserMapper;
 import org.hotfilm.identityservice.Model.Customer;
+import org.hotfilm.identityservice.ModelDTO.Response.UserResponse;
 import org.hotfilm.identityservice.Repository.CustomerRepository;
 import org.hotfilm.identityservice.Service.CustomerService;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.data.redis.core.HashOperations;
 import org.springframework.data.redis.core.RedisTemplate;
 import org.springframework.scheduling.annotation.Scheduled;
+import org.springframework.security.crypto.bcrypt.BCryptPasswordEncoder;
+import org.springframework.security.crypto.password.PasswordEncoder;
 import org.springframework.stereotype.Service;
 
 import java.util.List;
 import java.util.concurrent.TimeUnit;
+import java.util.stream.Collectors;
 
 @Service
 public class CustomerServiceImp implements CustomerService {
@@ -19,17 +24,21 @@ public class CustomerServiceImp implements CustomerService {
 
     @Autowired
     private RedisTemplate<String, Object> redisTemplate;
-    private HashOperations<String, String, Customer> hashOperations;
+    private HashOperations<String, String, UserResponse> hashOperations;
 
     @Autowired
     private CustomerRepository customerRepository;
+
+    @Autowired
+    private UserMapper userMapper;
 
     @Scheduled(fixedRate = 300000)
     public void preloadCache() {
         System.out.println("Preloading cache...");
         List<Customer> customers = customerRepository.findAll();
         for (Customer customer : customers) {
-            hashOperations.put(HASH_KEY, customer.getCustomerId(), customer);
+
+            hashOperations.put(HASH_KEY, customer.getCustomerId(), userMapper.toUserResponse(customer));
         }
         setTTL(HASH_KEY);
     }
@@ -43,7 +52,7 @@ public class CustomerServiceImp implements CustomerService {
         this.hashOperations = redisTemplate.opsForHash();
     }
 
-    public List<Customer> findAll() {
+    public List<UserResponse> findAll() {
         if (redisTemplate.hasKey(HASH_KEY)) {
             System.out.println("get from redis");
             return hashOperations.values(HASH_KEY);
@@ -53,17 +62,21 @@ public class CustomerServiceImp implements CustomerService {
             System.out.println("get from database");
             List<Customer> customers = customerRepository.findAll();
             for (Customer customer : customers) {
-                hashOperations.put(HASH_KEY, customer.getCustomerId(), customer);
+                hashOperations.put(HASH_KEY, customer.getCustomerId(), userMapper.toUserResponse(customer));
                 setTTL(HASH_KEY);
             }
-            return customers;
+            return customers.stream()
+                    .map(userMapper::toUserResponse)
+                    .collect(Collectors.toList());
         }
     }
 
     public Customer save(Customer entity) {
         entity.setRoles(Customer.ROLE.USER);
+        PasswordEncoder passwordEncoder = new BCryptPasswordEncoder();
+        entity.setPassword(passwordEncoder.encode(entity.getPassword()));
         Customer customer = customerRepository.save(entity);
-        hashOperations.put(HASH_KEY, entity.getCustomerId(), entity);
+        hashOperations.put(HASH_KEY, entity.getCustomerId(), userMapper.toUserResponse(entity));
         if (hashOperations.hasKey(HASH_KEY, entity.getCustomerId())) {
             setTTL(HASH_KEY);
             System.out.println("save to redis");
@@ -71,16 +84,16 @@ public class CustomerServiceImp implements CustomerService {
         return customer;
     }
 
-    public Customer findById(String CustomerId) {
+    public UserResponse findById(String CustomerId) {
         if (hashOperations.hasKey(HASH_KEY, CustomerId)) {
             System.out.println("get from redis");
             return hashOperations.get(HASH_KEY, CustomerId);
         } else {
             System.out.println("get from database");
             Customer customer = customerRepository.findById(CustomerId).orElseThrow(() -> new RuntimeException("Couldn't find'"));
-            hashOperations.put(HASH_KEY, CustomerId, customer);
+            hashOperations.put(HASH_KEY, CustomerId, userMapper.toUserResponse(customer));
            setTTL(HASH_KEY);
-            return customer;
+            return userMapper.toUserResponse(customer);
         }
     }
 
@@ -95,12 +108,12 @@ public class CustomerServiceImp implements CustomerService {
         }
     }
 
-    public Customer updateById(String customerId, Customer customer){
+    public UserResponse updateById(String customerId, Customer customer){
         if (hashOperations.hasKey(HASH_KEY, customerId) || customerRepository.existsById(customerId)) {
-            hashOperations.put(HASH_KEY, customerId, customer);
+            hashOperations.put(HASH_KEY, customerId, userMapper.toUserResponse(customer));
             setTTL(HASH_KEY);
             customer.setCustomerId(customerId);
-            return customerRepository.save(customer);
+            return userMapper.toUserResponse(customerRepository.save(customer));
         } else {
             throw new RuntimeException("Customer not found");
         }
