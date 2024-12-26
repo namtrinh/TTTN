@@ -1,0 +1,168 @@
+<!DOCTYPE html>
+<!-- saved from url=(0055)file:///Applications/booking%20ticket%20fe/seating.html -->
+<html lang="vi"><head><meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+    
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Chọn Ghế</title>
+    <link rel="stylesheet" href="./Chọn Ghế_files/seating.css">
+    
+</head>
+<body>
+    <header>
+        Chọn Ghế - NHOM 32
+    </header>
+
+    <section class="branch-cities">
+        <h2>Chọn chi nhánh thành phố</h2>
+        <select id="city-branch">
+            <option value="hanoi">Hà Nội</option>
+            <option value="hcm">Hồ Chí Minh</option>
+            <option value="danang">Đà Nẵng</option>
+            <option value="hue">Huế</option>
+        </select>
+    </section>
+
+    
+    <section class="branch-theaters">
+        <h2>Chọn rạp</h2>
+        <select id="theater-branch">
+            <option value="rap1">Rạp 1</option>
+            <option value="rap2">Rạp 2</option>
+            <option value="rap3">Rạp 3</option>
+            <option value="rap4">Rạp 4</option>
+        </select>
+    </section>
+
+
+    <section class="show-times">
+        <h2>Chọn giờ chiếu</h2>
+        <select id="show-times">
+            <option value="10am">10:00 AM</option>
+            <option value="1pm">1:00 PM</option>
+            <option value="4pm">4:00 PM</option>
+            <option value="7pm">7:00 PM</option>
+        </select>
+    </section>
+
+
+    <div class="container">
+        <h1>Chọn Ghế</h1>
+        <div class="screen">Màn Hình</div>
+        <div class="seating">
+            
+            <div class="seat">A1</div>
+            <div class="seat">A2</div>
+            <div class="seat">A3</div>
+            <div class="seat">A4</div>
+            <div class="seat">A5</div>
+            <div class="seat">A6</div>
+            <div class="seat">A7</div>
+            <div class="seat">A8</div>
+            <div class="seat">A9</div>
+            <div class="seat">A10</div>
+            <div class="seat">B1</div>
+            <div class="seat">B2</div>
+            <div class="seat">B3</div>
+            <div class="seat">B4</div>
+            <div class="seat">B5</div>
+            <div class="seat">B6</div>
+            <div class="seat">B7</div>
+            <div class="seat">B8</div>
+            <div class="seat">B9</div>
+            <div class="seat">B10</div>
+            <div class="seat">C1</div>
+            <div class="seat">C2</div>
+            <div class="seat">C3</div>
+            <div class="seat">C4</div>
+            <div class="seat">C5</div>
+            <div class="seat">C6</div>
+            <div class="seat">C7</div>
+            <div class="seat">C8</div>
+            <div class="seat">C9</div>
+            <div class="seat">C10</div>
+            <div class="seat">D1</div>
+            <div class="seat">D2</div>
+            <div class="seat">D3</div>
+            <div class="seat">D4</div>
+            <div class="seat">D5</div>
+            <div class="seat">D6</div>
+            <div class="seat">D7</div>
+            <div class="seat">D8</div>
+            <div class="seat">D9</div>
+            <div class="seat">D10</div>
+            <div class="seat">E1</div>
+            <div class="seat">E2</div>
+            <div class="seat">E3</div>
+            <div class="seat">E4</div>
+            <div class="seat">E5</div>
+            <div class="seat">E6</div>
+            <div class="seat">E7</div>
+            <div class="seat">E8</div>
+            <div class="seat">E9</div>
+            <div class="seat">E10</div>
+            <div class="seat">F1</div>
+            <div class="seat">F2</div>
+            <div class="seat">F3</div>
+            <div class="seat">F4</div>
+            <div class="seat">F5</div>
+            <div class="seat">F6</div>
+            <div class="seat">F7</div>
+            <div class="seat">F8</div>
+            <div class="seat">F9</div>
+            <div class="seat">F10</div>
+            <div class="seat">G1</div>
+            <div class="seat">G2</div>
+            <div class="seat">G3</div>
+            <div class="seat">G4</div>
+            <div class="seat">G5</div>
+            <div class="seat">G6</div>
+            <div class="seat">G7</div>
+            <div class="seat">G8</div>
+            <div class="seat">G9</div>
+            <div class="seat">G10</div>
+            <div class="seat">H1</div>
+            <div class="seat">H2</div>
+            <div class="seat">H3</div>
+            <div class="seat">H4</div>
+            <div class="seat">H5</div>
+            <div class="seat">H6</div>
+            <div class="seat">H7</div>
+            <div class="seat">H8</div>
+            <div class="seat">H9</div>
+            <div class="seat">H10</div>
+            <div class="seat">I1</div>
+            <div class="seat">I2</div>
+            <div class="seat">I3</div>
+            <div class="seat">I4</div>
+            <div class="seat">I5</div>
+            <div class="seat">I6</div>
+            <div class="seat">I7</div>
+            <div class="seat">I8</div>
+            <div class="seat">I9</div>
+            <div class="seat">I10</div>
+        </div>
+
+        <div class="legend">
+            <div class="legend-item">
+                <div class="legend-color available"></div>
+                <span>Ghế trống</span>
+            </div>
+            <div class="legend-item">
+                <div class="legend-color selected"></div>
+                <span>Đã chọn</span>
+            </div>
+            <div class="legend-item">
+                <div class="legend-color reserved"></div>
+                <span>Đã đặt</span>
+            </div>
+        </div>
+
+        <button style="margin-top: 20px; width: 100%; padding: 10px; font-size: 16px; background-color: #e50914; color: white; border: none; border-radius: 5px; cursor: pointer;">Xác nhận ghế</button>
+    </div>
+
+    <footer>
+        © 2024 NHOM 32. Tất cả các quyền được bảo lưu.
+    </footer>
+
+
+</body></html>
