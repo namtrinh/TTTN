@@ -91,3 +91,5 @@ IIdentityService/src/main/java/org/hotfilm/identityservice/Model/Seat.java,9\d\
 LIdentityService/src/main/java/org/hotfilm/identityservice/Model/Booking.java,f\0\f0bfd36b3933d47540bb0b956f9805eb603bc466
 y
 IIdentityService/src/main/java/org/hotfilm/identityservice/Model/Room.java,6\e\6ea8fdc3b4e11c1e88293570e53fa7ed4c66ed1a
+]
+-.idea/sonarlint/securityhotspotstore/index.pb,8\8\88a9255124c95bdc913197c120a8d560edc59c8e
