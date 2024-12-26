@@ -1,0 +1,33 @@
+.footer {
+  background-color: #141414;
+  color: #fff;
+}
+
+.footer a {
+  color: #fff;
+  text-decoration: none;
+}
+
+.footer a:hover {
+  text-decoration: underline;
+}
+
+.footer .fa {
+  font-size: 20px;
+}
+
+.footer .container {
+  max-width: 1200px;
+}
+
+.footer .social-media {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-top: 20px;
+}
+
+.footer .social-media a {
+  margin: 0 10px;
+  font-size: 25px;
+}
