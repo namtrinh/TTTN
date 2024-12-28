@@ -25,11 +25,19 @@ public class MovieController {
                 .build();
     }
 
-    @GetMapping(value = "/{movieId}")
+    @GetMapping(value = "/findById/{movieId}")
     public ApiResponse<Movie> getById(@PathVariable String movieId) {
         return ApiResponse.<Movie>builder()
                 .code(200)
                 .result(movieService.findById(movieId))
+                .build();
+    }
+
+    @GetMapping(value = "/findByTitle/{title}")
+    public ApiResponse<Movie> findByMovieTitle(@PathVariable String title) {
+        return ApiResponse.<Movie>builder()
+                .code(200)
+                .result(movieService.findByMovieTitle(title))
                 .build();
     }
 

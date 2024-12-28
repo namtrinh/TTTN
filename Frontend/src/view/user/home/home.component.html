@@ -2,10 +2,12 @@
 <!-- Navbar -->
 <div class="banner" style="position: relative; width: 100vw; height: 100vh; overflow: hidden;">
   <!-- Navbar -->
-    <nav class="navbar navbar-expand-lg navbar-dark bg-dark" style="position: absolute; top: 0; left: 0; right: 0; width: 100%; z-index: 20;">
+  <nav class="navbar navbar-expand-lg navbar-dark bg-dark"
+       style="position: absolute; top: 0; left: 0; right: 0; width: 100%; z-index: 20;">
     <div class="container-fluid">
       <!-- MovieFlix logo in the top left corner -->
-      <a class="navbar-brand" href="#" style="position: absolute; left: 10px; top: 10px; font-size: 30px;font-weight: 600">MovieFlix</a>
+      <a class="navbar-brand" href="#"
+         style="position: absolute; left: 10px; top: 10px; font-size: 30px;font-weight: 600">GalaxyFilm</a>
 
       <!-- Navbar menu positioned to the top right -->
       <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
@@ -38,9 +40,11 @@
 
 
   <!-- Overlay Content -->
-  <div style="position: absolute; top: 45%; left: 50%; transform: translate(-50%, -50%); color: white; text-align: center; z-index: 10; width: 90%; max-width: 600px;">
+  <div
+    style="position: absolute; top: 45%; left: 50%; transform: translate(-50%, -50%); color: white; text-align: center; z-index: 10; width: 90%; max-width: 600px;">
     <h1 style="font-size: 3rem; font-weight: bold; margin-bottom: 20px;">Welcome to MovieFlix</h1>
-    <input class="form-control mb-3" type="text" placeholder="Enter your film..." style="border-radius: 20px; padding: 10px 15px; font-size: 1.1rem;">
+    <input class="form-control mb-3" type="text" placeholder="Enter your film..."
+           style="border-radius: 20px; padding: 10px 15px; font-size: 1.1rem;">
     <p style="font-size: 1.2rem;">Book your favorite movies now!</p>
   </div>
 
@@ -49,19 +53,13 @@
 <!-- Movie Categories -->
 <div class="container movie-category mt-4">
   <h2>Popular Movies</h2>
-  <div class="row mt-4">
-    <div class="col-6 col-sm-6 col-md-3">
-      <img src="https://via.placeholder.com/300x450" class="img-fluid movie-poster" alt="Movie 1">
-    </div>
-    <div class="col-6 col-sm-6 col-md-3">
-      <img src="https://via.placeholder.com/300x450" class="img-fluid movie-poster" alt="Movie 2">
-    </div>
-    <div class="col-6 col-sm-6 col-md-3">
-      <img src="https://via.placeholder.com/300x450" class="img-fluid movie-poster" alt="Movie 3">
-    </div>
-    <div class="col-6 col-sm-6 col-md-3">
-      <img src="https://via.placeholder.com/300x450" class="img-fluid movie-poster" alt="Movie 4">
-    </div>
+  <div class="row grid-frame">
+    @for (movie of movies; track $index) {
+      <div class="movie-item" [routerLink]="['/film-detail', movie.movieTitle]">
+        <img src="{{movie.posterUrl}}" class="img-fluid movie-poster" alt="Movie {{ $index + 1 }}">
+        <p style="color: white">ccc</p>
+      </div>
+    }
   </div>
 </div>
 

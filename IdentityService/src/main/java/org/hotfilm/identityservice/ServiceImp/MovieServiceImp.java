@@ -79,6 +79,12 @@ public class MovieServiceImp implements MovieService {
     }
 
     @Override
+    public Movie findByMovieTitle(String string) {
+          return movieRepository.findByMovieTitle(string);
+
+    }
+
+    @Override
     public boolean existsById(String string) {
         return movieRepository.existsById(string);
     }

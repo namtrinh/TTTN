@@ -1,0 +1,30 @@
+
+›	java:S120"ZRename this package name to match the regular expression '^[a-z_]+(\.[a-z_][a-z0-9_]*)*$'.(¤ÙÁ8éÊÐèÀ2J$be2ffa82-476c-4237-8f17-38f6b611aafe
+p
+java:S5411,"(Use a primitive boolean expression here.(“±ó‡úÿÿÿÿ8êÊÐèÀ2J$e17af12d-6bd7-42f5-9cef-768e3ce5881d
+k
+java:S5411H"(Use a primitive boolean expression here.(ñ‚íå8êÊÐèÀ2J$b256244b-4d01-4154-bab4-097999861b65
+k
+java:S5411^"(Use a primitive boolean expression here.(ñ‚íå8êÊÐèÀ2J$6ede54cf-3fab-458c-a9bf-ccb40e237d4c
+k
+java:S5411f"(Use a primitive boolean expression here.(µÿæå8êÊÐèÀ2J$8aeb1f7a-a9fc-45db-bbf0-ebe0dc17ce77
+
+java:S3008"URename this field "HASH_MOVIE" to match the regular expression '^[a-z][a-zA-Z0-9]*$'.(¤ÿ ½ûÿÿÿÿ8óÊÐèÀ2J$9ada8dbc-c637-4592-a8ac-4bd83eecf0f7
+…
+java:S6813"BRemove this field injection and use constructor injection instead.(êæÄÞ8ôÊÐèÀ2J$0acd4609-24cb-4ccf-86b2-ed1d61ce01c7
+…
+java:S6813"BRemove this field injection and use constructor injection instead.(êæÄÞ8ôÊÐèÀ2J$b75dd741-55ad-4949-8e8e-9945215f867e
+…
+java:S6813"BRemove this field injection and use constructor injection instead.(êæÄÞ8ôÊÐèÀ2J$180daa55-40c9-4ecf-9b88-aa13243e58bd
+•	java:S100&"NRename this method name to match the regular expression '^[a-z][a-zA-Z0-9]*$'.(ñš¸Õüÿÿÿÿ8ÿÊÐèÀ2J$363b95c7-bf1f-4fea-8e64-3ee4be10456a
+½
+java:S62041"zReplace this usage of 'Stream.collect(Collectors.toList())' with 'Stream.toList()' and ensure that the list is unmodified.(ª™¨¹8‚ËÐèÀ2J$cc912dc1-f067-4f9b-bd6a-b8818ec4e7e0
+†
+java:S16120">Replace this lambda with method reference 'Movie.class::cast'.(§°×®þÿÿÿÿ8ƒËÐèÀ2J$d639c1c1-b9b4-43bc-8f16-f2f9c0f6074b
+p
+java:S19050"(Remove this unnecessary cast to "Movie".(§°×®þÿÿÿÿ8ƒËÐèÀ2J$f1561fdb-4a0d-4fa9-8a78-36720d7dd7d4
+½
+java:S62044"zReplace this usage of 'Stream.collect(Collectors.toList())' with 'Stream.toList()' and ensure that the list is unmodified.(ª™¨¹8ƒËÐèÀ2J$11a241ab-bcb2-46d1-935a-7bf136b7278d
+r	java:S1066"+Replace this use of System.out by a logger.(£õâøýÿÿÿÿ8„ËÐèÀ2J$1be51ad9-8ec0-41ef-b0c6-480f333ade88
+½
+java:S6204="zReplace this usage of 'Stream.collect(Collectors.toList())' with 'Stream.toList()' and ensure that the list is unmodified.(ª™¨¹8…ËÐèÀ2J$fbad18c7-6e23-4e4e-b08b-b1695df7b68d

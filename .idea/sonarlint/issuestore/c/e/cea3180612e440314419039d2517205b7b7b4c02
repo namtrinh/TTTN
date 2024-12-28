@@ -1,2 +1,8 @@
 
-”	java:S120"ZRename this package name to match the regular expression '^[a-z_]+(\.[a-z_][a-z0-9_]*)*$'.(’•ñ"J$8131349e-2680-4824-8e40-00b8acd6d44d
+”	java:S120"ZRename this package name to match the regular expression '^[a-z_]+(\.[a-z_][a-z0-9_]*)*$'.(’•ñ"J$eeb59e34-aaf3-473b-ad61-306793f6a8ee
+m
+java:S1948/"*Make "showtime" transient or serializable.(¿ÊÛü8íïÌéÀ2J$1765c6c4-0ac2-4bf3-bdd9-398e74358502
+o
+java:S1128"RRemove this unused import 'com.fasterxml.jackson.annotation.JsonIgnoreProperties'.(ô’ˆî8ÿ¸ÏéÀ2
+s
+java:S1128"+Remove this unused import 'java.io.Serial'.(Ö£€şÿÿÿÿ8—É³éÀ2J$610abeff-cab9-492c-a62f-d71322434324

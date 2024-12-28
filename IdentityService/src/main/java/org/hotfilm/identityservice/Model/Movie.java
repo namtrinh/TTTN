@@ -1,5 +1,7 @@
 package org.hotfilm.identityservice.Model;
 
+import com.fasterxml.jackson.annotation.JsonIgnore;
+import com.fasterxml.jackson.annotation.JsonIgnoreProperties;
 import jakarta.persistence.*;
 import lombok.AllArgsConstructor;
 import lombok.Getter;
@@ -40,8 +42,11 @@ public class Movie implements Serializable {
 
     private MovieStatus movieStatus;
 
-    @OneToMany
-    private Set<Showtime> showtime; // Lịch chiếu phim
+    @OneToMany(fetch = FetchType.EAGER)
+    @JsonIgnore
+    private Set<Showtime> showtime;
+
+
 
     public enum MovieStatus{
         SHOWING, FINISH

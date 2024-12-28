@@ -1,10 +1,15 @@
 import {Component, OnInit} from '@angular/core';
 import {FooterComponent} from '../footer/footer.component';
+import {MovieService} from '../../../service/movie.service';
+import {Movie} from '../../../model/movie.model';
+import {MovieResponse} from '../../../modelDto/response/movie.response';
+import {RouterLink} from '@angular/router';
 
 @Component({
   selector: 'app-home',
   imports: [
-    FooterComponent
+    FooterComponent,
+    RouterLink
   ],
   templateUrl: './home.component.html',
   standalone: true,
@@ -12,12 +17,18 @@ import {FooterComponent} from '../footer/footer.component';
 })
 export class HomeComponent implements OnInit{
   videoUrl!: string;
+  movies: MovieResponse[] = []
 
-  constructor() { }
+  constructor(private movieService:MovieService) { }
 
   ngOnInit(): void {
-    // Thêm tham số timestamp vào URL để làm mới video mỗi khi tải lại trang
-    this.videoUrl = `https://www.youtube.com/embed/TcMBFSGVi1c?autoplay=1&mute=0&loop=1&playlist=TcMBFSGVi1c&timestamp=${new Date().getTime()}`;
+    this.getAll();
   }
 
+  getAll(){
+    this.movieService.getAll().subscribe((data:any) =>{
+        this.movies = data.result;
+        console.log(this.movies);
+    })
+  }
 }

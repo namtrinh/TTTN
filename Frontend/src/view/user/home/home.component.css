@@ -3,33 +3,71 @@ body {
   color: #fff;
   font-family: Arial, sans-serif;
 }
+
 .navbar {
   background-color: #141414;
 }
+
 .navbar {
   margin: 0;
   padding: 0;
 }
+
 .navbar-brand {
   font-weight: bold;
   color: #e50914 !important;
 }
+
 .movie-category {
   margin-top: 30px;
 }
-.movie-poster {
-  transition: transform 0.3s ease;
-}
+
 .movie-poster:hover {
   transform: scale(1.1);
 }
+
 .banner h1 {
   font-size: 3rem;
   font-weight: bold;
 }
+
 .banner a {
-  font-size:22px;
+  font-size: 22px;
   font-weight: 600;
 }
+
+.grid-frame {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr); /* 4 phim nằm ngang */
+}
+
+.movie-item {
+  width: 100%;
+  height: 100%; /* Chiều cao đầy đủ để ảnh tràn hết khung */
+  overflow: hidden; /* Ẩn phần thừa của ảnh */
+  border-radius: 20px;
+}
+
+.movie-poster {
+  transition: transform 0.3s ease;
+  width: 100%;
+  height: 100%;
+  object-fit: cover; /* Đảm bảo ảnh lấp đầy khung mà không méo hình */
+  border-radius: 20px;
+}
+
+@media (max-width: 768px) {
+  .grid-frame {
+    grid-template-columns: repeat(2, 1fr); /* Chuyển sang 2 phim nằm ngang */
+  }
+}
+
+@media (max-width: 480px) {
+  .grid-frame {
+    grid-template-columns: repeat(1, 1fr); /* Chuyển sang 1 phim nằm ngang */
+  }
+}
+
+
 
 

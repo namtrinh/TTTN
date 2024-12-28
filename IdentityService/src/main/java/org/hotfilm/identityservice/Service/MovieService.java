@@ -12,6 +12,8 @@ public interface MovieService {
 
     Movie findById(String string);
 
+    Movie findByMovieTitle(String string);
+
     boolean existsById(String string);
 
     void deleteById(String string);
