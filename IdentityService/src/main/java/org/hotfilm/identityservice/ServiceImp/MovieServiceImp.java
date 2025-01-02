@@ -1,5 +1,7 @@
 package org.hotfilm.identityservice.ServiceImp;
 
+import org.hotfilm.identityservice.Exception.AppException;
+import org.hotfilm.identityservice.Exception.ErrorCode;
 import org.hotfilm.identityservice.Mapper.MovieMapper;
 import org.hotfilm.identityservice.Model.Movie;
 import org.hotfilm.identityservice.ModelDTO.Response.MovieResponse;
@@ -94,7 +96,11 @@ public class MovieServiceImp implements MovieService {
         if (hashOperations.hasKey(HASH_MOVIE, string)) {
             hashOperations.delete(HASH_MOVIE, string);
         }
-        movieRepository.deleteById(string);
+        if (movieRepository.existsById(string)) {
+            movieRepository.deleteById(string);
+        }else{
+            throw new AppException(ErrorCode.NOT_FOUND);
+        }
     }
 
     @Override

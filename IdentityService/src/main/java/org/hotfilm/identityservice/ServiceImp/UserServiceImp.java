@@ -1,5 +1,7 @@
 package org.hotfilm.identityservice.ServiceImp;
 
+import org.hotfilm.identityservice.Exception.AppException;
+import org.hotfilm.identityservice.Exception.ErrorCode;
 import org.hotfilm.identityservice.Mapper.UserMapper;
 import org.hotfilm.identityservice.Model.User;
 import org.hotfilm.identityservice.ModelDTO.Response.UserResponse;
@@ -38,13 +40,12 @@ public class UserServiceImp implements UserService {
         System.out.println("Preloading cache...");
         List<User> customers = customerRepository.findAll();
         for (User customer : customers) {
-
             hashOperations.put(HASH_KEY, customer.getUserId(), userMapper.toUserResponse(customer));
         }
         setTTL(HASH_KEY);
     }
 
-    private void setTTL(String hashKey){
+    private void setTTL(String hashKey) {
         redisTemplate.expire(HASH_KEY, 5, TimeUnit.MINUTES);
     }
 
@@ -73,8 +74,8 @@ public class UserServiceImp implements UserService {
     }
 
     public User save(User entity) {
-        if(customerRepository.existsByEmail(entity.getEmail())){
-            throw new RuntimeException("Email has been already!");
+        if (customerRepository.existsByEmail(entity.getEmail())) {
+            throw new AppException(ErrorCode.NOT_FOUND);
         }
         entity.setRole(User.Role.USER);
         PasswordEncoder passwordEncoder = new BCryptPasswordEncoder();
@@ -94,9 +95,9 @@ public class UserServiceImp implements UserService {
             return hashOperations.get(HASH_KEY, UserId);
         } else {
             System.out.println("get from database");
-            User customer = customerRepository.findById(UserId).orElseThrow(() -> new RuntimeException("Couldn't find'"));
+            User customer = customerRepository.findById(UserId).orElseThrow(() -> new AppException(ErrorCode.NOT_FOUND));
             hashOperations.put(HASH_KEY, UserId, userMapper.toUserResponse(customer));
-           setTTL(HASH_KEY);
+            setTTL(HASH_KEY);
             return userMapper.toUserResponse(customer);
         }
     }
@@ -108,18 +109,18 @@ public class UserServiceImp implements UserService {
         if (customerRepository.existsById(customerId)) {
             customerRepository.deleteById(customerId);
         } else {
-            throw new RuntimeException("User not found");
+            throw new AppException(ErrorCode.NOT_FOUND);
         }
     }
 
-    public UserResponse updateById(String customerId, User customer){
+    public UserResponse updateById(String customerId, User customer) {
         if (hashOperations.hasKey(HASH_KEY, customerId) || customerRepository.existsById(customerId)) {
             hashOperations.put(HASH_KEY, customerId, userMapper.toUserResponse(customer));
             setTTL(HASH_KEY);
             customer.setUserId(customerId);
             return userMapper.toUserResponse(customerRepository.save(customer));
         } else {
-            throw new RuntimeException("User not found");
+            throw new AppException(ErrorCode.NOT_FOUND);
         }
     }
 }

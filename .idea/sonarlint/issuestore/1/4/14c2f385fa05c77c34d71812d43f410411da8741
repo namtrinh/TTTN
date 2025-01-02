@@ -1,30 +1,30 @@
 
-›	java:S120"ZRename this package name to match the regular expression '^[a-z_]+(\.[a-z_][a-z0-9_]*)*$'.(¤ÙÁ8éÊĞèÀ2J$be2ffa82-476c-4237-8f17-38f6b611aafe
+›	java:S120"ZRename this package name to match the regular expression '^[a-z_]+(\.[a-z_][a-z0-9_]*)*$'.(¤ÙÁ8éÊĞèÀ2J$2df23dbd-5fa9-441d-8648-9c93ea577f63
 p
-java:S5411,"(Use a primitive boolean expression here.(“±ó‡úÿÿÿÿ8êÊĞèÀ2J$e17af12d-6bd7-42f5-9cef-768e3ce5881d
+java:S5411."(Use a primitive boolean expression here.(“±ó‡úÿÿÿÿ8êÊĞèÀ2J$ca0a45ea-a8f1-4943-8b95-625c48549339
 k
-java:S5411H"(Use a primitive boolean expression here.(ñ‚íå8êÊĞèÀ2J$b256244b-4d01-4154-bab4-097999861b65
+java:S5411J"(Use a primitive boolean expression here.(ñ‚íå8êÊĞèÀ2J$2bee0af3-1d64-47d1-bb61-dcc37ea6921c
 k
-java:S5411^"(Use a primitive boolean expression here.(ñ‚íå8êÊĞèÀ2J$6ede54cf-3fab-458c-a9bf-ccb40e237d4c
+java:S5411`"(Use a primitive boolean expression here.(ñ‚íå8êÊĞèÀ2J$2cf8c06d-1b95-41e6-88d6-705cba0412ce
 k
-java:S5411f"(Use a primitive boolean expression here.(µÿæå8êÊĞèÀ2J$8aeb1f7a-a9fc-45db-bbf0-ebe0dc17ce77
+java:S5411l"(Use a primitive boolean expression here.(µÿæå8êÊĞèÀ2J$e54ae8d3-f9ee-49e1-8e9b-c8c23575c56f
 
-java:S3008"URename this field "HASH_MOVIE" to match the regular expression '^[a-z][a-zA-Z0-9]*$'.(¤ÿ ½ûÿÿÿÿ8óÊĞèÀ2J$9ada8dbc-c637-4592-a8ac-4bd83eecf0f7
+java:S3008!"URename this field "HASH_MOVIE" to match the regular expression '^[a-z][a-zA-Z0-9]*$'.(¤ÿ ½ûÿÿÿÿ8óÊĞèÀ2J$349161f9-d4cb-42aa-85c7-fa8280ab2817
 …
-java:S6813"BRemove this field injection and use constructor injection instead.(êæÄŞ8ôÊĞèÀ2J$0acd4609-24cb-4ccf-86b2-ed1d61ce01c7
+java:S6813"BRemove this field injection and use constructor injection instead.(êæÄŞ8ôÊĞèÀ2J$558be232-798f-455f-abb4-f88de01971a5
 …
-java:S6813"BRemove this field injection and use constructor injection instead.(êæÄŞ8ôÊĞèÀ2J$b75dd741-55ad-4949-8e8e-9945215f867e
+java:S6813"BRemove this field injection and use constructor injection instead.(êæÄŞ8ôÊĞèÀ2J$7d4bdc89-d0ee-4e1d-ac6f-a957c4c74cb1
 …
-java:S6813"BRemove this field injection and use constructor injection instead.(êæÄŞ8ôÊĞèÀ2J$180daa55-40c9-4ecf-9b88-aa13243e58bd
-•	java:S100&"NRename this method name to match the regular expression '^[a-z][a-zA-Z0-9]*$'.(ñš¸Õüÿÿÿÿ8ÿÊĞèÀ2J$363b95c7-bf1f-4fea-8e64-3ee4be10456a
+java:S6813"BRemove this field injection and use constructor injection instead.(êæÄŞ8ôÊĞèÀ2J$83b5c4a8-3264-4501-b4ae-ddffe4cb898e
+•	java:S100("NRename this method name to match the regular expression '^[a-z][a-zA-Z0-9]*$'.(ñš¸Õüÿÿÿÿ8ÿÊĞèÀ2J$edcde384-5d4c-460c-b808-04c7dae50e53
 ½
-java:S62041"zReplace this usage of 'Stream.collect(Collectors.toList())' with 'Stream.toList()' and ensure that the list is unmodified.(ª™¨¹8‚ËĞèÀ2J$cc912dc1-f067-4f9b-bd6a-b8818ec4e7e0
+java:S62043"zReplace this usage of 'Stream.collect(Collectors.toList())' with 'Stream.toList()' and ensure that the list is unmodified.(ª™¨¹8‚ËĞèÀ2J$3d6863a3-e73e-4ac8-8ba7-f357f6561e7d
 †
-java:S16120">Replace this lambda with method reference 'Movie.class::cast'.(§°×®şÿÿÿÿ8ƒËĞèÀ2J$d639c1c1-b9b4-43bc-8f16-f2f9c0f6074b
+java:S16122">Replace this lambda with method reference 'Movie.class::cast'.(§°×®şÿÿÿÿ8ƒËĞèÀ2J$bde0e2d2-b777-4626-a169-3b5c78e74a27
 p
-java:S19050"(Remove this unnecessary cast to "Movie".(§°×®şÿÿÿÿ8ƒËĞèÀ2J$f1561fdb-4a0d-4fa9-8a78-36720d7dd7d4
+java:S19052"(Remove this unnecessary cast to "Movie".(§°×®şÿÿÿÿ8ƒËĞèÀ2J$a531a79e-29e2-4745-878a-993a56ca6e99
 ½
-java:S62044"zReplace this usage of 'Stream.collect(Collectors.toList())' with 'Stream.toList()' and ensure that the list is unmodified.(ª™¨¹8ƒËĞèÀ2J$11a241ab-bcb2-46d1-935a-7bf136b7278d
-r	java:S1066"+Replace this use of System.out by a logger.(£õâøıÿÿÿÿ8„ËĞèÀ2J$1be51ad9-8ec0-41ef-b0c6-480f333ade88
+java:S62046"zReplace this usage of 'Stream.collect(Collectors.toList())' with 'Stream.toList()' and ensure that the list is unmodified.(ª™¨¹8ƒËĞèÀ2J$90a8e9e1-c768-4069-bd0f-55aa5e2c62c5
+r	java:S1068"+Replace this use of System.out by a logger.(£õâøıÿÿÿÿ8„ËĞèÀ2J$515548c7-9efd-45a0-a5b3-475730024906
 ½
-java:S6204="zReplace this usage of 'Stream.collect(Collectors.toList())' with 'Stream.toList()' and ensure that the list is unmodified.(ª™¨¹8…ËĞèÀ2J$fbad18c7-6e23-4e4e-b08b-b1695df7b68d
+java:S6204?"zReplace this usage of 'Stream.collect(Collectors.toList())' with 'Stream.toList()' and ensure that the list is unmodified.(ª™¨¹8…ËĞèÀ2J$b1040d14-c54e-4f20-9a35-53c75ab534d2

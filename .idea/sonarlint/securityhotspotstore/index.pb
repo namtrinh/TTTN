@@ -135,3 +135,7 @@ k
 ;Frontend/src/view/admin/view-admin/view-admin.component.css,c\1\c13588e91e0888e0e24f910242c7ddfdf4c794e9
 j
 :Frontend/src/view/admin/view-admin/view-admin.component.ts,1\e\1e35c4c5da133c3c3dda95e8198812d591cee978
+‚
+RIdentityService/src/main/java/org/hotfilm/identityservice/Exception/ErrorCode.java,e\2\e2516809fdddfe33cf0db083da17e5b00b82deac
+…
+UIdentityService/src/main/java/org/hotfilm/identityservice/Exception/AppException.java,f\b\fb7a3be83ab2695c756cbc067e7120a84caf8580
