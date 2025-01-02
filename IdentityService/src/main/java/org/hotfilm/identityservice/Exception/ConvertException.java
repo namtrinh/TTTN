@@ -11,14 +11,14 @@ public class ConvertException {
     // catch error directly
 
     @ExceptionHandler(value = RuntimeException.class)
-    ResponseEntity<ApiResponse> getHandlingException(RuntimeException exception) {
+    ResponseEntity<ApiResponse> getRuntimeException(RuntimeException exception) {
         ApiResponse apiResponse = new ApiResponse();
         apiResponse.setMessage(exception.getMessage());
         return ResponseEntity.badRequest().body(apiResponse);
     }
 
     @ExceptionHandler(value = AppException.class)
-    ResponseEntity<ApiResponse> getResponseAppException(AppException exception) {
+    ResponseEntity<ApiResponse> getAppException(AppException exception) {
         ApiResponse apiResponse = new ApiResponse();
         apiResponse.setCode(exception.getErrorCode().getCode());
         apiResponse.setMessage(exception.getErrorCode().getMessage());
