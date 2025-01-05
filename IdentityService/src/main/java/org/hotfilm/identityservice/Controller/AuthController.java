@@ -1,10 +1,10 @@
 package org.hotfilm.identityservice.Controller;
 
 import com.nimbusds.jose.JOSEException;
-import org.hotfilm.identityservice.ModelDTO.Request.UserRequest;
-import org.hotfilm.identityservice.ModelDTO.Request.VerifyCodeRequest;
+import org.hotfilm.identityservice.ModelDTO.Request.*;
 import org.hotfilm.identityservice.ModelDTO.Response.ApiResponse;
 import org.hotfilm.identityservice.ModelDTO.Response.AuthenticateResponse;
+import org.hotfilm.identityservice.ModelDTO.Response.CheckTokenResponse;
 import org.hotfilm.identityservice.ModelDTO.Response.LoginResponse;
 import org.hotfilm.identityservice.Repository.UserRepository;
 import org.hotfilm.identityservice.Service.AuthService;
@@ -12,10 +12,8 @@ import org.hotfilm.identityservice.Service.EmailService;
 import org.hotfilm.identityservice.Service.ResetPasswordService;
 import org.hotfilm.identityservice.Service.UserService;
 import org.springframework.beans.factory.annotation.Autowired;
-import org.springframework.security.crypto.bcrypt.BCryptPasswordEncoder;
-import org.springframework.security.crypto.password.PasswordEncoder;
 import org.springframework.web.bind.annotation.*;
-
+import java.text.ParseException;
 import java.util.UUID;
 
 @RestController
@@ -54,6 +52,26 @@ public class AuthController {
                 .code(200)
                 .message("Your account has been successfully confirmed.")
                 .result(response)
+                .build();
+    }
+
+    @PostMapping("/check_token")
+    public ApiResponse<CheckTokenResponse> authenticateToken(@RequestBody CheckTokenRequest checkTokenRequest)
+            throws ParseException, JOSEException {
+        var result = authService.checkToken(checkTokenRequest);
+        return ApiResponse.<CheckTokenResponse>builder()
+                .code(201)
+                .result(result)
+                .build();
+    }
+
+    @PostMapping("/refresh")
+    public ApiResponse<AuthenticateResponse> refreshToken(@RequestBody RefreshTokenRequest refreshTokenRequest)
+            throws ParseException, JOSEException {
+        var result = authService.refreshToken(refreshTokenRequest);
+        return ApiResponse.<AuthenticateResponse>builder()
+                .code(200)
+                .result(result)
                 .build();
     }
 
@@ -106,5 +124,11 @@ public class AuthController {
                 .message("Password has been updated successfully")
                 .result("true")
                 .build();
+    }
+
+    @PostMapping("/logout")
+    ApiResponse<Void> logout(@RequestBody LogoutRequest logoutRequest) throws ParseException, JOSEException {
+        authService.logout(logoutRequest);
+        return ApiResponse.<Void>builder().build();
     }
 }

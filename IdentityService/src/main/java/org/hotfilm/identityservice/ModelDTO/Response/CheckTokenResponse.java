@@ -8,7 +8,6 @@ import lombok.*;
 @AllArgsConstructor
 @NoArgsConstructor
 @Builder
-public class LoginResponse {
-
-    boolean authenticate;
+public class CheckTokenResponse {
+    protected boolean valid;
 }

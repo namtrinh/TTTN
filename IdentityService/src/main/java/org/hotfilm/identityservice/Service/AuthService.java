@@ -12,11 +12,9 @@ import org.hotfilm.identityservice.Exception.AppException;
 import org.hotfilm.identityservice.Exception.ErrorCode;
 import org.hotfilm.identityservice.Model.InvalidateToken;
 import org.hotfilm.identityservice.Model.User;
-import org.hotfilm.identityservice.ModelDTO.Request.LogoutRequest;
-import org.hotfilm.identityservice.ModelDTO.Request.RefreshTokenRequest;
-import org.hotfilm.identityservice.ModelDTO.Request.UserRequest;
-import org.hotfilm.identityservice.ModelDTO.Request.VerifyCodeRequest;
+import org.hotfilm.identityservice.ModelDTO.Request.*;
 import org.hotfilm.identityservice.ModelDTO.Response.AuthenticateResponse;
+import org.hotfilm.identityservice.ModelDTO.Response.CheckTokenResponse;
 import org.hotfilm.identityservice.ModelDTO.Response.LoginResponse;
 import org.hotfilm.identityservice.Repository.InvalidateTokenRepository;
 import org.hotfilm.identityservice.Repository.UserRepository;
@@ -101,7 +99,7 @@ public class AuthService {
         userRepository.save(user);
 
         emailService.sendCodeToMail(user.getEmail(), "Mã xác nhận của bạn là: ", "Mã của bạn là: " + auth_code);
-        return LoginResponse.builder().authenticated(true).build();
+        return LoginResponse.builder().authenticate(true).build();
     }
 
     public AuthenticateResponse verifyAuthCode(VerifyCodeRequest verifyCodeRequest) throws JOSEException {
@@ -122,6 +120,17 @@ public class AuthService {
         return AuthenticateResponse.builder().token(token).authenticate(true).build();
     }
 
+    public CheckTokenResponse checkToken(CheckTokenRequest request) throws JOSEException, ParseException {
+        var token = request.getToken();
+        boolean isValid = true;
+        try {
+            verifyToken(token, false);
+        } catch (AppException e) {
+            isValid = false;
+        }
+        return CheckTokenResponse.builder().valid(isValid).build();
+    }
+
     public SignedJWT verifyToken(String token, boolean isRefresh) throws JOSEException, ParseException {
         JWSVerifier verifier = new MACVerifier(SIGN_KEY.getBytes());
         SignedJWT signedJWT = SignedJWT.parse(token);
@@ -138,12 +147,12 @@ public class AuthService {
         if (!(verified && expiryTime.after(new Date()))) {
             throw new AppException(ErrorCode.EXPIRE_TOKEN);
         }
-
         if (invalidateTokenRepository.existsById(signedJWT.getJWTClaimsSet().getJWTID())) {
             throw new AppException(ErrorCode.UNAUTHENTICATED);
         }
         return signedJWT;
     }
+
 
     public void logout(LogoutRequest logoutRequest) throws ParseException, JOSEException {
         try {
@@ -169,9 +178,12 @@ public class AuthService {
                 InvalidateToken.builder().id(jit).expiryTime(expiryTime).build();
         invalidateTokenRepository.save(invalidatedToken);
 
-        var email = signJWT.getJWTClaimsSet().getSubject();
-        User user = userRepository.findByEmail(email);
-        var token = generateToken(user);
+        var userId = signJWT.getJWTClaimsSet().getSubject();
+        Optional<User> user = userRepository.findById(userId);
+        if (user.isEmpty()){
+            throw new AppException(ErrorCode.NOT_FOUND);
+        }
+        var token = generateToken(user.get());
         return AuthenticateResponse.builder().token(token).authenticate(true).build();
     }
 
@@ -182,7 +194,7 @@ public class AuthService {
                 .jwtID(UUID.randomUUID().toString())
                 .subject(customer.getUserId())
                 .issueTime(new Date())
-                .expirationTime(new Date(System.currentTimeMillis() + 600000))
+                .expirationTime(new Date(System.currentTimeMillis() + VALID_DURATION))
                 .claim("scope", customer.getRole())
                 .build();
         Payload payload = new Payload(jwtClaimsSet.toJSONObject());

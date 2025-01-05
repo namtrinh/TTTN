@@ -4,17 +4,19 @@ import jakarta.persistence.Entity;
 import jakarta.persistence.Id;
 import jakarta.persistence.Table;
 import lombok.*;
+import lombok.experimental.FieldDefaults;
 import org.springframework.web.bind.annotation.RequestBody;
 
 import java.util.Date;
 
-@Entity
 @Getter
 @Setter
-@AllArgsConstructor
-@RequiredArgsConstructor
 @Builder
-@Table(name = "invalidaToken")
+@NoArgsConstructor
+@AllArgsConstructor
+@FieldDefaults(level = AccessLevel.PRIVATE)
+@Entity
+@Table(name = "invalidate_token")
 public class InvalidateToken {
     @Id
     String id;

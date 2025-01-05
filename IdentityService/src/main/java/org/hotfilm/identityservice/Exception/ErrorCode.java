@@ -13,7 +13,8 @@ public enum ErrorCode {
     UNAUTHENTICATED(401, "Unauthorized", HttpStatus.UNAUTHORIZED),
     REQUEST_LIMIT_EXCEEDED(400, "Request Limit Exceeded", HttpStatus.BAD_REQUEST),
     VERIFY_CODE_EXPIRED(400, "Verified Code Exceeded", HttpStatus.BAD_REQUEST),
-    EXPIRE_TOKEN(400, "Expired Token", HttpStatus.BAD_REQUEST);
+    EXPIRE_TOKEN(400, "Expired Token", HttpStatus.BAD_REQUEST),
+    INVALID_TOKEN(400, "Invalid Token", HttpStatus.UNAUTHORIZED);
 
     private int code;
     private String message;

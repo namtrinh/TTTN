@@ -163,3 +163,17 @@ cIdentityService/src/main/java/org/hotfilm/identityservice/ModelDTO/Request/Requ
 ]IdentityService/src/main/java/org/hotfilm/identityservice/ModelDTO/Request/LogoutRequest.java,8\3\832804c888e4e89d292e48dd4e81c4441bc94060
 ‹
 [IdentityService/src/main/java/org/hotfilm/identityservice/Service/ResetPasswordService.java,8\c\8c098c2228319bbf52ca1c992839541a79fdc318
+“
+cIdentityService/src/main/java/org/hotfilm/identityservice/ModelDTO/Request/RefreshTokenRequest.java,a\9\a91567f060dc45ea180fea19a29dd6a742288469
+’
+bIdentityService/src/main/java/org/hotfilm/identityservice/ModelDTO/Request/CheckTokenResponse.java,c\3\c3b132137b20a27c950fedd31e21c0c0740601ee
+“
+cIdentityService/src/main/java/org/hotfilm/identityservice/ModelDTO/Response/CheckTokenResponse.java,b\e\bea1f38343ad7d10ee03d7a363d314f14a9e8666
+†
+VIdentityService/src/main/java/org/hotfilm/identityservice/Config/CustomJwtDecoder.java,4\5\45349bf13b9e79737ad66fe612f4e1a8108fd095
+‘
+aIdentityService/src/main/java/org/hotfilm/identityservice/Config/JwtAuthenticationEntryPoint.java,2\f\2f75cf5ec8654ec24f8f7a9d332a208c959abd66
+‘
+aIdentityService/src/main/java/org/hotfilm/identityservice/ModelDTO/Request/CheckTokenRequest.java,d\f\df34558dfad7f362204283e71714a0576930f64d
+“
+cIdentityService/src/main/java/org/hotfilm/identityservice/Repository/InvalidateTokenRepository.java,0\f\0f430451f814ea28c7e49fc7fba04c498c61847d

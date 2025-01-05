@@ -1,13 +1,33 @@
 
-œ	java:S120"ZRename this package name to match the regular expression '^[a-z_]+(\.[a-z_][a-z0-9_]*)*$'.(ô¾µ8û×ÀˆÀ2J$21e50962-e791-4d93-a11d-5e9324c03ab1
-š	java:S116!"SRename this field "SIGN_KEY" to match the regular expression '^[a-z][a-zA-Z0-9]*$'.(ÀÃå†ıÿÿÿÿ8´çÀˆÀ2J$2492c565-448b-49a0-a126-0d5516df1d59
-…
-java:S6813#"BRemove this field injection and use constructor injection instead.(êæÄŞ8´çÀˆÀ2J$f5787137-f334-49fd-99fd-a4f2c1285b57
-
-java:S3305$"ZInject this field value directly into "securityFilterChain", the only method that uses it.(†’³Ö8µçÀˆÀ2J$4093d383-4e79-477f-9db9-e5b546186537
-u
-java:S1128"-Remove this unused import 'java.util.Arrays'.(î–˜Éüÿÿÿÿ8ÅçÀˆÀ2J$fd63939c-aad6-405f-860a-8784abbe9c88
+v	java:S120"ZRename this package name to match the regular expression '^[a-z_]+(\.[a-z_][a-z0-9_]*)*$'.(ô¾µ8†Šé°Ã2
+_
+java:S6813%"BRemove this field injection and use constructor injection instead.(êæÄŞ8ŠŠé°Ã2
+_
+java:S6813("BRemove this field injection and use constructor injection instead.(êæÄŞ8ŠŠé°Ã2
+w
+java:S3305)"ZInject this field value directly into "securityFilterChain", the only method that uses it.(§ô‰½8ŠŠé°Ã2
+w
+java:S3305&"ZInject this field value directly into "securityFilterChain", the only method that uses it.(†’³Ö8ŠŠé°Ã2
+]	java:S125H"<This block of commented-out lines of code should be removed.(³¤ºªøÿÿÿÿ8Šé°Ã2
+l
+java:S1128"ORemove this unused import 'org.springframework.beans.factory.annotation.Value'.(ìø›8”Šé°Ã2
+
+java:S1128"_Remove this unused import 'org.springframework.security.core.authority.SimpleGrantedAuthority'.(– ‹Ìûÿÿÿÿ8”Šé°Ã2
 s
-java:S1128"+Remove this unused import 'java.util.List'.(Õë±Äøÿÿÿÿ8ÅçÀˆÀ2J$e249f5df-f31d-4853-8ffd-b5e4115f94b8
-€
-java:S1128"8Remove this unused import 'java.util.stream.Collectors'.(Óóº´úÿÿÿÿ8ÅçÀˆÀ2J$31c61c47-132c-4363-8887-c089683bc0a6
+java:S1128"VRemove this unused import 'org.springframework.security.oauth2.jose.jws.MacAlgorithm'.(ğå…†8”Šé°Ã2
+l
+java:S1128"ORemove this unused import 'org.springframework.security.oauth2.jwt.JwtDecoder'.(¸½œÚ8”Šé°Ã2
+r
+java:S1128"URemove this unused import 'org.springframework.security.oauth2.jwt.NimbusJwtDecoder'.(ûè“³8”Šé°Ã2
+P
+java:S1128"3Remove this unused import 'javax.crypto.SecretKey'.(±•¸×8”Šé°Ã2
+^
+java:S1128"<Remove this unused import 'javax.crypto.spec.SecretKeySpec'.(¹«è•üÿÿÿÿ8”Šé°Ã2
+O
+java:S1128"-Remove this unused import 'java.util.Arrays'.(î–˜Éüÿÿÿÿ8”Šé°Ã2
+T
+java:S1128"2Remove this unused import 'java.util.Collections'.(¢³ïÓşÿÿÿÿ8”Šé°Ã2
+M
+java:S1128"+Remove this unused import 'java.util.List'.(Õë±Äøÿÿÿÿ8”Šé°Ã2
+Z
+java:S1128"8Remove this unused import 'java.util.stream.Collectors'.(Óóº´úÿÿÿÿ8”Šé°Ã2
