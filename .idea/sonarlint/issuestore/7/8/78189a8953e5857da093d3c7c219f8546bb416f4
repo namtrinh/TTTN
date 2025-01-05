@@ -1,8 +1,21 @@
 
-›	java:S120"ZRename this package name to match the regular expression '^[a-z_]+(\.[a-z_][a-z0-9_]*)*$'.(¤ÙÁ8Ìäë‘À2J$a5001967-5e5e-4dc0-ae34-0fc0d621b174
-	java:S112"FDefine and throw a dedicated exception instead of using a generic one.(ïİûöûÿÿÿÿ8Ğäë‘À2J$3257f959-03d3-4dd7-be64-fda3272ab530
-	java:S112%"FDefine and throw a dedicated exception instead of using a generic one.(ÚçÁùùÿÿÿÿ8Ğäë‘À2J$aafae1d6-ed16-4736-9938-4b0b3ea35aa4
-š	java:S116"SRename this field "SIGN_KEY" to match the regular expression '^[a-z][a-zA-Z0-9]*$'.(Ò¸¥Ìüÿÿÿÿ8Òäë‘À2J$8b3d135a-853c-4fa2-a504-883c3bef3074
+˜	java:S117H"QRename this local variable to match the regular expression '^[a-z][a-zA-Z0-9]*$'.(¸¼üíùÿÿÿÿ8´ŸÕ©Ã2J$0990cccb-6ba5-42ca-8565-6f984b866879
+›	java:S120"ZRename this package name to match the regular expression '^[a-z_]+(\.[a-z_][a-z0-9_]*)*$'.(¤ÙÁ8´ŸÕ©Ã2J$03cd0b47-3701-4d85-8382-3aa624a5324b
+	java:S112&"FDefine and throw a dedicated exception instead of using a generic one.(ïİûöûÿÿÿÿ8¶ŸÕ©Ã2J$5fc59e29-7a03-4143-89c7-ec65ed5ea7c4
+	java:S112."FDefine and throw a dedicated exception instead of using a generic one.(ÚçÁùùÿÿÿÿ8¶ŸÕ©Ã2J$7b3a1f73-1e19-49db-96ba-49c1088d67e2
+š	java:S116"SRename this field "SIGN_KEY" to match the regular expression '^[a-z][a-zA-Z0-9]*$'.(Ò¸¥Ìüÿÿÿÿ8¸ŸÕ©Ã2J$35d11591-d7eb-4526-93f7-5bd67e7f1364
 …
-java:S6813"BRemove this field injection and use constructor injection instead.(êæÄŞ8Ôäë‘À2J$814ae053-dfcd-4697-820d-0d41f808dd0d
-m	java:S106("+Replace this use of System.out by a logger.(Ï˜ø 8æäë‘À2J$b7073179-4999-445a-8680-f24a60ddf48e
+java:S6813"BRemove this field injection and use constructor injection instead.(êæÄŞ8¸ŸÕ©Ã2J$b5506422-b28a-4252-a576-fd1aaf656b73
+…
+java:S6813 "BRemove this field injection and use constructor injection instead.(êæÄŞ8¸ŸÕ©Ã2J$2e18e21a-eda7-4cc9-8ab2-4201ca2c8db3
+m	java:S1061"+Replace this use of System.out by a logger.(Ï˜ø 8¾ŸÕ©Ã2J$41d81d73-3683-4a86-958d-fd2153192a9f
+c
+java:S18549"ARemove this useless assignment to local variable "authenticated".(üùíéıÿÿÿÿ8ç‰Û©Ã2
+`
+java:S18548"CRemove this useless assignment to local variable "passwordEncoder".(ÖØ8ç‰Û©Ã2
+U
+java:S18546"8Remove this useless assignment to local variable "user".(©‹¶ş8ç‰Û©Ã2
+Y
+java:S1854;"7Remove this useless assignment to local variable "now".(ÃÅøûÿÿÿÿ8ç‰Û©Ã2
+_
+java:S1854H"=Remove this useless assignment to local variable "auth_code".(¸¼üíùÿÿÿÿ8ç‰Û©Ã2

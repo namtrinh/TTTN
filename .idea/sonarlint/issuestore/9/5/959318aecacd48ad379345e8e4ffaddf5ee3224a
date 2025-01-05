@@ -1,4 +1,18 @@
 
-š	java:S120"ZRename this package name to match the regular expression '^[a-z_]+(\.[a-z_][a-z0-9_]*)*$'.(Û´¬áÿÿÿÿÿJ$4a028271-30e8-4915-97cc-f299bbc842c8
-~
-java:S6813"BRemove this field injection and use constructor injection instead.(êæÄŞJ$f42e3a08-e646-47bb-a19c-eb6d378b65e7
+“	java:S117F"QRename this local variable to match the regular expression '^[a-z][a-zA-Z0-9]*$'.(¼ŞàÀ8ÛÆ¾«Ã2J$93a56a80-d082-4ac8-885f-558673a292a3
+’	java:S117\"QRename this local variable to match the regular expression '^[a-z][a-zA-Z0-9]*$'.(ÍÑùD8İÆ¾«Ã2J$f034c4e3-2f49-4b90-bec2-de228462b9a9
+¡	java:S120"ZRename this package name to match the regular expression '^[a-z_]+(\.[a-z_][a-z0-9_]*)*$'.(Û´¬áÿÿÿÿÿ8İÆ¾«Ã2J$231eaac2-2639-4af7-b819-5e18eff0b3ca
+ˆ
+java:S1192B"FDefine a constant instead of duplicating this literal "false" 3 times.(‰üêa8àÆ¾«Ã2J$b4e5420b-4070-43d7-8547-4afeae909964
+…
+java:S6813"BRemove this field injection and use constructor injection instead.(êæÄŞ8âÆ¾«Ã2J$c3f571cd-169b-4eae-90c8-ae94114aef5d
+…
+java:S6813"BRemove this field injection and use constructor injection instead.(êæÄŞ8âÆ¾«Ã2J$902d76db-9d05-4227-9b61-87169facd9b3
+…
+java:S6813"BRemove this field injection and use constructor injection instead.(êæÄŞ8âÆ¾«Ã2J$c31be2f4-9947-48e7-9af6-bdb7919a854d
+…
+java:S6813""BRemove this field injection and use constructor injection instead.(êæÄŞ8âÆ¾«Ã2J$d75570a8-6987-43d1-8858-ffca4f5dcd03
+…
+java:S6813%"BRemove this field injection and use constructor injection instead.(êæÄŞ8õ¢Â«Ã2J$1f368276-abc2-4f43-92a9-6bc95f24273e
+À
+java:S1130)"xRemove the declaration of thrown exception 'com.nimbusds.jose.JOSEException', as it cannot be thrown from method's body.(¼¡°øÿÿÿÿ8æÆ¾«Ã2J$8bed6fbe-4214-4410-b94a-46ec12a01d2e

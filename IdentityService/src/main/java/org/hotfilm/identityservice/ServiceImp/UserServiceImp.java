@@ -4,6 +4,7 @@ import org.hotfilm.identityservice.Exception.AppException;
 import org.hotfilm.identityservice.Exception.ErrorCode;
 import org.hotfilm.identityservice.Mapper.UserMapper;
 import org.hotfilm.identityservice.Model.User;
+import org.hotfilm.identityservice.ModelDTO.Request.UserRequest;
 import org.hotfilm.identityservice.ModelDTO.Response.UserResponse;
 import org.hotfilm.identityservice.Repository.UserRepository;
 import org.hotfilm.identityservice.Service.UserService;
@@ -16,7 +17,6 @@ import org.springframework.security.crypto.password.PasswordEncoder;
 import org.springframework.stereotype.Service;
 
 import java.util.List;
-import java.util.UUID;
 import java.util.concurrent.TimeUnit;
 import java.util.stream.Collectors;
 
@@ -122,5 +122,16 @@ public class UserServiceImp implements UserService {
         } else {
             throw new AppException(ErrorCode.NOT_FOUND);
         }
+    }
+
+    @Override
+    public void updatePasswordByEmail(UserRequest userRequest){
+        var user = customerRepository.findByEmail(userRequest.getEmail());
+        if (user == null){
+            throw new AppException(ErrorCode.NOT_FOUND);
+        }
+        PasswordEncoder passwordEncoder = new BCryptPasswordEncoder();
+        user.setPassword(passwordEncoder.encode(userRequest.getPassword()));
+        customerRepository.save(user);
     }
 }

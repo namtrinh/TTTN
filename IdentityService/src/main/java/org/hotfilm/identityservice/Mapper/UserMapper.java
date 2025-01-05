@@ -9,6 +9,6 @@ import org.mapstruct.Mapper;
 public interface UserMapper {
     User toUser(UserRequest userRequest);
 
-    UserResponse toUserResponse(User customer);
+    UserResponse toUserResponse(User user);
 
 }

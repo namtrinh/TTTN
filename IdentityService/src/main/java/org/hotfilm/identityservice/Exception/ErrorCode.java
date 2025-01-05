@@ -9,8 +9,11 @@ import org.springframework.http.HttpStatusCode;
 @RequiredArgsConstructor
 public enum ErrorCode {
 
-    NOT_FOUND(400,"Not Found", HttpStatus.NOT_FOUND);
-
+    NOT_FOUND(400,"Not Found", HttpStatus.NOT_FOUND),
+    UNAUTHENTICATED(401, "Unauthorized", HttpStatus.UNAUTHORIZED),
+    REQUEST_LIMIT_EXCEEDED(400, "Request Limit Exceeded", HttpStatus.BAD_REQUEST),
+    VERIFY_CODE_EXPIRED(400, "Verified Code Exceeded", HttpStatus.BAD_REQUEST),
+    EXPIRE_TOKEN(400, "Expired Token", HttpStatus.BAD_REQUEST);
 
     private int code;
     private String message;

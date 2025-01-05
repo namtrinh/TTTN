@@ -3,15 +3,13 @@ package org.hotfilm.identityservice.ServiceImp;
 import com.nimbusds.jose.JOSEException;
 import org.hotfilm.identityservice.Model.User;
 import org.hotfilm.identityservice.Repository.UserRepository;
+import org.hotfilm.identityservice.Service.AuthService;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.security.oauth2.client.userinfo.DefaultOAuth2UserService;
 import org.springframework.security.oauth2.client.userinfo.OAuth2UserRequest;
 import org.springframework.security.oauth2.client.userinfo.OAuth2UserService;
 import org.springframework.security.oauth2.core.user.OAuth2User;
 import org.springframework.stereotype.Service;
-import org.springframework.transaction.annotation.Transactional;
-
-import java.util.UUID;
 
 @Service
 public class Oauth2Service {

@@ -38,4 +38,15 @@ public class User implements Serializable {
         USER, ADMIN
     }
 
+    private String verificationCode;
+
+    private LocalDateTime verificationCodeExpiry;
+
+    private Integer requestCount = 0;
+
+    private LocalDateTime lastRequestTime;
+
+    private Boolean activated;
+
+
 }
