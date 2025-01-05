@@ -36,12 +36,15 @@ import java.util.UUID;
 @Slf4j
 public class AuthService {
 
+    @NonFinal
     @Value("${jwt.secretKey}")
     public String SIGN_KEY;
 
+    @NonFinal
     @Value("${jwt.valid-Duration}")
     protected long VALID_DURATION;
 
+    @NonFinal
     @Value("${jwt.refreshable-Duration}")
     protected long REFRESHABLE_DURATION;
 
@@ -159,6 +162,9 @@ public class AuthService {
             var signToken = verifyToken(logoutRequest.getToken(), true);
 
             String jit = signToken.getJWTClaimsSet().getJWTID();
+            if (invalidateTokenRepository.existsById(jit)){
+                throw new AppException(ErrorCode.UNAUTHENTICATED);
+            }
             Date expiryTime = signToken.getJWTClaimsSet().getExpirationTime();
 
             InvalidateToken invalidatedToken =

@@ -1,33 +1,12 @@
 
-v	java:S120"ZRename this package name to match the regular expression '^[a-z_]+(\.[a-z_][a-z0-9_]*)*$'.(ô¾µž8†Šé°Ã2
-_
-java:S6813%"BRemove this field injection and use constructor injection instead.(êæÄÞ8ŠŠé°Ã2
-_
-java:S6813("BRemove this field injection and use constructor injection instead.(êæÄÞ8ŠŠé°Ã2
-w
-java:S3305)"ZInject this field value directly into "securityFilterChain", the only method that uses it.(§ô‰½8ŠŠé°Ã2
-w
-java:S3305&"ZInject this field value directly into "securityFilterChain", the only method that uses it.(†’³Ö8ŠŠé°Ã2
-]	java:S125H"<This block of commented-out lines of code should be removed.(³¤ºªøÿÿÿÿ8Šé°Ã2
-l
-java:S1128"ORemove this unused import 'org.springframework.beans.factory.annotation.Value'.(ìø›8”Šé°Ã2
-
-java:S1128"_Remove this unused import 'org.springframework.security.core.authority.SimpleGrantedAuthority'.(– ‹Ìûÿÿÿÿ8”Šé°Ã2
-s
-java:S1128"VRemove this unused import 'org.springframework.security.oauth2.jose.jws.MacAlgorithm'.(ðå…†8”Šé°Ã2
-l
-java:S1128"ORemove this unused import 'org.springframework.security.oauth2.jwt.JwtDecoder'.(¸½œÚ8”Šé°Ã2
-r
-java:S1128"URemove this unused import 'org.springframework.security.oauth2.jwt.NimbusJwtDecoder'.(ûè“³8”Šé°Ã2
-P
-java:S1128"3Remove this unused import 'javax.crypto.SecretKey'.(±•¸×8”Šé°Ã2
-^
-java:S1128"<Remove this unused import 'javax.crypto.spec.SecretKeySpec'.(¹«è•üÿÿÿÿ8”Šé°Ã2
-O
-java:S1128"-Remove this unused import 'java.util.Arrays'.(î–˜Éüÿÿÿÿ8”Šé°Ã2
-T
-java:S1128"2Remove this unused import 'java.util.Collections'.(¢³ïÓþÿÿÿÿ8”Šé°Ã2
-M
-java:S1128"+Remove this unused import 'java.util.List'.(Õë±Äøÿÿÿÿ8”Šé°Ã2
-Z
-java:S1128"8Remove this unused import 'java.util.stream.Collectors'.(Óóº´úÿÿÿÿ8”Šé°Ã2
+œ	java:S120"ZRename this package name to match the regular expression '^[a-z_]+(\.[a-z_][a-z0-9_]*)*$'.(ô¾µž8†Šé°Ã2J$e54b063b-1bc4-4fff-a2d9-938a0c34d1d6
+…
+java:S6813"BRemove this field injection and use constructor injection instead.(êæÄÞ8º·Ü±Ã2J$d383be6a-39dd-4ed4-9e22-50e04c2aaa48
+…
+java:S6813"BRemove this field injection and use constructor injection instead.(êæÄÞ8º·Ü±Ã2J$a676374b-6563-42e4-8e4a-5bd70fbb1993
+
+java:S3305 "ZInject this field value directly into "securityFilterChain", the only method that uses it.(’„Ñ8»·Ü±Ã2J$7f87b398-33b8-41fe-bd22-11b4cce1672b
+
+java:S3305"ZInject this field value directly into "securityFilterChain", the only method that uses it.(†’³Ö8»·Ü±Ã2J$6d554bd2-2a28-4e0f-87b1-20d0b38cc6b4
+À
+java:S1128"~Remove this unused import 'org.springframework.security.oauth2.server.resource.authentication.JwtGrantedAuthoritiesConverter'.(§¨ãi8È·Ü±Ã2J$eaca6e99-e657-49a3-a11d-aef9a8fe6233

@@ -1,9 +1,9 @@
 
-”	java:S120"ZRename this package name to match the regular expression '^[a-z_]+(\.[a-z_][a-z0-9_]*)*$'.(¤ÙÁJ$1ab7da72-6d60-46bc-8579-43a180dcf73b
-†	java:S1121"FDefine and throw a dedicated exception instead of using a generic one.(²ïÂ°øÿÿÿÿJ$fd954f9c-fc3d-4f06-b46f-402fbb2afa05
+”	java:S120"ZRename this package name to match the regular expression '^[a-z_]+(\.[a-z_][a-z0-9_]*)*$'.(¤ÙÁJ$f3d6fa90-d2a5-4638-804a-bd7b1da2f027
+†	java:S1121"FDefine and throw a dedicated exception instead of using a generic one.(²ïÂ°øÿÿÿÿJ$87905b4b-ee20-4974-9b1e-687d1262fc9e
 ~
-java:S6813"BRemove this field injection and use constructor injection instead.(êæÄŞJ$32994e4e-ddde-46bc-b237-197035000880
+java:S6813"BRemove this field injection and use constructor injection instead.(êæÄŞJ$a15762a3-e73a-4358-b7cc-d1fe91a439a7
 ~
-java:S6813"BRemove this field injection and use constructor injection instead.(êæÄŞJ$21449001-7875-482d-a76b-47f0510850a5
-k	java:S106"+Replace this use of System.out by a logger.(¤ÅÓåıÿÿÿÿJ$67027516-6137-4c0c-8255-a6d433270e6a
-f	java:S106."+Replace this use of System.out by a logger.(ñšÔJ$a258e99d-a65c-4b02-851b-31d650355431
+java:S6813"BRemove this field injection and use constructor injection instead.(êæÄŞJ$118817ad-030a-48f7-b03b-d37314b66a88
+k	java:S106"+Replace this use of System.out by a logger.(¤ÅÓåıÿÿÿÿJ$bc2bc630-22df-466b-9902-2eab98583db3
+f	java:S106."+Replace this use of System.out by a logger.(ñšÔJ$fc25a240-797c-43fa-bedf-db0b4489ba7c

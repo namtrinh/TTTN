@@ -1,13 +1,13 @@
 
-˜	java:S117_"QRename this local variable to match the regular expression '^[a-z][a-zA-Z0-9]*$'.(¸¼üíùÿÿÿÿ8ß¿’°Ã2J$95163e04-0b18-447e-beeb-2304925d945b
-œ	java:S120"ZRename this package name to match the regular expression '^[a-z_]+(\.[a-z_][a-z0-9_]*)*$'.(õ­¬¾8ß¿’°Ã2J$ce4dfa3f-ebb9-49bb-a5b5-c7ec260dd172
-š	java:S116("SRename this field "SIGN_KEY" to match the regular expression '^[a-z][a-zA-Z0-9]*$'.(Ò¸¥Ìüÿÿÿÿ8ä¿’°Ã2J$e28ad3af-2f6e-439e-bb44-bc0fbbc29ccd
-›	java:S116+"YRename this field "VALID_DURATION" to match the regular expression '^[a-z][a-zA-Z0-9]*$'.(ˆçï˜8ä¿’°Ã2J$bff8f053-9fe6-4cb9-909b-02370fe4aaf6
-¡	java:S116."_Rename this field "REFRESHABLE_DURATION" to match the regular expression '^[a-z][a-zA-Z0-9]*$'.(µĞ²8ä¿’°Ã2J$ccfb7bb1-a72e-4bb9-8f75-2b72eb1b3f9c
+˜	java:S117b"QRename this local variable to match the regular expression '^[a-z][a-zA-Z0-9]*$'.(¸¼üíùÿÿÿÿ8ß¿’°Ã2J$8c4e4ba2-2a53-40b2-8742-7450ec87b9c6
+œ	java:S120"ZRename this package name to match the regular expression '^[a-z_]+(\.[a-z_][a-z0-9_]*)*$'.(õ­¬¾8ß¿’°Ã2J$db3fbf73-6c01-4f61-bb8a-4b171ee42d1e
+š	java:S116)"SRename this field "SIGN_KEY" to match the regular expression '^[a-z][a-zA-Z0-9]*$'.(Ò¸¥Ìüÿÿÿÿ8ä¿’°Ã2J$2207ccf5-5753-4deb-b90d-c7ac87334de3
+›	java:S116-"YRename this field "VALID_DURATION" to match the regular expression '^[a-z][a-zA-Z0-9]*$'.(ˆçï˜8ä¿’°Ã2J$f774581e-e81a-4b0e-b8fe-3a301c89c689
+¡	java:S1161"_Rename this field "REFRESHABLE_DURATION" to match the regular expression '^[a-z][a-zA-Z0-9]*$'.(µĞ²8ä¿’°Ã2J$6368b45b-e98d-4ae1-bfd5-3079b04f8409
 …
-java:S68130"BRemove this field injection and use constructor injection instead.(êæÄŞ8ä¿’°Ã2J$50d256ce-81cd-446e-8b94-4f2b94175f58
+java:S68133"BRemove this field injection and use constructor injection instead.(êæÄŞ8ä¿’°Ã2J$764ca364-777b-4261-a904-d028ec827774
 …
-java:S68133"BRemove this field injection and use constructor injection instead.(êæÄŞ8ä¿’°Ã2J$681fe68d-f7f2-48aa-87b3-8d06c316927d
+java:S68136"BRemove this field injection and use constructor injection instead.(êæÄŞ8ä¿’°Ã2J$bb8d96d5-4aad-4f10-8cea-043700d7484b
 …
-java:S68136"BRemove this field injection and use constructor injection instead.(êæÄŞ8ä¿’°Ã2J$7d12d3d7-7b1e-4411-b242-33730693a01b
-ƒ	java:S1259"<This block of commented-out lines of code should be removed.(»Èßşùÿÿÿÿ8ê¿’°Ã2J$dff2622a-5d5f-442d-b8ad-8eb7584c934a
+java:S68139"BRemove this field injection and use constructor injection instead.(êæÄŞ8ä¿’°Ã2J$46d5aa0d-090c-4a44-812e-18bca49df246
+ƒ	java:S125<"<This block of commented-out lines of code should be removed.(»Èßşùÿÿÿÿ8ê¿’°Ã2J$e5e929f7-d755-4be9-9f5d-6fc26553d178
