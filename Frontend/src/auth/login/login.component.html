@@ -5,37 +5,72 @@
   <div class="form-wrapper">
     <h2>Sign In</h2>
     <form (ngSubmit)="onSubmit()" #loginForm="ngForm">
-      <div class="form-control">
-        <input [(ngModel)]="username" name="username" type="text" required >
-        <label>Email or phone number</label>
-      </div>
-      <div class="form-control">
-        <input [(ngModel)]="password" name="password" type="password" required>
-        <label>Password</label>
-      </div>
-      <div class="form-help">
-        <p>Forgot password ?</p>
-      </div>
-      <button type="submit" [disabled]="!loginForm.form.valid">Sign In</button>
-      @if (message){
-        <p style="color: #c99d9d"> {{message}}</p>
+
+      @if (!showFormCode) {
+        <div class="form-control">
+          <input [(ngModel)]="email" name="email" type="email" required>
+          <label>Email or phone number</label>
+        </div>
+        <div class="form-control">
+          <input [(ngModel)]="password" name="password" type="password" required>
+          <label>Password</label>
+        </div>
       }
+
+      @if (showFormCode) {
+        <form #verificationForm="ngForm" (ngSubmit)="getVerificationCode(verificationForm)">
+          <div class="verification-form">
+            <input type="text" maxlength="1" (input)="moveFocus($event, digit2)" #digit1 name="digit1" ngModel/>
+            <input type="text" maxlength="1" (input)="moveFocus($event, digit3)" #digit2 name="digit2" ngModel/>
+            <input type="text" maxlength="1" (input)="moveFocus($event, digit4)" #digit3 name="digit3" ngModel/>
+            <input type="text" maxlength="1" (input)="moveFocus($event, digit5)" #digit4 name="digit4" ngModel/>
+            <input type="text" maxlength="1" (input)="moveFocus($event, digit6)" #digit5 name="digit5" ngModel/>
+            <input type="text" maxlength="1" #digit6 name="digit6" ngModel/>
+          </div>
+          <button type="submit">Submit</button>
+        </form>
+      }
+
+      @if (!showFormCode) {
+        <div class="form-help">
+          <p>Forgot password ?</p>
+        </div>
+
+        <button type="submit" [disabled]="!loginForm.form.valid" data-bs-toggle="modal" data-bs-target="#exampleModal">
+          Sign In
+        </button>
+      }
+
+      <div class="form-help" [routerLink]="['/register']">
+        <p>You don't have account ? Sign Up</p>
+      </div>
     </form>
 
-    <div class="button-group">
-      <button class="btn-google" onclick="window.location.href = 'http://localhost:8080/oauth2/authorization/google';
-">
-        Google <i class="fa-brands fa-google"></i></button>
-      <button class="btn-facebook" onclick="window.location.href='http://localhost:8080/oauth2/authorization/facebook'">
-        Facebook <i class="fa-brands fa-facebook"></i></button>
-    </div>
+    @if (!showFormCode) {
+      <div class="button-group">
+        <button class="btn-google"
+                onclick="window.location.href = 'http://localhost:8080/oauth2/authorization/google';">
+          Google <i class="fa-brands fa-google"></i></button>
+        <button class="btn-facebook"
+                onclick="window.location.href='http://localhost:8080/oauth2/authorization/facebook'">
+          Facebook <i class="fa-brands fa-facebook"></i></button>
+      </div>
+    }
 
+    @if (message) {
+      <p style="color: #c99d9d"> {{ message }}</p>
+    }
+
+    <!--
     <div class="form-help">
       <div class="remember-me">
         <input type="checkbox" id="remember-me">
         <label for="remember-me">Remember me</label>
       </div>
     </div>
-  </div>
+    -->
 
+  </div>
 </div>
+
+

@@ -1,0 +1,35 @@
+<div id="app">
+  <nav>
+    <img src="/assets/logo.svg" alt="logo">
+  </nav>
+  <div class="form-wrapper">
+    <h2>Sign up</h2>
+    <form (ngSubmit)="onSubmit()" #loginForm="ngForm">
+
+      <div class="form-control">
+        <input [(ngModel)]="email" name="email" type="email" required>
+        <label>Email or phone number</label>
+      </div>
+
+      <div class="form-control">
+        <input [(ngModel)]="password" name="password" type="password" required>
+        <label>Password</label>
+      </div>
+
+      <div class="form-control">
+        <input [(ngModel)]="confirmPassword" name="confirmPassword" type="password" required>
+        <label>Confirm Password</label>
+      </div>
+
+      <div class="form-help" [routerLink]="['/login']">
+        <p>You have been account ? Sign in</p>
+      </div>
+
+      <button type="submit" [disabled]="!loginForm.form.valid">Sign In</button>
+      @if (message) {
+        <p style="color: #c99d9d"> {{ message }}</p>
+      }
+    </form>
+  </div>
+
+</div>
