@@ -23,7 +23,7 @@ public class JwtAuthenticationEntryPoint implements AuthenticationEntryPoint {
         response.setContentType(MediaType.APPLICATION_JSON_VALUE);
 
         ApiResponse<?> apiResponse = ApiResponse.builder()
-                .code(errorCoder.getCode())
+                .status(errorCoder.getStatus())
                 .message(errorCoder.getMessage())
                 .build();
 

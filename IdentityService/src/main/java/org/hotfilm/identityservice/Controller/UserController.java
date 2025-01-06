@@ -25,7 +25,7 @@ public class UserController {
     @GetMapping
     public ApiResponse<List<UserResponse>> getAll() {
         return ApiResponse.<List<UserResponse>>builder()
-                .code(200)
+                .status(HttpStatus.OK)
                 .result(customerService.findAll())
                 .build();
     }
@@ -33,7 +33,7 @@ public class UserController {
     @PostMapping
     public ApiResponse<User> create(@RequestBody User customer) {
         return ApiResponse.<User>builder()
-                .code(200)
+                .status(HttpStatus.OK)
                 .result(customerService.save(customer))
                 .build();
     }
@@ -41,7 +41,7 @@ public class UserController {
     @GetMapping(value = "/{customerId}")
     public ApiResponse<UserResponse> getById(@PathVariable String customerId) {
         return ApiResponse.<UserResponse>builder()
-                .code(200)
+                .status(HttpStatus.OK)
                 .result(customerService.findById(customerId))
                 .build();
     }
@@ -50,7 +50,7 @@ public class UserController {
     public ApiResponse deleteById(@PathVariable String customerId) {
         customerService.deleteById(customerId);
         return ApiResponse.<User>builder()
-                .code(200)
+                .status(HttpStatus.OK)
                 .message("User has been deleted successfully !")
                 .build();
     }
@@ -58,7 +58,7 @@ public class UserController {
     @PutMapping(value = "/{customerId}")
     public ApiResponse<UserResponse> updateById(@PathVariable String customerId, @RequestBody User customer){
         return ApiResponse.<UserResponse>builder()
-                .code(200)
+                .status(HttpStatus.OK)
                 .result(customerService.updateById(customerId, customer))
                 .build();
     }

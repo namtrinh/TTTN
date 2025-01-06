@@ -1,24 +1,16 @@
 
-¡	java:S120"ZRename this package name to match the regular expression '^[a-z_]+(\.[a-z_][a-z0-9_]*)*$'.(”ƒ…şÿÿÿÿ8£İ†°Ã2J$3b70d238-6b1d-425b-bf8d-64d6c5eada95
+¡	java:S120"ZRename this package name to match the regular expression '^[a-z_]+(\.[a-z_][a-z0-9_]*)*$'.(”ƒ…şÿÿÿÿ8£İ†°Ã2J$810a0a04-67ef-4c59-96ca-3981cbc4d4e8
 r
-java:S3740"/Provide the parametrized type for this generic.(ã „©8¨İ†°Ã2J$5c6c2546-0968-41a3-9d46-89612b644e7a
+java:S3740"/Provide the parametrized type for this generic.(ã „©8¨İ†°Ã2J$c38d5a40-e595-48da-b9de-dd521d06fd7c
 r
-java:S3740"/Provide the parametrized type for this generic.(™´ñ®8ªİ†°Ã2J$b34ae33d-3ee0-46f7-a978-4127b5dbed29
+java:S3740"/Provide the parametrized type for this generic.(™´ñ®8ªİ†°Ã2J$9f0aa701-bc76-4537-bf79-b0553efe37eb
 r
-java:S3740"/Provide the parametrized type for this generic.(™´ñ®8«İ†°Ã2J$8c8b4a81-5d9b-4b64-8f93-6b58433bd077
+java:S3740"/Provide the parametrized type for this generic.(™´ñ®8«İ†°Ã2J$99432155-d26d-451a-ab19-bdf7382f1825
 r
-java:S3740"/Provide the parametrized type for this generic.(º„°¼8¬İ†°Ã2J$38608995-8090-4f56-bd8a-da75f5d61e0e
+java:S3740"/Provide the parametrized type for this generic.(º„°¼8¬İ†°Ã2J$dda743b3-8e7a-41a8-b412-fc1c6d6d3129
 r
-java:S3740"/Provide the parametrized type for this generic.(™´ñ®8­İ†°Ã2J$e7b9b2e5-7679-4f9e-87d5-369ea233421b
+java:S3740"/Provide the parametrized type for this generic.(™´ñ®8­İ†°Ã2J$fe165940-6a44-4dff-9d75-763711179920
 r
-java:S3740"/Provide the parametrized type for this generic.(™´ñ®8¯İ†°Ã2J$59bc11c7-c437-4ef3-a18d-1c29ade4f852
+java:S3740"/Provide the parametrized type for this generic.(™´ñ®8¯İ†°Ã2J$42f2e51b-2fbd-44f4-9197-2fd0e29e94fd
 †
-java:S2166"CRename this class to remove "Exception" or correct its inheritance.(ïõÉ8›Ş†°Ã2J$ac00f835-8846-4e53-a1fc-db582c0fc14b
-
-java:S1128"7Remove this unused import 'org.apache.coyote.Response'.(˜ÊŠşÿÿÿÿ8±Ş†°Ã2J$2e892989-9a28-4e09-90ea-9c622440be54
-ˆ
-java:S1128"@Remove this unused import 'org.springframework.http.HttpStatus'.(íŸ¤Šúÿÿÿÿ8„ò°Ã2J$5fb357dc-7003-4557-86c1-6ace272dd796
-ª
-java:S1128"gRemove this unused import 'org.springframework.security.authentication.AuthenticationServiceException'.( üöï8„ò°Ã2J$4125b0eb-5912-43a7-9141-f6e1477d9fb5
-™
-java:S1128"QRemove this unused import 'org.springframework.security.oauth2.jwt.JwtException'.(Ñ“˜Òıÿÿÿÿ8±Ş†°Ã2J$5f12dd72-783b-4a81-a3c0-2d745d6c01a4
+java:S2166"CRename this class to remove "Exception" or correct its inheritance.(ïõÉ8›Ş†°Ã2J$ec2e2c95-7f95-489b-9445-61a9bb4550df

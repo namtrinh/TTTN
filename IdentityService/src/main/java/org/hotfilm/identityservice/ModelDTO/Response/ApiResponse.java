@@ -1,6 +1,7 @@
 package org.hotfilm.identityservice.ModelDTO.Response;
 
 import lombok.*;
+import org.springframework.http.HttpStatus;
 
 import java.util.Set;
 @Data
@@ -11,7 +12,7 @@ import java.util.Set;
 @AllArgsConstructor
 public class ApiResponse<T> {
 
-    private int code;
+    private HttpStatus status;
     private String message;
     private T result;
 

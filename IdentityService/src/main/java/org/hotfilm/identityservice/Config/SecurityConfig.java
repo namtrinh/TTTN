@@ -5,6 +5,7 @@ import org.hotfilm.identityservice.ServiceImp.Oauth2Service;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.context.annotation.Bean;
 import org.springframework.context.annotation.Configuration;
+import org.springframework.http.HttpMethod;
 import org.springframework.security.config.annotation.method.configuration.EnableMethodSecurity;
 import org.springframework.security.config.annotation.web.builders.HttpSecurity;
 import org.springframework.security.config.annotation.web.configuration.EnableWebSecurity;
@@ -31,12 +32,27 @@ public class SecurityConfig {
     @Autowired
     private CustomJwtDecoder customJwtDecoder;
 
+    private final String[] POST_PUBlIC = {
+            "/auth/verify_code",
+            "/auth/reset-password",
+            "/auth/forgot-password",
+            "/auth/refresh",
+            "/auth/login",
+    };
+
+    private final String[] GET_PUBLIC = {
+            "/v3/api-docs/**",
+            "/swagger-ui/**"
+    };
+
 
     @Bean
     public SecurityFilterChain securityFilterChain(HttpSecurity http) throws Exception {
         http.csrf(AbstractHttpConfigurer::disable).authorizeHttpRequests(
                 request -> request
-                        .requestMatchers("/auth/*")
+                        .requestMatchers(HttpMethod.GET, GET_PUBLIC)
+                        .permitAll()
+                        .requestMatchers(HttpMethod.POST, POST_PUBlIC)
                         .permitAll()
                         .anyRequest()
                         .authenticated()
@@ -59,7 +75,7 @@ public class SecurityConfig {
     }
 
     // ánh xạ các thông tin từ JWT
-   @Bean
+    @Bean
     JwtAuthenticationConverter jwtAuthenticationConverter() {
         JwtAuthenticationConverter jwtAuthenticationConverter = new JwtAuthenticationConverter();
         jwtAuthenticationConverter.setJwtGrantedAuthoritiesConverter(jwt -> {

@@ -23,7 +23,7 @@ public class ConvertException {
     @ExceptionHandler(value = AppException.class)
     ResponseEntity<ApiResponse> getAppException(AppException exception) {
         ApiResponse apiResponse = new ApiResponse();
-        apiResponse.setCode(exception.getErrorCode().getCode());
+        apiResponse.setStatus(exception.getErrorCode().getStatus());
         apiResponse.setMessage(exception.getErrorCode().getMessage());
         return ResponseEntity.badRequest().body(apiResponse);
     }

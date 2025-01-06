@@ -7,8 +7,6 @@ G
 QIdentityService/src/main/java/org/hotfilm/identityservice/Config/RedisConfig.java,a\6\a69adea67d2071d9fd7e27cdeef8c00488f71a8c
 Ñ
 TIdentityService/src/main/java/org/hotfilm/identityservice/Config/SecurityConfig.java,d\1\d1617346fb7b1bea0177687d1baf9bfa748cc478
-Ö
-UIdentityService/src/main/java/org/hotfilm/identityservice/ServiceImp/AuthService.java,7\8\78189a8953e5857da093d3c7c219f8546bb416f4
 á
 WIdentityService/src/main/java/org/hotfilm/identityservice/ServiceImp/Oauth2Service.java,7\9\79c1ef2706188419df167665bce6d372a263a814
 à
@@ -141,8 +139,6 @@ RIdentityService/src/main/java/org/hotfilm/identityservice/Exception/ErrorCode.j
 UIdentityService/src/main/java/org/hotfilm/identityservice/Exception/AppException.java,f\b\fb7a3be83ab2695c756cbc067e7120a84caf8580
 é
 ^IdentityService/src/main/java/org/hotfilm/identityservice/ServiceImp/VerifyCodeGeneration.java,c\3\c3d10a55d0273da97d47981be037f2efdaf81a90
-Ü
-VIdentityService/src/main/java/org/hotfilm/identityservice/ServiceImp/EmailService.java,c\d\cdacbe17f93f342264699adb3dbd7bb74eda455e
 é
 ^IdentityService/src/main/java/org/hotfilm/identityservice/ModelDTO/Response/LoginResponse.java,4\e\4e7243406c0acaa54dbdfe599880fc785722e088
 ï
@@ -157,16 +153,12 @@ aIdentityService/src/main/java/org/hotfilm/identityservice/ModelDTO/Request/Veri
 TIdentityService/src/main/java/org/hotfilm/identityservice/Model/InvalidateToken.java,0\d\0d60e301d45e62a3357bc081d6d95b0b54ff01dc
 ì
 cIdentityService/src/main/java/org/hotfilm/identityservice/Repository/InvalidateTokenrepository.java,1\1\117b6be18e43abbd80129d606ba85ab488a7f216
-ì
-cIdentityService/src/main/java/org/hotfilm/identityservice/ModelDTO/Request/RequestTokenRequest.java,d\9\d9d17c5ff910b02f854f40f50f7c6d4754adb50c
 ç
 ]IdentityService/src/main/java/org/hotfilm/identityservice/ModelDTO/Request/LogoutRequest.java,8\3\832804c888e4e89d292e48dd4e81c4441bc94060
 ã
 [IdentityService/src/main/java/org/hotfilm/identityservice/Service/ResetPasswordService.java,8\c\8c098c2228319bbf52ca1c992839541a79fdc318
 ì
 cIdentityService/src/main/java/org/hotfilm/identityservice/ModelDTO/Request/RefreshTokenRequest.java,a\9\a91567f060dc45ea180fea19a29dd6a742288469
-í
-bIdentityService/src/main/java/org/hotfilm/identityservice/ModelDTO/Request/CheckTokenResponse.java,c\3\c3b132137b20a27c950fedd31e21c0c0740601ee
 ì
 cIdentityService/src/main/java/org/hotfilm/identityservice/ModelDTO/Response/CheckTokenResponse.java,b\e\bea1f38343ad7d10ee03d7a363d314f14a9e8666
 Ü
@@ -177,3 +169,5 @@ aIdentityService/src/main/java/org/hotfilm/identityservice/Config/JwtAuthenticat
 aIdentityService/src/main/java/org/hotfilm/identityservice/ModelDTO/Request/CheckTokenRequest.java,d\f\df34558dfad7f362204283e71714a0576930f64d
 ì
 cIdentityService/src/main/java/org/hotfilm/identityservice/Repository/InvalidateTokenRepository.java,0\f\0f430451f814ea28c7e49fc7fba04c498c61847d
+É
+SIdentityService/src/main/java/org/hotfilm/identityservice/Config/SwaggerConfig.java,3\f\3feeef2676489e7f0edf9f5432671fdb575a4b78

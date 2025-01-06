@@ -12,6 +12,7 @@ import org.hotfilm.identityservice.Service.EmailService;
 import org.hotfilm.identityservice.Service.ResetPasswordService;
 import org.hotfilm.identityservice.Service.UserService;
 import org.springframework.beans.factory.annotation.Autowired;
+import org.springframework.http.HttpStatus;
 import org.springframework.web.bind.annotation.*;
 import java.text.ParseException;
 import java.util.UUID;
@@ -38,7 +39,7 @@ public class AuthController {
     @PostMapping(value = "login")
     public ApiResponse<LoginResponse> login(@RequestBody UserRequest customer) throws JOSEException {
         return ApiResponse.<LoginResponse>builder()
-                .code(200)
+                .status(HttpStatus.OK)
                 .message("A verifyCode has been sent to your email!")
                 .result(authService.login(customer))
                 .build();
@@ -49,7 +50,7 @@ public class AuthController {
             @RequestBody VerifyCodeRequest verifyCodeRequest) throws JOSEException {
         AuthenticateResponse response = authService.verifyAuthCode(verifyCodeRequest);
         return ApiResponse.<AuthenticateResponse>builder()
-                .code(200)
+                .status(HttpStatus.OK)
                 .message("Your account has been successfully confirmed.")
                 .result(response)
                 .build();
@@ -60,7 +61,7 @@ public class AuthController {
             throws ParseException, JOSEException {
         var result = authService.checkToken(checkTokenRequest);
         return ApiResponse.<CheckTokenResponse>builder()
-                .code(201)
+                .status(HttpStatus.OK)
                 .result(result)
                 .build();
     }
@@ -70,16 +71,16 @@ public class AuthController {
             throws ParseException, JOSEException {
         var result = authService.refreshToken(refreshTokenRequest);
         return ApiResponse.<AuthenticateResponse>builder()
-                .code(200)
+                .status(HttpStatus.OK)
                 .result(result)
                 .build();
     }
 
-    @PostMapping("/reset/forgot-password")
+    @PostMapping("/forgot-password")
     public ApiResponse<String> forgotPassword(@RequestParam String email) {
       if (!userRepository.existsByEmail(email)){
             return ApiResponse.<String>builder()
-                    .code(404)
+                    .status(HttpStatus.OK)
                     .message("Couldn't find this email address")
                     .result("false")
                     .build();
@@ -92,27 +93,27 @@ public class AuthController {
             emailService.sendCodeToMail(email, "Reset your password", "Click this url to reset password: " + resetLink);
 
             return ApiResponse.<String>builder()
-                    .code(200)
+                    .status(HttpStatus.OK)
                     .message("One url has been sent to your email")
                     .result("true")
                     .build();
         } catch (IllegalStateException e) {
             return ApiResponse.<String>builder()
-                    .code(429) // Mã lỗi 429 Too Many Requests
+                    .status(HttpStatus.TOO_MANY_REQUESTS) // Mã lỗi 429 Too Many Requests
                     .message(e.getMessage()) // Thông báo lỗi nếu vượt quá giới hạn
                     .result("false")
                     .build();
         }
     }
 
-    @PostMapping("/reset/reset-password")
+    @PostMapping("/reset-password")
     public ApiResponse<String> resetPassword(
             @RequestParam String reset_key, @RequestBody UserRequest userRequest) {
         String cachedResetKey = resetPasswordService.getResetKey(userRequest.getEmail());
 
         if (cachedResetKey == null || !cachedResetKey.equals(reset_key)) {
             return ApiResponse.<String>builder()
-                    .code(200)
+                    .status(HttpStatus.BAD_GATEWAY)
                     .message("reset_key is invalid or expired.")
                     .result("false")
                     .build();
@@ -120,7 +121,7 @@ public class AuthController {
         userService.updatePasswordByEmail(userRequest);
         resetPasswordService.removeResetKey(userRequest.getEmail());
         return ApiResponse.<String>builder()
-                .code(200)
+                .status(HttpStatus.OK)
                 .message("Password has been updated successfully")
                 .result("true")
                 .build();

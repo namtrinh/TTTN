@@ -6,6 +6,7 @@ import org.hotfilm.identityservice.ModelDTO.Response.ApiResponse;
 import org.hotfilm.identityservice.ModelDTO.Response.MovieResponse;
 import org.hotfilm.identityservice.Service.MovieService;
 import org.springframework.beans.factory.annotation.Autowired;
+import org.springframework.http.HttpStatus;
 import org.springframework.web.bind.annotation.*;
 
 import java.util.List;
@@ -20,7 +21,7 @@ public class MovieController {
     @GetMapping
     public ApiResponse<List<MovieResponse>> getAll() {
         return ApiResponse.<List<MovieResponse>>builder()
-                .code(200)
+                .status(HttpStatus.OK)
                 .result(movieService.findAll())
                 .build();
     }
@@ -28,7 +29,7 @@ public class MovieController {
     @GetMapping(value = "/findById/{movieId}")
     public ApiResponse<Movie> getById(@PathVariable String movieId) {
         return ApiResponse.<Movie>builder()
-                .code(200)
+                .status(HttpStatus.OK)
                 .result(movieService.findById(movieId))
                 .build();
     }
@@ -36,7 +37,7 @@ public class MovieController {
     @GetMapping(value = "/findByTitle/{title}")
     public ApiResponse<Movie> findByMovieTitle(@PathVariable String title) {
         return ApiResponse.<Movie>builder()
-                .code(200)
+                .status(HttpStatus.OK)
                 .result(movieService.findByMovieTitle(title))
                 .build();
     }
@@ -44,7 +45,7 @@ public class MovieController {
     @PostMapping
     public ApiResponse<Movie> create(@RequestBody Movie movie) {
         return ApiResponse.<Movie>builder()
-                .code(200)
+                .status(HttpStatus.OK)
                 .result(movieService.save(movie))
                 .build();
     }
@@ -52,7 +53,7 @@ public class MovieController {
     @PutMapping(value = "/{movieId}")
     public ApiResponse<Movie> updateById(@PathVariable String movieId, @RequestBody Movie movie) {
         return ApiResponse.<Movie>builder()
-                .code(200)
+                .status(HttpStatus.OK)
                 .result(movieService.updateById(movieId, movie))
                 .build();
     }
