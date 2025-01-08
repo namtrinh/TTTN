@@ -6,15 +6,26 @@ import {ViewAdminComponent} from '../view/admin/view-admin/view-admin.component'
 import {RegisterComponent} from '../auth/register/register.component';
 import {_401Component} from '../auth/401/401.component';
 import {CustomCanActiveService} from '../service/CustomCanActive.service';
+import {ResetPasswordComponent} from '../auth/reset-password/reset-password.component';
+import {ViewManageComponent} from '../view/manager/view-manage/view-manage.component';
+import {MovieManageComponent} from '../view/manager/movie-manage/movie-manage.component';
 
 export const routes: Routes = [
 
-  {path: '', redirectTo: 'login', pathMatch: 'full'},
+  {path: '', redirectTo: 'home', pathMatch: 'full'},
   {path: 'login', component: LoginComponent},
-  {path: 'home', component: HomeComponent},
   {path: 'film-detail/:movieTitle', component: FilmDetailComponent},
-  {path: 'admin', component: ViewAdminComponent, canActivate: [CustomCanActiveService], data: {role: 1}},
   {path: 'register', component: RegisterComponent},
+  {path: 'reset-password', component: ResetPasswordComponent},
+
+  {path: 'home', component: HomeComponent},
+
+  {path: 'admin', component: ViewAdminComponent, canActivate: [CustomCanActiveService], data: {role: 1}},
+
+  {path:'manage', component:ViewManageComponent, children: [
+      {path:'movie', component:MovieManageComponent},
+    ]},
+
 
 
   {path: '???', component: _401Component}

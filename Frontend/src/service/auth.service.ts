@@ -28,13 +28,16 @@ export class AuthService {
   }
 
   forgotPassword(email: string) {
-    return this.http.post(`${this.baseUrl}/forgot-password`, {email})
+    const params = new HttpParams()
+      .set('email', email);
+    return this.http.post(`${this.baseUrl}/forgot-password`, {}, { params });
   }
 
-  resetPassword(body: LoginRequest, seret_key: string) {
+
+  resetPassword(email:string, password:string, seret_key: string) {
     const params = new HttpParams()
-      .set("seret_key", seret_key);
-    return this.http.post(`${this.baseUrl}/reset-password`, {body}, {params})
+      .set("reset_key", seret_key);
+    return this.http.post(`${this.baseUrl}/reset-password`, {email, password}, {params})
   }
 
   logout(token: string) {

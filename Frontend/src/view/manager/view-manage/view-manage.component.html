@@ -1,0 +1,26 @@
+
+<body>
+<div class="admin-container">
+  <aside class="sidebar">
+    <h2>Trang Admin</h2>
+    <ul>
+      <li><a>Dashboard</a></li>
+      <li><a [routerLink]="['/manage/movie']">Quản lý phim</a></li>
+      <li><a >Quản lý lịch chiếu</a></li>
+      <li><a>Quản lý rạp</a></li>
+      <li><a>Quản lý vé</a></li>
+      <li><a>Quản lý ghế ngồi</a></li>
+      <li><a>Báo cáo</a></li>
+      <li><a>Cài đặt</a></li>
+    </ul>
+  </aside>
+  <main class="main-content">
+
+    <router-outlet></router-outlet>
+
+  </main>
+</div>
+</body>
+
+
+

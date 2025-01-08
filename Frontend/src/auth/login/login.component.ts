@@ -2,6 +2,7 @@ import {Component} from '@angular/core';
 import {AuthService} from '../../service/auth.service';
 import {FormsModule} from '@angular/forms';
 import {Router, RouterLink} from '@angular/router';
+import {exhaustMap} from 'rxjs';
 
 @Component({
   selector: 'app-login',
@@ -22,29 +23,42 @@ export class LoginComponent {
   password: string = '';
   message!: string;
   showFormCode: boolean = false;
+  showFormChangePass: boolean = false;
 
   loginn() {
     this.authService.login(this.email, this.password).subscribe(
       (data: any) => {
         setTimeout(() => {
           this.showFormCode = true;
-        }, 500)
+        }, 0)
       }, error => {
         this.message = error.error.message;
       }
     );
   }
 
-  verifyCode(code:number){
-    this.authService.verifyCode(this.email, code).subscribe((data:any) => {
+  verifyCode(code: number) {
+    this.authService.verifyCode(this.email, code).subscribe((data: any) => {
       const tokenKey = data.result.token;
       if (tokenKey !== null) {
         localStorage.setItem("auth_token", tokenKey);
         console.log(tokenKey);
         this.router.navigate(['/home']);
       }
-    },error => {
+    }, error => {
       this.message = error.error.message;
+    })
+  }
+
+  forgotPassword() {
+    this.showFormChangePass = true;
+  }
+
+  submitForgotPassword() {
+    this.authService.forgotPassword(this.email).subscribe((data: any) => {
+      this.message = data.message;
+    }, error => {
+      this.message = error.error.message
     })
   }
 

@@ -1,0 +1,144 @@
+<section id="movies" class="container my-4">
+  <div class="card shadow-sm bg-dark text-white">
+    <div class="card-header text-white d-flex justify-content-between align-items-center">
+      <h2 class="h4 mb-0 fw-bold">Manage Film</h2>
+      <button class="btn btn-light btn-sm add-btn fw-bold" data-bs-toggle="modal" data-bs-target="#exampleModal">+ Add
+        new film
+      </button>
+    </div>
+    <div class="card-body">
+      <table class="table table-striped table-bordered table-hover table-dark">
+        <thead class="table-light text-dark">
+        <tr class="fw-bold">
+          <th>Movie Name</th>
+          <th>Poster</th>
+          <th>Type</th>
+          <th>Director</th>
+          <th>Release Day</th>
+          <th class="text-center">Hành động</th>
+        </tr>
+        </thead>
+        <tbody>
+          @for (movie of movies; track $index) {
+            <tr>
+              <td class="fw-bold">{{ movie.movieName }}</td>
+              <td><img [src]="movie.posterUrl" style="height: 150px"></td>
+              <td>{{ movie.genre }}</td>
+              <td>{{ movie.director }}</td>
+              <td>{{ movie.releaseDate | date:'dd/MM/yyyy' }}</td>
+              <td class="text-center">
+                <button class="btn btn-warning btn-sm edit-btn me-2">Sửa</button>
+                <button class="btn btn-danger btn-sm delete-btn">Xóa</button>
+              </td>
+            </tr>
+          }
+        </tbody>
+      </table>
+    </div>
+  </div>
+</section>
+
+<div class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+  <div class="modal-dialog modal-dialog-centered modal-lg">
+    <div class="modal-content">
+      <div class="modal-header bg-dark">
+        <h5 class="modal-title" id="exampleModalLabel">Modal title</h5>
+        <button type="button" class="btn-close bg-white" data-bs-dismiss="modal" aria-label="Close"></button>
+      </div>
+      <div class="modal-body bg-dark">
+        <form #formCreate="ngForm" (ngSubmit)="createFilm(movie)" class="container my-4">
+
+          <div class="form-group text-center mb-4">
+            <img [src]="imageUrl" alt="Avatar Preview" class="img-fluid rounded"
+                 style="max-width: 200px; max-height: 200px;">
+            <input type="file" class="form-control mt-3" (change)="onFileSelected($event)" accept="image/*"
+                   style="width: 50%; margin: 0 auto; border-radius: 8px;">
+          </div>
+
+
+          <div class="row mb-3">
+            <label for="movieName" class="form-label">Movie Name</label>
+            <input id="movieName" required name="movieName" [(ngModel)]="movie.movieName" type="text"
+                   class="form-control"
+                   required/>
+          </div>
+
+          <div class="row mb-3">
+            <label for="movieTitle" class="form-label">Movie Title</label>
+            <input id="movieTitle" required name="movieTitle" [(ngModel)]="movie.movieTitle" type="text"
+                   class="form-control"/>
+          </div>
+
+          <div class="row mb-3">
+            <label for="movieDescription" class="form-label">Description</label>
+            <textarea id="movieDescription" required name="movieDescription" [(ngModel)]="movie.movieDescription"
+                      class="form-control"></textarea>
+          </div>
+
+          <div class="row mb-3">
+            <label for="genre" class="form-label">Genre</label>
+            <input id="genre" required name="genre" [(ngModel)]="movie.genre" type="text" class="form-control"/>
+          </div>
+
+          <div class="row mb-3">
+            <label for="director" class="form-label">Director</label>
+            <input id="director" required name="director" [(ngModel)]="movie.director" type="text"
+                   class="form-control"/>
+          </div>
+
+          <div class="row mb-3">
+            <label for="country" class="form-label">Country</label>
+            <input id="country" required name="country" [(ngModel)]="movie.country" type="text" class="form-control"/>
+          </div>
+
+          <div class="row mb-3">
+            <label for="releaseDate" class="form-label">Release Date</label>
+            <input id="releaseDate" required name="releaseDate" [(ngModel)]="movie.releaseDate" type="date"
+                   class="form-control"/>
+          </div>
+
+          <div class="row mb-3">
+            <label for="duration" class="form-label">Duration (minutes)</label>
+            <input id="duration" required name="duration" [(ngModel)]="movie.duration" type="number"
+                   class="form-control"/>
+          </div>
+
+          <div class="row mb-3">
+            <label for="rating" class="form-label">Rating</label>
+            <input id="rating" required name="rating" [(ngModel)]="movie.rating" type="number" step="0.1"
+                   class="form-control"/>
+          </div>
+
+          <div class="row mb-3">
+            <label for="productionCompany" class="form-label">Production Company</label>
+            <input id="productionCompany" required name="productionCompany" [(ngModel)]="movie.productionCompany"
+                   type="text"
+                   class="form-control"/>
+          </div>
+
+          <div class="row mb-3">
+            <label for="trailerUrl" class="form-label">Trailer URL</label>
+            <input id="trailerUrl" required name="trailerUrl" [(ngModel)]="movie.trailerUrl" type="url"
+                   class="form-control"/>
+          </div>
+
+          <div class="row mb-3">
+            <label for="movieStatus" class="form-label">Movie Status</label>
+            <select id="movieStatus" required name="movieStatus" [(ngModel)]="movie.movieStatus" class="form-select">
+              <option [value]="MovieStatus.SHOWING">Showing</option>
+              <option [value]="MovieStatus.FINISH">Finish</option>
+            </select>
+          </div>
+
+          <!-- muốn đóng modal thì dùng data-bs-dismiss = "modal" -->
+          <div class="modal-footer">
+            <button type="submit" data-bs-dismiss="modal" class="btn btn-primary w-100" [disabled]="formCreate.invalid">
+              Create Film
+            </button>
+          </div>
+        </form>
+
+      </div>
+    </div>
+  </div>
+</div>
