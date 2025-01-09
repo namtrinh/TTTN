@@ -11,6 +11,7 @@ import java.time.LocalDate;
 @RequiredArgsConstructor
 @Builder
 public class MovieResponse implements Serializable {
+
     private String movieName; // Tên phim
     private String posterUrl; // Đường dẫn hình ảnh poster
     private String movieTitle; // Tên phụ (nếu có)

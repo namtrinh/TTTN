@@ -15,16 +15,23 @@ export class AuthInterceptor implements HttpInterceptor {
 
   intercept(request: HttpRequest<any>, next: HttpHandler): Observable<HttpEvent<any>> {
 
-    if (
-      request.url.includes('/auth/login') ||
-      request.url.includes('/auth/refresh') ||
-      request.url.includes('/auth/token') ||
-      request.url.includes('/auth/logout') ||
-      request.url.includes('/auth/verify_code') ||
-      request.url.includes('/auth/forgot-password') ||
-      request.url.includes('/auth/reset-password')) {
+    /*
+    const publicEndpoints = [
+      '/auth/login',
+      '/auth/refresh',
+      '/auth/token',
+      '/auth/logout',
+      '/auth/verify_code',
+      '/auth/forgot-password',
+      '/auth/reset-password'
+    ];
+
+    if (publicEndpoints.some(endpoint => request.url.includes(endpoint))) {
       return next.handle(request);
     }
+
+     */
+
 
     const token = this.authService.getToken();
 

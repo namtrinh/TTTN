@@ -1,8 +1,2 @@
 
-¡	java:S120"ZRename this package name to match the regular expression '^[a-z_]+(\.[a-z_][a-z0-9_]*)*$'.(ÍıæËÿÿÿÿÿ8´¶àšÀ2J$b9ae9758-9ee2-42d3-b7d1-9b9e360f6ffb
- 
-java:S1128"XRemove this unused import 'org.hotfilm.identityservice.ModelDTO.Response.MovieResponse'.(íÀÁşÿÿÿÿ8¶ŒãšÀ2J$ac97926b-0a6d-4271-bcba-b81c27001b52
-’
-java:S1128"JRemove this unused import 'org.springframework.data.jpa.repository.Query'.(Äºöïşÿÿÿÿ8ûáâšÀ2J$703add96-bab2-4ad9-965e-e8ca80c61db3
-s
-java:S1128	"+Remove this unused import 'java.util.List'.(Õë±Äøÿÿÿÿ8¶ŒãšÀ2J$bd65e595-61cc-478f-8bb1-bbbb42c80559
+¡	java:S120"ZRename this package name to match the regular expression '^[a-z_]+(\.[a-z_][a-z0-9_]*)*$'.(ÍıæËÿÿÿÿÿ8µŞØĞÄ2J$41bb2630-8a51-4d7c-9610-629388871dc8

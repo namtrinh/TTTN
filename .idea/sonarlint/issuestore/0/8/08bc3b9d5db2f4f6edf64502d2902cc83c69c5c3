@@ -14,3 +14,11 @@ r
 java:S3740"/Provide the parametrized type for this generic.(™´ñ®8¯İ†°Ã2J$42f2e51b-2fbd-44f4-9197-2fd0e29e94fd
 †
 java:S2166"CRename this class to remove "Exception" or correct its inheritance.(ïõÉ8›Ş†°Ã2J$ec2e2c95-7f95-489b-9445-61a9bb4550df
+Y
+java:S1128"7Remove this unused import 'org.apache.coyote.Response'.(˜ÊŠşÿÿÿÿ8˜şĞÄ2
+b
+java:S1128"@Remove this unused import 'org.springframework.http.HttpStatus'.(íŸ¤Šúÿÿÿÿ8˜şĞÄ2
+„
+java:S1128"gRemove this unused import 'org.springframework.security.authentication.AuthenticationServiceException'.( üöï8˜şĞÄ2
+s
+java:S1128"QRemove this unused import 'org.springframework.security.oauth2.jwt.JwtException'.(Ñ“˜Òıÿÿÿÿ8˜şĞÄ2

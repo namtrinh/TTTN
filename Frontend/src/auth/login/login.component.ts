@@ -32,6 +32,7 @@ export class LoginComponent {
           this.showFormCode = true;
         }, 0)
       }, error => {
+        console.log(error);
         this.message = error.error.message;
       }
     );

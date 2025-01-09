@@ -1,0 +1,14 @@
+
+š	java:S120"ZRename this package name to match the regular expression '^[a-z_]+(\.[a-z_][a-z0-9_]*)*$'.(­ß¿ÅıÿÿÿÿJ$e38ede89-dce9-4cd6-9d6a-4dee0ac06c65
+‹
+java:S1128"HRemove this unused import 'com.fasterxml.jackson.annotation.JsonIgnore'.(ş‘‹„8šµğ¯Ä2J$a3d17a11-d228-422f-a43b-bbbc2bcccd41
+‚
+java:S1128":Remove this unused import 'jakarta.persistence.FetchType'.(ŠÂ¤Šûÿÿÿÿ8šµğ¯Ä2J$5edb9761-31fe-4e47-ba04-706df08a52f7
+‚
+java:S1128":Remove this unused import 'jakarta.persistence.OneToMany'.( ëîéúÿÿÿÿ8šµğ¯Ä2J$9be5ee8d-81b4-4e29-98b4-4a1759ee7abd
+Š
+java:S1128"GRemove this unused import 'org.hotfilm.identityservice.Model.Showtime'.(Ùş™Ÿ8šµğ¯Ä2J$f2b34cd7-4de1-43d0-97c8-81544f06723b
+S
+java:S1128"1Remove this unused import 'java.io.Serializable'.(èãîÂÿÿÿÿÿ8úŠ°Ä2
+r
+java:S1128"*Remove this unused import 'java.util.Set'.(ö²„¤şÿÿÿÿ8šµğ¯Ä2J$3d8e7883-d08f-48b0-b61a-45c63d94c6e3

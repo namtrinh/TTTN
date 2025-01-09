@@ -37,11 +37,20 @@ public class AuthController {
     private UserRepository userRepository;
 
     @PostMapping(value = "login")
-    public ApiResponse<LoginResponse> login(@RequestBody UserRequest customer) throws JOSEException {
+    public ApiResponse<LoginResponse> login(@RequestBody UserRequest customer)  {
         return ApiResponse.<LoginResponse>builder()
                 .status(HttpStatus.OK)
                 .message("A verifyCode has been sent to your email!")
                 .result(authService.login(customer))
+                .build();
+    }
+
+    @PostMapping(value = "register")
+    public ApiResponse<String> register(@RequestBody UserRequest customer){
+        return ApiResponse.<String>builder()
+                .status(HttpStatus.OK)
+                .message("Your account has beent created successfully!")
+                .result(authService.register(customer))
                 .build();
     }
 

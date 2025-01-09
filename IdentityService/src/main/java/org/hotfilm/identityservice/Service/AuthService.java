@@ -10,6 +10,7 @@ import lombok.extern.slf4j.Slf4j;
 import lombok.extern.slf4j.XSlf4j;
 import org.hotfilm.identityservice.Exception.AppException;
 import org.hotfilm.identityservice.Exception.ErrorCode;
+import org.hotfilm.identityservice.Mapper.UserMapper;
 import org.hotfilm.identityservice.Model.InvalidateToken;
 import org.hotfilm.identityservice.Model.User;
 import org.hotfilm.identityservice.ModelDTO.Request.*;
@@ -49,6 +50,9 @@ public class AuthService {
     protected long REFRESHABLE_DURATION;
 
     @Autowired
+    private UserMapper userMapper;
+
+    @Autowired
     private UserRepository userRepository;
 
     @Autowired
@@ -81,7 +85,7 @@ public class AuthService {
                 .findByEmail(userRequest.getEmail());
         PasswordEncoder passwordEncoder = new BCryptPasswordEncoder(10);
         boolean authenticated = passwordEncoder.matches(userRequest.getPassword(), user.getPassword());
-        if (!authenticated) throw new AppException(ErrorCode.UNAUTHENTICATED);
+        if (!authenticated) throw new AppException(ErrorCode.LOGIN_ACCOUNT);
         LocalDateTime now = LocalDateTime.now();
         if (user.getLastRequestTime() != null) {
             if (now.isBefore(user.getLastRequestTime().plusMinutes(10))) {
@@ -105,11 +109,23 @@ public class AuthService {
         return LoginResponse.builder().authenticate(true).build();
     }
 
+    public String register(UserRequest userRequest){
+        if (userRepository.existsByEmail(userRequest.getEmail())){
+            throw new AppException(ErrorCode.ACCOUNT_EXIST);
+        }
+        User user = userMapper.toUser(userRequest);
+        PasswordEncoder passwordEncoder = new BCryptPasswordEncoder();
+        user.setPassword(passwordEncoder.encode(userRequest.getPassword()));
+        user.setActivated(false);
+        userRepository.save(user);
+        return "Ok";
+    }
+
     public AuthenticateResponse verifyAuthCode(VerifyCodeRequest verifyCodeRequest) throws JOSEException {
         User user = userRepository.findByEmail(verifyCodeRequest.getEmail());
         // Kiểm tra mã xác thực
         if (user.getVerificationCode() == null || !user.getVerificationCode().equals(verifyCodeRequest.getAuthCode())) {
-            throw new AppException(ErrorCode.UNAUTHENTICATED);
+            throw new AppException(ErrorCode.VERIFY_CODE_EXPIRED);
         }
         if (user.getVerificationCodeExpiry() == null || LocalDateTime.now().isAfter(user.getVerificationCodeExpiry())) {
             throw new AppException(ErrorCode.VERIFY_CODE_EXPIRED);

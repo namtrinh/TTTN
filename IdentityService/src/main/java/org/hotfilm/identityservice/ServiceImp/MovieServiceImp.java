@@ -1,19 +1,26 @@
 package org.hotfilm.identityservice.ServiceImp;
 
+import jdk.jfr.ContentType;
 import org.hotfilm.identityservice.Exception.AppException;
 import org.hotfilm.identityservice.Exception.ErrorCode;
 import org.hotfilm.identityservice.Mapper.MovieMapper;
 import org.hotfilm.identityservice.Model.Movie;
+import org.hotfilm.identityservice.ModelDTO.Request.MovieCreateRequest;
 import org.hotfilm.identityservice.ModelDTO.Response.MovieResponse;
 import org.hotfilm.identityservice.Repository.MovieRepository;
+import org.hotfilm.identityservice.Service.CloudinaryService;
 import org.hotfilm.identityservice.Service.MovieService;
 import org.springframework.beans.factory.annotation.Autowired;
+import org.springframework.data.domain.Page;
+import org.springframework.data.domain.PageRequest;
+import org.springframework.data.domain.Pageable;
+import org.springframework.data.domain.Sort;
 import org.springframework.data.redis.core.HashOperations;
 import org.springframework.data.redis.core.RedisTemplate;
 import org.springframework.stereotype.Service;
+import org.springframework.web.multipart.MultipartFile;
 
-import java.util.List;
-import java.util.Map;
+import java.util.*;
 import java.util.concurrent.TimeUnit;
 import java.util.stream.Collectors;
 
@@ -25,6 +32,9 @@ public class MovieServiceImp implements MovieService {
 
     @Autowired
     private MovieMapper movieMapper;
+
+    @Autowired
+    private CloudinaryService cloudinaryService;
 
     @Autowired
     private RedisTemplate<String, Object> redisTemplate;
@@ -42,11 +52,12 @@ public class MovieServiceImp implements MovieService {
     }
 
     @Override
-    public List<MovieResponse> findAll() {
+    public List<MovieResponse> findTop4() {
         if (redisTemplate.hasKey(HASH_MOVIE)) {
             Map<String, Movie> movieMap = hashOperations.entries(HASH_MOVIE);
             List<Movie> movieList = movieMap.values()
                     .stream()
+                    .sorted(Comparator.comparing(Movie::getReleaseDate).reversed())
                     .map(value -> (Movie) value)
                     .collect(Collectors.toList());
             return movieList.stream()
@@ -54,7 +65,7 @@ public class MovieServiceImp implements MovieService {
                     .collect(Collectors.toList());
         } else {
             System.out.println("get movie from database");
-            List<Movie> movies = movieRepository.findAll();
+            List<Movie> movies = movieRepository.findMovieTop4();
             for (Movie movie : movies) {
                 hashOperations.put(HASH_MOVIE, movie.getMovieId(), movie);
             }
@@ -65,8 +76,29 @@ public class MovieServiceImp implements MovieService {
     }
 
     @Override
-    public Movie save(Movie entity) {
-        return movieRepository.save(entity);
+    public Page<Movie> findAll(int page, int size) {
+        Pageable pageable = PageRequest.of(page, size, Sort.by(Sort.Order.desc("releaseDate")));
+        return movieRepository.findAll(pageable);
+    }
+
+    @Override
+    public Set<Movie> searchMovie(String name) {
+        if (name == null || name == "") {
+            throw new AppException(ErrorCode.NAME_NOT_NULL);
+        }
+        return movieRepository.findByName(name);
+    }
+
+    @Override
+    public Movie save(MovieCreateRequest entity, MultipartFile file) {
+        Movie movie = movieMapper.MovieCreateToMovie(entity);
+        if (file != null && !file.isEmpty()) {
+            String poster = cloudinaryService.uploadFile(file);
+            movie.setPosterUrl(poster);
+        }
+        //  movie.setMovieId(UUID.randomUUID().toString());
+        redisTemplate.delete(HASH_MOVIE);
+        return movieRepository.save(movie);
     }
 
     @Override
@@ -82,8 +114,7 @@ public class MovieServiceImp implements MovieService {
 
     @Override
     public Movie findByMovieTitle(String string) {
-          return movieRepository.findByMovieTitle(string);
-
+        return movieRepository.findByMovieTitle(string);
     }
 
     @Override
@@ -97,19 +128,35 @@ public class MovieServiceImp implements MovieService {
             hashOperations.delete(HASH_MOVIE, string);
         }
         if (movieRepository.existsById(string)) {
+            Optional<Movie> movie = movieRepository.findById(string);
+            if (movie.get().getPosterUrl() != null && !movie.get().getPosterUrl().isEmpty()) {
+
+                cloudinaryService.deleteFile(movie.get().getPosterUrl());
+            }
             movieRepository.deleteById(string);
-        }else{
+        } else {
             throw new AppException(ErrorCode.NOT_FOUND);
         }
     }
 
     @Override
-    public Movie updateById(String movieId, Movie movie) {
-        if (hashOperations.hasKey(HASH_MOVIE, movieId)) {
-            hashOperations.put(HASH_MOVIE, movieId, movie);
+    public Movie updateById(String movieId, MovieCreateRequest movieCreateRequest, MultipartFile file) {
+        Movie existingMovie = movieRepository.findById(movieId)
+                .orElseThrow(() -> new AppException(ErrorCode.NOT_FOUND));
+
+        movieMapper.updateMovieFromDto(movieCreateRequest, existingMovie);
+
+        if (file != null && !file.isEmpty()) {
+            String poster = cloudinaryService.uploadFile(file);
+            if (existingMovie.getPosterUrl() != null && !existingMovie.getPosterUrl().isEmpty()) {
+                cloudinaryService.deleteFile(existingMovie.getPosterUrl());
+            }
+            existingMovie.setPosterUrl(poster);
         }
-        movie.setMovieId(movieId);
-        return movieRepository.save(movie);
+        if (hashOperations.hasKey(HASH_MOVIE, movieId)) {
+            hashOperations.put(HASH_MOVIE, movieId, existingMovie);
+        }
+        return movieRepository.save(existingMovie);
     }
 
 }

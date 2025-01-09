@@ -1,15 +1,24 @@
 package org.hotfilm.identityservice.Controller;
 
+import com.cloudinary.Api;
 import lombok.RequiredArgsConstructor;
 import org.hotfilm.identityservice.Model.Movie;
+import org.hotfilm.identityservice.ModelDTO.Request.MovieCreateRequest;
 import org.hotfilm.identityservice.ModelDTO.Response.ApiResponse;
 import org.hotfilm.identityservice.ModelDTO.Response.MovieResponse;
+import org.hotfilm.identityservice.Service.CloudinaryService;
 import org.hotfilm.identityservice.Service.MovieService;
 import org.springframework.beans.factory.annotation.Autowired;
+import org.springframework.data.domain.Page;
 import org.springframework.http.HttpStatus;
+import org.springframework.http.MediaType;
 import org.springframework.web.bind.annotation.*;
+import org.springframework.web.multipart.MultipartFile;
 
+import javax.print.attribute.standard.Media;
 import java.util.List;
+import java.util.Map;
+import java.util.Set;
 
 @RestController
 @RequestMapping("/movie")
@@ -19,10 +28,26 @@ public class MovieController {
     private MovieService movieService;
 
     @GetMapping
-    public ApiResponse<List<MovieResponse>> getAll() {
+    public ApiResponse<List<MovieResponse>> findTop4() {
         return ApiResponse.<List<MovieResponse>>builder()
                 .status(HttpStatus.OK)
-                .result(movieService.findAll())
+                .result(movieService.findTop4())
+                .build();
+    }
+
+    @GetMapping(value = "manage/movie")
+    public ApiResponse<Page<Movie>> findAll(@RequestParam int page, @RequestParam int size) {
+        return ApiResponse.<Page<Movie>>builder()
+                .status(HttpStatus.OK)
+                .result(movieService.findAll(page, size))
+                .build();
+    }
+
+    @GetMapping(value = "search")
+    public ApiResponse<Set<Movie>> searchMovie(@RequestParam String name) {
+        return ApiResponse.<Set<Movie>>builder()
+                .status(HttpStatus.OK)
+                .result(movieService.searchMovie(name))
                 .build();
     }
 
@@ -42,19 +67,22 @@ public class MovieController {
                 .build();
     }
 
-    @PostMapping
-    public ApiResponse<Movie> create(@RequestBody Movie movie) {
+    @PostMapping(consumes = MediaType.MULTIPART_FORM_DATA_VALUE)
+    public ApiResponse<Movie> create(@ModelAttribute MovieCreateRequest movie,
+                                     @RequestParam(value = "posterUrl", required = false) MultipartFile posterUrl) {
         return ApiResponse.<Movie>builder()
                 .status(HttpStatus.OK)
-                .result(movieService.save(movie))
+                .result(movieService.save(movie, posterUrl))
                 .build();
     }
 
-    @PutMapping(value = "/{movieId}")
-    public ApiResponse<Movie> updateById(@PathVariable String movieId, @RequestBody Movie movie) {
+    @PutMapping(value = "/{movieId}", consumes = MediaType.MULTIPART_FORM_DATA_VALUE)
+    public ApiResponse<Movie> updateById(@PathVariable String movieId,
+                                         @ModelAttribute MovieCreateRequest movie,
+                                         @RequestParam(value = "posterUrl", required = false) MultipartFile file) {
         return ApiResponse.<Movie>builder()
                 .status(HttpStatus.OK)
-                .result(movieService.updateById(movieId, movie))
+                .result(movieService.updateById(movieId, movie, file))
                 .build();
     }
 

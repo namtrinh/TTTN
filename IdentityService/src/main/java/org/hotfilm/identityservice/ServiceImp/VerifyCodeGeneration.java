@@ -4,6 +4,8 @@ import org.springframework.context.annotation.Bean;
 import org.springframework.context.annotation.Configuration;
 
 import java.security.SecureRandom;
+import java.util.concurrent.Executor;
+import java.util.concurrent.Executors;
 
 @Configuration
 public class VerifyCodeGeneration {
@@ -21,3 +23,4 @@ public class VerifyCodeGeneration {
         return code.toString();
     }
 }
+

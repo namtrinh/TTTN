@@ -22,6 +22,7 @@ import java.util.Set;
 public class Movie implements Serializable {
     @Id
     @GeneratedValue(strategy = GenerationType.UUID)
+    @Column(name = "movie_id")
     private String movieId; // UUID để đảm bảo tính duy nhất
 
     private String movieName; // Tên phim
@@ -52,4 +53,24 @@ public class Movie implements Serializable {
         SHOWING, FINISH
     }
 
+    @Override
+    public String toString() {
+        return "Movie{" +
+                "movieId='" + movieId + '\'' +
+                ", movieName='" + movieName + '\'' +
+                ", movieTitle='" + movieTitle + '\'' +
+                ", movieDescription='" + movieDescription + '\'' +
+                ", genre='" + genre + '\'' +
+                ", director='" + director + '\'' +
+                ", country='" + country + '\'' +
+                ", releaseDate=" + releaseDate +
+                ", duration=" + duration +
+                ", rating=" + rating +
+                ", posterUrl='" + posterUrl + '\'' +
+                ", productionCompany='" + productionCompany + '\'' +
+                ", trailerUrl='" + trailerUrl + '\'' +
+                ", movieStatus=" + movieStatus +
+                ", showtime=" + showtime +
+                '}';
+    }
 }

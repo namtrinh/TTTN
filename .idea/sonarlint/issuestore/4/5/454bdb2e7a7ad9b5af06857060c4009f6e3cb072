@@ -1,4 +1,14 @@
 
-¡	java:S120"ZRename this package name to match the regular expression '^[a-z_]+(\.[a-z_][a-z0-9_]*)*$'.(Û´¬áÿÿÿÿÿ8ä±Ó—À2J$3f02d6f6-575e-47c9-a9f0-931f28479d29
+¡	java:S120"ZRename this package name to match the regular expression '^[a-z_]+(\.[a-z_][a-z0-9_]*)*$'.(Û´¬áÿÿÿÿÿ8ð¨¡ÓÄ2J$ee19d71f-261b-43b0-b987-81bce3cffd44
 …
-java:S6813"BRemove this field injection and use constructor injection instead.(êæÄÞ8ê±Ó—À2J$f1c6ebd4-8aae-49cd-8522-d258c7a9e714
+java:S6813"BRemove this field injection and use constructor injection instead.(êæÄÞ8ó¨¡ÓÄ2J$39982c62-dd79-4afc-8326-dccd11407e99
+r
+java:S1128"/Remove this unused import 'com.cloudinary.Api'.(¹¼£¨8Ð²ÍÓÄ2J$16c69e24-5145-4508-a486-b33d415941b8
+ƒ
+java:S1128";Remove this unused import 'lombok.RequiredArgsConstructor'.(ÑØŽúøÿÿÿÿ8Ò²ÍÓÄ2J$c6c4257d-ec36-4cf6-8383-9ff97ee99687
+š
+java:S1128	"RRemove this unused import 'org.hotfilm.identityservice.Service.CloudinaryService'.(Îœ½‰ýÿÿÿÿ8Ó²ÍÓÄ2J$b025d7ea-2a6f-4c90-95de-c42bffb879c3
+„
+java:S1128"ARemove this unused import 'javax.print.attribute.standard.Media'.(‰šäÁ8Ó²ÍÓÄ2J$2147f1e4-4c83-4622-af1c-571809567ee6
+r
+java:S1128"*Remove this unused import 'java.util.Map'.(¼è½Òþÿÿÿÿ8Ó²ÍÓÄ2J$ba74efa2-b281-4ba3-9d7b-e34c4bf4686f

@@ -38,25 +38,30 @@ public class SecurityConfig {
             "/auth/forgot-password",
             "/auth/refresh",
             "/auth/login",
+            "/auth/register",
+            "/movie/**"
     };
 
     private final String[] GET_PUBLIC = {
             "/v3/api-docs/**",
-            "/swagger-ui/**"
+            "/swagger-ui/**",
+            "/movie/**",
+            "/movie"
     };
 
 
     @Bean
     public SecurityFilterChain securityFilterChain(HttpSecurity http) throws Exception {
-        http.csrf(AbstractHttpConfigurer::disable).authorizeHttpRequests(
-                request -> request
-                        .requestMatchers(HttpMethod.GET, GET_PUBLIC)
-                        .permitAll()
-                        .requestMatchers(HttpMethod.POST, POST_PUBlIC)
-                        .permitAll()
-                        .anyRequest()
-                        .authenticated()
-        );
+        http.csrf(AbstractHttpConfigurer::disable)
+                .authorizeHttpRequests(
+                        request -> request
+                                .requestMatchers(POST_PUBlIC)
+                                .permitAll()
+                                .requestMatchers(HttpMethod.GET, GET_PUBLIC)
+                                .permitAll()
+                                .anyRequest()
+                                .authenticated()
+                );
         http.oauth2Login(oauth2 -> oauth2
                 .defaultSuccessUrl("http://localhost:4200/home", true)
                 .failureUrl("/auth/login?error=true")

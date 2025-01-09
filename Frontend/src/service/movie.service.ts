@@ -28,6 +28,13 @@ export class MovieService{
     return this.http.post<any>(`${this.baseUrl}`, movie); // Truyền trực tiếp FormData
   }
 
+  deleteById(id:string){
+    return this.http.delete(`${this.baseUrl}/${id}`)
+  }
+
+  updateById(id:string, movie:FormData):Observable<any>{
+    return this.http.put<any>(`${this.baseUrl}/${id}`, movie)
+  }
 
   getById(movieId:string):Observable<Movie>{
     return this.http.get<Movie>(`${this.baseUrl}/findById/${movieId}`)

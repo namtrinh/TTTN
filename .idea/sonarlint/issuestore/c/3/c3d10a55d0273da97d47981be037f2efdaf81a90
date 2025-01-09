@@ -1,4 +1,8 @@
 
-u	java:S120"ZRename this package name to match the regular expression '^[a-z_]+(\.[a-z_][a-z0-9_]*)*$'.(¤ÙÁ8ñÍş°Ã2
+›	java:S120"ZRename this package name to match the regular expression '^[a-z_]+(\.[a-z_][a-z0-9_]*)*$'.(¤ÙÁ8‚ãŠ€Ä2J$a8cdbd04-1795-40ea-9add-368ab91d5dbb
+‚
+java:S1118":Add a private constructor to hide the implicit public one.(ÓŠ×«ùÿÿÿÿ8§ãŠ€Ä2J$26185944-99dc-4550-a810-657da5cc9679
 \
-java:S1118	":Add a private constructor to hide the implicit public one.(ÓŠ×«ùÿÿÿÿ8öÍş°Ã2
+java:S1128":Remove this unused import 'java.util.concurrent.Executor'.(÷ı¶Œúÿÿÿÿ8¶†§Ä2
+]
+java:S1128";Remove this unused import 'java.util.concurrent.Executors'.(äåÒÛÿÿÿÿÿ8¶†§Ä2
