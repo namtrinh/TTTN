@@ -1,0 +1,17 @@
+
+¡	java:S120"ZRename this package name to match the regular expression '^[a-z_]+(\.[a-z_][a-z0-9_]*)*$'.(Û´¬áÿÿÿÿÿ8Ö®ÌãÁ2J$0c9c7361-dfa5-42c1-b498-04133c78c147
+w
+java:S37402"/Provide the parametrized type for this generic.(õÙÕ‹úÿÿÿÿ8×®ÌãÁ2J$23b60193-e13a-432a-8a11-7f9c42c228f0
+…
+java:S6813"BRemove this field injection and use constructor injection instead.(êæÄŞ8Ú®ÌãÁ2J$263a83ca-b56e-46bd-a815-4f04cb18f3d5
+b
+java:S1128	"@Remove this unused import 'org.springframework.http.HttpStatus'.(íŸ¤Šúÿÿÿÿ8ùĞßãÁ2
+f
+java:S1128
+"DRemove this unused import 'org.springframework.http.ResponseEntity'.(¶¯ø¦úÿÿÿÿ8úĞßãÁ2
+P
+java:S1128".Remove this unused import 'java.util.HashMap'.(™˜”€ùÿÿÿÿ8úĞßãÁ2
+L
+java:S1128"*Remove this unused import 'java.util.Map'.(¼è½Òşÿÿÿÿ8úĞßãÁ2
+w
+java:S1128"/Remove this unused import 'java.util.Optional'.(¨˜ëİüÿÿÿÿ8ü®ÌãÁ2J$d7037918-493c-4bc6-819e-dc0349e8e6c8

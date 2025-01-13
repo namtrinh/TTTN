@@ -1,0 +1,31 @@
+
+“	java:S117\"QRename this local variable to match the regular expression '^[a-z][a-zA-Z0-9]*$'.(ê¬½ó8ô‡º«Ã2J$ff418bb1-9c69-459e-8d8f-6f68a73e3137
+›	java:S120"ZRename this package name to match the regular expression '^[a-z_]+(\.[a-z_][a-z0-9_]*)*$'.(¤ÙÁ8ô‡º«Ã2J$1063cff6-43ba-4b25-b460-362944b175e5
+p
+java:S5411:"(Use a primitive boolean expression here.(ÍÉç“ûÿÿÿÿ8ô‡º«Ã2J$61da450a-f956-49f2-b6a9-6401eb9b0a10
+k
+java:S5411U"(Use a primitive boolean expression here.(‚âÏˆ8ô‡º«Ã2J$62391cbc-1d14-4918-ada8-da9847e5d028
+p
+java:S5411]"(Use a primitive boolean expression here.(Æ¼…ùÿÿÿÿ8ô‡º«Ã2J$452eea0b-eee0-414c-9d33-80f81c67a36e
+p
+java:S5411j"(Use a primitive boolean expression here.(üºëåúÿÿÿÿ8ô‡º«Ã2J$46a7654c-fce4-4e56-bd89-87d3b679996f
+p
+java:S5411u"(Use a primitive boolean expression here.(ú’ªŠşÿÿÿÿ8ÃÍ¿«Ã2J$296f6b34-88df-46a9-9de6-154427acaa59
+…
+java:S6813"BRemove this field injection and use constructor injection instead.(êæÄŞ8ø‡º«Ã2J$7ab29919-adf2-404d-b0f5-b084019075f3
+…
+java:S6813 "BRemove this field injection and use constructor injection instead.(êæÄŞ8ø‡º«Ã2J$ad7b30b0-da44-4ed0-887a-e6ec2ded0553
+…
+java:S6813#"BRemove this field injection and use constructor injection instead.(êæÄŞ8ø‡º«Ã2J$2d806306-0688-4883-ba53-6988966983a7
+€
+java:S11444"8Remove this unused private "UserServiceImp" constructor.(Å‰»øùÿÿÿÿ8ù‡º«Ã2J$a540e222-12a0-48c9-a0c6-5b2a698dc942
+r	java:S106("+Replace this use of System.out by a logger.(Í½ôûıÿÿÿÿ8ü‡º«Ã2J$286dd2a3-c875-447b-aedf-bda036c6170e
+v
+java:S11720".Remove this unused method parameter "hashKey".(ä¨¦µüÿÿÿÿ8ı‡º«Ã2J$f0fb2142-91ae-4434-aac8-a1054e5d0dab
+m	java:S106;"+Replace this use of System.out by a logger.(åÃŒâ8ş‡º«Ã2J$461c46ae-af16-43f1-93d2-36cc70727f4a
+m	java:S106@"+Replace this use of System.out by a logger.(¾¨Â€8ş‡º«Ã2J$5b4f50a8-735b-4ca3-af7b-0c3cb112dd77
+½
+java:S6204H"zReplace this usage of 'Stream.collect(Collectors.toList())' with 'Stream.toList()' and ensure that the list is unmodified.(ª™¨¹8ÿ‡º«Ã2J$e1f66c93-d8fb-41ff-a87e-f01d603dcd33
+m	java:S106W"+Replace this use of System.out by a logger.(¦ûĞ8‚ˆº«Ã2J$fa20bb84-3558-4ee8-a8fc-75336915f298
+m	java:S106^"+Replace this use of System.out by a logger.(åÃŒâ8‚ˆº«Ã2J$d7366675-629c-4aa1-8448-0a7a64351e28
+m	java:S106a"+Replace this use of System.out by a logger.(¾¨Â€8‚ˆº«Ã2J$af849c12-39ff-4df5-bc44-af289978b95c

@@ -1,0 +1,12 @@
+
+ú	java:S120"ZRename this package name to match the regular expression '^[a-z_]+(\.[a-z_][a-z0-9_]*)*$'.(Ùæµû8ÜäÈ∞√2J$e54b063b-1bc4-4fff-a2d9-938a0c34d1d6
+Ö
+java:S6813"BRemove this field injection and use constructor injection instead.(ÍÊƒﬁ8∫∑‹±√2J$d383be6a-39dd-4ed4-9e22-50e04c2aaa48
+Ö
+java:S6813"BRemove this field injection and use constructor injection instead.(ÍÊƒﬁ8∫∑‹±√2J$a676374b-6563-42e4-8e4a-5bd70fbb1993
+ù
+java:S3305 "ZInject this field value directly into "securityFilterChain", the only method that uses it.(íÑ—ù8ª∑‹±√2J$7f87b398-33b8-41fe-bd22-11b4cce1672b
+ù
+java:S3305"ZInject this field value directly into "securityFilterChain", the only method that uses it.(Üí≥÷8ª∑‹±√2J$6d554bd2-2a28-4e0f-87b1-20d0b38cc6b4
+¿
+java:S1128"~Remove this unused import 'org.springframework.security.oauth2.server.resource.authentication.JwtGrantedAuthoritiesConverter'.(ß®„i8»∑‹±√2J$eaca6e99-e657-49a3-a11d-aef9a8fe6233

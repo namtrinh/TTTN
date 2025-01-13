@@ -1,0 +1,13 @@
+
+˜	java:S117b"QRename this local variable to match the regular expression '^[a-z][a-zA-Z0-9]*$'.(¸¼üíùÿÿÿÿ8ß¿’°Ã2J$8c4e4ba2-2a53-40b2-8742-7450ec87b9c6
+œ	java:S120"ZRename this package name to match the regular expression '^[a-z_]+(\.[a-z_][a-z0-9_]*)*$'.(õ­¬¾8ß¿’°Ã2J$db3fbf73-6c01-4f61-bb8a-4b171ee42d1e
+š	java:S116)"SRename this field "SIGN_KEY" to match the regular expression '^[a-z][a-zA-Z0-9]*$'.(Ò¸¥Ìüÿÿÿÿ8ä¿’°Ã2J$2207ccf5-5753-4deb-b90d-c7ac87334de3
+›	java:S116-"YRename this field "VALID_DURATION" to match the regular expression '^[a-z][a-zA-Z0-9]*$'.(ˆçï˜8ä¿’°Ã2J$f774581e-e81a-4b0e-b8fe-3a301c89c689
+¡	java:S1161"_Rename this field "REFRESHABLE_DURATION" to match the regular expression '^[a-z][a-zA-Z0-9]*$'.(µĞ²8ä¿’°Ã2J$6368b45b-e98d-4ae1-bfd5-3079b04f8409
+…
+java:S68133"BRemove this field injection and use constructor injection instead.(êæÄŞ8ä¿’°Ã2J$764ca364-777b-4261-a904-d028ec827774
+…
+java:S68136"BRemove this field injection and use constructor injection instead.(êæÄŞ8ä¿’°Ã2J$bb8d96d5-4aad-4f10-8cea-043700d7484b
+…
+java:S68139"BRemove this field injection and use constructor injection instead.(êæÄŞ8ä¿’°Ã2J$46d5aa0d-090c-4a44-812e-18bca49df246
+ƒ	java:S125<"<This block of commented-out lines of code should be removed.(»Èßşùÿÿÿÿ8ê¿’°Ã2J$e5e929f7-d755-4be9-9f5d-6fc26553d178
