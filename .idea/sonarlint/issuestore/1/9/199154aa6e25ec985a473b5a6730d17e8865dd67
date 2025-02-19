@@ -1,0 +1,11 @@
+
+š	java:S120"ZRename this package name to match the regular expression '^[a-z_]+(\.[a-z_][a-z0-9_]*)*$'.(­ß¿ÅıÿÿÿÿJ$6fc235a6-bcc4-4839-a200-6c47012d8b6d
+o
+java:S1068".Remove this unused "seatNumber" private field.(ÚÒ÷ôüÿÿÿÿJ$dddd916d-3d9c-4f49-864e-8ecc9ab20abc
+g
+java:S1068",Remove this unused "seatType" private field.(ìéŸ|J$796a6582-ff8a-4d44-9063-00eb25598dee
+j
+java:S1068	".Remove this unused "seatStatus" private field.(ìÑÃJ$4c1316cc-8733-4909-b1a9-25a1000b1d6e
+i
+java:S1068
+"-Remove this unused "theaterId" private field.(ˆÕş¹J$3be23c35-caea-4c38-a42e-459c3899b253

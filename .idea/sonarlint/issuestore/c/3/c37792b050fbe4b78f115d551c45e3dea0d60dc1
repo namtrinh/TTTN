@@ -1,0 +1,19 @@
+
+›	java:S120"ZRename this package name to match the regular expression '^[a-z_]+(\.[a-z_][a-z0-9_]*)*$'.(¤ÙÁ8ò¯ŠñÑ2J$b5b80538-fe32-4af8-9a8b-77d987d4d726
+p
+java:S5411."(Use a primitive boolean expression here.(ˆÁªşÿÿÿÿ8ó¯ŠñÑ2J$848293b1-2c1a-4802-a8a7-69be84a714d4
+ 
+java:S14880"]Immediately return this expression instead of assigning it to the temporary variable "rooms".(Ö­†Û8ô¯ŠñÑ2J$ce7673e5-06f6-4604-b828-3f89aff20745
+ˆ	java:S112>"FDefine and throw a dedicated exception instead of using a generic one.(ïï–ä8ô¯ŠñÑ2J$c2600cc4-c9dc-40cf-a895-04a512b3e3a8
+…
+java:S6813"BRemove this field injection and use constructor injection instead.(êæÄŞ8ö¯ŠñÑ2J$5cd32938-879b-403a-8907-65fc6529aea5
+…
+java:S6813"BRemove this field injection and use constructor injection instead.(êæÄŞ8ö¯ŠñÑ2J$c2ea455d-c194-4e39-a78d-d07c6d5f4bbb
+…
+java:S6813"BRemove this field injection and use constructor injection instead.(êæÄŞ8ö¯ŠñÑ2J$6a940e13-f7d3-4a2b-836d-323dd548e3a7
+n
+java:S1144("+Remove this unused private "setTTL" method.(‹‡İ¶8÷¯ŠñÑ2J$65216099-cba5-47b3-9186-5b3f284841fe
+r	java:S106L"+Replace this use of System.out by a logger.(…µóÁûÿÿÿÿ8°ŠñÑ2J$c77bc295-eace-42ac-84e4-002ce2ea888b
+l	java:S106a"+Replace this use of System.out by a logger.(éŒÄV8Í€šñÑ2J$20833cc7-e386-4c3b-8d26-80290d49fcb4
+r	java:S106b"+Replace this use of System.out by a logger.(çÅûÿÿÿÿ8é…ñÑ2J$24a096bb-9dd0-432f-9b9d-076ea74b2564
+r	java:S106c"+Replace this use of System.out by a logger.(ï„‘æúÿÿÿÿ8Í¥ñÑ2J$30d88133-ba56-4b78-949b-0df148076b7d

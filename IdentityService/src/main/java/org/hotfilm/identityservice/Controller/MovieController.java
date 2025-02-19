@@ -2,6 +2,7 @@ package org.hotfilm.identityservice.Controller;
 
 import com.cloudinary.Api;
 import lombok.RequiredArgsConstructor;
+import org.apache.coyote.Response;
 import org.hotfilm.identityservice.Model.Movie;
 import org.hotfilm.identityservice.ModelDTO.Request.MovieCreateRequest;
 import org.hotfilm.identityservice.ModelDTO.Response.ApiResponse;
@@ -10,8 +11,10 @@ import org.hotfilm.identityservice.Service.CloudinaryService;
 import org.hotfilm.identityservice.Service.MovieService;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.data.domain.Page;
+import org.springframework.http.HttpMessage;
 import org.springframework.http.HttpStatus;
 import org.springframework.http.MediaType;
+import org.springframework.http.ResponseEntity;
 import org.springframework.web.bind.annotation.*;
 import org.springframework.web.multipart.MultipartFile;
 

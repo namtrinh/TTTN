@@ -1,14 +1,20 @@
 
-¡	java:S120"ZRename this package name to match the regular expression '^[a-z_]+(\.[a-z_][a-z0-9_]*)*$'.(Û´¬áÿÿÿÿÿ8ğ¨¡ÓÄ2J$ee19d71f-261b-43b0-b987-81bce3cffd44
-…
-java:S6813"BRemove this field injection and use constructor injection instead.(êæÄŞ8ó¨¡ÓÄ2J$39982c62-dd79-4afc-8326-dccd11407e99
-r
-java:S1128"/Remove this unused import 'com.cloudinary.Api'.(¹¼£¨8Ğ²ÍÓÄ2J$16c69e24-5145-4508-a486-b33d415941b8
-ƒ
-java:S1128";Remove this unused import 'lombok.RequiredArgsConstructor'.(ÑØúøÿÿÿÿ8Ò²ÍÓÄ2J$c6c4257d-ec36-4cf6-8383-9ff97ee99687
-š
-java:S1128	"RRemove this unused import 'org.hotfilm.identityservice.Service.CloudinaryService'.(Îœ½‰ıÿÿÿÿ8Ó²ÍÓÄ2J$b025d7ea-2a6f-4c90-95de-c42bffb879c3
-„
-java:S1128"ARemove this unused import 'javax.print.attribute.standard.Media'.(‰šäÁ8Ó²ÍÓÄ2J$2147f1e4-4c83-4622-af1c-571809567ee6
-r
-java:S1128"*Remove this unused import 'java.util.Map'.(¼è½Òşÿÿÿÿ8Ó²ÍÓÄ2J$ba74efa2-b281-4ba3-9d7b-e34c4bf4686f
+_
+java:S6813"BRemove this field injection and use constructor injection instead.(êæÄŞ8ş÷¬èÑ2
+L
+java:S1128"/Remove this unused import 'com.cloudinary.Api'.(¹¼£¨8€ø¬èÑ2
+]
+java:S1128";Remove this unused import 'lombok.RequiredArgsConstructor'.(ÑØúøÿÿÿÿ8ø¬èÑ2
+Y
+java:S1128"7Remove this unused import 'org.apache.coyote.Response'.(˜ÊŠşÿÿÿÿ8‘ø¬èÑ2
+t
+java:S1128
+"RRemove this unused import 'org.hotfilm.identityservice.Service.CloudinaryService'.(Îœ½‰ıÿÿÿÿ8Äø¬èÑ2
+c
+java:S1128"ARemove this unused import 'org.springframework.http.HttpMessage'.(ş÷Ìñıÿÿÿÿ8Äø¬èÑ2
+f
+java:S1128"DRemove this unused import 'org.springframework.http.ResponseEntity'.(¶¯ø¦úÿÿÿÿ8Äø¬èÑ2
+^
+java:S1128"ARemove this unused import 'javax.print.attribute.standard.Media'.(‰šäÁ8Äø¬èÑ2
+L
+java:S1128"*Remove this unused import 'java.util.Map'.(¼è½Òşÿÿÿÿ8Äø¬èÑ2

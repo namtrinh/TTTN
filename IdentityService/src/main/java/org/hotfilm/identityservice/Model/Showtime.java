@@ -25,6 +25,10 @@ public class Showtime {
 
     private LocalDateTime showtime;
 
+    private LocalDateTime time_create = LocalDateTime.now();
+
+    private LocalDateTime time_update;
+
     public void setShowtime(LocalDateTime showtime){
         DateTimeFormatter formatter = DateTimeFormatter.ofPattern("yyyy-MM-dd hh-mm" );
         this.showtime = LocalDateTime.parse(showtime.format(formatter));

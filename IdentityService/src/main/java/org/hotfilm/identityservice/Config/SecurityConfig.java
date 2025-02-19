@@ -39,14 +39,16 @@ public class SecurityConfig {
             "/auth/refresh",
             "/auth/login",
             "/auth/register",
-            "/movie/**"
+            "/movie/**",
+            "/room/**"
     };
 
     private final String[] GET_PUBLIC = {
             "/v3/api-docs/**",
             "/swagger-ui/**",
             "/movie/**",
-            "/movie"
+            "/movie",
+            "/room/**"
     };
 
 

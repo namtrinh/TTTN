@@ -1,22 +1,30 @@
-version: '2'
+version: '3.8'
 services:
-  app:
-    image: library/spring-boot-docker-example
-    container_name: app
-    depends_on:
-      - db
+  sqlserver:
+    image: mcr.microsoft.com/mssql/server:2022-latest
+    container_name: sqlserver
+    environment:
+      SA_PASSWORD: "12345N@m"
+      ACCEPT_EULA: "Y"
+    ports:
+      - "1445:1433"
+    networks:
+      - app-network
+
+  springboot-app:
+    build: .
+    container_name: movie
+    environment:
+      SPRING_DATASOURCE_URL: jdbc:sqlserver://172.17.0.2:1445;databaseName=TTTN;encrypt=true;trustServerCertificate=true;
+      SPRING_DATASOURCE_USERNAME: sa
+      SPRING_DATASOURCE_PASSWORD: 12345N@m
     ports:
       - "8080:8080"
-    links:
-      - db:database
-    volumes:
-      - /tmp:/tmp
-  db:
-    image: mariadb:latest
-    container_name: db
-    environment:
-      MYSQL_ROOT_PASSWORD: root
-    ports:
-      - "3306:3306"
-    volumes:
-      - /var/mysql/data:/var/lib/mysql
+    depends_on:
+      - sqlserver
+    networks:
+      - app-network
+
+networks:
+  app-network:
+    driver: bridge

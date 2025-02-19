@@ -6,6 +6,8 @@ import lombok.Getter;
 import lombok.RequiredArgsConstructor;
 import lombok.Setter;
 
+import java.time.LocalDateTime;
+
 @Entity
 @Getter
 @Setter
@@ -27,6 +29,8 @@ public class Seat {
 
     @Enumerated(EnumType.STRING)
     private SeatStatus seatStatus;
+
+    private LocalDateTime time_celected;
 
     public enum SeatType {
         REGULAR, VIP

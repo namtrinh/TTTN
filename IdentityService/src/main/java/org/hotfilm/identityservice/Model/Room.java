@@ -1,11 +1,13 @@
 package org.hotfilm.identityservice.Model;
 
+import com.fasterxml.jackson.annotation.JsonIgnore;
 import jakarta.persistence.*;
 import lombok.AllArgsConstructor;
 import lombok.Getter;
 import lombok.RequiredArgsConstructor;
 import lombok.Setter;
 
+import java.io.Serializable;
 import java.util.Set;
 
 @Entity
@@ -14,7 +16,7 @@ import java.util.Set;
 @AllArgsConstructor
 @RequiredArgsConstructor
 @Table(name = "room")
-public class Room {
+public class Room implements Serializable {
     @Id
     @GeneratedValue(strategy = GenerationType.UUID)
     private String roomId;
@@ -27,12 +29,14 @@ public class Room {
 
     private double roomPrice;
 
+    @Enumerated(EnumType.STRING)
     private RoomType roomType;
 
     @OneToMany
+    @JsonIgnore
     private Set<Seat> seat;
 
     public enum RoomType{
-        STANDARD, IMAX, COUPLE, KIDS
+        STANDARD, IMAX, COUPLE, KID
     }
 }

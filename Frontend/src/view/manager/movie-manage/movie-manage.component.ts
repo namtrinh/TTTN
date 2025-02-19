@@ -50,6 +50,7 @@ export class MovieManageComponent implements OnInit {
       const newmovies = data.result.content;
       this.movies.push(...newmovies)
       console.log(this.movies);
+      console.log(localStorage.getItem('auth_token'))
       this.isLoading = false;
     })
   }

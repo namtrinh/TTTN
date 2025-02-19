@@ -18,7 +18,9 @@
           <th>Type</th>
           <th>Director</th>
           <th>Release Day</th>
-          <th class="text-center">Hành động</th>
+          <th>Show time</th>
+          <th>Update</th>
+          <th>Delete</th>
         </tr>
         </thead>
         <tbody>
@@ -29,12 +31,14 @@
               <td>{{ movie.genre }}</td>
               <td>{{ movie.director }}</td>
               <td>{{ movie.releaseDate | date:'dd/MM/yyyy' }}</td>
+              <td></td>
               <td class="text-center">
                 <button class="btn btn-warning btn-sm edit-btn me-2" data-bs-toggle="modal"
                         data-bs-target="#updateMovie" (click)="findById(movie.movieId)">
                   <i class="fa-duotone fa-solid fa-pen-to-square"></i>
                 </button>
-
+              </td>
+              <td>
                 <button class="btn btn-danger btn-sm delete-btn" (click)="deleteMovie(movie.movieId, movie.movieName)">
                   <i class="fa-solid fa-delete-left"></i></button>
               </td>

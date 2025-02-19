@@ -1,15 +1,0 @@
-
-¡	java:S120"ZRename this package name to match the regular expression '^[a-z_]+(\.[a-z_][a-z0-9_]*)*$'.(Û´¬áÿÿÿÿÿ8Ö®ÌãÁ2J$0c5553c3-0fd9-4d25-91f8-bf5b463f67f0
-Q
-java:S37402"/Provide the parametrized type for this generic.(õÙÕ‹úÿÿÿÿ8„ŒĞ×Ã2
-…
-java:S6813"BRemove this field injection and use constructor injection instead.(êæÄŞ8Ú®ÌãÁ2J$8bc20b2b-45f3-44cf-96b9-9d5278f997f0
-f
-java:S1128
-"DRemove this unused import 'org.springframework.http.ResponseEntity'.(¶¯ø¦úÿÿÿÿ8ŒŒĞ×Ã2
-P
-java:S1128".Remove this unused import 'java.util.HashMap'.(™˜”€ùÿÿÿÿ8ŒĞ×Ã2
-L
-java:S1128"*Remove this unused import 'java.util.Map'.(¼è½Òşÿÿÿÿ8ŒĞ×Ã2
-Q
-java:S1128"/Remove this unused import 'java.util.Optional'.(¨˜ëİüÿÿÿÿ8ŒĞ×Ã2
