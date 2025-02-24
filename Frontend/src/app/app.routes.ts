@@ -9,6 +9,8 @@ import {ResetPasswordComponent} from '../auth/reset-password/reset-password.comp
 import {ViewManageComponent} from '../view/manager/view-manage/view-manage.component';
 import {MovieManageComponent} from '../view/manager/movie-manage/movie-manage.component';
 import {RoomManageComponent} from '../view/manager/room-manage/room-manage.component';
+import {TestComponent} from '../test/test.component';
+import {ShowtimeManageComponent} from '../view/manager/showtime-manage/showtime-manage.component';
 
 export const routes: Routes = [
 
@@ -23,9 +25,11 @@ export const routes: Routes = [
 
   {path:'manage', component:ViewManageComponent, children: [
       {path:'movie', component:MovieManageComponent},
-      {path:'room', component:RoomManageComponent}
+      {path:'room', component:RoomManageComponent},
+      {path:'showtime', component:ShowtimeManageComponent}
     ]},
 
+  {path: 'test', component: TestComponent},
 
 
   {path: '???', component: _401Component}

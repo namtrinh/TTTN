@@ -3,7 +3,7 @@ package org.hotfilm.identityservice.Controller;
 import org.hotfilm.identityservice.Mapper.SeatMapper;
 import org.hotfilm.identityservice.Model.Seat;
 import org.hotfilm.identityservice.Model.Seat.SeatStatus;
-import org.hotfilm.identityservice.Model.Seat.SeatType;
+
 import org.hotfilm.identityservice.ModelDTO.Request.SeatRequest;
 import org.hotfilm.identityservice.ModelDTO.Response.SeatResponse;
 import org.hotfilm.identityservice.Service.SeatService;
@@ -55,14 +55,6 @@ public class SeatController {
     public ResponseEntity<Void> deleteSeat(@PathVariable String seatId) {
         seatService.deleteById(seatId);
         return ResponseEntity.noContent().build();
-    }
-
-    @GetMapping("/type/{seatType}")
-    public ResponseEntity<List<SeatResponse>> getSeatsByType(@PathVariable SeatType seatType) {
-        List<Seat> seats = seatService.findBySeatType(seatType);
-        return ResponseEntity.ok(seats.stream()
-                .map(seatMapper::toSeatResponse)
-                .toList());
     }
 
     @GetMapping("/status/{seatStatus}")

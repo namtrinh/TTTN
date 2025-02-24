@@ -1,2 +1,8 @@
 
-t	java:S120"ZRename this package name to match the regular expression '^[a-z_]+(\.[a-z_][a-z0-9_]*)*$'.(ÍıæËÿÿÿÿÿ
+{	java:S120"ZRename this package name to match the regular expression '^[a-z_]+(\.[a-z_][a-z0-9_]*)*$'.(ÍıæËÿÿÿÿÿ8İü›ÂÓ2
+T
+java:S6126"2Replace this String concatenation with Text block.(ø”ÅĞùÿÿÿÿ8àü›ÂÓ2
+^
+java:S1128"ARemove this unused import 'org.springframework.cglib.core.Local'.(ÁÒû8àü›ÂÓ2
+V
+java:S1128"4Remove this unused import 'java.time.LocalDateTime'.(æÃ§ƒüÿÿÿÿ8àü›ÂÓ2

@@ -1,25 +1,15 @@
 
-body {
-  font-family: Arial, sans-serif;
-  background-color: #1a1a1a;
-  color: #f4f4f4;
-  margin: 0;
-  padding: 0;
-}
-
 .container {
-  max-width: 900px;
-  margin: 30px auto;
-  padding: 20px;
-  background-color: #333;
-  border-radius: 10px;
-  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+  width: 40%;
+  margin: 10px auto;
+  padding: 30px;
 }
 
 h1 {
   text-align: center;
-  color: #e50914;
+  color: #ffffff;
   margin-bottom: 20px;
+  font-weight: bold;
 }
 
 .screen {
@@ -29,25 +19,6 @@ h1 {
   padding: 10px;
   border-radius: 5px;
   margin-bottom: 20px;
-}
-
-.seating {
-  display: grid;
-  grid-template-columns: repeat(10, 1fr);
-  gap: 10px;
-  justify-content: center;
-}
-
-.seat {
-  width: 40px;
-  height: 40px;
-  background-color: #444;
-  border-radius: 5px;
-  cursor: pointer;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  color: #fff;
 }
 
 .seat:hover {
@@ -85,7 +56,7 @@ h1 {
 }
 
 .reserved {
-  background-color: #888;
+  background-color: #ffbc41;
 }
 
 footer {
@@ -95,8 +66,6 @@ footer {
   color: #888;
   margin-top: 30px;
 }
-
-
 
 section {
   background-color: #ffffff57;
@@ -112,7 +81,7 @@ section {
 
 h2 {
   font-size: 20px;
-  color: #333;
+  color: #fafafa;
   margin-bottom: 15px;
   font-weight: bold;
 }
@@ -137,18 +106,43 @@ select:hover {
   margin-bottom: 20px;
 }
 
-button {
-  margin-top: 20px;
-  width: 100%;
-  padding: 10px;
-  font-size: 16px;
-  background-color: #e50914;
-  color: rgba(255, 255, 255, 0.429);
-  border: none;
-  border-radius: 5px;
-  cursor: pointer;
+.room h2 {
+  text-align: center;
 }
 
-button:hover {
-  background-color: #b50611;
+.seats {
+  display: grid;
+  grid-gap: 10px;
+  justify-items: center;
+  margin-top: 20px;
+}
+
+.standard-room {
+  grid-template-columns: repeat(8, 1fr);
+}
+
+.imax-room {
+  grid-template-columns: repeat(10, 1fr);
+}
+
+.couple-room {
+  grid-template-columns: repeat(6, 1fr);
+}
+
+.seat {
+  width: 50px;
+  height: 50px;
+  background-color: #444;
+  color: white;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border-radius: 5px;
+  cursor: pointer;
+  font-size: 14px;
+  transition: background-color 0.3s ease;
+}
+
+.seat:active {
+  background-color: #ccc6c6;
 }

@@ -1,8 +1,9 @@
 
-›	java:S120"ZRename this package name to match the regular expression '^[a-z_]+(\.[a-z_][a-z0-9_]*)*$'.(’•ñ"8–Ì”Ñ2J$eee844e5-b9ed-4a4a-bb52-6b67b238914d
-Z
-java:S1700"Rename field "showtime"(ÈÂ˜À8–Ì”Ñ2J$b826ecc8-ceec-45d9-8169-5ef7dc2c6836
-˜	java:S116"VRename this field "time_create" to match the regular expression '^[a-z][a-zA-Z0-9]*$'.(º…8–Ì”Ñ2J$c6df4504-4d27-4f6b-b1f9-b3c6afa973af
-˜	java:S116"VRename this field "time_update" to match the regular expression '^[a-z][a-zA-Z0-9]*$'.(Í¶Û8–Ì”Ñ2J$5b7d41d2-9ea4-4e98-926f-f45d43a4bfa5
+›	java:S120"ZRename this package name to match the regular expression '^[a-z_]+(\.[a-z_][a-z0-9_]*)*$'.(’•ñ"8ıîô½Ó2J$75634340-5b6a-4296-8e96-96685c26630e
+—	java:S116"URename this field "time_start" to match the regular expression '^[a-z][a-zA-Z0-9]*$'.(Ÿøû»8¹ïô½Ó2J$f32631b6-3279-4770-9b71-8a2d087470a3
+š	java:S116 "SRename this field "time_end" to match the regular expression '^[a-z][a-zA-Z0-9]*$'.(œĞÕ†úÿÿÿÿ8ºïô½Ó2J$08d4e841-a9e0-4348-b8a4-cde7ced57dae
 „
-java:S1128"ARemove this unused import 'org.springframework.cglib.core.Local'.(ÁÒû8šÌ”Ñ2J$150872ed-8dc9-4e54-b9f8-52e6937a5e1f
+java:S1128
+"ARemove this unused import 'org.springframework.cglib.core.Local'.(ÁÒû8¢¢õ½Ó2J$a9c59136-10f3-4e1f-8f9c-2d2c5ac6b648
+‚
+java:S1128"?Remove this unused import 'java.time.format.DateTimeFormatter'.(‰÷÷ª8¢¢õ½Ó2J$afa0b89c-5e25-435e-a34a-52a7a2c952c9

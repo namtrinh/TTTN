@@ -3,16 +3,19 @@ package org.hotfilm.identityservice.Controller;
 import org.hotfilm.identityservice.Mapper.ShowtimeMapper;
 import org.hotfilm.identityservice.Model.Showtime;
 import org.hotfilm.identityservice.ModelDTO.Request.ShowtimeRequest;
+import org.hotfilm.identityservice.ModelDTO.Response.ApiResponse;
 import org.hotfilm.identityservice.ModelDTO.Response.ShowtimeResponse;
 import org.hotfilm.identityservice.Service.ShowtimeService;
 import org.springframework.beans.factory.annotation.Autowired;
+import org.springframework.http.HttpStatus;
 import org.springframework.http.ResponseEntity;
 import org.springframework.web.bind.annotation.*;
 
+import java.sql.Date;
 import java.util.List;
 
 @RestController
-@RequestMapping("/api/showtimes")
+@RequestMapping("/showtime")
 public class ShowtimeController {
 
     @Autowired
@@ -22,9 +25,11 @@ public class ShowtimeController {
     private ShowtimeMapper showtimeMapper;
 
     @GetMapping
-    public ResponseEntity<List<ShowtimeResponse>> getAllShowtimes() {
-        List<ShowtimeResponse> showtimes = showtimeService.findAll();
-        return ResponseEntity.ok(showtimes);
+    public ApiResponse<List<ShowtimeResponse>> getAllShowtimes(@RequestParam("showtime") Date dateTime) {
+        return ApiResponse.<List<ShowtimeResponse>>builder()
+                .status(HttpStatus.OK)
+                .result(showtimeService.findAll(dateTime))
+                .build();
     }
 
     @GetMapping("/{showtimeId}")

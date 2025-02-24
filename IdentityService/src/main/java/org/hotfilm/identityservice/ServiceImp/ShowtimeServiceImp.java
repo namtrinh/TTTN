@@ -8,6 +8,8 @@ import org.hotfilm.identityservice.Service.ShowtimeService;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
 
+
+import java.sql.Date;
 import java.util.List;
 import java.util.stream.Collectors;
 
@@ -21,11 +23,8 @@ public class ShowtimeServiceImp implements ShowtimeService {
     private ShowtimeMapper showtimeMapper;
 
     @Override
-    public List<ShowtimeResponse> findAll() {
-        return showtimeRepository.findAll()
-                .stream()
-                .map(showtimeMapper::toShowtimeResponse)
-                .collect(Collectors.toList());
+    public List<ShowtimeResponse> findAll(Date dateTime) {
+        return showtimeRepository.findAllByTime(dateTime);
     }
 
     @Override

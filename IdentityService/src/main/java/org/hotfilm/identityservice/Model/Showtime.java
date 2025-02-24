@@ -1,5 +1,7 @@
 package org.hotfilm.identityservice.Model;
 
+import com.fasterxml.jackson.annotation.JsonFormat;
+import com.fasterxml.jackson.annotation.JsonIgnore;
 import jakarta.persistence.*;
 import lombok.AllArgsConstructor;
 import lombok.Getter;
@@ -7,6 +9,7 @@ import lombok.RequiredArgsConstructor;
 import lombok.Setter;
 import org.springframework.cglib.core.Local;
 
+import java.io.Serializable;
 import java.time.LocalDateTime;
 import java.time.format.DateTimeFormatter;
 
@@ -16,21 +19,20 @@ import java.time.format.DateTimeFormatter;
 @AllArgsConstructor
 @RequiredArgsConstructor
 @Table(name = "showtime")
-public class Showtime {
+public class Showtime implements Serializable {
     @Id
     @GeneratedValue(strategy = GenerationType.UUID)
     private String showtimeId;
 
     private String theaterId;
 
-    private LocalDateTime showtime;
+    @JsonFormat(pattern = "yyyy-MM-dd hh:mm:ss")
+    private LocalDateTime time_start;
+    @JsonFormat(pattern = "yyyy-MM-dd hh:mm:ss")
+    private LocalDateTime time_end;
 
-    private LocalDateTime time_create = LocalDateTime.now();
+    @ManyToOne(cascade = CascadeType.REMOVE)
+    @JsonIgnore
+    private Room room;
 
-    private LocalDateTime time_update;
-
-    public void setShowtime(LocalDateTime showtime){
-        DateTimeFormatter formatter = DateTimeFormatter.ofPattern("yyyy-MM-dd hh-mm" );
-        this.showtime = LocalDateTime.parse(showtime.format(formatter));
-    }
 }

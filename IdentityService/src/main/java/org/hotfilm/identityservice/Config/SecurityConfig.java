@@ -40,7 +40,9 @@ public class SecurityConfig {
             "/auth/login",
             "/auth/register",
             "/movie/**",
-            "/room/**"
+            "/room/**",
+            "/showtime",
+            "/showtime/**"
     };
 
     private final String[] GET_PUBLIC = {
@@ -48,7 +50,10 @@ public class SecurityConfig {
             "/swagger-ui/**",
             "/movie/**",
             "/movie",
-            "/room/**"
+            "/room/**",
+            "/room",
+            "/showtime",
+            "/showtime/**"
     };
 
 

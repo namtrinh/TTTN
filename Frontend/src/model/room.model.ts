@@ -14,5 +14,4 @@ export enum RoomType{
   STANDARD='STANDARD',
   IMAX ='IMAX',
   COUPLE ='COUPLE',
-  KID ='KID',
 }

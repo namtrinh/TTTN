@@ -1,6 +1,4 @@
 
-t	java:S120"ZRename this package name to match the regular expression '^[a-z_]+(\.[a-z_][a-z0-9_]*)*$'.(­ß¿Åýÿÿÿÿ
-C
-java:S1068"-Remove this unused "theaterId" private field.(ˆÕþ¹
-B
-java:S1068",Remove this unused "showtime" private field.(ÈÂ˜À
+š	java:S120"ZRename this package name to match the regular expression '^[a-z_]+(\.[a-z_][a-z0-9_]*)*$'.(­ß¿ÅýÿÿÿÿJ$1d8abae9-b1e6-4c3a-ae25-bb54f6795477
+—	java:S116"URename this field "time_start" to match the regular expression '^[a-z][a-zA-Z0-9]*$'.(Ÿøû»8¶àø½Ó2J$e2f2d51f-1512-4211-b4b2-f5211e7ef460
+š	java:S116"SRename this field "time_end" to match the regular expression '^[a-z][a-zA-Z0-9]*$'.(œÐÕ†úÿÿÿÿ8¶àø½Ó2J$d988bc1c-0ea5-4c36-9462-c5ade8ddc3aa

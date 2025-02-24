@@ -32,8 +32,7 @@ public class Room implements Serializable {
     @Enumerated(EnumType.STRING)
     private RoomType roomType;
 
-    @OneToMany
-    @JsonIgnore
+    @OneToMany(fetch = FetchType.EAGER, cascade = CascadeType.REMOVE, orphanRemoval = true)
     private Set<Seat> seat;
 
     public enum RoomType{

@@ -1,7 +1,6 @@
-export class ShowTime{
+export class Showtime{
   showtimeId!: string;
-  theaterId!: string;
-  showtime!: string;
-  time_created!:string;
-  time_updated!:string;
+
+  time_start!:string;
+  time_end!:string;
 }

@@ -7,7 +7,7 @@ import {RouterLink, RouterOutlet} from '@angular/router';
 
 @Component({
   selector: 'app-movie-manage',
-  imports: [RouterLink, RouterOutlet, FormsModule, CommonModule],
+  imports: [FormsModule, CommonModule],
   templateUrl: './movie-manage.component.html',
   standalone: true,
   styleUrl: './movie-manage.component.css'

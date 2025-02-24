@@ -2,11 +2,13 @@ import {Component, OnInit} from '@angular/core';
 import {RoomService} from '../../../service/room.service';
 import {Room, RoomType} from '../../../model/room.model';
 import {FormsModule} from '@angular/forms';
+import {CurrencyPipe, DecimalPipe} from '@angular/common';
 
 @Component({
   selector: 'app-room-manage',
   imports: [
-    FormsModule
+    FormsModule,
+    DecimalPipe,
   ],
   templateUrl: './room-manage.component.html',
   standalone: true,
@@ -55,12 +57,12 @@ export class RoomManageComponent implements OnInit{
     })
   }
 
-  updateRoom(id:string, room:Room){
-    console.log(id)
-    this.roomService.updateById(id, room).subscribe((data:any) =>{
-      const index = this.rooms.findIndex(room => room.roomId === id);
+  updateRoom(id: string, room: Room): void {
+    console.log(id);
+    this.roomService.updateById(id, room).subscribe((data: any) => {
+      const index: number = this.rooms.findIndex(room => room.roomId === id);
       if (index !== -1) {
-        this.room[index] = data.result;
+        this.rooms[index] = data.result;
       }
     });
   }

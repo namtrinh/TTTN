@@ -1,24 +1,37 @@
 
-›	java:S120"ZRename this package name to match the regular expression '^[a-z_]+(\.[a-z_][a-z0-9_]*)*$'.(¤ÙÁ8§óñÑ2J$d60edd71-1ae2-43f8-a73c-a09928d44452
+›	java:S120"ZRename this package name to match the regular expression '^[a-z_]+(\.[a-z_][a-z0-9_]*)*$'.(¤ÙÁ8êæºÓ2J$81090ecf-c91c-447a-9a5c-b736d43c7f9a
 p
-java:S5411."(Use a primitive boolean expression here.(ˆÁªşÿÿÿÿ8§óñÑ2J$4ab86337-7f34-44c4-9970-119c2e29f4ff
+java:S54114"(Use a primitive boolean expression here.(ˆÁªşÿÿÿÿ8ûê†ºÓ2J$ee592792-57c4-4c89-b46e-46f8d7cd72fc
 p
-java:S5411F"(Use a primitive boolean expression here.(š±Œúøÿÿÿÿ8§óñÑ2J$4a79a4e1-3509-425a-bc52-18e931d42038
+java:S5411b"(Use a primitive boolean expression here.(š±Œúøÿÿÿÿ8êæºÓ2J$9cf0e68a-db26-44a2-ab75-f94f00e52e98
 p
-java:S5411Y"(Use a primitive boolean expression here.(š±Œúøÿÿÿÿ8§óñÑ2J$2f17569a-5825-4d3e-a928-ff6915921909
+java:S5411u"(Use a primitive boolean expression here.(š±Œúøÿÿÿÿ8êæºÓ2J$b7e878e4-685a-488f-ab7f-3a2c6a799a17
 k
-java:S5411c"(Use a primitive boolean expression here.(òéÈé8§óñÑ2J$e5871564-180a-48de-b3ec-367ecb456417
- 
-java:S14880"]Immediately return this expression instead of assigning it to the temporary variable "rooms".(Ö­†Û8 §óñÑ2J$d62ffdaa-6757-400b-a777-abbd13ad236e
-ˆ	java:S112>"FDefine and throw a dedicated exception instead of using a generic one.(ïï–ä8 §óñÑ2J$27262c9a-95d6-4859-83c7-d1ac805ab2f2
+java:S5411"(Use a primitive boolean expression here.(òéÈé8êæºÓ2J$ab2ae8c4-b4c5-4e66-89ad-c8604b3f7b2f
+ˆ	java:S112K"FDefine and throw a dedicated exception instead of using a generic one.(ïï–ä8íæºÓ2J$ebcbee7c-aa3d-4afd-a013-47cafd9b3729
 …
-java:S6813"BRemove this field injection and use constructor injection instead.(êæÄŞ8¢§óñÑ2J$9e8a375c-2050-4010-9901-382910192276
+java:S6813"BRemove this field injection and use constructor injection instead.(êæÄŞ8ïæºÓ2J$a49199b5-84df-4084-a88c-3a57fc883ec9
 …
-java:S6813"BRemove this field injection and use constructor injection instead.(êæÄŞ8¢§óñÑ2J$ee6f05f3-d910-4bb2-92a5-d128651f3d2a
+java:S6813"BRemove this field injection and use constructor injection instead.(êæÄŞ8ïæºÓ2J$bf59f905-9306-4aaf-8ca6-4e02db4c227a
 …
-java:S6813"BRemove this field injection and use constructor injection instead.(êæÄŞ8¢§óñÑ2J$d6cb8362-d5a5-4965-bdd5-14e0ad2a2b59
+java:S6813"BRemove this field injection and use constructor injection instead.(êæÄŞ8ïæºÓ2J$27bbdcce-558e-4984-8577-8b185fb51cb1
+…
+java:S6813""BRemove this field injection and use constructor injection instead.(êæÄŞ8ïæºÓ2J$c7f489ab-25e4-47f4-a8f5-ba6c30de908f
 n
-java:S1144("+Remove this unused private "setTTL" method.(‹‡İ¶8¤§óñÑ2J$68b3b8c0-7502-41f0-9542-5ff06d3dbebf
-r	java:S106L"+Replace this use of System.out by a logger.(…µóÁûÿÿÿÿ8²§óñÑ2J$fc1f04a5-b05d-4e78-873c-7e7a95ce954e
+java:S1144-"+Remove this unused private "setTTL" method.(‹‡İ¶8òæºÓ2J$8691103b-9524-4234-b178-13e77c9dbc5c
+½
+java:S62049"zReplace this usage of 'Stream.collect(Collectors.toList())' with 'Stream.toList()' and ensure that the list is unmodified.(ª™¨¹8ûæºÓ2J$be68f202-d5bf-4a18-bcc5-5ded2f6628fe
 €
-java:S1128"8Remove this unused import 'java.util.stream.Collectors'.(Óóº´úÿÿÿÿ8¶§óñÑ2J$6c962270-78b3-47a4-bff5-f834b3e6ed76
+java:S16128"=Replace this lambda with method reference 'Room.class::cast'.(˜ò›ˆ8…ë†ºÓ2J$41359eeb-ce54-41dd-b779-2fb8c85324e3
+j
+java:S19058"'Remove this unnecessary cast to "Room".(˜ò›ˆ8†ë†ºÓ2J$84feb6db-9fd0-441b-ac05-54d1538803ee
+½
+java:S6204<"zReplace this usage of 'Stream.collect(Collectors.toList())' with 'Stream.toList()' and ensure that the list is unmodified.(ª™¨¹8†ë†ºÓ2J$40c1ef3a-75d0-4433-9023-a203a0a35c8a
+½
+java:S6204D"zReplace this usage of 'Stream.collect(Collectors.toList())' with 'Stream.toList()' and ensure that the list is unmodified.(ª™¨¹8‡ë†ºÓ2J$4dc94024-514d-4566-a9e4-849bbfecd5f0
+d	java:S131M""Add a default case to this switch.(Áİ†§8şæºÓ2J$2cce213f-172d-4d15-84fa-544a57af989b
+r	java:S106h"+Replace this use of System.out by a logger.(…µóÁûÿÿÿÿ8…Ó“ºÓ2J$a1734977-05bd-4747-ab9d-a15af36a7d80
+Œ
+java:S1128"DRemove this unused import 'org.hotfilm.identityservice.Model.Movie'.(Ó‰˜Îøÿÿÿÿ8çºÓ2J$c5d487d1-7bca-4838-967f-0b4430d0eb2f
+‹
+java:S1128"CRemove this unused import 'org.hotfilm.identityservice.Model.Seat'.(Ñ¤Ùéıÿÿÿÿ8’çºÓ2J$4fbb779f-4472-4d5f-8387-a491f50544c6

@@ -1,11 +1,18 @@
 package org.hotfilm.identityservice.ModelDTO.Request;
 
+
+import lombok.*;
 import org.hotfilm.identityservice.Model.Seat.SeatStatus;
-import org.hotfilm.identityservice.Model.Seat.SeatType;
+import java.time.LocalDateTime;
+@Getter
+@Setter
+@AllArgsConstructor
+@RequiredArgsConstructor
+@Builder
 
 public class SeatRequest {
+    private String seatId;
     private String seatNumber;
-    private SeatType seatType;
     private SeatStatus seatStatus;
-    private String theaterId;
+    private LocalDateTime time_selected;
 }

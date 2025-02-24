@@ -1,19 +1,21 @@
 package org.hotfilm.identityservice.ServiceImp;
 
 import org.hotfilm.identityservice.Mapper.RoomMapper;
+import org.hotfilm.identityservice.Model.Movie;
 import org.hotfilm.identityservice.Model.Room;
+import org.hotfilm.identityservice.Model.Seat;
 import org.hotfilm.identityservice.ModelDTO.Request.RoomRequest;
 import org.hotfilm.identityservice.ModelDTO.Response.RoomResponse;
 import org.hotfilm.identityservice.Repository.RoomRepository;
 import org.hotfilm.identityservice.Service.RoomService;
+import org.hotfilm.identityservice.Service.SeatService;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.data.redis.core.HashOperations;
 import org.springframework.data.redis.core.RedisTemplate;
 import org.springframework.stereotype.Service;
+import org.springframework.transaction.annotation.Transactional;
 
-import java.util.ArrayList;
-import java.util.List;
-import java.util.Map;
+import java.util.*;
 import java.util.concurrent.TimeUnit;
 import java.util.stream.Collectors;
 
@@ -25,6 +27,9 @@ public class RoomServiceImp implements RoomService {
 
     @Autowired
     private RoomMapper roomMapper;
+
+    @Autowired
+    private SeatService seatService;
 
     @Autowired
     private RedisTemplate<String, Object> redisTemplate;
@@ -42,27 +47,50 @@ public class RoomServiceImp implements RoomService {
     }
 
     @Override
-    public List<Room> findAll() {
+    @Transactional
+    public List<RoomResponse> findAll() {
         if (redisTemplate.hasKey(HASH_ROOM)) {
             Map<String, Room> roomMap = hashOperations.entries(HASH_ROOM);
-            List<Room> rooms = new ArrayList<>(roomMap.values());
-            return rooms;
+            List<Room> rooms = roomMap.values()
+                    .stream()
+                    .map(value -> (Room) value)
+                    .collect(Collectors.toList());
+            return rooms.stream()
+                    .map(roomMapper::toRoomResponse)
+                    .collect(Collectors.toList());
         } else {
             List<Room> rooms = roomRepository.findAll();
             for (Room room : rooms) {
                 hashOperations.put(HASH_ROOM, room.getRoomId(), room);
             }
-            return rooms;
+            return rooms.stream()
+                    .map(roomMapper::toRoomResponse)
+                    .collect(Collectors.toList());
         }
     }
 
     @Override
-    public Room save(Room room) {
+    public RoomResponse save(Room room) {
         if (roomRepository.existsByRoomName(room.getRoomName())) {
             throw new RuntimeException("Room name has been exists");
         }
+        switch (room.getRoomType().toString()){
+            case "STANDARD":
+                room.setSeat(seatService.createSeat(8, 8));
+                room.setTotalSeat(64);
+                break;
+            case "IMAX":
+                room.setSeat(seatService.createSeat(10, 10));
+                room.setTotalSeat(100);
+                break;
+            case "COUPLE":
+                room.setSeat(seatService.createSeat(6,7));
+                room.setTotalSeat(42);
+                break;
+        }
+        roomRepository.save(room);
         hashOperations.put(HASH_ROOM, room.getRoomId(), room);
-        return roomRepository.save(room);
+        return roomMapper.toRoomResponse(room);
     }
 
     @Override

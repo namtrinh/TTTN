@@ -1,12 +1,19 @@
 package org.hotfilm.identityservice.ModelDTO.Response;
 
+import lombok.*;
 import org.hotfilm.identityservice.Model.Seat.SeatStatus;
-import org.hotfilm.identityservice.Model.Seat.SeatType;
 
-public class SeatResponse {
+import java.io.Serializable;
+
+@Getter
+@Setter
+@AllArgsConstructor
+@RequiredArgsConstructor
+@Builder
+
+public class SeatResponse implements Serializable {
     private String seatId;
     private String seatNumber;
-    private SeatType seatType;
     private SeatStatus seatStatus;
     private String theaterId;
 }

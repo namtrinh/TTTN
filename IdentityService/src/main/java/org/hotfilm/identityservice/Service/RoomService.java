@@ -7,9 +7,9 @@ import org.hotfilm.identityservice.ModelDTO.Response.RoomResponse;
 import java.util.List;
 
 public interface RoomService {
-    List<Room> findAll();
+    List<RoomResponse> findAll();
 
-    Room save(Room room);
+    RoomResponse save(Room room);
 
     RoomResponse findById(String roomId);
 

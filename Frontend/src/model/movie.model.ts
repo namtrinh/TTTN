@@ -1,4 +1,5 @@
-import {ShowTime} from './showtime.model';
+import {Showtime} from './showtime.model';
+
 
 export class Movie {
   movieId!: string;
@@ -15,7 +16,7 @@ export class Movie {
   productionCompany?: string;
   trailerUrl?: string;
   movieStatus!: MovieStatus;
-  showtime!: Partial<ShowTime>
+  showtime!: Partial<Showtime>
 }
 
 // Enum cho trạng thái phim

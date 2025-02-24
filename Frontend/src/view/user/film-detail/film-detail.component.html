@@ -10,25 +10,24 @@
     <div class="movie-info mt-2">
       <img src="{{movie.posterUrl}}" alt="{{movie.movieName}}" class="poster">
       <div class="details">
-        <h2>{{movie.movieName}}</h2>
-        <p class="rating">⭐ {{movie.rating}}/10</p>
+        <h1>{{ movie.movieName }}</h1>
+        <p class="rating">⭐ {{ movie.rating }}/10</p>
         <a href="bookingticket.html">
           <button class="watch-btn">ĐẶT VÉ</button>
         </a>
         <ul>
           <li>Thời gian: 1 giờ 41 phút</li>
-          <li>Đạo diễn: {{movie.director}}</li>
-          <li>Quốc gia: {{movie.country}}</li>
-          <li>Khởi chiếu: {{movie.releaseDate | date : 'dd/MM/yyyy'}}</li>
+          <li>Đạo diễn: {{ movie.director }}</li>
+          <li>Quốc gia: {{ movie.country }}</li>
+          <li>Khởi chiếu: {{ movie.releaseDate | date : 'dd/MM/yyyy' }}</li>
         </ul>
         <p class="description">
-          {{movie.movieName}}: {{movie.movieDescription}}...
+          {{ movie.movieName }}: {{ movie.movieDescription }}...
         </p>
       </div>
     </div>
 
   </div>
-
   <app-seat></app-seat>
 </section>
 

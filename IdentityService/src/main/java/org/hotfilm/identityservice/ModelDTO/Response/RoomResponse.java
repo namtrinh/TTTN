@@ -18,4 +18,5 @@ public class RoomResponse implements Serializable {
     private int totalSeat;
     private double roomPrice;
     private RoomType roomType;
+    private Set<SeatResponse> seat;
 }

@@ -27,8 +27,8 @@ public class RoomController {
     private RoomRepository roomRepository;
 
     @GetMapping
-    public ApiResponse<List<Room>> getAllRooms() {
-        return ApiResponse.<List<Room>>builder()
+    public ApiResponse<List<RoomResponse>> getAllRooms() {
+        return ApiResponse.<List<RoomResponse>>builder()
                 .status(HttpStatus.OK)
                 .result( roomService.findAll())
                 .build();
@@ -43,8 +43,8 @@ public class RoomController {
     }
 
     @PostMapping
-    public ApiResponse<Room> createRoom(@RequestBody Room room) {
-        return ApiResponse.<Room>builder()
+    public ApiResponse<RoomResponse> createRoom(@RequestBody Room room) {
+        return ApiResponse.<RoomResponse>builder()
                 .status(HttpStatus.OK)
                 .result(roomService.save(room))
                 .build();
