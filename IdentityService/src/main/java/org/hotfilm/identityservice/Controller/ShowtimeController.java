@@ -5,6 +5,7 @@ import org.hotfilm.identityservice.Model.Showtime;
 import org.hotfilm.identityservice.ModelDTO.Request.ShowtimeRequest;
 import org.hotfilm.identityservice.ModelDTO.Response.ApiResponse;
 import org.hotfilm.identityservice.ModelDTO.Response.ShowtimeResponse;
+import org.hotfilm.identityservice.ModelDTO.Response.ShowtimeResponseById;
 import org.hotfilm.identityservice.Service.ShowtimeService;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.http.HttpStatus;
@@ -33,30 +34,33 @@ public class ShowtimeController {
     }
 
     @GetMapping("/{showtimeId}")
-    public ResponseEntity<ShowtimeResponse> getShowtimeById(@PathVariable String showtimeId) {
-        Showtime showtime = showtimeService.findById(showtimeId);
-        return ResponseEntity.ok(showtimeMapper.toShowtimeResponse(showtime));
+    public ApiResponse<ShowtimeResponseById> getShowtimeById(@PathVariable String showtimeId) {
+        return ApiResponse.<ShowtimeResponseById>builder()
+                .status(HttpStatus.OK)
+                .result(showtimeService.findById(showtimeId))
+                .build();
     }
 
     @PostMapping
-    public ResponseEntity<ShowtimeResponse> createShowtime(@RequestBody ShowtimeRequest showtimeRequest) {
-        Showtime showtime = showtimeMapper.toShowtime(showtimeRequest);
-        Showtime savedShowtime = showtimeService.save(showtime);
-        return ResponseEntity.ok(showtimeMapper.toShowtimeResponse(savedShowtime));
+    public ApiResponse<ShowtimeResponse> createShowtime(@RequestBody ShowtimeRequest showtimeRequest) {
+        return ApiResponse.<ShowtimeResponse>builder()
+                .status(HttpStatus.OK)
+                .result(showtimeService.createShowtime(showtimeRequest))
+                .build();
     }
 
     @PutMapping("/{showtimeId}")
-    public ResponseEntity<ShowtimeResponse> updateShowtime(
+    public ApiResponse<ShowtimeResponse> updateShowtime(
             @PathVariable String showtimeId,
             @RequestBody ShowtimeRequest showtimeRequest) {
-        Showtime showtime = showtimeMapper.toShowtime(showtimeRequest);
-        Showtime updatedShowtime = showtimeService.updateById(showtimeId, showtime);
-        return ResponseEntity.ok(showtimeMapper.toShowtimeResponse(updatedShowtime));
+        return ApiResponse.<ShowtimeResponse>builder()
+                .status(HttpStatus.OK)
+                .result(showtimeService.updateById(showtimeId, showtimeRequest))
+                .build();
     }
 
     @DeleteMapping("/{showtimeId}")
-    public ResponseEntity<Void> deleteShowtime(@PathVariable String showtimeId) {
+    public void deleteShowtime(@PathVariable String showtimeId) {
         showtimeService.deleteById(showtimeId);
-        return ResponseEntity.noContent().build();
     }
 }

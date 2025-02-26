@@ -43,12 +43,6 @@ public class Movie implements Serializable {
 
     private MovieStatus movieStatus;
 
-    @OneToMany(fetch = FetchType.EAGER)
-    @JsonIgnore
-    private Set<Showtime> showtime;
-
-
-
     public enum MovieStatus{
         SHOWING, FINISH
     }
@@ -70,7 +64,6 @@ public class Movie implements Serializable {
                 ", productionCompany='" + productionCompany + '\'' +
                 ", trailerUrl='" + trailerUrl + '\'' +
                 ", movieStatus=" + movieStatus +
-                ", showtime=" + showtime +
                 '}';
     }
 }

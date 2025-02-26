@@ -1,6 +1,10 @@
 
-›	java:S120"ZRename this package name to match the regular expression '^[a-z_]+(\.[a-z_][a-z0-9_]*)*$'.(’•ñ"8®º¡îÑ2J$191e4e1b-4885-4f15-8918-0f002016dac7
-•
-java:S1128"RRemove this unused import 'com.fasterxml.jackson.annotation.JsonIgnoreProperties'.(ô’ˆî8¾º¡îÑ2J$a48a8668-3b0a-4c3e-af23-9f1247516b8c
-s
-java:S1128"+Remove this unused import 'java.io.Serial'.(Ö£€şÿÿÿÿ8¾º¡îÑ2J$69ce0b4a-56e5-4b4f-ac5d-df89d3e425d1
+›	java:S120"ZRename this package name to match the regular expression '^[a-z_]+(\.[a-z_][a-z0-9_]*)*$'.(’•ñ"8®º¡îÑ2J$f3726eb5-e0e4-4e89-b85b-2ef28fa39079
+e
+java:S1128"HRemove this unused import 'com.fasterxml.jackson.annotation.JsonIgnore'.(ş‘‹„8çÜØßÓ2
+o
+java:S1128"RRemove this unused import 'com.fasterxml.jackson.annotation.JsonIgnoreProperties'.(ô’ˆî8èÜØßÓ2
+M
+java:S1128"+Remove this unused import 'java.io.Serial'.(Ö£€şÿÿÿÿ8èÜØßÓ2
+L
+java:S1128"*Remove this unused import 'java.util.Set'.(ö²„¤şÿÿÿÿ8íÜØßÓ2

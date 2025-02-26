@@ -16,11 +16,17 @@
     @for (showtime of showtimes; track $index) {
       <div class="timeline">
         <div class="timeline-item">
-          <div class="time">{{ showtime.time_start }}</div>
+          <div class="time">{{ showtime.time_start }} - {{ showtime.time_end }}</div>
           <div class="event">
             <h3>Avatar 2</h3>
             <p>Phòng 1 - Đang mở bán</p>
           </div>
+          <button class="btn btn-light" (click)="deleteShowtime(showtime.showtimeId)"><i class="fa-solid fa-minus"
+                                                                                         style="color: red"></i>
+          </button>
+
+          <button class="btn btn-light" (click)="getById(showtime.showtimeId)" data-bs-toggle="modal" data-bs-target="#updateShowtime"><i
+            class="fa-duotone fa-solid fa-pen-to-square" style="color: #0071eb"></i></button>
         </div>
       </div>
     }
@@ -33,11 +39,11 @@
   <div class="modal-dialog modal-dialog-centered modal-lg">
     <div class="modal-content">
       <div class="modal-header bg-secondary text-light">
-        <h5 class="modal-title fw-bolder" id="exampleModalLabel">Create new room</h5>
+        <h5 class="modal-title fw-bolder" id="exampleModalLabel">Create showtime</h5>
         <button type="button" class="btn-close btn-close-white" data-bs-dismiss="modal" aria-label="Close"></button>
       </div>
       <div class="modal-body bg-dark text-white">
-        <form #formCreate="ngForm" class="container my-4">
+        <form #formCreate="ngForm" (ngSubmit)="createShowtime(showtime)" class="container my-4">
 
           <div class="row mb-3">
             <div class="col-md-6">
@@ -55,7 +61,7 @@
           </div>
           <div class="modal-footer">
             <button type="submit" class="btn btn-success w-100" [disabled]="formCreate.invalid" data-bs-dismiss="modal">
-              Create Film
+              Save
             </button>
           </div>
         </form>
@@ -63,4 +69,40 @@
     </div>
   </div>
 </div>
+
+  <div class="modal fade" id="updateShowtime" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+    <div class="modal-dialog modal-dialog-centered modal-lg">
+      <div class="modal-content">
+        <div class="modal-header bg-secondary text-light">
+          <h5 class="modal-title fw-bolder">Update showtime</h5>
+          <button type="button" class="btn-close btn-close-white" data-bs-dismiss="modal" aria-label="Close"></button>
+        </div>
+        <div class="modal-body bg-dark text-white">
+          <form #formCreate="ngForm" (ngSubmit)="updateShowtime(showtime.showtimeId, showtime)" class="container my-4">
+
+            <div class="row mb-3">
+              <div class="col-md-6">
+                <label for="time_start1" class="form-label">Time Start</label>
+                <input id="time_start1" name="time_start" [(ngModel)]="showtime.time_start" type="datetime-local"
+                       class="form-control"
+                       required/>
+              </div>
+              <div class="col-md-6">
+                <label for="time_end1" class="form-label">Time End</label>
+                <input id="time_end1" name="time_end" [(ngModel)]="showtime.time_end" type="datetime-local"
+                       class="form-control"
+                       required/>
+              </div>
+            </div>
+            <div class="modal-footer">
+              <button type="submit" class="btn btn-success w-100" [disabled]="formCreate.invalid"
+                      data-bs-dismiss="modal">
+                Save
+              </button>
+            </div>
+          </form>
+        </div>
+      </div>
+    </div>
+  </div>
 

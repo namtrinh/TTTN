@@ -1,10 +1,13 @@
 
-˜	java:S117"QRename this local variable to match the regular expression '^[a-z][a-zA-Z0-9]*$'.(æ‚ý¨øÿÿÿÿ8áÍúÀÓ2J$0b4b013b-adb4-47e5-a52d-cf1c4d99905a
-•	java:S120"ZRename this package name to match the regular expression '^[a-z_]+(\.[a-z_][a-z0-9_]*)*$'.(æñòÕJ$31462d5d-220c-48f5-bfe9-a49f0ca989dc
-—	java:S116"URename this field "time_start" to match the regular expression '^[a-z][a-zA-Z0-9]*$'.(ºÁý™8¶—ù½Ó2J$32813bae-c777-4b8b-856e-e96bdfddb2a9
-š	java:S116"SRename this field "time_end" to match the regular expression '^[a-z][a-zA-Z0-9]*$'.(œÐÕ†úÿÿÿÿ8¶—ù½Ó2J$3d22e407-d40d-43e9-9aef-a6c2b18e0547
-ƒ	java:S125"<This block of commented-out lines of code should be removed.(êÞ´Ìøÿÿÿÿ8ó»ØÀÓ2J$60fe0708-5faf-4a9e-874b-91c534ebe56e
-‹
-java:S1128"CRemove this unused import 'org.hotfilm.identityservice.Model.Room'.(¸ÇÛðýÿÿÿÿ8©ê‡ÁÓ2J$4aad1ce3-efc3-463e-b1ba-b13c7d1648dc
-s
-java:S1128"+Remove this unused import 'java.io.Serial'.(Ö£€þÿÿÿÿ8©ê‡ÁÓ2J$ae106acc-d5ad-4f1e-a789-5d423ed96a12
+’	java:S117"QRename this local variable to match the regular expression '^[a-z][a-zA-Z0-9]*$'.(ðÏµg8áÍúÀÓ2J$5a34a4e5-3256-4467-8e2c-1da79430ba94
+’	java:S117"QRename this local variable to match the regular expression '^[a-z][a-zA-Z0-9]*$'.(ðÏµg8€ÁšâÓ2J$217c9cfb-4d30-4ad8-b9e8-822b9c9e1e13
+•	java:S120"ZRename this package name to match the regular expression '^[a-z_]+(\.[a-z_][a-z0-9_]*)*$'.(æñòÕJ$f5810ac5-41d3-44e1-babe-541cfbe7efd3
+—	java:S116"URename this field "time_start" to match the regular expression '^[a-z][a-zA-Z0-9]*$'.(ºÁý™8¶—ù½Ó2J$022f947d-2b45-4ee3-8f93-6fb2a6945e42
+•	java:S116"SRename this field "time_end" to match the regular expression '^[a-z][a-zA-Z0-9]*$'.(èÑÐ8¶—ù½Ó2J$e0eda6d7-0198-4552-b880-593c11bc9c22
+ƒ	java:S125"<This block of commented-out lines of code should be removed.(êÞ´Ìøÿÿÿÿ8ó»ØÀÓ2J$5dba9820-8ec6-44dd-8a30-914a2504d8e6
+e
+java:S1128"CRemove this unused import 'org.hotfilm.identityservice.Model.Room'.(¸ÇÛðýÿÿÿÿ8Ã—›çÓ2
+M
+java:S1128"+Remove this unused import 'java.io.Serial'.(Ö£€þÿÿÿÿ8Ã—›çÓ2
+V
+java:S1128"4Remove this unused import 'java.time.LocalDateTime'.(æÃ§ƒüÿÿÿÿ8Ã—›çÓ2

@@ -1,0 +1,5 @@
+
+Otypescript:S1128",Remove this unused import of 'CurrencyPipe'.(ÈÔÄÑ8Õ‹áÓ2
+×typescript:S1874"³'(next?: ((value: Room[]) => void) | null | undefined, error?: ((error: any) => void) | null | undefined, complete?: (() => void) | null | undefined): Subscription' is deprecated.(é–Æ£8×‹áÓ2
+Õtypescript:S1874&"±'(next?: ((value: Room) => void) | null | undefined, error?: ((error: any) => void) | null | undefined, complete?: (() => void) | null | undefined): Subscription' is deprecated.(ÃÄº©8×‹áÓ2
+Btypescript:S1199."Nested block is redundant.(ÒÌâ–øÿÿÿÿ8×‹áÓ2

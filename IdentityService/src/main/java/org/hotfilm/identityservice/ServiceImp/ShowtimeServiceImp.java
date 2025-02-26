@@ -2,16 +2,17 @@ package org.hotfilm.identityservice.ServiceImp;
 
 import org.hotfilm.identityservice.Mapper.ShowtimeMapper;
 import org.hotfilm.identityservice.Model.Showtime;
+import org.hotfilm.identityservice.ModelDTO.Request.ShowtimeRequest;
 import org.hotfilm.identityservice.ModelDTO.Response.ShowtimeResponse;
+import org.hotfilm.identityservice.ModelDTO.Response.ShowtimeResponseById;
 import org.hotfilm.identityservice.Repository.ShowtimeRepository;
 import org.hotfilm.identityservice.Service.ShowtimeService;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
 
-
 import java.sql.Date;
+import java.time.format.DateTimeFormatter;
 import java.util.List;
-import java.util.stream.Collectors;
 
 @Service
 public class ShowtimeServiceImp implements ShowtimeService {
@@ -27,15 +28,25 @@ public class ShowtimeServiceImp implements ShowtimeService {
         return showtimeRepository.findAllByTime(dateTime);
     }
 
-    @Override
-    public Showtime save(Showtime showtime) {
-        return showtimeRepository.save(showtime);
+    public ShowtimeResponse createShowtime(ShowtimeRequest showtimeRequest) {
+        Showtime showtime = showtimeMapper.toShowtime(showtimeRequest);
+        if (!showtimeRepository.existsShowtime(showtime.getTime_start(), showtime.getTime_end()).isEmpty()) {
+            throw new RuntimeException("Showtime already exists");
+        }
+        showtimeRepository.save(showtime);
+        ShowtimeResponse showtimeResponse = showtimeMapper.toShowtimeResponse(showtime);
+        DateTimeFormatter dateTimeFormatter = DateTimeFormatter.ofPattern("HH:mm a");
+        showtimeResponse.setTime_start(dateTimeFormatter.format(showtime.getTime_start()));
+        showtimeResponse.setTime_end(dateTimeFormatter.format(showtime.getTime_end()));
+        return showtimeResponse;
     }
 
+
     @Override
-    public Showtime findById(String showtimeId) {
-        return showtimeRepository.findById(showtimeId)
+    public ShowtimeResponseById findById(String showtimeId) {
+        Showtime showtime = showtimeRepository.findById(showtimeId)
                 .orElseThrow(() -> new RuntimeException("Showtime with ID " + showtimeId + " not found"));
+        return showtimeMapper.toShowtimeResponseById(showtime);
     }
 
     @Override
@@ -53,8 +64,24 @@ public class ShowtimeServiceImp implements ShowtimeService {
     }
 
     @Override
-    public Showtime updateById(String showtimeId, Showtime showtime) {
-        showtime.setShowtimeId(showtimeId);
-        return showtimeRepository.save(showtime);
+    public ShowtimeResponse updateById(String showtimeId, ShowtimeRequest showtimeRequest) {
+        if (showtimeRepository.existsById(showtimeId)) {
+            deleteById(showtimeId);
+        }
+        ShowtimeResponse showtimeResponse = createShowtime(showtimeRequest);
+        return showtimeResponse;
     }
 }
+
+        /*  if(!showtimeRepository.existsShowtime(showtimeRequest.getTime_start(), showtimeRequest.getTime_end()).isEmpty()){
+            throw new RuntimeException("Showtime already exists");
+        }
+        Showtime showtime = showtimeMapper.toShowtime(showtimeRequest);
+        showtime.setShowtimeId(showtimeId);
+        showtimeRepository.save(showtime);
+        ShowtimeResponse showtimeResponse = showtimeMapper.toShowtimeResponse(showtime);
+        DateTimeFormatter dateTimeFormatter = DateTimeFormatter.ofPattern("HH-mm a");
+        showtimeResponse.setTime_start(dateTimeFormatter.format(showtime.getTime_start()));
+        showtimeResponse.setTime_end(dateTimeFormatter.format(showtime.getTime_end()));
+        return showtimeResponse;
+       */

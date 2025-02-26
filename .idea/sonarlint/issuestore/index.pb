@@ -297,3 +297,5 @@ w
 GFrontend/src/view/manager/showtime-manage/showtime-manage.component.css,f\9\f9882e1a5230d0e51c909dee9386aaf16560e0d5
 v
 FFrontend/src/view/manager/showtime-manage/showtime-manage.component.ts,a\b\ab53552a101fe12ac2ae3a51d1af6d2f28922c11
+•
+eIdentityService/src/main/java/org/hotfilm/identityservice/ModelDTO/Response/ShowtimeResponseById.java,d\0\d0feaaa9b41a1d533427d55a4e9ce78c7acf3a60

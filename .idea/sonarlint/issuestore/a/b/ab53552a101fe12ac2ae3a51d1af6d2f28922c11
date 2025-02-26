@@ -1,0 +1,7 @@
+
+Ftypescript:S1186"#Unexpected empty method 'ngOnInit'.(Åˆ³Â8Ğ…¥ƒÔ2
+Ûtypescript:S1874"·'(next?: ((value: Showtime[]) => void) | null | undefined, error?: ((error: any) => void) | null | undefined, complete?: (() => void) | null | undefined): Subscription' is deprecated.(öÛÿÿ8Ñ…¥ƒÔ2
+^typescript:S6551%";'data' will evaluate to '[object Object]' when stringified.(ŞÌ¢ë8Ñ…¥ƒÔ2
+Ştypescript:S1874&"µ'(next?: ((value: Showtime) => void) | null | undefined, error?: ((error: any) => void) | null | undefined, complete?: (() => void) | null | undefined): Subscription' is deprecated.(áà´¥şÿÿÿÿ8Ñ…¥ƒÔ2
+^typescript:S6551<";'data' will evaluate to '[object Object]' when stringified.(Ù›¸8Ñ…¥ƒÔ2
+Ôtypescript:S1874="°'(next?: ((value: any) => void) | null | undefined, error?: ((error: any) => void) | null | undefined, complete?: (() => void) | null | undefined): Subscription' is deprecated.(äš„Â8Ñ…¥ƒÔ2

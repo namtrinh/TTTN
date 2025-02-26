@@ -19,7 +19,8 @@ export class ShowtimeManageComponent implements OnInit {
 
   ngOnInit(): void {
   }
-dateTime!:string;
+
+  dateTime!: string;
   showtime: Showtime = new Showtime();
   showtimes: Showtime[] = []
 
@@ -27,6 +28,44 @@ dateTime!:string;
     this.showtimeService.getAll(this.dateTime).subscribe((data: any) => {
       this.showtimes = data.result;
       console.log(this.showtimes)
+    }, error => {
+      console.log(error.error.message)
+    })
+  }
+
+  createShowtime(data: Showtime) {
+    console.log("dâta cre" + data)
+    this.showtimeService.createShowtime(data).subscribe((data: any) => {
+      this.showtimes.push(data.result)
+    }, error => {
+      alert(error.error.message !)
+    })
+  }
+
+  deleteShowtime(id: string) {
+    if (window.confirm("Are you sure you want to delete this showtime")) {
+      this.showtimeService.deleteById(id).subscribe(data => {
+      this.getAll();
+      })
+    }
+  }
+
+  getById(id:string){
+    this.showtimeService.getById(id).subscribe((data:any) => {
+      this.showtime = data.result;
+    })
+  }
+
+  updateShowtime(id:string, data:Showtime){
+    console.log("data update"+data)
+    this.showtimeService.updateById(id, data).subscribe((data:any) =>{
+      const index = this.showtimes.findIndex(showtime => showtime.showtimeId === id)
+      if(index !== -1){
+        this.showtimes[index] = data.result
+         console.log(data.result)
+      }
+    }, error => {
+      alert(error.error.message)
     })
   }
 }

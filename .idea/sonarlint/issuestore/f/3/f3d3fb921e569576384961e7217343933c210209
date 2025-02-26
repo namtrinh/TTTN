@@ -1,7 +1,11 @@
 
-›	java:S120"ZRename this package name to match the regular expression '^[a-z_]+(\.[a-z_][a-z0-9_]*)*$'.(¤ÙÁ8Ê¡ƒÀÓ2J$0b4d9af9-a2a5-4e30-8ac9-cc02f1455a1a
-	java:S1123"FDefine and throw a dedicated exception instead of using a generic one.(Ñó²ûıÿÿÿÿ8Ë¡ƒÀÓ2J$060040e1-e416-47a7-9674-fba20340878a
+›	java:S120"ZRename this package name to match the regular expression '^[a-z_]+(\.[a-z_][a-z0-9_]*)*$'.(¤ÙÁ8¹Ô¤çÓ2J$7cb57f54-7112-42ff-8e1f-49cab116c97c
 …
-java:S6813"BRemove this field injection and use constructor injection instead.(êæÄŞ8Ì¡ƒÀÓ2J$4bcaa79b-38cb-4ca2-831c-25bf2b6db382
+java:S1488G"hImmediately return this expression instead of assigning it to the temporary variable "showtimeResponse".(ÎîèÍ8ÃÙçÓ2
+ˆ	java:S112""FDefine and throw a dedicated exception instead of using a generic one.(èºı©8ºÔ¤çÓ2J$45184781-fbd6-48a9-ba98-06366f1b73b5
+	java:S112>"FDefine and throw a dedicated exception instead of using a generic one.(Ñó²ûıÿÿÿÿ8ºÔ¤çÓ2J$9b324114-1beb-4098-8a00-a3efdbb3d8b2
 …
-java:S6813"BRemove this field injection and use constructor injection instead.(êæÄŞ8Ì¡ƒÀÓ2J$d9cc7eb0-9d59-427b-9907-26385f84a1ca
+java:S6813"BRemove this field injection and use constructor injection instead.(êæÄŞ8¾Ô¤çÓ2J$c9a570e0-df4d-4a78-a97e-b4bcc21606f6
+…
+java:S6813"BRemove this field injection and use constructor injection instead.(êæÄŞ8¾Ô¤çÓ2J$e13cde59-96d3-4295-988f-9d2193ace5e4
+ƒ	java:S125L"<This block of commented-out lines of code should be removed.(êê¾şıÿÿÿÿ8ÉÔ¤çÓ2J$40ede099-5f8b-4b3e-a95d-c0fcbf3e0f23

@@ -3,13 +3,14 @@ body {
   font-family: Arial, sans-serif;
   background-color: #f4f4f9;
   color: #333;
+  min-height: 95vh;
 }
 
 .container {
   width: 70%;
-  max-width: 1200px;
   margin: 0 auto;
   padding: 30px;
+
 }
 
 header {
@@ -79,27 +80,27 @@ header .btn:hover {
 
 .timeline-item .time {
   position: absolute;
-  left: -35px;
+  left: -105px;
   top: 10px;
   background-color: #fff;
   color: #4CAF50;
   font-weight: bold;
-  padding: 5px;
+  padding: 20px;
   border: 2px solid #4CAF50;
   border-radius: 50%;
-  font-size: 14px;
+  font-size: 18px;
 }
 
 .timeline-item .event h3 {
   font-size: 18px;
   font-weight: bold;
-  padding-left:50px;
+  padding-left:100px;
 }
 
 .timeline-item .event p {
   font-size: 14px;
   color: #777;
-  padding-left:50px;
+  padding-left:110px;
 }
 
 @media (max-width: 768px) {
