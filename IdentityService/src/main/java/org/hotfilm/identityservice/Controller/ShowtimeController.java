@@ -1,6 +1,7 @@
 package org.hotfilm.identityservice.Controller;
 
 import org.hotfilm.identityservice.Mapper.ShowtimeMapper;
+import org.hotfilm.identityservice.Model.Movie;
 import org.hotfilm.identityservice.Model.Showtime;
 import org.hotfilm.identityservice.ModelDTO.Request.ShowtimeRequest;
 import org.hotfilm.identityservice.ModelDTO.Response.ApiResponse;
@@ -56,6 +57,14 @@ public class ShowtimeController {
         return ApiResponse.<ShowtimeResponse>builder()
                 .status(HttpStatus.OK)
                 .result(showtimeService.updateById(showtimeId, showtimeRequest))
+                .build();
+    }
+
+    @PutMapping(value = "/set/{showtimeId}")
+    public ApiResponse<ShowtimeResponse> setMovieToShowtime(@PathVariable String showtimeId, @RequestBody Movie movieId){
+        return ApiResponse.<ShowtimeResponse>builder()
+                .status(HttpStatus.OK)
+                .result(showtimeService.setMovieToShowtime(showtimeId, movieId))
                 .build();
     }
 

@@ -14,8 +14,8 @@ import java.util.List;
 @Repository
 public interface ShowtimeRepository extends JpaRepository<Showtime, String> {
 
-    @Query(value = "SELECT showtime_id, FORMAT(time_start, 'hh-mm tt'), FORMAT(time_end, 'hh-mm tt')\n" +
-            "FROM showtime\n" +
+    @Query(value = "SELECT showtime_id,movie_movie_id, movie_name, FORMAT(time_start, 'hh-mm tt'), FORMAT(time_end, 'hh-mm tt')\n" +
+            "FROM showtime LEFT JOIN movie ON movie.movie_id = showtime.movie_movie_id\n" +
             "WHERE FORMAT(time_start, 'yyyy-MM-dd') = :time ORDER BY time_start ASC", nativeQuery = true)
     List<ShowtimeResponse> findAllByTime(Date time);
 

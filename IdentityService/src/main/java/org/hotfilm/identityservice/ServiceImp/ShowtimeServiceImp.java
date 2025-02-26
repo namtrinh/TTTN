@@ -1,6 +1,7 @@
 package org.hotfilm.identityservice.ServiceImp;
 
 import org.hotfilm.identityservice.Mapper.ShowtimeMapper;
+import org.hotfilm.identityservice.Model.Movie;
 import org.hotfilm.identityservice.Model.Showtime;
 import org.hotfilm.identityservice.ModelDTO.Request.ShowtimeRequest;
 import org.hotfilm.identityservice.ModelDTO.Response.ShowtimeResponse;
@@ -13,6 +14,7 @@ import org.springframework.stereotype.Service;
 import java.sql.Date;
 import java.time.format.DateTimeFormatter;
 import java.util.List;
+import java.util.Optional;
 
 @Service
 public class ShowtimeServiceImp implements ShowtimeService {
@@ -70,6 +72,14 @@ public class ShowtimeServiceImp implements ShowtimeService {
         }
         ShowtimeResponse showtimeResponse = createShowtime(showtimeRequest);
         return showtimeResponse;
+    }
+
+    @Override
+    public ShowtimeResponse setMovieToShowtime(String showtimeId, Movie movieId){
+        Optional<Showtime> showtime = showtimeRepository.findById(showtimeId);
+        showtime.get().setShowtimeId(showtimeId);
+        showtime.get().setMovie(movieId);
+        return showtimeMapper.toShowtimeResponse(showtimeRepository.save(showtime.get()));
     }
 }
 

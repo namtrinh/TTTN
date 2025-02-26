@@ -35,7 +35,7 @@ public class Showtime implements Serializable {
     @JsonIgnore
     private Room room;
 
-    @OneToOne
+    @ManyToOne
     private Movie movie;
 
 }

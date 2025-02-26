@@ -1,10 +1,10 @@
 
-¡	java:S120"ZRename this package name to match the regular expression '^[a-z_]+(\.[a-z_][a-z0-9_]*)*$'.(Û´¬áÿÿÿÿÿ8İŒ§ãÓ2J$d530bf48-2dcf-4e2b-8d1c-27823a8800d7
+¡	java:S120"ZRename this package name to match the regular expression '^[a-z_]+(\.[a-z_][a-z0-9_]*)*$'.(Û´¬áÿÿÿÿÿ8ì×‹Ô2J$ccb07eb2-ab85-4c8f-81fe-d1cea1113159
 …
-java:S6813"BRemove this field injection and use constructor injection instead.(êæÄŞ8àŒ§ãÓ2J$8919b122-9ae7-4d8b-84b3-c1a3b2203a3c
+java:S6813"BRemove this field injection and use constructor injection instead.(êæÄŞ8ğ×‹Ô2J$2bd5e9c6-0d6a-4b82-8297-4d489e7148e2
 …
-java:S6813"BRemove this field injection and use constructor injection instead.(êæÄŞ8àŒ§ãÓ2J$38b2c6a6-f980-4e5d-81a3-be72123878ab
-d
-java:S1128"GRemove this unused import 'org.hotfilm.identityservice.Model.Showtime'.(Ùş™Ÿ8¯–›çÓ2
-f
-java:S1128"DRemove this unused import 'org.springframework.http.ResponseEntity'.(¶¯ø¦úÿÿÿÿ8¯–›çÓ2
+java:S6813"BRemove this field injection and use constructor injection instead.(êæÄŞ8ğ×‹Ô2J$207ef44e-54a1-4b04-83e8-42f05829ea35
+Š
+java:S1128"GRemove this unused import 'org.hotfilm.identityservice.Model.Showtime'.(Ùş™Ÿ8‘Œí‹Ô2J$b676a980-18cd-46ef-b33f-360db0bd9589
+Œ
+java:S1128"DRemove this unused import 'org.springframework.http.ResponseEntity'.(¶¯ø¦úÿÿÿÿ8‘Œí‹Ô2J$e9d5464e-f402-4dae-ac12-bdde0d4b11e3

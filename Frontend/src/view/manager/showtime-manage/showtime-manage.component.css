@@ -7,7 +7,7 @@ body {
 }
 
 .container {
-  width: 70%;
+  width: 60%;
   margin: 0 auto;
   padding: 30px;
 
@@ -121,4 +121,9 @@ header .btn:hover {
     flex-direction: column;
     gap: 10px;
   }
+}
+
+.form-select {
+  width:60%;
+  float: right;
 }

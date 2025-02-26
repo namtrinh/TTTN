@@ -1,5 +1,6 @@
 package org.hotfilm.identityservice.Service;
 
+import org.hotfilm.identityservice.Model.Movie;
 import org.hotfilm.identityservice.Model.Showtime;
 import org.hotfilm.identityservice.ModelDTO.Request.ShowtimeRequest;
 import org.hotfilm.identityservice.ModelDTO.Response.ShowtimeResponse;
@@ -20,4 +21,6 @@ public interface ShowtimeService {
     void deleteById(String showtimeId);
 
     ShowtimeResponse updateById(String showtimeId, ShowtimeRequest showtimeRequest);
+
+    ShowtimeResponse setMovieToShowtime(String showtimeId, Movie movieId);
 }

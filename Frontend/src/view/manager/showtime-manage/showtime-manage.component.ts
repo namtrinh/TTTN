@@ -2,6 +2,8 @@ import {Component, OnInit} from '@angular/core';
 import {FormsModule, ReactiveFormsModule} from '@angular/forms';
 import {Showtime} from '../../../model/showtime.model';
 import {ShowtimeService} from '../../../service/showtime.service';
+import {MovieService} from '../../../service/movie.service';
+import {Movie} from '../../../model/movie.model';
 
 @Component({
   selector: 'app-showtime-manage',
@@ -14,7 +16,8 @@ import {ShowtimeService} from '../../../service/showtime.service';
   styleUrl: './showtime-manage.component.css'
 })
 export class ShowtimeManageComponent implements OnInit {
-  constructor(private showtimeService: ShowtimeService) {
+  constructor(private showtimeService: ShowtimeService,
+              private movieService:MovieService) {
   }
 
   ngOnInit(): void {
@@ -22,12 +25,15 @@ export class ShowtimeManageComponent implements OnInit {
 
   dateTime!: string;
   showtime: Showtime = new Showtime();
-  showtimes: Showtime[] = []
+  showtimes: Showtime[] = [];
+  movies:Movie[] =[]
+  selectedMovie !: Movie;
 
   getAll() {
     this.showtimeService.getAll(this.dateTime).subscribe((data: any) => {
       this.showtimes = data.result;
       console.log(this.showtimes)
+      this.getMovie();
     }, error => {
       console.log(error.error.message)
     })
@@ -66,6 +72,24 @@ export class ShowtimeManageComponent implements OnInit {
       }
     }, error => {
       alert(error.error.message)
+    })
+  }
+
+  getMovie(){
+    this.movieService.getTop4().subscribe((data:any) =>{
+      this.movies = data.result;
+      console.log(this.movies)
+    })
+  }
+movie:Movie = new Movie()
+  setMovietoShowtime(id:string, movieId:string){
+    this.showtime.movie = {
+      movieName: '', movieStatus: this.movie.movieStatus, showtime: '',
+      movieId:movieId
+    }
+    console.log("hehe"+this.showtime.movie.movieId)
+    this.showtimeService.setMovieToShowtime(id, this.showtime.movie).subscribe((data:any) =>{
+      console.log(data)
     })
   }
 }
