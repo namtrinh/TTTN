@@ -1,13 +1,14 @@
 
-›	java:S120"ZRename this package name to match the regular expression '^[a-z_]+(\.[a-z_][a-z0-9_]*)*$'.(¤ÙÁ8€ÚÆ‹Ô2J$6c5c7df6-b7c4-4925-adc2-0abbb5c721c1
-«
-java:S1488I"hImmediately return this expression instead of assigning it to the temporary variable "showtimeResponse".(ÎîèÍ8‚ÚÆ‹Ô2J$d8b2441d-e4c5-4079-b5d1-8ea3c913d8a7
+›	java:S120"ZRename this package name to match the regular expression '^[a-z_]+(\.[a-z_][a-z0-9_]*)*$'.(¤ÙÁ8Á…¿¿Ô2J$de61c0ec-238f-4165-a1c1-fd4f94480c1d
 “
-java:S3655P"PCall "showtime.isPresent()" or "!showtime.isEmpty()" before accessing the value.(È¬”8‚ÚÆ‹Ô2J$eba3c2f8-b803-4c78-9aac-9e9f514c087f
-ˆ	java:S112$"FDefine and throw a dedicated exception instead of using a generic one.(èºı©8‚ÚÆ‹Ô2J$1b2a3646-0e08-441d-98f8-9369ca23b2bf
-	java:S112@"FDefine and throw a dedicated exception instead of using a generic one.(Ñó²ûıÿÿÿÿ8‚ÚÆ‹Ô2J$1ccad93d-74f5-46e3-ab6d-d6489fefa7a2
+java:S3655b"PCall "showtime.isPresent()" or "!showtime.isEmpty()" before accessing the value.(È¬”8Å…¿¿Ô2J$0c3e0400-ad4e-4b80-b827-4256541d3174
+ˆ	java:S112,"FDefine and throw a dedicated exception instead of using a generic one.(èºı©8Å…¿¿Ô2J$e31787d0-f795-4d89-9386-ba46e95e1596
+	java:S112H"FDefine and throw a dedicated exception instead of using a generic one.(Ñó²ûıÿÿÿÿ8Å…¿¿Ô2J$54ec82eb-abfa-45ee-bb72-6f727a8cfbb5
 …
-java:S6813"BRemove this field injection and use constructor injection instead.(êæÄŞ8…ÚÆ‹Ô2J$39f08301-9cad-4ff4-a572-6740537750b6
+java:S6813"BRemove this field injection and use constructor injection instead.(êæÄŞ8Ë…¿¿Ô2J$196a89ff-a0bb-4b2a-8a66-b45cefc3d782
 …
-java:S6813"BRemove this field injection and use constructor injection instead.(êæÄŞ8…ÚÆ‹Ô2J$ef1147a5-419d-4304-bb1d-be55b18d8568
-ƒ	java:S125V"<This block of commented-out lines of code should be removed.(êê¾şıÿÿÿÿ8“ÚÆ‹Ô2J$f3941649-c888-41fd-ada8-da84ac0ea3eb
+java:S6813"BRemove this field injection and use constructor injection instead.(êæÄŞ8Í…¿¿Ô2J$b3bd3f2c-ef36-4e3e-88ce-85f9a1c90295
+…
+java:S6813"BRemove this field injection and use constructor injection instead.(êæÄŞ8Î…¿¿Ô2J$bdf29edb-9df4-41b8-90d6-7aeedcd3db89
+…
+java:S6813!"BRemove this field injection and use constructor injection instead.(êæÄŞ8Ï…¿¿Ô2J$0b5a0a7d-7073-4acb-b567-e09cc32c22a2

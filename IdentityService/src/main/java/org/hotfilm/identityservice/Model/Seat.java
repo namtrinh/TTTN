@@ -26,7 +26,6 @@ public class Seat implements Serializable {
     @Enumerated(EnumType.STRING)
     private SeatStatus seatStatus;
 
-    @JsonFormat(pattern = "yyyy-MM-dd hh:mm:ss")
     private LocalDateTime time_selected = LocalDateTime.now();
 
     public enum SeatStatus {

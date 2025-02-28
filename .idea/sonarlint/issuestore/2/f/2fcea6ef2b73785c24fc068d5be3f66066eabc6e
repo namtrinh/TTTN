@@ -1,10 +1,14 @@
 
-¡	java:S120"ZRename this package name to match the regular expression '^[a-z_]+(\.[a-z_][a-z0-9_]*)*$'.(Û´¬áÿÿÿÿÿ8ì×‹Ô2J$ccb07eb2-ab85-4c8f-81fe-d1cea1113159
+¡	java:S120"ZRename this package name to match the regular expression '^[a-z_]+(\.[a-z_][a-z0-9_]*)*$'.(Û´¬áÿÿÿÿÿ8ŒóÔ2J$b2c80bd0-1084-446c-97a3-5dfba7129b48
 …
-java:S6813"BRemove this field injection and use constructor injection instead.(êæÄŞ8ğ×‹Ô2J$2bd5e9c6-0d6a-4b82-8297-4d489e7148e2
+java:S6813"BRemove this field injection and use constructor injection instead.(êæÄŞ8•óÔ2J$ffbca55f-50e7-4729-a2f6-91c0df686550
 …
-java:S6813"BRemove this field injection and use constructor injection instead.(êæÄŞ8ğ×‹Ô2J$207ef44e-54a1-4b04-83e8-42f05829ea35
-Š
-java:S1128"GRemove this unused import 'org.hotfilm.identityservice.Model.Showtime'.(Ùş™Ÿ8‘Œí‹Ô2J$b676a980-18cd-46ef-b33f-360db0bd9589
+java:S6813"BRemove this field injection and use constructor injection instead.(êæÄŞ8•óÔ2J$d1b01a07-571e-4a8b-acba-185d64ee43ce
 Œ
-java:S1128"DRemove this unused import 'org.springframework.http.ResponseEntity'.(¶¯ø¦úÿÿÿÿ8‘Œí‹Ô2J$e9d5464e-f402-4dae-ac12-bdde0d4b11e3
+java:S1128"DRemove this unused import 'org.hotfilm.identityservice.Model.Movie'.(Ó‰˜Îøÿÿÿÿ8µùˆ¾Ô2J$de4954c3-4267-48bd-a7d0-6d1aaca0a3ac
+‹
+java:S1128"CRemove this unused import 'org.hotfilm.identityservice.Model.Room'.(¸ÇÛğıÿÿÿÿ8µùˆ¾Ô2J$6b7c7a7c-3307-49c1-9445-2d18e32aea8f
+Š
+java:S1128"GRemove this unused import 'org.hotfilm.identityservice.Model.Showtime'.(Ùş™Ÿ8µùˆ¾Ô2J$7a179d15-1c54-4ee0-aba3-a93686acf597
+Œ
+java:S1128"DRemove this unused import 'org.springframework.http.ResponseEntity'.(¶¯ø¦úÿÿÿÿ8µùˆ¾Ô2J$70af6815-ef28-4eae-a92f-40956d7004e8

@@ -2,10 +2,14 @@ package org.hotfilm.identityservice.ServiceImp;
 
 import org.hotfilm.identityservice.Mapper.ShowtimeMapper;
 import org.hotfilm.identityservice.Model.Movie;
+import org.hotfilm.identityservice.Model.Room;
 import org.hotfilm.identityservice.Model.Showtime;
+import org.hotfilm.identityservice.ModelDTO.Request.SetShowtimerequest;
 import org.hotfilm.identityservice.ModelDTO.Request.ShowtimeRequest;
 import org.hotfilm.identityservice.ModelDTO.Response.ShowtimeResponse;
 import org.hotfilm.identityservice.ModelDTO.Response.ShowtimeResponseById;
+import org.hotfilm.identityservice.Repository.MovieRepository;
+import org.hotfilm.identityservice.Repository.RoomRepository;
 import org.hotfilm.identityservice.Repository.ShowtimeRepository;
 import org.hotfilm.identityservice.Service.ShowtimeService;
 import org.springframework.beans.factory.annotation.Autowired;
@@ -24,6 +28,10 @@ public class ShowtimeServiceImp implements ShowtimeService {
 
     @Autowired
     private ShowtimeMapper showtimeMapper;
+    @Autowired
+    private RoomRepository roomRepository;
+    @Autowired
+    private MovieRepository movieRepository;
 
     @Override
     public List<ShowtimeResponse> findAll(Date dateTime) {
@@ -67,26 +75,12 @@ public class ShowtimeServiceImp implements ShowtimeService {
 
     @Override
     public ShowtimeResponse updateById(String showtimeId, ShowtimeRequest showtimeRequest) {
-        if (showtimeRepository.existsById(showtimeId)) {
-            deleteById(showtimeId);
-        }
-        ShowtimeResponse showtimeResponse = createShowtime(showtimeRequest);
-        return showtimeResponse;
-    }
-
-    @Override
-    public ShowtimeResponse setMovieToShowtime(String showtimeId, Movie movieId){
-        Optional<Showtime> showtime = showtimeRepository.findById(showtimeId);
-        showtime.get().setShowtimeId(showtimeId);
-        showtime.get().setMovie(movieId);
-        return showtimeMapper.toShowtimeResponse(showtimeRepository.save(showtime.get()));
-    }
-}
-
-        /*  if(!showtimeRepository.existsShowtime(showtimeRequest.getTime_start(), showtimeRequest.getTime_end()).isEmpty()){
-            throw new RuntimeException("Showtime already exists");
-        }
         Showtime showtime = showtimeMapper.toShowtime(showtimeRequest);
+        showtime.setRoom(showtimeRequest.getRoom());
+
+        showtime.setMovie(showtimeRequest.getMovie());
+
+
         showtime.setShowtimeId(showtimeId);
         showtimeRepository.save(showtime);
         ShowtimeResponse showtimeResponse = showtimeMapper.toShowtimeResponse(showtime);
@@ -94,4 +88,17 @@ public class ShowtimeServiceImp implements ShowtimeService {
         showtimeResponse.setTime_start(dateTimeFormatter.format(showtime.getTime_start()));
         showtimeResponse.setTime_end(dateTimeFormatter.format(showtime.getTime_end()));
         return showtimeResponse;
-       */
+    }
+
+    @Override
+    public ShowtimeResponse setMovieToShowtime(String showtimeId, SetShowtimerequest setShowtimerequest){
+        Room room = setShowtimerequest.getRoom();
+        Movie movie = setShowtimerequest.getMovie();
+        Optional<Showtime> showtime = showtimeRepository.findById(showtimeId);
+        showtime.get().setShowtimeId(showtimeId);
+        showtime.get().setMovie(movie);
+        showtime.get().setRoom(room);
+        return showtimeMapper.toShowtimeResponse(showtimeRepository.save(showtime.get()));
+    }
+}
+

@@ -1,3 +1,5 @@
 
-›	java:S120"ZRename this package name to match the regular expression '^[a-z_]+(\.[a-z_][a-z0-9_]*)*$'.(’•ñ"8ÇÜ•”Ñ2J$5c865505-9da2-4120-bb6a-adb169cd7f48
-Ÿ	java:S116"XRename this field "time_selected" to match the regular expression '^[a-z][a-zA-Z0-9]*$'.(•…«€ùÿÿÿÿ8ÿÀ¸Ó2J$83feb293-fd0e-4162-8373-56c25628130b
+›	java:S120"ZRename this package name to match the regular expression '^[a-z_]+(\.[a-z_][a-z0-9_]*)*$'.(’•ñ"8ÇÜ•”Ñ2J$7dccc783-b5f4-4e63-a9d5-5c96f19ba558
+Ÿ	java:S116"XRename this field "time_selected" to match the regular expression '^[a-z][a-zA-Z0-9]*$'.(•…«€ùÿÿÿÿ8ÿÀ¸Ó2J$c39fb7f0-3b16-4d1c-bd6c-d8a9c97f328d
+
+java:S1128"HRemove this unused import 'com.fasterxml.jackson.annotation.JsonFormat'.(ıÙè‹øÿÿÿÿ8—•¯ĞÔ2J$5de309f8-d835-4f63-8058-c7d10556f57b

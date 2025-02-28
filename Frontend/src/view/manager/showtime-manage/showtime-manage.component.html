@@ -11,7 +11,7 @@
     <div class="filter">
       <label for="datePicker">Chọn Ngày:</label>
       <input type="date" id="datePicker" [(ngModel)]="dateTime"/>
-      <button class="btn btn-danger" (click)="getAll()">Get</button>
+      <button class="btn btn-danger" (click)="getAllShowtimeByTime()">Get</button>
     </div>
     @for (showtime of showtimes; track $index) {
       <div class="timeline">
@@ -21,13 +21,27 @@
             <h3>Avatar 2</h3>
             <p>Phòng 1 - Đang mở bán</p>
           </div>
-          <select class="form-select" aria-label="Default select example" [(ngModel)]="showtime.movieId"
-                  (change)="setMovietoShowtime(showtime.showtimeId, showtime.movieId)">
-            <option selected disabled>-- Select movie --</option>
-            @for (movie of movies; track $index) {
-              <option [value]="movie.movieId" [selected]="showtime.movieId === movie.movieId">{{ movie.movieName }}</option>
-            }
-          </select>
+          <div class="select-container">
+            <select class="form-select" aria-label="Default select example" [(ngModel)]="showtime.movieId"
+                    (change)="setMovietoShowtime(showtime.showtimeId, showtime.movieId, showtime.roomId)">
+              <option selected disabled>-- Select movie --</option>
+              @for (movie of movies; track $index) {
+                <option [value]="movie.movieId" [selected]="showtime.movieId === movie.movieId">{{ movie.movieName }}
+                </option>
+              }
+            </select>
+
+            <select class="form-select" aria-label="Default select example" [(ngModel)]="showtime.roomId"
+                    (change)="setMovietoShowtime(showtime.showtimeId,showtime.movieId, showtime.roomId)">
+              <option selected disabled>-- Select room --</option>
+              @for (room of rooms; track $index) {
+                <option [value]="room.roomId" [selected]="showtime.roomId === room.roomId">{{ room.roomName }}
+                  - {{ room.roomType }}
+                </option>
+              }
+            </select>
+          </div>
+
           <button class="btn btn-light" (click)="deleteShowtime(showtime.showtimeId)"><i class="fa-solid fa-minus"
                                                                                          style="color: red"></i>
           </button>

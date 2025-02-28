@@ -123,7 +123,12 @@ header .btn:hover {
   }
 }
 
+.select-container {
+  display: flex;
+  justify-content: space-between;
+  gap: 10px; /* Adjust space between the selects as needed */
+}
+
 .form-select {
-  width:60%;
-  float: right;
+  width: 50%; /* Adjust width as necessary */
 }

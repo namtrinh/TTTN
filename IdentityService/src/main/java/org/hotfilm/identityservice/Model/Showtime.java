@@ -31,8 +31,7 @@ public class Showtime implements Serializable {
     @JsonFormat(pattern = "yyyy-MM-dd hh:mm:ss")
     private LocalDateTime time_end;
 
-    @ManyToOne(cascade = CascadeType.REMOVE)
-    @JsonIgnore
+    @ManyToOne
     private Room room;
 
     @ManyToOne

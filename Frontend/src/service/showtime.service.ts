@@ -3,6 +3,7 @@ import {HttpClient, HttpParams} from '@angular/common/http';
 import { Observable} from 'rxjs';
 import {Showtime} from '../model/showtime.model';
 import {Movie} from '../model/movie.model';
+import {Room, RoomType} from '../model/room.model';
 
 
 
@@ -35,14 +36,14 @@ export class ShowtimeService {
     return this.http.put<any>(`${this.baseUrl}/${id}`, body)
   }
 
-  setMovieToShowtime(id: string, body: {
-    movieStatus: string;
-    showtime: string;
-    movieId: string;
-    movieName: string
-  }): Observable<any> {
-    return this.http.put<any>(`${this.baseUrl}/set/${id}`, body)
+  setMovieToShowtime(id: string, movie: Partial<Movie>, room: Partial<Room>): Observable<any> {
+    const payload = {
+      movie,
+      room
+    };
+    return this.http.put<any>(`${this.baseUrl}/set/${id}`, payload);
   }
+
 
   getById(movieId: string): Observable<Showtime> {
     return this.http.get<Showtime>(`${this.baseUrl}/${movieId}`)

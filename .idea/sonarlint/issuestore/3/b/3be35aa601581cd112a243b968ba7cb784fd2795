@@ -1,16 +1,7 @@
 
-’	java:S117 "QRename this local variable to match the regular expression '^[a-z][a-zA-Z0-9]*$'.(úÓ¸8ç“‹Ô2J$f56d5e3a-5efe-4c99-ba91-6061b5a432e9
-’	java:S117 "QRename this local variable to match the regular expression '^[a-z][a-zA-Z0-9]*$'.(úÓ¸8è“‹Ô2J$4af16db6-37a2-4bcf-a1d7-9523f7c4b4d0
-œ	java:S120"ZRename this package name to match the regular expression '^[a-z_]+(\.[a-z_][a-z0-9_]*)*$'.(æñòÕ8è“‹Ô2J$c1b0c18f-21f1-4293-ab01-7b6eeb717368
-—	java:S116"URename this field "time_start" to match the regular expression '^[a-z][a-zA-Z0-9]*$'.(ºÁı™8î“‹Ô2J$1ea3809a-8a96-4c55-9217-c86777e6a9eb
-•	java:S116"SRename this field "time_end" to match the regular expression '^[a-z][a-zA-Z0-9]*$'.(èÑĞ8î“‹Ô2J$2807b263-034e-4de9-a57a-1487c34dff3b
-ƒ	java:S125("<This block of commented-out lines of code should be removed.(êŞ´Ìøÿÿÿÿ8ó“‹Ô2J$4c0eae9e-ef66-4443-bb25-901c6f874134
-‹
-java:S1128"CRemove this unused import 'org.hotfilm.identityservice.Model.Room'.(¸ÇÛğıÿÿÿÿ8’îü‹Ô2J$b50853f9-3e72-4334-a624-cbeec4c8a6d3
-s
-java:S1128"+Remove this unused import 'java.io.Serial'.(Ö£€şÿÿÿÿ8’îü‹Ô2J$106aa90f-2079-4098-a981-c8158ddaecd9
-|
-java:S1128	"4Remove this unused import 'java.time.LocalDateTime'.(æÃ§ƒüÿÿÿÿ8’îü‹Ô2J$d2374398-c21e-4c3b-a699-e897d361b1be
-r
-java:S1128
-"*Remove this unused import 'java.util.Set'.(ö²„¤şÿÿÿÿ8’îü‹Ô2J$7d692ea3-f2c0-4656-8f35-2e145e4bbeef
+“	java:S117""QRename this local variable to match the regular expression '^[a-z][a-zA-Z0-9]*$'.(’Áëø8õÊÑ»Ô2J$d60b37f6-ec09-4fc8-bfb9-a9db7a0f779d
+“	java:S117""QRename this local variable to match the regular expression '^[a-z][a-zA-Z0-9]*$'.(’Áëø8öÊÑ»Ô2J$f913acd6-e5b6-4af0-80a6-5426b8969759
+œ	java:S120"ZRename this package name to match the regular expression '^[a-z_]+(\.[a-z_][a-z0-9_]*)*$'.(æñòÕ8öÊÑ»Ô2J$6fca2a46-ad65-47a7-8567-d8e33aa526c7
+—	java:S116"URename this field "time_start" to match the regular expression '^[a-z][a-zA-Z0-9]*$'.(ºÁı™8ûÊÑ»Ô2J$8e4367b7-bfb2-4a27-8056-4d3228e3809e
+•	java:S116"SRename this field "time_end" to match the regular expression '^[a-z][a-zA-Z0-9]*$'.(èÑĞ8ûÊÑ»Ô2J$e38c5ea4-a531-472b-98ec-4b00f304162e
+ƒ	java:S125,"<This block of commented-out lines of code should be removed.(êŞ´Ìøÿÿÿÿ8ËÑ»Ô2J$e8825d14-dce9-41cf-a6a9-f639f217f15b

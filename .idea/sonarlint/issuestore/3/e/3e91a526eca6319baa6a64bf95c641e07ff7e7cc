@@ -1,9 +1,11 @@
 
-›	java:S120"ZRename this package name to match the regular expression '^[a-z_]+(\.[a-z_][a-z0-9_]*)*$'.(’•ñ"8ü“ØßÓ2J$d2ea5fb8-bb13-49bd-8e8d-750b6d5f6818
-—	java:S116"URename this field "time_start" to match the regular expression '^[a-z][a-zA-Z0-9]*$'.(Ÿøû»8”ØßÓ2J$03d3fadf-b73b-4f70-b93f-e2ab920076ab
-š	java:S116 "SRename this field "time_end" to match the regular expression '^[a-z][a-zA-Z0-9]*$'.(œĞÕ†úÿÿÿÿ8‚”ØßÓ2J$40c0be6b-a43c-4151-a2a9-abe82e2c34d6
+›	java:S120"ZRename this package name to match the regular expression '^[a-z_]+(\.[a-z_][a-z0-9_]*)*$'.(’•ñ"8ü“ØßÓ2J$96931ed5-2f04-49cf-b607-82dd7cc6ba0c
+—	java:S116"URename this field "time_start" to match the regular expression '^[a-z][a-zA-Z0-9]*$'.(Ÿøû»8”ØßÓ2J$34e5be3f-1c00-491d-835d-89abf5850c3b
+š	java:S116 "SRename this field "time_end" to match the regular expression '^[a-z][a-zA-Z0-9]*$'.(œĞÕ†úÿÿÿÿ8‚”ØßÓ2J$c91600cb-b0d6-4c13-8259-4b986f9c8745
+‹
+java:S1128"HRemove this unused import 'com.fasterxml.jackson.annotation.JsonIgnore'.(ş‘‹„8•Ô€½Ô2J$58879d92-a915-49af-a27a-2d21770d7ab8
 „
 java:S1128
-"ARemove this unused import 'org.springframework.cglib.core.Local'.(ÁÒû8Ú¤æÓ2J$4168cb4f-4816-4e7b-ae00-4e706028edba
+"ARemove this unused import 'org.springframework.cglib.core.Local'.(ÁÒû8Ú¤æÓ2J$45c28922-8895-474d-8848-77fb1094be29
 ‚
-java:S1128"?Remove this unused import 'java.time.format.DateTimeFormatter'.(‰÷÷ª8Û¤æÓ2J$076c921f-50cb-4ae9-9a9f-6e8e84d0837e
+java:S1128"?Remove this unused import 'java.time.format.DateTimeFormatter'.(‰÷÷ª8Û¤æÓ2J$44a33dd0-f526-48df-af96-7e89d8a4915b

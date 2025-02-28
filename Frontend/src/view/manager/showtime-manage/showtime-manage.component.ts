@@ -4,6 +4,8 @@ import {Showtime} from '../../../model/showtime.model';
 import {ShowtimeService} from '../../../service/showtime.service';
 import {MovieService} from '../../../service/movie.service';
 import {Movie} from '../../../model/movie.model';
+import {RoomService} from '../../../service/room.service';
+import {Room} from '../../../model/room.model';
 
 @Component({
   selector: 'app-showtime-manage',
@@ -17,7 +19,8 @@ import {Movie} from '../../../model/movie.model';
 })
 export class ShowtimeManageComponent implements OnInit {
   constructor(private showtimeService: ShowtimeService,
-              private movieService:MovieService) {
+              private movieService:MovieService,
+              private roomService:RoomService) {
   }
 
   ngOnInit(): void {
@@ -27,13 +30,16 @@ export class ShowtimeManageComponent implements OnInit {
   showtime: Showtime = new Showtime();
   showtimes: Showtime[] = [];
   movies:Movie[] =[]
-  selectedMovie !: Movie;
+  movie:Movie = new Movie()
+  rooms:Room[] = [];
+  room!:Room
 
-  getAll() {
+  getAllShowtimeByTime() {
     this.showtimeService.getAll(this.dateTime).subscribe((data: any) => {
       this.showtimes = data.result;
       console.log(this.showtimes)
       this.getMovie();
+      this.getRoom();
     }, error => {
       console.log(error.error.message)
     })
@@ -51,7 +57,7 @@ export class ShowtimeManageComponent implements OnInit {
   deleteShowtime(id: string) {
     if (window.confirm("Are you sure you want to delete this showtime")) {
       this.showtimeService.deleteById(id).subscribe(data => {
-      this.getAll();
+      this.getAllShowtimeByTime();
       })
     }
   }
@@ -59,19 +65,21 @@ export class ShowtimeManageComponent implements OnInit {
   getById(id:string){
     this.showtimeService.getById(id).subscribe((data:any) => {
       this.showtime = data.result;
+      console.log("getById",this.showtime)
     })
   }
 
   updateShowtime(id:string, data:Showtime){
-    console.log("data update"+data)
+   console.log(data)
     this.showtimeService.updateById(id, data).subscribe((data:any) =>{
       const index = this.showtimes.findIndex(showtime => showtime.showtimeId === id)
       if(index !== -1){
         this.showtimes[index] = data.result
-         console.log(data.result)
+         console.log("update ",data)
+
       }
     }, error => {
-      alert(error.error.message)
+      console.log(error)
     })
   }
 
@@ -81,15 +89,24 @@ export class ShowtimeManageComponent implements OnInit {
       console.log(this.movies)
     })
   }
-movie:Movie = new Movie()
-  setMovietoShowtime(id:string, movieId:string){
+
+  setMovietoShowtime(id:string, movieId:string, roomId:string){
     this.showtime.movie = {
-      movieName: '', movieStatus: this.movie.movieStatus, showtime: '',
       movieId:movieId
     }
+    this.showtime.room = {
+      roomId:roomId
+    }
     console.log("hehe"+this.showtime.movie.movieId)
-    this.showtimeService.setMovieToShowtime(id, this.showtime.movie).subscribe((data:any) =>{
+    this.showtimeService.setMovieToShowtime(id, this.showtime.movie, this.showtime.room).subscribe((data:any) =>{
       console.log(data)
+    })
+  }
+
+  getRoom(){
+    this.roomService.getAll().subscribe((data:any) =>{
+      this.rooms = data.result;
+      console.log(this.rooms)
     })
   }
 }
