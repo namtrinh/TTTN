@@ -62,14 +62,6 @@ public class ShowtimeController {
                 .build();
     }
 
-    @PutMapping(value = "/set/{showtimeId}")
-    public ApiResponse<ShowtimeResponse> setMovieToShowtime(@PathVariable String showtimeId, @RequestBody ShowtimeRequest setShowtimerequest){
-        return ApiResponse.<ShowtimeResponse>builder()
-                .status(HttpStatus.OK)
-                .result(showtimeService.updateById(showtimeId, setShowtimerequest))
-                .build();
-    }
-
     @DeleteMapping("/{showtimeId}")
     public void deleteShowtime(@PathVariable String showtimeId) {
         showtimeService.deleteById(showtimeId);

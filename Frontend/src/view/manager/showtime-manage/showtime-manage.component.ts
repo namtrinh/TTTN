@@ -74,7 +74,7 @@ export class ShowtimeManageComponent implements OnInit {
     })
   }
 
-  updateShowtime(id: string, data: { time_start: string; time_end: string }){
+  updateShowtime(id: string, data: Showtime){
    console.log(data)
     this.showtimeService.updateById(id, data).subscribe((data:any) =>{
       console.log("update ",data)
@@ -82,8 +82,6 @@ export class ShowtimeManageComponent implements OnInit {
       if(index !== -1){
         this.showtimes[index].time_start = data.result.time_start
         this.showtimes[index].time_end = data.result.time_end
-
-
       }
     }, error => {
       console.log(error)
@@ -102,7 +100,7 @@ export class ShowtimeManageComponent implements OnInit {
     console.log(movieId)
     this.body.movieId = movieId
     this.body.roomId = roomId
-    this.showtimeService.setMovieToShowtime(id, this.body).subscribe((data:any) =>{
+    this.showtimeService.updateById(id, this.body).subscribe((data:any) =>{
       console.log("setMovietoShowtime",data)
     })
   }

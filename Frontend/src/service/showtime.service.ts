@@ -32,14 +32,9 @@ export class ShowtimeService {
     return this.http.delete(`${this.baseUrl}/${id}`)
   }
 
-  updateById(id: string, body: { time_start: string; time_end: string }): Observable<any> {
-    return this.http.put<any>(`${this.baseUrl}/${id}`, body)
+  updateById(id: string, data:Showtime): Observable<any> {
+    return this.http.put<any>(`${this.baseUrl}/${id}`, data)
   }
-
-  setMovieToShowtime(id: string, data:Showtime): Observable<any> {
-    return this.http.put<any>(`${this.baseUrl}/set/${id}`, data);
-  }
-
 
   getById(movieId: string): Observable<Showtime> {
     return this.http.get<Showtime>(`${this.baseUrl}/${movieId}`)

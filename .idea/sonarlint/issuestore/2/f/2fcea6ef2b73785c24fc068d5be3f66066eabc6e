@@ -1,16 +1,16 @@
 
-¡	java:S120"ZRename this package name to match the regular expression '^[a-z_]+(\.[a-z_][a-z0-9_]*)*$'.(Û´¬áÿÿÿÿÿ8ŒóÔ2J$47d2f290-3c43-408a-805a-0502fdf707a3
+¡	java:S120"ZRename this package name to match the regular expression '^[a-z_]+(\.[a-z_][a-z0-9_]*)*$'.(Û´¬áÿÿÿÿÿ8ŒóÔ2J$6c3a62f9-f351-437c-93e7-c9733558da5d
 …
-java:S6813"BRemove this field injection and use constructor injection instead.(êæÄŞ8•óÔ2J$b677b983-8884-4bf9-82de-9c97e5a20bd6
+java:S6813"BRemove this field injection and use constructor injection instead.(êæÄŞ8•óÔ2J$5b3ef79d-1783-41ff-a73f-3d3e24515b96
 …
-java:S6813"BRemove this field injection and use constructor injection instead.(êæÄŞ8•óÔ2J$25578ae1-2517-4c8a-9f78-de8062df0d02
-f
-java:S1128"DRemove this unused import 'org.hotfilm.identityservice.Model.Movie'.(Ó‰˜Îøÿÿÿÿ8¸¼Ò‚Õ2
-e
-java:S1128"CRemove this unused import 'org.hotfilm.identityservice.Model.Room'.(¸ÇÛğıÿÿÿÿ8¸¼Ò‚Õ2
-d
-java:S1128"GRemove this unused import 'org.hotfilm.identityservice.Model.Showtime'.(Ùş™Ÿ8¸¼Ò‚Õ2
-~
-java:S1128"\Remove this unused import 'org.hotfilm.identityservice.ModelDTO.Request.SetShowtimerequest'.(¯¾š²úÿÿÿÿ8¸¼Ò‚Õ2
-f
-java:S1128"DRemove this unused import 'org.springframework.http.ResponseEntity'.(¶¯ø¦úÿÿÿÿ8¸¼Ò‚Õ2
+java:S6813"BRemove this field injection and use constructor injection instead.(êæÄŞ8•óÔ2J$64340274-4f15-4273-ab50-94a794228375
+Œ
+java:S1128"DRemove this unused import 'org.hotfilm.identityservice.Model.Movie'.(Ó‰˜Îøÿÿÿÿ8¸¼Ò‚Õ2J$f1929c8f-1230-4a27-a67a-da5f9cdd6ab9
+‹
+java:S1128"CRemove this unused import 'org.hotfilm.identityservice.Model.Room'.(¸ÇÛğıÿÿÿÿ8¸¼Ò‚Õ2J$21d6395a-36ff-4128-bb6c-e95ceaf4b33f
+Š
+java:S1128"GRemove this unused import 'org.hotfilm.identityservice.Model.Showtime'.(Ùş™Ÿ8¸¼Ò‚Õ2J$dc21312b-4314-4904-82c2-c1f21a8c1f2f
+¤
+java:S1128"\Remove this unused import 'org.hotfilm.identityservice.ModelDTO.Request.SetShowtimerequest'.(¯¾š²úÿÿÿÿ8¸¼Ò‚Õ2J$ed3b280b-9f8f-45d6-aa9c-ae74f4905e2c
+Œ
+java:S1128"DRemove this unused import 'org.springframework.http.ResponseEntity'.(¶¯ø¦úÿÿÿÿ8¸¼Ò‚Õ2J$6fddd1f2-6e7e-4d03-b362-b880cc395fec

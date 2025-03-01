@@ -1,10 +1,10 @@
 
-v	java:S120"ZRename this package name to match the regular expression '^[a-z_]+(\.[a-z_][a-z0-9_]*)*$'.(õ­¬¾8šÿðÿÔ2
-f
-java:S1128"DRemove this unused import 'org.hotfilm.identityservice.Model.Movie'.(Ó‰˜Îøÿÿÿÿ8·ÿðÿÔ2
-e
-java:S1128"CRemove this unused import 'org.hotfilm.identityservice.Model.Room'.(¸ÇÛðýÿÿÿÿ8·ÿðÿÔ2
-d
-java:S1128"GRemove this unused import 'org.hotfilm.identityservice.Model.Showtime'.(Ùþ™Ÿ8·ÿðÿÔ2
-~
-java:S1128"\Remove this unused import 'org.hotfilm.identityservice.ModelDTO.Request.SetShowtimerequest'.(¯¾š²úÿÿÿÿ8·ÿðÿÔ2
+œ	java:S120"ZRename this package name to match the regular expression '^[a-z_]+(\.[a-z_][a-z0-9_]*)*$'.(õ­¬¾8šÿðÿÔ2J$5aeac5fe-c923-4e02-b982-76f595010a19
+Œ
+java:S1128"DRemove this unused import 'org.hotfilm.identityservice.Model.Movie'.(Ó‰˜Îøÿÿÿÿ8·ÿðÿÔ2J$e1a5c9ed-ef13-4a6d-acec-3cd6fcef8423
+‹
+java:S1128"CRemove this unused import 'org.hotfilm.identityservice.Model.Room'.(¸ÇÛðýÿÿÿÿ8·ÿðÿÔ2J$d4aa80a0-f01f-4cb6-a0d0-1ec9229c2f48
+Š
+java:S1128"GRemove this unused import 'org.hotfilm.identityservice.Model.Showtime'.(Ùþ™Ÿ8·ÿðÿÔ2J$139eb85e-5321-43ff-b9ed-5cd6ad4e9e75
+¤
+java:S1128"\Remove this unused import 'org.hotfilm.identityservice.ModelDTO.Request.SetShowtimerequest'.(¯¾š²úÿÿÿÿ8·ÿðÿÔ2J$e1b0e58c-dacb-466d-b583-b8655657ffa9
