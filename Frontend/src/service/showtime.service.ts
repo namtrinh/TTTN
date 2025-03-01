@@ -32,16 +32,12 @@ export class ShowtimeService {
     return this.http.delete(`${this.baseUrl}/${id}`)
   }
 
-  updateById(id: string, body: Showtime): Observable<any> {
+  updateById(id: string, body: { time_start: string; time_end: string }): Observable<any> {
     return this.http.put<any>(`${this.baseUrl}/${id}`, body)
   }
 
-  setMovieToShowtime(id: string, movie: Partial<Movie>, room: Partial<Room>): Observable<any> {
-    const payload = {
-      movie,
-      room
-    };
-    return this.http.put<any>(`${this.baseUrl}/set/${id}`, payload);
+  setMovieToShowtime(id: string, data:Showtime): Observable<any> {
+    return this.http.put<any>(`${this.baseUrl}/set/${id}`, data);
   }
 
 

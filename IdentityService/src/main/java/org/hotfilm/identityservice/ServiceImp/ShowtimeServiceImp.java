@@ -75,30 +75,32 @@ public class ShowtimeServiceImp implements ShowtimeService {
 
     @Override
     public ShowtimeResponse updateById(String showtimeId, ShowtimeRequest showtimeRequest) {
-        Showtime showtime = showtimeMapper.toShowtime(showtimeRequest);
-        showtime.setRoom(showtimeRequest.getRoom());
-
-        showtime.setMovie(showtimeRequest.getMovie());
-
-
-        showtime.setShowtimeId(showtimeId);
-        showtimeRepository.save(showtime);
-        ShowtimeResponse showtimeResponse = showtimeMapper.toShowtimeResponse(showtime);
-        DateTimeFormatter dateTimeFormatter = DateTimeFormatter.ofPattern("HH-mm a");
-        showtimeResponse.setTime_start(dateTimeFormatter.format(showtime.getTime_start()));
-        showtimeResponse.setTime_end(dateTimeFormatter.format(showtime.getTime_end()));
-        return showtimeResponse;
-    }
-
-    @Override
-    public ShowtimeResponse setMovieToShowtime(String showtimeId, SetShowtimerequest setShowtimerequest){
-        Room room = setShowtimerequest.getRoom();
-        Movie movie = setShowtimerequest.getMovie();
         Optional<Showtime> showtime = showtimeRepository.findById(showtimeId);
-        showtime.get().setShowtimeId(showtimeId);
-        showtime.get().setMovie(movie);
-        showtime.get().setRoom(room);
-        return showtimeMapper.toShowtimeResponse(showtimeRepository.save(showtime.get()));
+        if (showtimeRequest.getRoomId() != null) {
+            Optional<Room> room = roomRepository.findById(showtimeRequest.getRoomId());
+            if (room.isPresent()) {
+                showtime.get().setRoom(room.get());
+            }
+        }
+        if (showtimeRequest.getMovieId() != null) {
+            Optional<Movie> movie = movieRepository.findById(showtimeRequest.getMovieId());
+            if (movie.isPresent()) {
+                showtime.get().setMovie(movie.get());
+            }
+        }
+        if (showtimeRequest.getTime_start() != null){
+            showtime.get().setTime_start(showtimeRequest.getTime_start());
+        }
+        if (showtimeRequest.getTime_end() != null){
+            showtime.get().setTime_end(showtimeRequest.getTime_end());
+        }
+        showtimeRepository.save(showtime.get());
+        ShowtimeResponse showtimeResponse = showtimeMapper.toShowtimeResponse(showtime.get());
+        DateTimeFormatter dateTimeFormatter = DateTimeFormatter.ofPattern("HH-mm a");
+        showtimeResponse.setTime_start(dateTimeFormatter.format(showtime.get().getTime_start()));
+        showtimeResponse.setTime_end(dateTimeFormatter.format(showtime.get().getTime_end()));
+
+        return showtimeResponse;
     }
 }
 

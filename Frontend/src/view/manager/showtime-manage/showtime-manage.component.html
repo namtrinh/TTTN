@@ -32,7 +32,7 @@
             </select>
 
             <select class="form-select" aria-label="Default select example" [(ngModel)]="showtime.roomId"
-                    (change)="setMovietoShowtime(showtime.showtimeId,showtime.movieId, showtime.roomId)">
+                    (change)="setMovietoShowtime(showtime.showtimeId,showtime.movieId,showtime.roomId)">
               <option selected disabled>-- Select room --</option>
               @for (room of rooms; track $index) {
                 <option [value]="room.roomId" [selected]="showtime.roomId === room.roomId">{{ room.roomName }}
@@ -100,18 +100,18 @@
         <button type="button" class="btn-close btn-close-white" data-bs-dismiss="modal" aria-label="Close"></button>
       </div>
       <div class="modal-body bg-dark text-white">
-        <form #formCreate="ngForm" (ngSubmit)="updateShowtime(showtime.showtimeId, showtime)" class="container my-4">
+        <form #formCreate="ngForm" (ngSubmit)="updateShowtime(showtime.showtimeId, timeSet)" class="container my-4">
 
           <div class="row mb-3">
             <div class="col-md-6">
               <label for="time_start1" class="form-label">Time Start</label>
-              <input id="time_start1" name="time_start" [(ngModel)]="showtime.time_start" type="datetime-local"
+              <input id="time_start1" name="time_start" [(ngModel)]="timeSet.time_start" type="datetime-local"
                      class="form-control"
                      required/>
             </div>
             <div class="col-md-6">
               <label for="time_end1" class="form-label">Time End</label>
-              <input id="time_end1" name="time_end" [(ngModel)]="showtime.time_end" type="datetime-local"
+              <input id="time_end1" name="time_end" [(ngModel)]="timeSet.time_end" type="datetime-local"
                      class="form-control"
                      required/>
             </div>

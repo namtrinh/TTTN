@@ -63,10 +63,10 @@ public class ShowtimeController {
     }
 
     @PutMapping(value = "/set/{showtimeId}")
-    public ApiResponse<ShowtimeResponse> setMovieToShowtime(@PathVariable String showtimeId, @RequestBody SetShowtimerequest setShowtimerequest){
+    public ApiResponse<ShowtimeResponse> setMovieToShowtime(@PathVariable String showtimeId, @RequestBody ShowtimeRequest setShowtimerequest){
         return ApiResponse.<ShowtimeResponse>builder()
                 .status(HttpStatus.OK)
-                .result(showtimeService.setMovieToShowtime(showtimeId, setShowtimerequest))
+                .result(showtimeService.updateById(showtimeId, setShowtimerequest))
                 .build();
     }
 

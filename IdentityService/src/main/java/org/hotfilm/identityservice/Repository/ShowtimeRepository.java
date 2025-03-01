@@ -14,8 +14,8 @@ import java.util.List;
 @Repository
 public interface ShowtimeRepository extends JpaRepository<Showtime, String> {
 
-    @Query(value = "SELECT showtime_id,movie_movie_id, movie_name, " +
-            "room_room_id, room_name, FORMAT(time_start, 'hh-mm tt'), FORMAT(time_end, 'hh-mm tt')\n" +
+    @Query(value = "SELECT showtime_id,movie_movie_id, " +
+            "room_room_id, FORMAT(time_start, 'hh-mm tt'), FORMAT(time_end, 'hh-mm tt')\n" +
             "FROM showtime " +
             "LEFT JOIN movie ON movie.movie_id = showtime.movie_movie_id\n" +
             "LEFT JOIN room ON room.room_id = showtime.room_room_id\n"+

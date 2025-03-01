@@ -19,12 +19,7 @@ public class ShowtimeRequest implements Serializable {
 
     private LocalDateTime time_end;
 
-    private Movie movie;
+    private String movieId;
 
-    private Room room;
-
-    public ShowtimeRequest(LocalDateTime time_start, LocalDateTime time_end) {
-        this.time_start = time_start;
-        this.time_end = time_end;
-    }
+    private String roomId;
 }

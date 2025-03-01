@@ -1,7 +1,9 @@
 
-“	java:S117""QRename this local variable to match the regular expression '^[a-z][a-zA-Z0-9]*$'.(’Áëø8õÊÑ»Ô2J$d60b37f6-ec09-4fc8-bfb9-a9db7a0f779d
-“	java:S117""QRename this local variable to match the regular expression '^[a-z][a-zA-Z0-9]*$'.(’Áëø8öÊÑ»Ô2J$f913acd6-e5b6-4af0-80a6-5426b8969759
-œ	java:S120"ZRename this package name to match the regular expression '^[a-z_]+(\.[a-z_][a-z0-9_]*)*$'.(æñòÕ8öÊÑ»Ô2J$6fca2a46-ad65-47a7-8567-d8e33aa526c7
-—	java:S116"URename this field "time_start" to match the regular expression '^[a-z][a-zA-Z0-9]*$'.(ºÁı™8ûÊÑ»Ô2J$8e4367b7-bfb2-4a27-8056-4d3228e3809e
-•	java:S116"SRename this field "time_end" to match the regular expression '^[a-z][a-zA-Z0-9]*$'.(èÑĞ8ûÊÑ»Ô2J$e38c5ea4-a531-472b-98ec-4b00f304162e
-ƒ	java:S125,"<This block of commented-out lines of code should be removed.(êŞ´Ìøÿÿÿÿ8ËÑ»Ô2J$e8825d14-dce9-41cf-a6a9-f639f217f15b
+œ	java:S120"ZRename this package name to match the regular expression '^[a-z_]+(\.[a-z_][a-z0-9_]*)*$'.(æñòÕ8öÊÑ»Ô2J$033bf880-4d8e-40df-bc27-0904b2e55770
+—	java:S116"URename this field "time_start" to match the regular expression '^[a-z][a-zA-Z0-9]*$'.(ºÁı™8ûÊÑ»Ô2J$d8db0929-0b72-4215-98f8-5092f242fbb8
+•	java:S116"SRename this field "time_end" to match the regular expression '^[a-z][a-zA-Z0-9]*$'.(èÑĞ8ûÊÑ»Ô2J$e83b4f7c-377b-4070-9cff-741e97a5451f
+ƒ	java:S125"<This block of commented-out lines of code should be removed.(êŞ´Ìøÿÿÿÿ8ËÑ»Ô2J$be38b0b0-79b9-4afc-a971-fa922bdbb96f
+f
+java:S1128"DRemove this unused import 'org.hotfilm.identityservice.Model.Movie'.(Ó‰˜Îøÿÿÿÿ8Î»Ñ€Õ2
+e
+java:S1128"CRemove this unused import 'org.hotfilm.identityservice.Model.Room'.(¸ÇÛğıÿÿÿÿ8Ï»Ñ€Õ2

@@ -8,8 +8,6 @@ export class Showtime{
 
   movieId!:string;
   roomId!:string;
-  roomName!:string;
-  roomType!:string;
   movie!:Partial<Movie>
   room!:Partial<Room>
 }

@@ -1,14 +1,24 @@
 
-›	java:S120"ZRename this package name to match the regular expression '^[a-z_]+(\.[a-z_][a-z0-9_]*)*$'.(¤ÙÁ8Á…¿¿Ô2J$de61c0ec-238f-4165-a1c1-fd4f94480c1d
-“
-java:S3655b"PCall "showtime.isPresent()" or "!showtime.isEmpty()" before accessing the value.(È¬”8Å…¿¿Ô2J$0c3e0400-ad4e-4b80-b827-4256541d3174
-ˆ	java:S112,"FDefine and throw a dedicated exception instead of using a generic one.(èºı©8Å…¿¿Ô2J$e31787d0-f795-4d89-9386-ba46e95e1596
-	java:S112H"FDefine and throw a dedicated exception instead of using a generic one.(Ñó²ûıÿÿÿÿ8Å…¿¿Ô2J$54ec82eb-abfa-45ee-bb72-6f727a8cfbb5
+›	java:S120"ZRename this package name to match the regular expression '^[a-z_]+(\.[a-z_][a-z0-9_]*)*$'.(¤ÙÁ8Éİ¿ƒÕ2J$b21610cf-5069-4c8a-a5a3-2613f38d5757
+m
+java:S3655a"PCall "showtime.isPresent()" or "!showtime.isEmpty()" before accessing the value.(ıÄêÄ8ÎûÁƒÕ2
+l
+java:S3655\"PCall "showtime.isPresent()" or "!showtime.isEmpty()" before accessing the value.(‰®Õ	8ÎûÁƒÕ2
+m
+java:S3655X"PCall "showtime.isPresent()" or "!showtime.isEmpty()" before accessing the value.(ÿÒÛÙ8ÎûÁƒÕ2
+m
+java:S3655_"PCall "showtime.isPresent()" or "!showtime.isEmpty()" before accessing the value.(Ïà±8ÎûÁƒÕ2
+m
+java:S3655R"PCall "showtime.isPresent()" or "!showtime.isEmpty()" before accessing the value.(ÎÅÇÈ8ÎûÁƒÕ2
+ˆ	java:S112,"FDefine and throw a dedicated exception instead of using a generic one.(èºı©8Òİ¿ƒÕ2J$f963fa61-5470-48dd-b48c-de4e9e2a9e30
+	java:S112H"FDefine and throw a dedicated exception instead of using a generic one.(Ñó²ûıÿÿÿÿ8Òİ¿ƒÕ2J$acc92ad5-d13b-4cc7-b9b0-e45f090c5cae
 …
-java:S6813"BRemove this field injection and use constructor injection instead.(êæÄŞ8Ë…¿¿Ô2J$196a89ff-a0bb-4b2a-8a66-b45cefc3d782
+java:S6813"BRemove this field injection and use constructor injection instead.(êæÄŞ8Õİ¿ƒÕ2J$fbb4f52b-990f-4729-b4e7-2670d85f90a0
 …
-java:S6813"BRemove this field injection and use constructor injection instead.(êæÄŞ8Í…¿¿Ô2J$b3bd3f2c-ef36-4e3e-88ce-85f9a1c90295
+java:S6813"BRemove this field injection and use constructor injection instead.(êæÄŞ8Õİ¿ƒÕ2J$7a398215-949f-4c7d-96d1-bcded12cda6f
 …
-java:S6813"BRemove this field injection and use constructor injection instead.(êæÄŞ8Î…¿¿Ô2J$bdf29edb-9df4-41b8-90d6-7aeedcd3db89
+java:S6813"BRemove this field injection and use constructor injection instead.(êæÄŞ8Õİ¿ƒÕ2J$df65acdf-3ae0-4d6d-b485-abaf5c8d1993
 …
-java:S6813!"BRemove this field injection and use constructor injection instead.(êæÄŞ8Ï…¿¿Ô2J$0b5a0a7d-7073-4acb-b567-e09cc32c22a2
+java:S6813!"BRemove this field injection and use constructor injection instead.(êæÄŞ8Õİ¿ƒÕ2J$f6480df6-36bc-46c4-b3c9-64d7ab5a8512
+~
+java:S1128"\Remove this unused import 'org.hotfilm.identityservice.ModelDTO.Request.SetShowtimerequest'.(¯¾š²úÿÿÿÿ8ñüÁƒÕ2

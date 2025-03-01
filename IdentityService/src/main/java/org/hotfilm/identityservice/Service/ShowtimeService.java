@@ -23,6 +23,4 @@ public interface ShowtimeService {
     void deleteById(String showtimeId);
 
     ShowtimeResponse updateById(String showtimeId, ShowtimeRequest showtimeRequest);
-
-    ShowtimeResponse setMovieToShowtime(String showtimeId, SetShowtimerequest setShowtimerequest);
 }

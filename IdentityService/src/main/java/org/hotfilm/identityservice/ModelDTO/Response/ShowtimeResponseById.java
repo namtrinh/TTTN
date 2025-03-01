@@ -21,15 +21,5 @@ public class ShowtimeResponseById implements Serializable {
 
     private LocalDateTime time_end;
 
-    private Movie movie;
-
-    private Room room;
-
-    public ShowtimeResponseById(String showtimeId, LocalDateTime time_start, LocalDateTime time_end) {
-        this.showtimeId = showtimeId;
-        this.time_start = time_start;
-        this.time_end = time_end;
-    }
-
     //  private RoomResponse room;
 }
