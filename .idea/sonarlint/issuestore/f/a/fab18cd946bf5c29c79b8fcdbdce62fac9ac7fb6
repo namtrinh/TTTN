@@ -1,6 +1,8 @@
 
-“	java:S117 "QRename this local variable to match the regular expression '^[a-z][a-zA-Z0-9]*$'.(·¸İè8¾şÚƒÔ2J$5ba35054-ea50-4f67-91f4-fa0be6d99f46
-“	java:S117 "QRename this local variable to match the regular expression '^[a-z][a-zA-Z0-9]*$'.(·¸İè8¿şÚƒÔ2J$2e988c52-c324-44b3-9748-f091975ab745
-¡	java:S120"ZRename this package name to match the regular expression '^[a-z_]+(\.[a-z_][a-z0-9_]*)*$'.(ÍıæËÿÿÿÿÿ8¿şÚƒÔ2J$a128111d-2afe-4e4b-8db1-bd438400650d
+“	java:S117)"QRename this local variable to match the regular expression '^[a-z][a-zA-Z0-9]*$'.(·¸İè8Íë±ĞÕ2J$300614ac-8294-4dce-a919-f834ffdadff2
+“	java:S117)"QRename this local variable to match the regular expression '^[a-z][a-zA-Z0-9]*$'.(·¸İè8Îë±ĞÕ2J$65bfb7ca-ff2d-4070-a2a7-060b4a989833
+¡	java:S120"ZRename this package name to match the regular expression '^[a-z_]+(\.[a-z_][a-z0-9_]*)*$'.(ÍıæËÿÿÿÿÿ8Îë±ĞÕ2J$e40bd283-c085-4b04-a1d6-9eef637cc04a
+’
+java:S1128"ORemove this unused import 'org.springframework.beans.factory.annotation.Value'.(ìø›8Ôë±ĞÕ2J$3f3b5c6a-c1b5-4dc3-b980-4642e96a20ce
 „
-java:S1128"ARemove this unused import 'org.springframework.cglib.core.Local'.(ÁÒû8‚î¡¿Ô2J$e28660f9-14c4-4034-937b-85e96c4a91bc
+java:S1128"ARemove this unused import 'org.springframework.cglib.core.Local'.(ÁÒû8Ôë±ĞÕ2J$04253280-e483-4d20-a3b7-d9bb66a152bf

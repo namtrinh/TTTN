@@ -76,15 +76,12 @@ public class RoomServiceImp implements RoomService {
         }
         switch (room.getRoomType().toString()){
             case "STANDARD":
-                room.setSeat(seatService.createSeat(8, 8));
                 room.setTotalSeat(64);
                 break;
             case "IMAX":
-                room.setSeat(seatService.createSeat(10, 10));
                 room.setTotalSeat(100);
                 break;
             case "COUPLE":
-                room.setSeat(seatService.createSeat(6,7));
                 room.setTotalSeat(42);
                 break;
         }

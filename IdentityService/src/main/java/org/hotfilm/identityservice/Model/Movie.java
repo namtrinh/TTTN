@@ -43,6 +43,9 @@ public class Movie implements Serializable {
 
     private MovieStatus movieStatus;
 
+    @OneToMany(mappedBy = "movie", fetch = FetchType.EAGER)
+    private Set<Showtime> showtimes;
+
     public enum MovieStatus{
         SHOWING, FINISH
     }

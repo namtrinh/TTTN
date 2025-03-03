@@ -1,37 +1,43 @@
 
-›	java:S120"ZRename this package name to match the regular expression '^[a-z_]+(\.[a-z_][a-z0-9_]*)*$'.(¤ÙÁ8üƒùèÑ2J$351edc67-ebdb-4f18-adba-1087275619bd
+›	java:S120"ZRename this package name to match the regular expression '^[a-z_]+(\.[a-z_][a-z0-9_]*)*$'.(¤ÙÁ8•àõ¨Õ2J$6068567a-363b-4363-84ec-0d31869373ea
 p
-java:S54118"(Use a primitive boolean expression here.(“±ó‡úÿÿÿÿ8ıƒùèÑ2J$187efb96-4500-44a0-a3ed-aed3a5a8e307
+java:S5411:"(Use a primitive boolean expression here.(“±ó‡úÿÿÿÿ8–àõ¨Õ2J$f68bc549-4fe2-406a-afb9-4b5b4db446ce
 k
-java:S5411"(Use a primitive boolean expression here.(ñ‚íå8†„ùèÑ2J$7c0c21c4-340c-4f42-8d69-71c15481af65
+java:S5411l"(Use a primitive boolean expression here.(ñ‚íå8–àõ¨Õ2J$9936a0eb-405a-4354-8368-ea862f002675
 l
-java:S5411œ"(Use a primitive boolean expression here.(µÿæå8ˆ„ùèÑ2J$8b5109e3-819f-4da2-a21f-c47fb3f98d0a
+java:S5411ƒ"(Use a primitive boolean expression here.(ñ‚íå8—àõ¨Õ2J$87ae61f4-d075-41b3-97eb-dc594c4cfe05
+l
+java:S5411 "(Use a primitive boolean expression here.(µÿæå8—àõ¨Õ2J$fd9101ae-58ed-4e55-b57f-2b4b6610bb56
 „
-java:S4973V"<Strings and Boxed types should be compared using "equals()".(­¡€Ùÿÿÿÿÿ8Š„ùèÑ2J$03f4a6e2-3f4c-4a1d-b56b-ffa298db7a17
+java:S4973X"<Strings and Boxed types should be compared using "equals()".(­¡€Ùÿÿÿÿÿ8—àõ¨Õ2J$55cf5633-b282-4612-9572-868caa5f9045
+³
+java:S1488x"kImmediately return this expression instead of assigning it to the temporary variable "movieResponseDetail".(Î»Ğ¿ıÿÿÿÿ8‰Îø¨Õ2J$37692e05-2443-4523-b6bb-81582b666f55
 
-java:S3655„"JCall "movie.isPresent()" or "!movie.isEmpty()" before accessing the value.(óáßÕ8Œ„ùèÑ2J$d6083d63-376c-434f-ad32-671f9e27deee
+java:S3655ˆ"JCall "movie.isPresent()" or "!movie.isEmpty()" before accessing the value.(óáßÕ8œàõ¨Õ2J$cc2f2f6a-1dab-4dbd-82c4-b57626d1afb8
 
-java:S3008+"URename this field "HASH_MOVIE" to match the regular expression '^[a-z][a-zA-Z0-9]*$'.(¤ÿ ½ûÿÿÿÿ8„ùèÑ2J$a78d9679-c748-45d7-ad46-f8415cb0c9ba
+java:S3008-"URename this field "HASH_MOVIE" to match the regular expression '^[a-z][a-zA-Z0-9]*$'.(¤ÿ ½ûÿÿÿÿ8àõ¨Õ2J$a4be2863-ba2a-4d25-8c53-99c27eee590f
 …
-java:S6813"BRemove this field injection and use constructor injection instead.(êæÄŞ8„ùèÑ2J$ccabce67-a650-4276-b529-ecc7a5394b63
+java:S6813 "BRemove this field injection and use constructor injection instead.(êæÄŞ8àõ¨Õ2J$5baab8d0-e0a3-4baa-83d2-3a4493d1f617
 …
-java:S6813!"BRemove this field injection and use constructor injection instead.(êæÄŞ8„ùèÑ2J$d4afa161-a6f0-45d5-be0b-4cae7acb69f0
+java:S6813#"BRemove this field injection and use constructor injection instead.(êæÄŞ8àõ¨Õ2J$ff8722fe-d31e-4c63-aa31-517349763a7d
 …
-java:S6813$"BRemove this field injection and use constructor injection instead.(êæÄŞ8‘„ùèÑ2J$5eea55c4-82bb-4acd-899c-8d312bfe8d01
+java:S6813&"BRemove this field injection and use constructor injection instead.(êæÄŞ8àõ¨Õ2J$c0b704ea-5fc2-42d4-8b3e-13261f3d7199
 …
-java:S6813'"BRemove this field injection and use constructor injection instead.(êæÄŞ8’„ùèÑ2J$0932275e-91e9-4e5c-bd23-c1bdea095b80
-•	java:S1002"NRename this method name to match the regular expression '^[a-z][a-zA-Z0-9]*$'.(ñš¸Õüÿÿÿÿ8“„ùèÑ2J$49768b52-2991-4fa3-b687-b96a4bf4fe28
+java:S6813)"BRemove this field injection and use constructor injection instead.(êæÄŞ8àõ¨Õ2J$a1cb83ac-49c5-4ae0-b09d-2cc554461c9a
+•	java:S1004"NRename this method name to match the regular expression '^[a-z][a-zA-Z0-9]*$'.(ñš¸Õüÿÿÿÿ8¢àõ¨Õ2J$7a4a6ff7-ca71-499d-834e-c007c92bceaf
 ½
-java:S6204>"zReplace this usage of 'Stream.collect(Collectors.toList())' with 'Stream.toList()' and ensure that the list is unmodified.(ª™¨¹8”„ùèÑ2J$cb30db36-d92d-4b97-98e8-37a655e1fcbe
+java:S6204@"zReplace this usage of 'Stream.collect(Collectors.toList())' with 'Stream.toList()' and ensure that the list is unmodified.(ª™¨¹8¤àõ¨Õ2J$358ca9ab-7261-4657-970b-45c497b0354a
 †
-java:S1612=">Replace this lambda with method reference 'Movie.class::cast'.(§°×®şÿÿÿÿ8•„ùèÑ2J$2cf5b2f3-35a4-4beb-b9fa-6ab562911ca1
+java:S1612?">Replace this lambda with method reference 'Movie.class::cast'.(§°×®şÿÿÿÿ8¤àõ¨Õ2J$4f1f7612-4173-4188-a748-65b8c9201013
 p
-java:S1905="(Remove this unnecessary cast to "Movie".(§°×®şÿÿÿÿ8•„ùèÑ2J$545d6293-6298-4fbd-8e25-817ddf77eed6
+java:S1905?"(Remove this unnecessary cast to "Movie".(§°×®şÿÿÿÿ8¤àõ¨Õ2J$45026e1f-9be9-40e9-ab3c-5acc4d17f24a
 ½
-java:S6204A"zReplace this usage of 'Stream.collect(Collectors.toList())' with 'Stream.toList()' and ensure that the list is unmodified.(ª™¨¹8•„ùèÑ2J$e9f2e68f-d1c6-4145-bf74-88dc48be412c
-r	java:S106C"+Replace this use of System.out by a logger.(£õâøıÿÿÿÿ8•„ùèÑ2J$a25763fc-10b1-4d15-86b3-330464c473df
+java:S6204C"zReplace this usage of 'Stream.collect(Collectors.toList())' with 'Stream.toList()' and ensure that the list is unmodified.(ª™¨¹8¥àõ¨Õ2J$be0e7ffa-f7dc-4d11-8d09-6f5be4d7d544
+r	java:S106E"+Replace this use of System.out by a logger.(£õâøıÿÿÿÿ8¥àõ¨Õ2J$1e8f5c12-91e0-4479-9611-3668508f2fb4
 ½
-java:S6204J"zReplace this usage of 'Stream.collect(Collectors.toList())' with 'Stream.toList()' and ensure that the list is unmodified.(ª™¨¹8•„ùèÑ2J$a9c2708f-66c4-4fe3-bd7a-e675d4ba02a4
-~	java:S125c"<This block of commented-out lines of code should be removed.(êì8•„ùèÑ2J$0883f743-5de3-45a7-912d-e770f2332796
+java:S6204L"zReplace this usage of 'Stream.collect(Collectors.toList())' with 'Stream.toList()' and ensure that the list is unmodified.(ª™¨¹8¦àõ¨Õ2J$504ce74e-d799-4c5a-afa7-01deead764e3
+~	java:S125e"<This block of commented-out lines of code should be removed.(êì8¨àõ¨Õ2J$3ac0fb85-03e4-4812-b937-d8f4ca97d08f
 s
-java:S1128"0Remove this unused import 'jdk.jfr.ContentType'.(„é²ò8•„ùèÑ2J$61cbc98a-514d-4ec3-b7ed-49e7ecf1aa50
+java:S1128"0Remove this unused import 'jdk.jfr.ContentType'.(„é²ò8ŸÎø¨Õ2J$8423c97a-152f-48d1-9907-9c6d27c5323b
+‚
+java:S1128"?Remove this unused import 'java.time.format.DateTimeFormatter'.(‰÷÷ª8ŸÎø¨Õ2J$1c16f5a8-3172-4a8d-b27d-4e7c803d471c

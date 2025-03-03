@@ -21,5 +21,6 @@ public class ShowtimeResponseById implements Serializable {
 
     private LocalDateTime time_end;
 
+
     //  private RoomResponse room;
 }

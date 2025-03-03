@@ -1,4 +1,6 @@
 
-œ	java:S120"ZRename this package name to match the regular expression '^[a-z_]+(\.[a-z_][a-z0-9_]*)*$'.(æñòÕ8‚Í ¹Ó2J$6da0ee6c-4f94-4b09-a193-a7ae2f77927f
+œ	java:S120"ZRename this package name to match the regular expression '^[a-z_]+(\.[a-z_][a-z0-9_]*)*$'.(æñòÕ8‚Í ¹Ó2J$1d540758-5145-4a1c-89db-34f9a65d5c49
 ‹
-java:S1128"CRemove this unused import 'org.hotfilm.identityservice.Model.Seat'.(Ñ¤Ùéıÿÿÿÿ8€¡½Ó2J$b9addf3d-4f98-4eed-9b8c-24d2e57f58b2
+java:S1128"CRemove this unused import 'org.hotfilm.identityservice.Model.Seat'.(Ñ¤Ùéıÿÿÿÿ8€¡½Ó2J$a571de10-44c5-47ab-8a22-8248fc16a9aa
+L
+java:S1128"*Remove this unused import 'java.util.Set'.(ö²„¤şÿÿÿÿ8ÈÙÜØÕ2

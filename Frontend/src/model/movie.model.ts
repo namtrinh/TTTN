@@ -16,7 +16,7 @@ export class Movie {
   productionCompany?: string;
   trailerUrl?: string;
   movieStatus!: MovieStatus;
-  showtime!: Partial<Showtime>
+  showtimes!: Showtime[]
 }
 
 // Enum cho trạng thái phim

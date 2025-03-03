@@ -68,11 +68,10 @@ footer {
 }
 
 section {
-  background-color: #ffffff57;
   border-radius: 8px;
   padding: 8px;
   margin: 10px 0;
-  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  box-shadow: 0 4px 8px rgba(255, 255, 255, 0.1);
   width: 100%;
   text-align: center;
   margin-left: auto;
@@ -146,3 +145,28 @@ select:hover {
 .seat:active {
   background-color: #ccc6c6;
 }
+
+
+.category {
+  margin-bottom: 15px;
+}
+.category h3 {
+  margin: 0 0 5px 0;
+  font-size: 16px;
+}
+.btn {
+  display: inline-block;
+  background-color: transparent;
+  color: white;
+  border: 1px solid white;
+  padding: 5px 10px;
+  margin-right: 5px;
+  cursor: pointer;
+  font-size: 14px;
+  border-radius: 5px;
+}
+.btn:hover {
+  background-color: white;
+  color: #662d91;
+}
+

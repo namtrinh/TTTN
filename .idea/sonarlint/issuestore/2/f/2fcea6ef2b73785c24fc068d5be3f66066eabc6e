@@ -1,16 +1,16 @@
 
-¡	java:S120"ZRename this package name to match the regular expression '^[a-z_]+(\.[a-z_][a-z0-9_]*)*$'.(Û´¬áÿÿÿÿÿ8ŒóÔ2J$6c3a62f9-f351-437c-93e7-c9733558da5d
+¡	java:S120"ZRename this package name to match the regular expression '^[a-z_]+(\.[a-z_][a-z0-9_]*)*$'.(Û´¬áÿÿÿÿÿ8ÎíšÒÕ2J$3b575d95-816e-4cc6-a965-bf5e8460f017
 …
-java:S6813"BRemove this field injection and use constructor injection instead.(êæÄŞ8•óÔ2J$5b3ef79d-1783-41ff-a73f-3d3e24515b96
+java:S6813"BRemove this field injection and use constructor injection instead.(êæÄŞ8ĞíšÒÕ2J$2958eb4e-022d-4be6-b880-cadd37221876
 …
-java:S6813"BRemove this field injection and use constructor injection instead.(êæÄŞ8•óÔ2J$64340274-4f15-4273-ab50-94a794228375
+java:S6813"BRemove this field injection and use constructor injection instead.(êæÄŞ8ĞíšÒÕ2J$ba2ac36c-edc0-44fd-905d-5ec29bbc392a
 Œ
-java:S1128"DRemove this unused import 'org.hotfilm.identityservice.Model.Movie'.(Ó‰˜Îøÿÿÿÿ8¸¼Ò‚Õ2J$f1929c8f-1230-4a27-a67a-da5f9cdd6ab9
+java:S1128"DRemove this unused import 'org.hotfilm.identityservice.Model.Movie'.(Ó‰˜Îøÿÿÿÿ8ÛíšÒÕ2J$43bd69f5-92d2-45ec-a8cc-0f745743a75c
 ‹
-java:S1128"CRemove this unused import 'org.hotfilm.identityservice.Model.Room'.(¸ÇÛğıÿÿÿÿ8¸¼Ò‚Õ2J$21d6395a-36ff-4128-bb6c-e95ceaf4b33f
+java:S1128"CRemove this unused import 'org.hotfilm.identityservice.Model.Room'.(¸ÇÛğıÿÿÿÿ8ÛíšÒÕ2J$a5090220-1e63-4563-8d52-fafc214bd6ac
 Š
-java:S1128"GRemove this unused import 'org.hotfilm.identityservice.Model.Showtime'.(Ùş™Ÿ8¸¼Ò‚Õ2J$dc21312b-4314-4904-82c2-c1f21a8c1f2f
+java:S1128"GRemove this unused import 'org.hotfilm.identityservice.Model.Showtime'.(Ùş™Ÿ8ÛíšÒÕ2J$d9bc1d86-440e-43fb-a90e-9d2fad4d9f58
 ¤
-java:S1128"\Remove this unused import 'org.hotfilm.identityservice.ModelDTO.Request.SetShowtimerequest'.(¯¾š²úÿÿÿÿ8¸¼Ò‚Õ2J$ed3b280b-9f8f-45d6-aa9c-ae74f4905e2c
+java:S1128"\Remove this unused import 'org.hotfilm.identityservice.ModelDTO.Request.SetShowtimerequest'.(¯¾š²úÿÿÿÿ8ÛíšÒÕ2J$732ef108-2c76-4822-bd1e-79e754186e6b
 Œ
-java:S1128"DRemove this unused import 'org.springframework.http.ResponseEntity'.(¶¯ø¦úÿÿÿÿ8¸¼Ò‚Õ2J$6fddd1f2-6e7e-4d03-b362-b880cc395fec
+java:S1128"DRemove this unused import 'org.springframework.http.ResponseEntity'.(¶¯ø¦úÿÿÿÿ8ÜíšÒÕ2J$98e89f90-f42c-4f11-939f-b3c7a4151e7b

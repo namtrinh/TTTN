@@ -6,6 +6,7 @@ import {MovieService} from '../../../service/movie.service';
 import {Movie} from '../../../model/movie.model';
 import {RoomService} from '../../../service/room.service';
 import {Room} from '../../../model/room.model';
+import {Seat} from '../../../model/seat.model';
 
 @Component({
   selector: 'app-showtime-manage',
@@ -24,6 +25,7 @@ export class ShowtimeManageComponent implements OnInit {
   }
 
   ngOnInit(): void {
+    this.getRoom()
   }
 
   dateTime!: string;
@@ -34,18 +36,27 @@ export class ShowtimeManageComponent implements OnInit {
   rooms:Room[] = [];
   room!:Room;
   body:Showtime = new Showtime()
+  selectdRoomId:string = ''
 
-  getAllShowtimeByTime() {
-    this.showtimeService.getAll(this.dateTime).subscribe((data: any) => {
-      this.showtimes = data.result;
-      this.getMovie();
-      this.getRoom();
-    }, error => {
-      console.log(error.error.message)
-    })
+
+  getAllShowtimeByTime(date:string, roomselected:string) {
+    if (date && roomselected) {
+      this.showtimeService.getAll(date, roomselected, '').subscribe((data: any) => {
+        this.showtimes = data.result;
+        console.log(this.showtimes)
+        this.getMovie();
+        this.getRoom();
+      }, error => {
+        console.log(error.error.message)
+      })
+    }else{
+      alert("Date or room is not empty!")
+    }
   }
 
   createShowtime(data: Showtime) {
+    console.log(data)
+    console.log(data.roomId)
     this.showtimeService.createShowtime(data).subscribe((data: any) => {
       this.showtimes.push(data.result)
     }, error => {
@@ -56,7 +67,7 @@ export class ShowtimeManageComponent implements OnInit {
   deleteShowtime(id: string) {
     if (window.confirm("Are you sure you want to delete this showtime")) {
       this.showtimeService.deleteById(id).subscribe(data => {
-      this.getAllShowtimeByTime();
+     // this.getAllShowtimeByTime(date);
       })
     }
   }
@@ -94,6 +105,9 @@ export class ShowtimeManageComponent implements OnInit {
   getRoom(){
     this.roomService.getAll().subscribe((data:any) =>{
       this.rooms = data.result;
+      console.log(this.rooms)
     })
   }
+
+
 }

@@ -28,6 +28,8 @@ public class Seat implements Serializable {
 
     private LocalDateTime time_selected = LocalDateTime.now();
 
+    private String showtimeId;
+
     public enum SeatStatus {
         AVAILABLE, RESERVED
     }

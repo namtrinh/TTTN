@@ -8,21 +8,14 @@ import java.util.List;
 import java.util.Set;
 
 public interface SeatService {
-    List<SeatResponse> findAll();
+    List<SeatResponse> findAll(String showtimeId);
 
-    Seat save(Seat seat);
-
-    Set<Seat> createSeat(int row, int col);
+    Set<Seat> createSeat(int row, int col, String showtimeId);
 
     Seat findById(String seatId);
 
-    boolean existsById(String seatId);
-
-    void deleteById(String seatId);
+    void deleteByShowtimeId(String showtimeId);
 
     Seat updateById(String seatId, Seat seat);
 
-
-
-    List<Seat> findBySeatStatus(SeatStatus seatStatus);
 }

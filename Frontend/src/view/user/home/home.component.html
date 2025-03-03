@@ -52,6 +52,7 @@
 
 <!-- Movie Categories -->
 <div class="container movie-category mt-4">
+  <br>
   <h2>Popular Movies</h2>
   <div class="row grid-frame">
     @for (movie of movies; track $index) {
@@ -61,26 +62,8 @@
       </div>
     }
   </div>
+  <br><br>
 </div>
-
-<div class="container movie-category mt-4">
-  <h2>Top Rated</h2>
-  <div class="row mt-4">
-    <div class="col-6 col-sm-6 col-md-3">
-      <img src="https://via.placeholder.com/300x450" class="img-fluid movie-poster" alt="Movie 5">
-    </div>
-    <div class="col-6 col-sm-6 col-md-3">
-      <img src="https://via.placeholder.com/300x450" class="img-fluid movie-poster" alt="Movie 6">
-    </div>
-    <div class="col-6 col-sm-6 col-md-3">
-      <img src="https://via.placeholder.com/300x450" class="img-fluid movie-poster" alt="Movie 7">
-    </div>
-    <div class="col-6 col-sm-6 col-md-3">
-      <img src="https://via.placeholder.com/300x450" class="img-fluid movie-poster" alt="Movie 8">
-    </div>
-  </div>
-</div>
-
 </body>
 
 <app-footer></app-footer>

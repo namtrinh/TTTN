@@ -53,7 +53,9 @@ public class SecurityConfig {
             "/room/**",
             "/room",
             "/showtime",
-            "/showtime/**"
+            "/showtime/**",
+            "/seat",
+            "/seat/**"
     };
 
 

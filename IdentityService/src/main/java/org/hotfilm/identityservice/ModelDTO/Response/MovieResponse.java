@@ -4,6 +4,7 @@ import lombok.*;
 
 import java.io.Serializable;
 import java.time.LocalDate;
+import java.util.Set;
 
 @Getter
 @Setter
@@ -15,4 +16,6 @@ public class MovieResponse implements Serializable {
     private String movieName; // Tên phim
     private String posterUrl; // Đường dẫn hình ảnh poster
     private String movieTitle; // Tên phụ (nếu có)
+
+    private Set<ShowtimeResponse> showtimes;
 }

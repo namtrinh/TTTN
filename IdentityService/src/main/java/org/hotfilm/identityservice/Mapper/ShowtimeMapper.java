@@ -14,4 +14,5 @@ public interface ShowtimeMapper {
     ShowtimeResponse toShowtimeResponse(Showtime showtime);
 
     ShowtimeResponseById toShowtimeResponseById(Showtime showtime);
+
 }

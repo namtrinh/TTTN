@@ -25,33 +25,31 @@ public class SeatServiceImp implements SeatService {
     private SeatMapper seatMapper;
 
     @Override
-    public List<SeatResponse> findAll() {
-        return seatRepository.findAll()
+    public List<SeatResponse> findAll(String showtimeId) {
+        return seatRepository.findAllByShowtimeId(showtimeId)
                 .stream()
                 .map(seatMapper::toSeatResponse)
                 .collect(Collectors.toList());
     }
 
     @Override
-    public Seat save(Seat seat) {
-        return seatRepository.save(seat);
-    }
-
-    @Override
-    public Set<Seat> createSeat(int row, int col) {
+    public Set<Seat> createSeat(int row, int col, String showtimeId) {
         Set<Seat> listSeat = new HashSet<>();
         char[] keys = {'A', 'B', 'C', 'D', 'E', 'F', 'G', 'H', 'I', 'J', 'K', 'L'};
         if (row > 10 && col > 10) {
             throw new RuntimeException("Row must be between 0 and 10");
         }
         for (int i = 0; i < row; i++) {
+
             for (int j = 1; j <= col; j++) {
                 System.out.println(keys[i] + "" + j);
                 Seat seat = new Seat();
                 seat.setSeatStatus(SeatStatus.AVAILABLE);
+                seat.setShowtimeId(showtimeId);
                 seat.setSeatNumber(keys[i]+""+j);
            //     seat.setSeatId(UUID.randomUUID().toString());
                 listSeat.add(seat);
+
                 seatRepository.save(seat);
             }
         }
@@ -64,28 +62,15 @@ public class SeatServiceImp implements SeatService {
                 .orElseThrow(() -> new RuntimeException("Seat with ID " + seatId + " not found"));
     }
 
-    @Override
-    public boolean existsById(String seatId) {
-        return seatRepository.existsById(seatId);
-    }
 
     @Override
-    public void deleteById(String seatId) {
-        if (seatRepository.existsById(seatId)) {
-            seatRepository.deleteById(seatId);
-        } else {
-            throw new RuntimeException("Seat with ID " + seatId + " does not exist");
-        }
+    public void deleteByShowtimeId(String showtimeId) {
+            seatRepository.deleteAllByShowtimeId(showtimeId);
     }
 
     @Override
     public Seat updateById(String seatId, Seat seat) {
         seat.setSeatId(seatId);
         return seatRepository.save(seat);
-    }
-
-    @Override
-    public List<Seat> findBySeatStatus(SeatStatus seatStatus) {
-        return seatRepository.findBySeatStatus(seatStatus);
     }
 }

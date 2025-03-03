@@ -7,6 +7,7 @@ import org.hotfilm.identityservice.Mapper.MovieMapper;
 import org.hotfilm.identityservice.Model.Movie;
 import org.hotfilm.identityservice.ModelDTO.Request.MovieCreateRequest;
 import org.hotfilm.identityservice.ModelDTO.Response.MovieResponse;
+import org.hotfilm.identityservice.ModelDTO.Response.MovieResponseDetail;
 import org.hotfilm.identityservice.Repository.MovieRepository;
 import org.hotfilm.identityservice.Service.CloudinaryService;
 import org.hotfilm.identityservice.Service.MovieService;
@@ -20,6 +21,7 @@ import org.springframework.data.redis.core.RedisTemplate;
 import org.springframework.stereotype.Service;
 import org.springframework.web.multipart.MultipartFile;
 
+import java.time.format.DateTimeFormatter;
 import java.util.*;
 import java.util.concurrent.TimeUnit;
 import java.util.stream.Collectors;
@@ -113,8 +115,10 @@ public class MovieServiceImp implements MovieService {
     }
 
     @Override
-    public Movie findByMovieTitle(String string) {
-        return movieRepository.findByMovieTitle(string);
+    public MovieResponseDetail findByMovieTitle(String string) {
+        Movie movie = movieRepository.findByMovieTitle(string);
+        MovieResponseDetail movieResponseDetail = movieMapper.toMovieResponseDetail(movie);
+        return movieResponseDetail;
     }
 
     @Override

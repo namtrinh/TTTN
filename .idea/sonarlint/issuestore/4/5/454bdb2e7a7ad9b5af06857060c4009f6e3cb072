@@ -1,21 +1,20 @@
 
-{	java:S120"ZRename this package name to match the regular expression '^[a-z_]+(\.[a-z_][a-z0-9_]*)*$'.(Û´¬áÿÿÿÿÿ8ßˆ‹¿Ó2
-_
-java:S6813"BRemove this field injection and use constructor injection instead.(êæÄŞ8ş÷¬èÑ2
+¡	java:S120"ZRename this package name to match the regular expression '^[a-z_]+(\.[a-z_][a-z0-9_]*)*$'.(Û´¬áÿÿÿÿÿ8ßˆ‹¿Ó2J$135b3f2b-5393-4cd6-b597-5d92c50c1938
+…
+java:S6813"BRemove this field injection and use constructor injection instead.(êæÄŞ8ş÷¬èÑ2J$df413d32-f142-4f0d-9211-59bbb13a9b49
 L
-java:S1128"/Remove this unused import 'com.cloudinary.Api'.(¹¼£¨8€ø¬èÑ2
+java:S1128"/Remove this unused import 'com.cloudinary.Api'.(¹¼£¨8Å‡ÂÎÕ2
 ]
-java:S1128";Remove this unused import 'lombok.RequiredArgsConstructor'.(ÑØúøÿÿÿÿ8ø¬èÑ2
+java:S1128";Remove this unused import 'lombok.RequiredArgsConstructor'.(ÑØúøÿÿÿÿ8Å‡ÂÎÕ2
 Y
-java:S1128"7Remove this unused import 'org.apache.coyote.Response'.(˜ÊŠşÿÿÿÿ8‘ø¬èÑ2
+java:S1128"7Remove this unused import 'org.apache.coyote.Response'.(˜ÊŠşÿÿÿÿ8Å‡ÂÎÕ2
 t
-java:S1128
-"RRemove this unused import 'org.hotfilm.identityservice.Service.CloudinaryService'.(Îœ½‰ıÿÿÿÿ8Äø¬èÑ2
+java:S1128"RRemove this unused import 'org.hotfilm.identityservice.Service.CloudinaryService'.(Îœ½‰ıÿÿÿÿ8Å‡ÂÎÕ2
 c
-java:S1128"ARemove this unused import 'org.springframework.http.HttpMessage'.(ş÷Ìñıÿÿÿÿ8Äø¬èÑ2
+java:S1128"ARemove this unused import 'org.springframework.http.HttpMessage'.(ş÷Ìñıÿÿÿÿ8Å‡ÂÎÕ2
 f
-java:S1128"DRemove this unused import 'org.springframework.http.ResponseEntity'.(¶¯ø¦úÿÿÿÿ8Äø¬èÑ2
+java:S1128"DRemove this unused import 'org.springframework.http.ResponseEntity'.(¶¯ø¦úÿÿÿÿ8Å‡ÂÎÕ2
 ^
-java:S1128"ARemove this unused import 'javax.print.attribute.standard.Media'.(‰šäÁ8Äø¬èÑ2
+java:S1128"ARemove this unused import 'javax.print.attribute.standard.Media'.(‰šäÁ8Å‡ÂÎÕ2
 L
-java:S1128"*Remove this unused import 'java.util.Map'.(¼è½Òşÿÿÿÿ8Äø¬èÑ2
+java:S1128"*Remove this unused import 'java.util.Map'.(¼è½Òşÿÿÿÿ8Å‡ÂÎÕ2

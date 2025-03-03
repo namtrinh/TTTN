@@ -1,6 +1,8 @@
 
-š	java:S120"ZRename this package name to match the regular expression '^[a-z_]+(\.[a-z_][a-z0-9_]*)*$'.(Û´¬áÿÿÿÿÿJ$a732ee5c-fb0c-4ea7-bf11-52c000bf6ae7
-~
-java:S6813"BRemove this field injection and use constructor injection instead.(êæÄÞJ$51b77033-3b09-451f-ba38-97402dd6b30d
-~
-java:S6813"BRemove this field injection and use constructor injection instead.(êæÄÞJ$7c0c81e1-9adf-4564-a3b7-6a670424801d
+¡	java:S120"ZRename this package name to match the regular expression '^[a-z_]+(\.[a-z_][a-z0-9_]*)*$'.(Û´¬áÿÿÿÿÿ8°ªï×Õ2J$23bc7ee0-f2d6-46e0-8f04-6571bbbdccf3
+…
+java:S6813"BRemove this field injection and use constructor injection instead.(êæÄÞ8³ªï×Õ2J$0718ef58-7dbd-49ea-8003-f12764771065
+…
+java:S6813"BRemove this field injection and use constructor injection instead.(êæÄÞ8³ªï×Õ2J$8786c366-0e58-4f46-a986-a2109867f699
+k
+java:S1128"NRemove this unused import 'org.hotfilm.identityservice.Model.Seat.SeatStatus'.(‹Æáà8…Õ˜ØÕ2

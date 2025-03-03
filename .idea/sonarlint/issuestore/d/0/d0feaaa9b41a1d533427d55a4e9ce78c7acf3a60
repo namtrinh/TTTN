@@ -1,11 +1,11 @@
 
-œ	java:S120"ZRename this package name to match the regular expression '^[a-z_]+(\.[a-z_][a-z0-9_]*)*$'.(æñòÕ8ÕÊÁ¾Ô2J$7982c04e-c7f6-43a9-9abe-cf16b822f024
-—	java:S116"URename this field "time_start" to match the regular expression '^[a-z][a-zA-Z0-9]*$'.(Ÿøû»8×ÊÁ¾Ô2J$ed75570d-492e-4dae-8883-6b337ac40a78
-š	java:S116"SRename this field "time_end" to match the regular expression '^[a-z][a-zA-Z0-9]*$'.(œÐÕ†úÿÿÿÿ8×ÊÁ¾Ô2J$6f0938f0-ab51-43b4-862a-0b4100f3b3e0
-ƒ	java:S125"<This block of commented-out lines of code should be removed.(êÞ´Ìøÿÿÿÿ8ÛÊÁ¾Ô2J$8c2834c5-9395-4fcf-9aab-111a3fc7c13d
-f
-java:S1128"DRemove this unused import 'org.hotfilm.identityservice.Model.Movie'.(Ó‰˜Îøÿÿÿÿ8»‘ßƒÕ2
-e
-java:S1128"CRemove this unused import 'org.hotfilm.identityservice.Model.Room'.(¸ÇÛðýÿÿÿÿ8»‘ßƒÕ2
-^
-java:S1128"ARemove this unused import 'org.springframework.cglib.core.Local'.(ÁÒû8»‘ßƒÕ2
+œ	java:S120"ZRename this package name to match the regular expression '^[a-z_]+(\.[a-z_][a-z0-9_]*)*$'.(æñòÕ8­—ƒ§Õ2J$109b47ae-3f62-4106-8ab8-6b22d6d41ae0
+—	java:S116"URename this field "time_start" to match the regular expression '^[a-z][a-zA-Z0-9]*$'.(Ÿøû»8¯—ƒ§Õ2J$5a6f68d1-ee78-4795-81a1-22385beeb3fb
+š	java:S116"SRename this field "time_end" to match the regular expression '^[a-z][a-zA-Z0-9]*$'.(œÐÕ†úÿÿÿÿ8¯—ƒ§Õ2J$a10c489e-da49-4ddc-8ccd-8e44fd8e15bc
+ƒ	java:S125"<This block of commented-out lines of code should be removed.(êÞ´Ìøÿÿÿÿ8²—ƒ§Õ2J$705669b7-6b4c-47c7-8b21-cbc560c6bee4
+Œ
+java:S1128"DRemove this unused import 'org.hotfilm.identityservice.Model.Movie'.(Ó‰˜Îøÿÿÿÿ8§«œ§Õ2J$2359f563-6196-4e65-a1e3-f842b2ec54a2
+‹
+java:S1128"CRemove this unused import 'org.hotfilm.identityservice.Model.Room'.(¸ÇÛðýÿÿÿÿ8§«œ§Õ2J$c6170456-3aea-4977-9803-50c5e9dc0819
+„
+java:S1128"ARemove this unused import 'org.springframework.cglib.core.Local'.(ÁÒû8Ò»ƒ§Õ2J$eb7eb202-47a4-4877-bba3-db815922d005

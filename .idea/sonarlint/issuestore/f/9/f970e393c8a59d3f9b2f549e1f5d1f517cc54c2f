@@ -1,14 +1,13 @@
 
-›	java:S120"ZRename this package name to match the regular expression '^[a-z_]+(\.[a-z_][a-z0-9_]*)*$'.(¤ÙÁ8ûÏµºÓ2J$23704c74-9dbd-4820-89d5-84279edd510d
-ˆ	java:S112-"FDefine and throw a dedicated exception instead of using a generic one.(ç¯šœ8“ĞµºÓ2J$9a666ca3-c165-4162-b8be-411885b768e0
-	java:S112M"FDefine and throw a dedicated exception instead of using a generic one.(À†„¡şÿÿÿÿ8“ĞµºÓ2J$c9e96dba-a539-4ce8-822a-f815ae954de1
+›	java:S120"ZRename this package name to match the regular expression '^[a-z_]+(\.[a-z_][a-z0-9_]*)*$'.(¤ÙÁ8–â«ØÕ2J$99e5df5c-2ac3-48b6-a5a3-2508ce0ab22b
+ˆ	java:S112("FDefine and throw a dedicated exception instead of using a generic one.(ç¯šœ8™â«ØÕ2J$212e0559-b5b6-439c-8e01-6beaf046f194
 …
-java:S6813"BRemove this field injection and use constructor injection instead.(êæÄŞ8™ĞµºÓ2J$82a6f47e-d8de-46ea-90b1-9c6501b7579b
+java:S6813"BRemove this field injection and use constructor injection instead.(êæÄŞ8œâ«ØÕ2J$e05a33bc-aa3b-4e75-99a8-53404ce11aa5
 …
-java:S6813"BRemove this field injection and use constructor injection instead.(êæÄŞ8™ĞµºÓ2J$d75f74b5-eab3-4dae-b968-30f2bc714e29
+java:S6813"BRemove this field injection and use constructor injection instead.(êæÄŞ8œâ«ØÕ2J$9fc33e45-24c2-431e-9b6b-d7ca5658f78d
 ½
-java:S6204 "zReplace this usage of 'Stream.collect(Collectors.toList())' with 'Stream.toList()' and ensure that the list is unmodified.(ª™¨¹8ÃĞµºÓ2J$3ba4ed02-7d3e-4106-80a2-aad62c2a0c03
-m	java:S1061"+Replace this use of System.out by a logger.(¦ü‚û8ùÑµºÓ2J$e402afee-36db-48c8-9289-d6acb2a38f69
-ƒ	java:S1255"<This block of commented-out lines of code should be removed.(ªã·¶ÿÿÿÿÿ8ƒÒµºÓ2J$3ce78b8d-ee62-4b9a-be9a-20928cc5ddbe
+java:S6204 "zReplace this usage of 'Stream.collect(Collectors.toList())' with 'Stream.toList()' and ensure that the list is unmodified.(ª™¨¹8 â«ØÕ2J$eb28be09-caf5-4ebf-82e8-a141085d69fe
+m	java:S106-"+Replace this use of System.out by a logger.(¦ü‚û8¥â«ØÕ2J$b274e27e-3b56-45b9-a5e5-94d3c335a451
+ƒ	java:S1252"<This block of commented-out lines of code should be removed.(ªã·¶ÿÿÿÿÿ8§â«ØÕ2J$69ebaaae-e384-42ec-991b-f23555e7b4a1
 s
-java:S1128"0Remove this unused import 'java.util.ArrayList'.(÷‰îƒ8ÒµºÓ2J$0ef66843-08ae-4765-a1c8-3733216ea494
+java:S1128"0Remove this unused import 'java.util.ArrayList'.(÷‰îƒ8©â«ØÕ2J$f350e54c-194d-41f8-8fd9-8fba8ac93f07

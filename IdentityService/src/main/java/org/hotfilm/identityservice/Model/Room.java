@@ -35,6 +35,8 @@ public class Room implements Serializable {
     @OneToMany(fetch = FetchType.EAGER, cascade = CascadeType.REMOVE, orphanRemoval = true)
     private Set<Seat> seat;
 
+
+
     public enum RoomType{
         STANDARD, IMAX, COUPLE, KID
     }

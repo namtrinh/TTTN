@@ -2,7 +2,8 @@
 <div class="container">
   <header>
     <h1>Quản Lý Showtime - Lịch Chiếu</h1>
-    <button class="btn btn-light btn-sm add-btn fw-bold" data-bs-toggle="modal" data-bs-target="#createShowtime">+ Add
+    <button class="btn btn-light btn-sm add-btn fw-bold" data-bs-toggle="modal" data-bs-target="#createShowtime"
+            (click)="getRoom()">+ Add
       Showtime
     </button>
   </header>
@@ -11,7 +12,17 @@
     <div class="filter">
       <label for="datePicker">Chọn Ngày:</label>
       <input type="date" id="datePicker" [(ngModel)]="dateTime"/>
-      <button class="btn btn-danger" (click)="getAllShowtimeByTime()">Get</button>
+
+      <select class="form-select" aria-label="Default select example" [(ngModel)]="selectdRoomId">
+        <option value="" selected disabled>-- Select room --</option>
+        @for (room of rooms; track $index) {
+          <option [value]="room.roomId">{{ room.roomName }}
+            - {{ room.roomType }}
+          </option>
+        }
+      </select>
+
+      <button class="btn btn-danger" (click)="getAllShowtimeByTime(dateTime, selectdRoomId)">Get</button>
     </div>
     @for (showtime of showtimes; track $index) {
       <div class="timeline">
@@ -81,6 +92,14 @@
                      required/>
             </div>
           </div>
+          <select class="form-select" name="roomId" [(ngModel)]="showtime.roomId">
+            <option selected disabled>-- Select room --</option>
+            @for (room of rooms; track $index) {
+              <option [value]="room.roomId">{{ room.roomName }}
+                - {{ room.roomType }}
+              </option>
+            }
+          </select>
           <div class="modal-footer">
             <button type="submit" class="btn btn-success w-100" [disabled]="formCreate.invalid" data-bs-dismiss="modal">
               Save

@@ -12,7 +12,7 @@ import java.sql.Date;
 import java.util.List;
 
 public interface ShowtimeService {
-    List<ShowtimeResponse> findAll(Date dateTime);
+    List<ShowtimeResponse> findAll(Date dateTime, String roomId, String movieId);
 
     ShowtimeResponse createShowtime(ShowtimeRequest showtimeRequest);
 

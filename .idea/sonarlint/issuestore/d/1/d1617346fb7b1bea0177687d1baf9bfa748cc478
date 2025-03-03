@@ -1,14 +1,14 @@
 
-œ	java:S120"ZRename this package name to match the regular expression '^[a-z_]+(\.[a-z_][a-z0-9_]*)*$'.(ô¾µ8òæÌÄ2J$16b69131-028c-4768-a198-31d3969cb333
-	java:S116#"VRename this field "POST_PUBlIC" to match the regular expression '^[a-z][a-zA-Z0-9]*$'.(†‹¡‹şÿÿÿÿ8‡çÌÄ2J$e8e76a2a-e55c-449f-9dd8-13fffdd87ffe
-—	java:S1160"URename this field "GET_PUBLIC" to match the regular expression '^[a-z][a-zA-Z0-9]*$'.(˜êßÓ8ŠçÌÄ2J$5228ddc2-b2b2-4ad7-984b-7bd12b3ca354
+œ	java:S120"ZRename this package name to match the regular expression '^[a-z_]+(\.[a-z_][a-z0-9_]*)*$'.(ô¾µ8òæÌÄ2J$97b7e202-cdab-4f26-bfb9-12ad2b844d13
+	java:S116#"VRename this field "POST_PUBlIC" to match the regular expression '^[a-z][a-zA-Z0-9]*$'.(†‹¡‹şÿÿÿÿ8‡çÌÄ2J$cd8ad87d-acf1-4c13-ba3c-c96641795186
+—	java:S1160"URename this field "GET_PUBLIC" to match the regular expression '^[a-z][a-zA-Z0-9]*$'.(˜êßÓ8ŠçÌÄ2J$12e19511-df28-488a-93da-c3a4682e7aa7
 …
-java:S6813"BRemove this field injection and use constructor injection instead.(êæÄŞ8çÌÄ2J$8ff723e3-35f8-4ced-9448-61658806c544
+java:S6813"BRemove this field injection and use constructor injection instead.(êæÄŞ8çÌÄ2J$a175de98-b7e2-4e33-8bb3-164a4605eff3
 …
-java:S6813 "BRemove this field injection and use constructor injection instead.(êæÄŞ8‘çÌÄ2J$38d4f37f-2439-4ab2-97ad-5decc599ac7c
+java:S6813 "BRemove this field injection and use constructor injection instead.(êæÄŞ8‘çÌÄ2J$71096873-e8db-4e6c-84bc-b7e0550e7ce7
 
-java:S3305"ZInject this field value directly into "securityFilterChain", the only method that uses it.(†’³Ö8’çÌÄ2J$1861cc53-8ea2-44ea-a1cc-2d1e66956bde
+java:S3305!"ZInject this field value directly into "securityFilterChain", the only method that uses it.(’„Ñ8’çÌÄ2J$3ab996b4-484f-4e6f-aea6-792d1fc832c2
 
-java:S3305!"ZInject this field value directly into "securityFilterChain", the only method that uses it.(’„Ñ8’çÌÄ2J$8ff78960-d30e-4da5-80d0-2333b0b6d179
+java:S3305"ZInject this field value directly into "securityFilterChain", the only method that uses it.(†’³Ö8’çÌÄ2J$917202dc-f488-4775-8eaf-cd9ce7fbbfe2
 À
-java:S1128"~Remove this unused import 'org.springframework.security.oauth2.server.resource.authentication.JwtGrantedAuthoritiesConverter'.(§¨ãi8—¸ğÌÄ2J$d25928f6-4e8b-4499-888f-971ef8541198
+java:S1128"~Remove this unused import 'org.springframework.security.oauth2.server.resource.authentication.JwtGrantedAuthoritiesConverter'.(§¨ãi8—¸ğÌÄ2J$12354fce-ac1d-4f21-b517-5cd3b6ad5d40

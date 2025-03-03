@@ -1,37 +1,37 @@
 
-›	java:S120"ZRename this package name to match the regular expression '^[a-z_]+(\.[a-z_][a-z0-9_]*)*$'.(¤ÙÁ8êæºÓ2J$81090ecf-c91c-447a-9a5c-b736d43c7f9a
+›	java:S120"ZRename this package name to match the regular expression '^[a-z_]+(\.[a-z_][a-z0-9_]*)*$'.(¤ÙÁ8êæºÓ2J$967467d0-0d07-48fb-9243-bd98e2b51c8d
 p
-java:S54114"(Use a primitive boolean expression here.(ˆÁªşÿÿÿÿ8ûê†ºÓ2J$ee592792-57c4-4c89-b46e-46f8d7cd72fc
+java:S54114"(Use a primitive boolean expression here.(ˆÁªşÿÿÿÿ8ûê†ºÓ2J$5d557766-ca68-4b91-bf74-ea79ea38947b
 p
-java:S5411b"(Use a primitive boolean expression here.(š±Œúøÿÿÿÿ8êæºÓ2J$9cf0e68a-db26-44a2-ab75-f94f00e52e98
+java:S5411_"(Use a primitive boolean expression here.(š±Œúøÿÿÿÿ8êæºÓ2J$bf36e252-1315-4d00-a933-9e995cdbeb04
 p
-java:S5411u"(Use a primitive boolean expression here.(š±Œúøÿÿÿÿ8êæºÓ2J$b7e878e4-685a-488f-ab7f-3a2c6a799a17
+java:S5411r"(Use a primitive boolean expression here.(š±Œúøÿÿÿÿ8êæºÓ2J$5298e47c-221b-42c2-acd6-ac35b936374e
 k
-java:S5411"(Use a primitive boolean expression here.(òéÈé8êæºÓ2J$ab2ae8c4-b4c5-4e66-89ad-c8604b3f7b2f
-ˆ	java:S112K"FDefine and throw a dedicated exception instead of using a generic one.(ïï–ä8íæºÓ2J$ebcbee7c-aa3d-4afd-a013-47cafd9b3729
+java:S5411|"(Use a primitive boolean expression here.(òéÈé8êæºÓ2J$173d3725-3723-45a5-8be3-5eb8b91cb183
+ˆ	java:S112K"FDefine and throw a dedicated exception instead of using a generic one.(ïï–ä8íæºÓ2J$5ce720e8-74b6-417d-8b71-c05e11be0709
 …
-java:S6813"BRemove this field injection and use constructor injection instead.(êæÄŞ8ïæºÓ2J$a49199b5-84df-4084-a88c-3a57fc883ec9
+java:S6813"BRemove this field injection and use constructor injection instead.(êæÄŞ8ïæºÓ2J$29612d5f-ac31-4ba1-b62b-4129ddb7c3d1
 …
-java:S6813"BRemove this field injection and use constructor injection instead.(êæÄŞ8ïæºÓ2J$bf59f905-9306-4aaf-8ca6-4e02db4c227a
+java:S6813"BRemove this field injection and use constructor injection instead.(êæÄŞ8ïæºÓ2J$5fd8e18a-4f6a-456e-9fc4-a31a03a60628
 …
-java:S6813"BRemove this field injection and use constructor injection instead.(êæÄŞ8ïæºÓ2J$27bbdcce-558e-4984-8577-8b185fb51cb1
+java:S6813"BRemove this field injection and use constructor injection instead.(êæÄŞ8ïæºÓ2J$e7696fed-1084-4f6d-b17a-2645255238a8
 …
-java:S6813""BRemove this field injection and use constructor injection instead.(êæÄŞ8ïæºÓ2J$c7f489ab-25e4-47f4-a8f5-ba6c30de908f
+java:S6813""BRemove this field injection and use constructor injection instead.(êæÄŞ8ïæºÓ2J$f320abec-1ab1-4874-a30d-ba927c2758dc
 n
-java:S1144-"+Remove this unused private "setTTL" method.(‹‡İ¶8òæºÓ2J$8691103b-9524-4234-b178-13e77c9dbc5c
+java:S1144-"+Remove this unused private "setTTL" method.(‹‡İ¶8òæºÓ2J$cd4f8c12-1373-41f3-8d85-0527068da8e1
 ½
-java:S62049"zReplace this usage of 'Stream.collect(Collectors.toList())' with 'Stream.toList()' and ensure that the list is unmodified.(ª™¨¹8ûæºÓ2J$be68f202-d5bf-4a18-bcc5-5ded2f6628fe
+java:S62049"zReplace this usage of 'Stream.collect(Collectors.toList())' with 'Stream.toList()' and ensure that the list is unmodified.(ª™¨¹8ûæºÓ2J$2b775eda-b9cd-4f32-9fc1-728bc6d90c6d
 €
-java:S16128"=Replace this lambda with method reference 'Room.class::cast'.(˜ò›ˆ8…ë†ºÓ2J$41359eeb-ce54-41dd-b779-2fb8c85324e3
+java:S16128"=Replace this lambda with method reference 'Room.class::cast'.(˜ò›ˆ8…ë†ºÓ2J$f78272d1-b095-4569-af29-cd52996c3d3f
 j
-java:S19058"'Remove this unnecessary cast to "Room".(˜ò›ˆ8†ë†ºÓ2J$84feb6db-9fd0-441b-ac05-54d1538803ee
+java:S19058"'Remove this unnecessary cast to "Room".(˜ò›ˆ8†ë†ºÓ2J$46a2a223-cf61-4e50-b9f7-a8717cacc6b7
 ½
-java:S6204<"zReplace this usage of 'Stream.collect(Collectors.toList())' with 'Stream.toList()' and ensure that the list is unmodified.(ª™¨¹8†ë†ºÓ2J$40c1ef3a-75d0-4433-9023-a203a0a35c8a
+java:S6204<"zReplace this usage of 'Stream.collect(Collectors.toList())' with 'Stream.toList()' and ensure that the list is unmodified.(ª™¨¹8†ë†ºÓ2J$40a68a85-1b52-4c65-8fab-870deff8ab05
 ½
-java:S6204D"zReplace this usage of 'Stream.collect(Collectors.toList())' with 'Stream.toList()' and ensure that the list is unmodified.(ª™¨¹8‡ë†ºÓ2J$4dc94024-514d-4566-a9e4-849bbfecd5f0
-d	java:S131M""Add a default case to this switch.(Áİ†§8şæºÓ2J$2cce213f-172d-4d15-84fa-544a57af989b
-r	java:S106h"+Replace this use of System.out by a logger.(…µóÁûÿÿÿÿ8…Ó“ºÓ2J$a1734977-05bd-4747-ab9d-a15af36a7d80
+java:S6204D"zReplace this usage of 'Stream.collect(Collectors.toList())' with 'Stream.toList()' and ensure that the list is unmodified.(ª™¨¹8‡ë†ºÓ2J$045ab4da-9727-4577-b2dd-1b899b6b5d49
+d	java:S131M""Add a default case to this switch.(Áİ†§8¾ÌÊÓÕ2J$8803d79b-e7d1-4acd-ad64-e1a6ea474ce5
+r	java:S106e"+Replace this use of System.out by a logger.(…µóÁûÿÿÿÿ8…Ó“ºÓ2J$62b4d31c-98c3-4fee-9ae9-043db106674e
 Œ
-java:S1128"DRemove this unused import 'org.hotfilm.identityservice.Model.Movie'.(Ó‰˜Îøÿÿÿÿ8çºÓ2J$c5d487d1-7bca-4838-967f-0b4430d0eb2f
+java:S1128"DRemove this unused import 'org.hotfilm.identityservice.Model.Movie'.(Ó‰˜Îøÿÿÿÿ8¤ÌÓÕ2J$fa046cba-0fd4-4170-9b54-6fb283d8231a
 ‹
-java:S1128"CRemove this unused import 'org.hotfilm.identityservice.Model.Seat'.(Ñ¤Ùéıÿÿÿÿ8’çºÓ2J$4fbb779f-4472-4d5f-8387-a491f50544c6
+java:S1128"CRemove this unused import 'org.hotfilm.identityservice.Model.Seat'.(Ñ¤Ùéıÿÿÿÿ8¤ÌÓÕ2J$2ddbf55f-1415-48e0-a8a4-4a7ac91f81f4

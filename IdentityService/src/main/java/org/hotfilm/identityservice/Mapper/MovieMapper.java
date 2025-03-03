@@ -5,6 +5,7 @@ import org.hotfilm.identityservice.Model.Movie;
 import org.hotfilm.identityservice.ModelDTO.Request.MovieCreateRequest;
 import org.hotfilm.identityservice.ModelDTO.Request.MovieRequest;
 import org.hotfilm.identityservice.ModelDTO.Response.MovieResponse;
+import org.hotfilm.identityservice.ModelDTO.Response.MovieResponseDetail;
 import org.mapstruct.Mapper;
 import org.mapstruct.MappingTarget;
 
@@ -18,4 +19,6 @@ public interface MovieMapper {
     MovieResponse toMovieReponse(Movie movie);
 
     void updateMovieFromDto(MovieCreateRequest dto, @MappingTarget Movie entity);
+
+    MovieResponseDetail toMovieResponseDetail(Movie entity);
 }

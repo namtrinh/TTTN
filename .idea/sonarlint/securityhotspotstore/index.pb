@@ -301,3 +301,9 @@ FFrontend/src/view/manager/showtime-manage/showtime-manage.component.ts,a\b\ab5
 eIdentityService/src/main/java/org/hotfilm/identityservice/ModelDTO/Response/ShowtimeResponseById.java,d\0\d0feaaa9b41a1d533427d55a4e9ce78c7acf3a60
 ’
 bIdentityService/src/main/java/org/hotfilm/identityservice/ModelDTO/Request/SetShowtimerequest.java,8\1\81f5fc18b7b799b95e4bb957b1b547cf4208ae5d
+c
+3Frontend/src/view/user/footer/footer.component.html,c\3\c32be1adeaf567a25592168febc6fcc49366315b
+b
+2Frontend/src/view/user/footer/footer.component.css,2\3\23882622eb75a20293f9fbe5f0f2364ef884574b
+”
+dIdentityService/src/main/java/org/hotfilm/identityservice/ModelDTO/Response/MovieResponseDetail.java,a\a\aa1de6099a0117b12d1083d21eb8f0040c097d8c

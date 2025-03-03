@@ -29,10 +29,12 @@ public class ShowtimeController {
     private ShowtimeMapper showtimeMapper;
 
     @GetMapping
-    public ApiResponse<List<ShowtimeResponse>> getAllShowtimes(@RequestParam("showtime") Date dateTime) {
+    public ApiResponse<List<ShowtimeResponse>> getAllShowtimes(@RequestParam("showtime") Date dateTime,
+                                                               @RequestParam("roomId") String roomId,
+                                                               @RequestParam("movieId") String movieId) {
         return ApiResponse.<List<ShowtimeResponse>>builder()
                 .status(HttpStatus.OK)
-                .result(showtimeService.findAll(dateTime))
+                .result(showtimeService.findAll(dateTime, roomId, movieId))
                 .build();
     }
 

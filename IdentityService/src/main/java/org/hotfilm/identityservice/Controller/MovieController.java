@@ -7,6 +7,7 @@ import org.hotfilm.identityservice.Model.Movie;
 import org.hotfilm.identityservice.ModelDTO.Request.MovieCreateRequest;
 import org.hotfilm.identityservice.ModelDTO.Response.ApiResponse;
 import org.hotfilm.identityservice.ModelDTO.Response.MovieResponse;
+import org.hotfilm.identityservice.ModelDTO.Response.MovieResponseDetail;
 import org.hotfilm.identityservice.Service.CloudinaryService;
 import org.hotfilm.identityservice.Service.MovieService;
 import org.springframework.beans.factory.annotation.Autowired;
@@ -63,8 +64,8 @@ public class MovieController {
     }
 
     @GetMapping(value = "/findByTitle/{title}")
-    public ApiResponse<Movie> findByMovieTitle(@PathVariable String title) {
-        return ApiResponse.<Movie>builder()
+    public ApiResponse<MovieResponseDetail> findByMovieTitle(@PathVariable String title) {
+        return ApiResponse.<MovieResponseDetail>builder()
                 .status(HttpStatus.OK)
                 .result(movieService.findByMovieTitle(title))
                 .build();
