@@ -8,7 +8,6 @@ import org.hotfilm.identityservice.ModelDTO.Request.MovieCreateRequest;
 import org.hotfilm.identityservice.ModelDTO.Response.ApiResponse;
 import org.hotfilm.identityservice.ModelDTO.Response.MovieResponse;
 import org.hotfilm.identityservice.ModelDTO.Response.MovieResponseDetail;
-import org.hotfilm.identityservice.Service.CloudinaryService;
 import org.hotfilm.identityservice.Service.MovieService;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.data.domain.Page;
@@ -40,8 +39,8 @@ public class MovieController {
     }
 
     @GetMapping(value = "manage/movie")
-    public ApiResponse<Page<Movie>> findAll(@RequestParam int page, @RequestParam int size) {
-        return ApiResponse.<Page<Movie>>builder()
+    public ApiResponse<Page<MovieResponseDetail>> findAll(@RequestParam int page, @RequestParam int size) {
+        return ApiResponse.<Page<MovieResponseDetail>>builder()
                 .status(HttpStatus.OK)
                 .result(movieService.findAll(page, size))
                 .build();

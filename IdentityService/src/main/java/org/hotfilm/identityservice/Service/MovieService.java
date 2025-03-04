@@ -13,7 +13,7 @@ import java.util.Set;
 public interface MovieService {
     List<MovieResponse> findTop4();
 
-    Page<Movie> findAll(int page, int size);
+    Page<MovieResponseDetail> findAll(int page, int size);
 
     Set<Movie> searchMovie(String name);
 

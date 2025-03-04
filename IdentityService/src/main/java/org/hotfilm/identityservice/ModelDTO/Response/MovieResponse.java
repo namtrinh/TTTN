@@ -17,5 +17,5 @@ public class MovieResponse implements Serializable {
     private String posterUrl; // Đường dẫn hình ảnh poster
     private String movieTitle; // Tên phụ (nếu có)
 
-    private Set<ShowtimeResponse> showtimes;
+ //   private Set<ShowtimeResponse> showtimes;
 }

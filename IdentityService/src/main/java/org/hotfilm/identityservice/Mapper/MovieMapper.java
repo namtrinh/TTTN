@@ -8,6 +8,7 @@ import org.hotfilm.identityservice.ModelDTO.Response.MovieResponse;
 import org.hotfilm.identityservice.ModelDTO.Response.MovieResponseDetail;
 import org.mapstruct.Mapper;
 import org.mapstruct.MappingTarget;
+import org.springframework.data.domain.Page;
 
 @Mapper(componentModel = "spring")
 public interface MovieMapper {
@@ -21,4 +22,5 @@ public interface MovieMapper {
     void updateMovieFromDto(MovieCreateRequest dto, @MappingTarget Movie entity);
 
     MovieResponseDetail toMovieResponseDetail(Movie entity);
+
 }

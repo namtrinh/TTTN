@@ -1,7 +1,7 @@
 
-˜	java:S117"QRename this local variable to match the regular expression '^[a-z][a-zA-Z0-9]*$'.(éÄçÕùÿÿÿÿ8â”ÒÎÕ2J$d71df203-a1cb-42b7-870f-973418b74441
-˜	java:S117"QRename this local variable to match the regular expression '^[a-z][a-zA-Z0-9]*$'.(éÄçÕùÿÿÿÿ8ã”ÒÎÕ2J$466fe478-0eaa-4808-bd34-10a3a13e7e8f
-œ	java:S120"ZRename this package name to match the regular expression '^[a-z_]+(\.[a-z_][a-z0-9_]*)*$'.(æñòÕ8å³ü§Õ2J$1fd513ba-4b99-4fed-a152-1fcb05a86227
-—	java:S116"URename this field "time_start" to match the regular expression '^[a-z][a-zA-Z0-9]*$'.(ºÁı™8ç³ü§Õ2J$04b52262-4c93-4afd-8744-8d9a1cdc1043
-•	java:S116"SRename this field "time_end" to match the regular expression '^[a-z][a-zA-Z0-9]*$'.(èÑĞ8ç³ü§Õ2J$7be39cd8-8544-4370-bff3-df9c5e6a6c1a
-ƒ	java:S125"<This block of commented-out lines of code should be removed.(êŞ´Ìøÿÿÿÿ8ë³ü§Õ2J$ff051d36-e173-4bed-8355-4046196c9d92
+˜	java:S117"QRename this local variable to match the regular expression '^[a-z][a-zA-Z0-9]*$'.(éÄçÕùÿÿÿÿ8â”ÒÎÕ2J$f2834d97-0f98-41ea-8650-9c46fddd437d
+˜	java:S117"QRename this local variable to match the regular expression '^[a-z][a-zA-Z0-9]*$'.(éÄçÕùÿÿÿÿ8ã”ÒÎÕ2J$4829c175-4a50-4f22-a955-0702029d46a2
+œ	java:S120"ZRename this package name to match the regular expression '^[a-z_]+(\.[a-z_][a-z0-9_]*)*$'.(æñòÕ8å³ü§Õ2J$748b827d-f4ab-4fa6-910c-6a05c4515669
+—	java:S116"URename this field "time_start" to match the regular expression '^[a-z][a-zA-Z0-9]*$'.(ºÁı™8ç³ü§Õ2J$e183b07e-9cce-41d8-b081-3d348f19b545
+•	java:S116"SRename this field "time_end" to match the regular expression '^[a-z][a-zA-Z0-9]*$'.(èÑĞ8ç³ü§Õ2J$614d830e-2119-4431-9019-904aada9f36a
+ƒ	java:S125"<This block of commented-out lines of code should be removed.(êŞ´Ìøÿÿÿÿ8ë³ü§Õ2J$498d83d3-0794-4bad-bf9a-a9aadb0a332b

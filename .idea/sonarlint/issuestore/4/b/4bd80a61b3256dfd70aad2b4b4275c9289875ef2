@@ -1,0 +1,6 @@
+
+Ktypescript:S1128"(Remove this unused import of 'RoomType'.(èÄ­Ì8Ù‘íúÕ2
+Ktypescript:S1128"(Remove this unused import of 'DatePipe'.(­¢³8Û‘íúÕ2
+Ftypescript:S1186%"#Unexpected empty method 'ngOnInit'.(Åˆ³Â8Û‘íúÕ2
+Ûtypescript:S1874+"·'(next?: ((value: Showtime[]) => void) | null | undefined, error?: ((error: any) => void) | null | undefined, complete?: (() => void) | null | undefined): Subscription' is deprecated.(¾‘»ê8Û‘íúÕ2
+×typescript:S1874R"³'(next?: ((value: Seat[]) => void) | null | undefined, error?: ((error: any) => void) | null | undefined, complete?: (() => void) | null | undefined): Subscription' is deprecated.(ŒÿÓª8Ü‘íúÕ2

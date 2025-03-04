@@ -1,2 +1,6 @@
 
-¡	java:S120"ZRename this package name to match the regular expression '^[a-z_]+(\.[a-z_][a-z0-9_]*)*$'.(ÍýæËÿÿÿÿÿ8µÞØÐÄ2J$41bb2630-8a51-4d7c-9610-629388871dc8
+¡	java:S120"ZRename this package name to match the regular expression '^[a-z_]+(\.[a-z_][a-z0-9_]*)*$'.(ÍýæËÿÿÿÿÿ8µÞØÐÄ2J$a64e8830-f297-4048-97e6-92f858cbc650
+m
+java:S1128"KRemove this unused import 'org.hotfilm.identityservice.Mapper.MovieMapper'.(Öøë¶ûÿÿÿÿ8–²½ûÕ2
+u
+java:S1128"SRemove this unused import 'org.springframework.beans.factory.annotation.Autowired'.(¡ž¸Îùÿÿÿÿ8–²½ûÕ2

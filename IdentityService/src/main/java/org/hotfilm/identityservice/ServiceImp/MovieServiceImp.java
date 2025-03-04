@@ -12,10 +12,7 @@ import org.hotfilm.identityservice.Repository.MovieRepository;
 import org.hotfilm.identityservice.Service.CloudinaryService;
 import org.hotfilm.identityservice.Service.MovieService;
 import org.springframework.beans.factory.annotation.Autowired;
-import org.springframework.data.domain.Page;
-import org.springframework.data.domain.PageRequest;
-import org.springframework.data.domain.Pageable;
-import org.springframework.data.domain.Sort;
+import org.springframework.data.domain.*;
 import org.springframework.data.redis.core.HashOperations;
 import org.springframework.data.redis.core.RedisTemplate;
 import org.springframework.stereotype.Service;
@@ -78,10 +75,17 @@ public class MovieServiceImp implements MovieService {
     }
 
     @Override
-    public Page<Movie> findAll(int page, int size) {
+    public Page<MovieResponseDetail> findAll(int page, int size) {
         Pageable pageable = PageRequest.of(page, size, Sort.by(Sort.Order.desc("releaseDate")));
-        return movieRepository.findAll(pageable);
+        Page<Movie> pageMovie = movieRepository.findAll(pageable);
+
+        List<MovieResponseDetail> movieResponseDetails = pageMovie.stream()
+                .map(movieMapper::toMovieResponseDetail)
+                .collect(Collectors.toList());
+
+        return new PageImpl<>(movieResponseDetails, pageable, pageMovie.getTotalElements());
     }
+
 
     @Override
     public Set<Movie> searchMovie(String name) {
