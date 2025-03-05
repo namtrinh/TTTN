@@ -170,3 +170,91 @@ select:hover {
   color: #662d91;
 }
 
+
+.inf-payment {
+  height: 120px;
+  color: white;
+  width: 60%;
+  background-color: #1c1f2d;
+  padding: 10px;
+  border-radius: 10px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  position: fixed;
+  left: 50%;
+  bottom: 0;
+  transform: translateX(-50%);
+  z-index: 999;
+}
+
+
+.movie-info {
+  flex: 1;
+}
+
+.movie-title {
+  font-size: 20px;
+  font-weight: bold;
+  margin-bottom: 10px;
+}
+
+.cinema-name {
+  font-size: 15px;
+}
+
+
+.time {
+  font-size: 16px;
+}
+
+.time span {
+  background-color: #f1c40f;
+  padding: 5px 10px;
+  border-radius: 5px;
+  font-weight: bold;
+}
+
+.status {
+  font-size: 14px;
+  color: #f1c40f;
+}
+
+.btn.selected {
+  font-weight: bold; /* Tô đậm nút đã chọn */
+  background-color: #f0f0f0; /* Thêm màu nền khi nút được chọn */
+  color: #333; /* Thay đổi màu chữ khi chọn */
+}
+.ticket-container {
+  color: white;
+  text-align: right;
+  padding: 20px;
+  border-radius: 8px;
+}
+.ticket-container span {
+  font-size: 14px;
+  color: #ccc;
+}
+.ticket-container strong {
+  font-size: 18px;
+  font-weight: bold;
+  color: white;
+}
+.book-button {
+  display: block;
+  background-color: #FFD700;
+  color: black;
+  font-weight: bold;
+  text-align: center;
+  padding: 10px 20px;
+  margin-top: 10px;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  font-size: 15px;
+}
+.book-button:hover {
+  background-color: #e6c200;
+}
+
+

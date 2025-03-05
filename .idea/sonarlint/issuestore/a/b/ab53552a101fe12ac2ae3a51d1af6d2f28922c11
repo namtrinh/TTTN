@@ -1,0 +1,6 @@
+
+rtypescript:S1128	"$Remove this unused import of 'Seat'.(Á¡¶Üÿÿÿÿÿ8÷ìœüÕ2J$b52dd8e2-1c02-4104-aa32-2a67f19061cc
+†typescript:S1874,"·'(next?: ((value: Showtime[]) => void) | null | undefined, error?: ((error: any) => void) | null | undefined, complete?: (() => void) | null | undefined): Subscription' is deprecated.(­»Ğ˜ùÿÿÿÿ8øìœüÕ2J$c24824ce-b879-41a5-9674-b89bcf863e8d
+„typescript:S1874<"µ'(next?: ((value: Showtime) => void) | null | undefined, error?: ((error: any) => void) | null | undefined, complete?: (() => void) | null | undefined): Subscription' is deprecated.(áà´¥şÿÿÿÿ8ùìœüÕ2J$e04845ee-3986-4377-b5b9-98d2248d88d4
+ltypescript:S125F"Remove this commented out code.(ã¸©ƒşÿÿÿÿ8ùìœüÕ2J$4a487515-105c-4e52-b6d0-0a858adc2ded
+útypescript:S1874R"°'(next?: ((value: any) => void) | null | undefined, error?: ((error: any) => void) | null | undefined, complete?: (() => void) | null | undefined): Subscription' is deprecated.(äš„Â8úìœüÕ2J$99cbd354-38fc-4a5f-ab11-c5d33eb04485

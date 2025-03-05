@@ -32,14 +32,16 @@
       </div>
     </form>
 
+    <!-- show list showtime -->
     @for (room of rooms; track $index) {
       <div class="category">
-        <h3>{{ room.roomName }} - {{room.roomType}}</h3>
-
+        <h3>{{ room.roomName }} - {{ room.roomType }}</h3>
         @for (showtime of groupedShowtimes; track $index) {
           @if (showtime.roomId === room.roomId) {
             @for (time of showtime.showtimes; track $index) {
-              <button class="btn" (click)="selectShowtime(showtime.roomId, time)">
+              <button class="btn"
+                      [ngClass]="{selected:  inf_selected &&  inf_selected.time.showtimeId === time.showtimeId}"
+                      (click)="selectShowtime(time, room)">
                 {{ time.time_start }}
               </button>
             }
@@ -48,40 +50,58 @@
       </div>
     }
 
+
+    @if (showtimeMessage) {
+      <p>{{ showtimeMessage }}</p>
+    }
+
   </section>
 
   <div class="screen">Màn Hình</div>
   <div class="seating">
     <br>
     @for (room of rooms; track $index) {
-      @if (selectedShowtime.roomId === room.roomId && room.roomType == "STANDARD") {
+
+      @if (inf_selected?.room?.roomId === room.roomId && room.roomType == "STANDARD") {
         <div class="room" id="STANDARD">
           <h2>STANDARD Room</h2>
           <div class="seats standard-room">
             @for (seat of seats; track $index) {
-              <div class="seat">{{ seat.seatNumber }}</div>
+              <div class="seat" [ngClass]="{ selected: isSelected(seat) }"
+                   (click)="toggleSeatSelection(seat)"
+              >
+                {{ seat.seatNumber }}
+              </div>
             }
           </div>
         </div>
       }
 
-      @if (selectedShowtime.roomId === room.roomId && room.roomType == "IMAX") {
+      @if (inf_selected?.room?.roomId === room.roomId && room.roomType == "IMAX") {
         <div class="room" id="IMAX">
           <h2>IMAX Room</h2>
           <div class="seats imax-room">
             @for (seat of seats; track $index) {
-              <div class="seat">{{ seat.seatNumber }}</div>
+              <div class="seat" [ngClass]="{ selected: isSelected(seat) }"
+                   (click)="toggleSeatSelection(seat)"
+              >
+                {{ seat.seatNumber }}
+              </div>
             }
           </div>
         </div>
       }
 
-      @if (selectedShowtime.roomId === room.roomId && room.roomType == "COUPLE") {
+      @if (inf_selected?.room?.roomId === room.roomId && room.roomType == "COUPLE") {
         <div class="room" id="COUPLE">
           <h2>COUPLE Room</h2>
           <div class="seats couple-room">
             @for (seat of seats; track $index) {
-              <div class="seat">{{ seat.seatNumber }}</div>
+              <div class="seat" [ngClass]="{ selected: isSelected(seat) }"
+                   (click)="toggleSeatSelection(seat)"
+              >
+                {{ seat.seatNumber }}
+              </div>
             }
           </div>
         </div>
@@ -109,3 +129,32 @@
     </button>
   </div>
 </div>
+
+@if (inf_selected) {
+  <div class="inf-payment">
+    <div class="movie-info">
+      <p class="movie-title">CƯỚI MA (T18)</p>
+      <p class="cinema-name">Show room: {{ inf_selected?.room?.roomName }} - {{ inf_selected?.room?.roomType }}
+        | @for (selectSeat of selectedSeats; track $index) {
+          {{ selectSeat.seatNumber }} |
+        }
+        {{ inf_selected?.time?.time_start }}</p>
+    </div>
+    <div class="details">
+      <div class="ticket-container">
+
+        <div>
+          <strong>
+            Subtotal: {{ (inf_selected?.room?.roomPrice || 0) * (inf_selected?.seat?.length || 0) | number:'1.0-0' }}</strong>
+        </div>
+        @if (showPayment) {
+          <button class="book-button">BOOK NOW</button>
+        }
+      </div>
+    </div>
+  </div>
+}
+<br><br><br>
+<app-footer></app-footer>
+
+

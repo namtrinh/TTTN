@@ -28,12 +28,7 @@
     </div>
 
   </div>
-  <app-seat [movieId]="movie.movieId" ></app-seat>
-</section>
+  <app-seat [movie]="{ movieId: movie.movieId, movieName: movie.movieName }"></app-seat>
 
-<footer>
-  <div class="container">
-    <p>&copy; 2024 MoonPlay | All Rights Reserved</p>
-  </div>
-</footer>
+</section>
 </body>

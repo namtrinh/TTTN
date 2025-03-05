@@ -2,7 +2,7 @@ body {
   font-family: 'Arial', sans-serif;
   margin: 0;
   padding: 0;
-  background: linear-gradient(45deg, #212120, #cc3cfc, #690d8f); /* Nền loang màu từ xanh dương, xanh lá, xanh lam */
+  background: linear-gradient(135deg, #8a2be2, #4b0082, #000000, #0066cc, #8a2be2);
   color: #fff; /* Chữ trắng để nổi bật trên nền tối */
 }
 

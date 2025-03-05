@@ -307,3 +307,5 @@ b
 2Frontend/src/view/user/footer/footer.component.css,2\3\23882622eb75a20293f9fbe5f0f2364ef884574b
 ”
 dIdentityService/src/main/java/org/hotfilm/identityservice/ModelDTO/Response/MovieResponseDetail.java,a\a\aa1de6099a0117b12d1083d21eb8f0040c097d8c
+ƒ
+SIdentityService/src/main/java/org/hotfilm/identityservice/ServiceImp/QrService.java,d\8\d8aa4a7c63c2a9173666dcfd8bb9aeeb5d7e7776

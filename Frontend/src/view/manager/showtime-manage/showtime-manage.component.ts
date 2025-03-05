@@ -40,7 +40,7 @@ export class ShowtimeManageComponent implements OnInit {
 
 
   getAllShowtimeByTime(date:string, roomselected:string) {
-    if (date && roomselected) {
+    if (date) {
       this.showtimeService.getAll(date, roomselected, '').subscribe((data: any) => {
         this.showtimes = data.result;
         console.log(this.showtimes)
@@ -50,7 +50,7 @@ export class ShowtimeManageComponent implements OnInit {
         console.log(error.error.message)
       })
     }else{
-      alert("Date or room is not empty!")
+      alert("Date is not empty!")
     }
   }
 

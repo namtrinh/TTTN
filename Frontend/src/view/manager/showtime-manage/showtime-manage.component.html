@@ -14,7 +14,7 @@
       <input type="date" id="datePicker" [(ngModel)]="dateTime"/>
 
       <select class="form-select" aria-label="Default select example" [(ngModel)]="selectdRoomId">
-        <option value="" selected disabled>-- Select room --</option>
+        <option value="" selected>-- Select room --</option>
         @for (room of rooms; track $index) {
           <option [value]="room.roomId">{{ room.roomName }}
             - {{ room.roomType }}
