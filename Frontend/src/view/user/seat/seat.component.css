@@ -258,3 +258,8 @@ select:hover {
 }
 
 
+.seat.reserved {
+  background-color: #ffbc41; /* Màu đỏ cho ghế đã được đặt */
+  color: #ffffff;
+  cursor: not-allowed;
+}

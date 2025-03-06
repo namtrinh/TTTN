@@ -40,7 +40,7 @@
           @if (showtime.roomId === room.roomId) {
             @for (time of showtime.showtimes; track $index) {
               <button class="btn"
-                      [ngClass]="{selected:  inf_selected &&  inf_selected.time.showtimeId === time.showtimeId}"
+                      [ngClass]="{selected:  inf_selected &&  inf_selected.time?.showtimeId === time.showtimeId}"
                       (click)="selectShowtime(time, room)">
                 {{ time.time_start }}
               </button>
@@ -67,9 +67,8 @@
           <h2>STANDARD Room</h2>
           <div class="seats standard-room">
             @for (seat of seats; track $index) {
-              <div class="seat" [ngClass]="{ selected: isSelected(seat) }"
-                   (click)="toggleSeatSelection(seat)"
-              >
+              <div class="seat" [ngClass]="{ selected: isSelected(seat), reserved: seat.seatStatus === 'RESERVED' }"
+                   (click)="seat.seatStatus !== 'RESERVED' ? toggleSeatSelection(seat): null">
                 {{ seat.seatNumber }}
               </div>
             }
@@ -82,9 +81,8 @@
           <h2>IMAX Room</h2>
           <div class="seats imax-room">
             @for (seat of seats; track $index) {
-              <div class="seat" [ngClass]="{ selected: isSelected(seat) }"
-                   (click)="toggleSeatSelection(seat)"
-              >
+              <div class="seat" [ngClass]="{ selected: isSelected(seat), reserved: seat.seatStatus === 'RESERVED' }"
+                   (click)="seat.seatStatus !== 'RESERVED' ? toggleSeatSelection(seat): null">
                 {{ seat.seatNumber }}
               </div>
             }
@@ -97,9 +95,8 @@
           <h2>COUPLE Room</h2>
           <div class="seats couple-room">
             @for (seat of seats; track $index) {
-              <div class="seat" [ngClass]="{ selected: isSelected(seat) }"
-                   (click)="toggleSeatSelection(seat)"
-              >
+              <div class="seat" [ngClass]="{ selected: isSelected(seat), reserved: seat.seatStatus === 'RESERVED' }"
+                   (click)="seat.seatStatus !== 'RESERVED' ? toggleSeatSelection(seat): null">
                 {{ seat.seatNumber }}
               </div>
             }
@@ -148,7 +145,7 @@
             Subtotal: {{ (inf_selected?.room?.roomPrice || 0) * (inf_selected?.seat?.length || 0) | number:'1.0-0' }}</strong>
         </div>
         @if (showPayment) {
-          <button class="book-button">BOOK NOW</button>
+          <button class="book-button" [routerLink]="['/checkout']">BOOK NOW</button>
         }
       </div>
     </div>

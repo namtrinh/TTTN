@@ -1,34 +1,36 @@
 
-¼
-java:S1130"yRemove the declaration of thrown exception 'com.google.zxing.WriterException', as it cannot be thrown from method's body.(í–šò8÷Åù€Ö2J$43ae0e85-2d90-40a0-8ab5-d12771581c98
-¯
-java:S1130"lRemove the declaration of thrown exception 'java.io.IOException', as it cannot be thrown from method's body.(í–šò8øÅù€Ö2J$b10207c0-d293-4da6-9815-6e26af15f444
 ƒ
-java:S1128";Remove this unused import 'com.google.zxing.BarcodeFormat'.(Â«Â¯ıÿÿÿÿ8üÅù€Ö2J$639e256c-0ab2-4301-8a9b-52c149f22113
+java:S1128";Remove this unused import 'com.google.zxing.BarcodeFormat'.(Â«Â¯ıÿÿÿÿ8ÅÂ©ÍÖ2J$87db56cc-56af-4346-8b04-db76f30d66d8
+€
+java:S1128"=Remove this unused import 'com.google.zxing.WriterException'.(˜ÿß8°†­ÍÖ2J$bb837f30-259d-4a09-9b1b-48bab2b1e891
 
-java:S1128"MRemove this unused import 'com.google.zxing.client.j2se.MatrixToImageWriter'.(ı¯ÒÀ8üÅù€Ö2J$48254c2f-fdd1-4dc1-b4de-b3020e3b4a28
+java:S1128"MRemove this unused import 'com.google.zxing.client.j2se.MatrixToImageWriter'.(ı¯ÒÀ8ÅÂ©ÍÖ2J$9bb90a95-ebc0-4e8c-99a1-97fbecdc0570
 
-java:S1128">Remove this unused import 'com.google.zxing.common.BitMatrix'.(¯©“8üÅù€Ö2J$e23b7e68-dde5-4164-becc-dbd4275ef446
+java:S1128">Remove this unused import 'com.google.zxing.common.BitMatrix'.(¯©“8ÅÂ©ÍÖ2J$33b81309-0576-4dbb-9e33-666a8b74ad2d
 ƒ
-java:S1128"ARemove this unused import 'com.google.zxing.qrcode.QRCodeWriter'.(õÙÕ.8üÅù€Ö2J$35bfe1de-6940-4159-8a30-8530346e327e
+java:S1128"ARemove this unused import 'com.google.zxing.qrcode.QRCodeWriter'.(õÙÕ.8ÅÂ©ÍÖ2J$7077fed7-7f21-470e-9f85-9704527ecc5d
 ‹
-java:S1128"CRemove this unused import 'org.hotfilm.identityservice.Model.Room'.(¸ÇÛğıÿÿÿÿ8§ËÆşÕ2J$ff352a9a-4046-4eb1-8c1b-a8cb51058a1a
+java:S1128"CRemove this unused import 'org.hotfilm.identityservice.Model.Room'.(¸ÇÛğıÿÿÿÿ8ÆÂ©ÍÖ2J$b329829d-79d0-4ee6-a901-0e5bb3974bdc
 ”
-java:S1128	"RRemove this unused import 'org.hotfilm.identityservice.Repository.RoomRepository'.(ÂÿÔ`8©ËÆşÕ2J$561c3327-e701-46de-945e-9de04de05b26
-›
+java:S1128	"RRemove this unused import 'org.hotfilm.identityservice.Repository.RoomRepository'.(ÂÿÔ`8ÆÂ©ÍÖ2J$9ec58edb-09ee-40d2-a3bf-c8312abda5ac
+˜
 java:S1128
-"SRemove this unused import 'org.springframework.beans.factory.annotation.Autowired'.(¡¸Îùÿÿÿÿ8±ËÆşÕ2J$898638dd-afd6-4106-a3e6-9a1df4f22fda
+"URemove this unused import 'org.hotfilm.identityservice.momo.service.GenerateOrderId'.(›¼¦Ï8±²­ÍÖ2J$7021a36e-a471-4e9a-8733-5100cba900f7
+›
+java:S1128"SRemove this unused import 'org.springframework.beans.factory.annotation.Autowired'.(¡¸Îùÿÿÿÿ8²²­ÍÖ2J$b96858ce-e89d-4acd-b30d-77244a370a01
 “
-java:S1128"PRemove this unused import 'org.springframework.scheduling.annotation.Schedules'.(ãÉª•8±ËÆşÕ2J$e0c79f21-7f11-4e90-b1e8-86aba2aea320
+java:S1128"PRemove this unused import 'org.springframework.scheduling.annotation.Schedules'.(ãÉª•8ÆÂ©ÍÖ2J$db58a99c-2b2b-4a77-9652-78fc1a921607
 l
-java:S1128")Remove this unused import 'java.io.File'.(†Ğ¥Å8±ËÆşÕ2J$b60244bb-43c0-4b56-a256-28a93ca0b399
+java:S1128")Remove this unused import 'java.io.File'.(†Ğ¥Å8ÆÂ©ÍÖ2J$31fd4074-b4c0-431a-97f9-f4a4e75ef7d3
+x
+java:S1128"0Remove this unused import 'java.io.IOException'.(ªº»Úıÿÿÿÿ8±†­ÍÖ2J$6ca24874-e7e2-409e-8641-aea356bb80e3
 y
-java:S1128"6Remove this unused import 'java.nio.file.FileSystems'.(Ş¢˜ß8†Æù€Ö2J$ecd9cb27-8dab-48d1-b5d2-51962eeda74f
+java:S1128"6Remove this unused import 'java.nio.file.FileSystems'.(Ş¢˜ß8ÆÂ©ÍÖ2J$e1c551dd-b27b-4e03-8f45-303be4ad948e
 r
-java:S1128"/Remove this unused import 'java.nio.file.Path'.(×²êÂ8†Æù€Ö2J$35f45b82-3c37-4a18-96da-dc5123cae563
+java:S1128"/Remove this unused import 'java.nio.file.Path'.(×²êÂ8ÆÂ©ÍÖ2J$8a28dac5-8e8f-4db6-a754-bd7839b7da8d
 s
-java:S1128"0Remove this unused import 'java.nio.file.Paths'.(áè°¯8±ËÆşÕ2J$71f0a6ba-3caf-4a75-89ba-181022821331
+java:S1128"0Remove this unused import 'java.nio.file.Paths'.(áè°¯8ÆÂ©ÍÖ2J$2deccf2d-79a9-44a2-b365-24135094a236
 |
-java:S1128"4Remove this unused import 'java.time.LocalDateTime'.(æÃ§ƒüÿÿÿÿ8²ËÆşÕ2J$b884fd4d-5711-42ef-9822-4622e916e30e
+java:S1128"4Remove this unused import 'java.time.LocalDateTime'.(æÃ§ƒüÿÿÿÿ8ÇÂ©ÍÖ2J$4b5da4eb-8ad0-4f9c-9c59-47fe64609261
 u
-java:S1128"-Remove this unused import 'java.util.Arrays'.(î–˜Éüÿÿÿÿ8²ËÆşÕ2J$391a8410-e046-42a8-9019-d50a88dfd366
+java:S1128"-Remove this unused import 'java.util.Arrays'.(î–˜Éüÿÿÿÿ8ÇÂ©ÍÖ2J$2ce42104-4f5f-40c7-a19a-61aa78f66c1c

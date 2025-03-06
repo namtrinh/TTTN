@@ -1,13 +1,16 @@
 import {Component, Input, OnInit} from '@angular/core';
 import {FormsModule} from '@angular/forms';
-import {Room, RoomType} from '../../../model/room.model';
+import {Room} from '../../../model/room.model';
 import {Showtime} from '../../../model/showtime.model';
-import {CurrencyPipe, DatePipe, DecimalPipe, NgClass} from '@angular/common';
+import {DatePipe, DecimalPipe, NgClass} from '@angular/common';
 import {ShowtimeService} from '../../../service/showtime.service';
 import {RoomService} from '../../../service/room.service';
 import {SeatService} from '../../../service/seat.service';
 import {Seat} from '../../../model/seat.model';
 import {FooterComponent} from '../footer/footer.component';
+import {RouterLink} from '@angular/router';
+import {SharedDataService} from '../../../service/sharedata.service';
+import {MovieDT} from '../../../modelDto/movie';
 
 
 @Component({
@@ -16,29 +19,31 @@ import {FooterComponent} from '../footer/footer.component';
     FormsModule,
     NgClass,
     DecimalPipe,
-    FooterComponent
+    FooterComponent,
+    RouterLink
   ],
   templateUrl: './seat.component.html',
   standalone: true,
   styleUrl: './seat.component.css'
 })
-export class SeatComponent{
+export class SeatComponent {
 
   constructor(private showtimeService: ShowtimeService,
               private roomService: RoomService,
-              private seatService: SeatService) {
+              private seatService: SeatService,
+              private shareDataService: SharedDataService) {
   }
 
-  @Input() movie!: { movieId: string; movieName: string };
+  @Input() movie!: MovieDT;
   date: string = '';
   showtimes: Showtime[] = [];
-  inf_selected!: { time: Showtime; room: Room, seat: Seat[] }
+  inf_selected!: Partial<{ time: Showtime; room: Room, seat: Seat[], movie: MovieDT }>
   room: Room = new Room;
   seats: Seat[] = [];
   rooms: Room[] = [];
   showtimeMessage!: string;
   seat: Seat = new Seat()
-  showPayment:boolean = false;
+  showPayment: boolean = false;
   selectedSeats!: Seat[];
   groupedShowtimes: any
 
@@ -82,14 +87,22 @@ export class SeatComponent{
   }
 
   selectShowtime(time: any, room: any) {
+    //FORMAT DATE NE ///////////////////////////////////////////////////////////////////////////////////////
     this.selectedSeats = []
+   // const formattedDate = new Date(this.date).toLocaleDateString('en-GB');
+  //  time.time_start = time.time_start + "  " + formattedDate
+   // console.log("time start", time.time_start)
+
     this.inf_selected = {
       time: time,
       room: room,
-      seat: []
+      seat: [],
+      movie: this.movie
     };
     console.log("selectedShowtime", this.inf_selected)
-    this.getSeat(this.inf_selected.time.showtimeId);
+    if (this.inf_selected.time?.showtimeId) {
+      this.getSeat(this.inf_selected.time.showtimeId);
+    }
   }
 
 
@@ -109,6 +122,10 @@ export class SeatComponent{
     if (index === -1) {
       this.selectedSeats.push(seat);
       this.inf_selected.seat = this.selectedSeats
+      this.shareDataService.changeData(this.inf_selected)
+      this.shareDataService.currentData.subscribe(data => {
+        console.log("share", data)
+      })
       console.log("full selected", this.inf_selected)
       console.log(this.selectedSeats)
     } else {
@@ -119,5 +136,6 @@ export class SeatComponent{
   isSelected(seat: Seat): boolean {
     return this.selectedSeats.some(s => s.seatId === seat.seatId);
   }
+
 
 }

@@ -41,11 +41,12 @@ public class SeatController {
     }
 
     @PutMapping("/{seatId}")
-    public ResponseEntity<SeatResponse> updateSeat(
+    public ApiResponse<SeatResponse> updateSeat(
             @PathVariable String seatId,
             @RequestBody SeatRequest seatRequest) {
-        Seat seat = seatMapper.toSeat(seatRequest);
-        Seat updatedSeat = seatService.updateById(seatId, seat);
-        return ResponseEntity.ok(seatMapper.toSeatResponse(updatedSeat));
+        return ApiResponse.<SeatResponse>builder()
+                .status(HttpStatus.OK)
+                .result(seatService.updateById(seatId, seatRequest))
+                .build();
     }
 }

@@ -42,7 +42,9 @@ public class SecurityConfig {
             "/movie/**",
             "/room/**",
             "/showtime",
-            "/showtime/**"
+            "/showtime/**",
+            "/api/**",
+            "/seat/**"
     };
 
     private final String[] GET_PUBLIC = {
@@ -55,7 +57,8 @@ public class SecurityConfig {
             "/showtime",
             "/showtime/**",
             "/seat",
-            "/seat/**"
+            "/seat/**",
+            "/api/**"
     };
 
 

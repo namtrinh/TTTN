@@ -11,6 +11,8 @@ import {MovieManageComponent} from '../view/manager/movie-manage/movie-manage.co
 import {RoomManageComponent} from '../view/manager/room-manage/room-manage.component';
 import {TestComponent} from '../test/test.component';
 import {ShowtimeManageComponent} from '../view/manager/showtime-manage/showtime-manage.component';
+import {CheckoutInfComponent} from '../view/user/payment/checkout-inf/checkout-inf.component';
+import {PaymentSuccessComponent} from '../view/user/payment/payment-success/payment-success.component';
 
 export const routes: Routes = [
 
@@ -21,6 +23,8 @@ export const routes: Routes = [
   {path: 'reset-password', component: ResetPasswordComponent},
 
   {path: 'home', component: HomeComponent},
+  {path:'checkout', component:CheckoutInfComponent},
+  {path:'payment-success', component:PaymentSuccessComponent},
 
 
   {path:'manage', component:ViewManageComponent, children: [

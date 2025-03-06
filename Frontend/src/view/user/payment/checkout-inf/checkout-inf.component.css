@@ -1,0 +1,194 @@
+body {
+  font-family: Arial, sans-serif;
+  background: linear-gradient(135deg, #8a2be2, #4b0082, #000000, #0066cc, #8a2be2);
+  color: white;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+}
+.container {
+  width: 55%;
+  display: flex;
+  justify-content: space-between;
+  padding: 20px;
+  border-radius: 15px;
+  box-shadow: 0 4px 10px rgba(255, 255, 255, 0.5);
+}
+
+.form-section, .ticket-info {
+  width: 48%;
+}
+
+h4, h5 {
+  color: #f4d03f;
+}
+
+label {
+  margin-bottom: 8px;
+  display: block;
+  color: #ffffff;
+  font-size:14px;
+}
+
+input[type="text"], input[type="email"], input[type="number"] {
+  width: 100%;
+  padding: 7px;
+  margin: 5px 0;
+  border: 1px solid #aaa;
+  border-radius: 8px;
+  background-color: #ffffff;
+  color: #1a1919;
+}
+
+
+.checkbox {
+  margin: 10px 0;
+}
+
+.checkbox input {
+  margin-right: 5px;
+}
+
+.checkbox label {
+  color: #b99d9d;
+
+}
+
+.total {
+  margin-top: 20px;
+}
+
+button {
+  background-color: #fd9c23;
+  color: #ffffff;
+  border: none;
+  padding: 12px 20px;
+  width: 100%;
+  border-radius: 8px;
+  font-size: 16px;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+button:hover {
+  background-color: #f39c12;
+}
+
+button:active {
+  background-color: #e67e22;
+}
+.ticket-info{
+  background-color: #1579ce;
+  padding:20px;
+  border-radius: 20px;
+}
+.ticket-info p {
+  font-size: 14px;
+  color: #ffffff;
+}
+
+.ticket-info p strong {
+  color: #f4d03f;
+}
+th {
+  padding-right: 10px;
+  color:#f4d03f;
+}
+td{
+  font-size:14px;
+}
+
+.payment-options {
+
+  padding: 20px;
+  border-radius: 10px;
+  width: 50%;
+  margin: auto;
+}
+
+.payment-method {
+  display: flex;
+  align-items: center;
+  padding: 10px;
+  margin-bottom: 15px;
+  border: 1px solid white;
+  border-radius: 4px;
+  transition: background-color 0.3s ease;
+}
+
+.payment-method img {
+  width: 30px;
+  height: 30px;
+  margin-right: 10px;
+}
+
+.payment-method span {
+  color: #ffffff;
+  font-size: 16px;
+}
+
+.payment-method:hover {
+  background-color: #811781;
+  cursor: pointer;
+}
+
+.discount-code {
+  background-color: #3a3f6b;
+  padding: 15px;
+  border-radius: 8px;
+  text-align: center;
+}
+
+.discount-btn {
+  background-color: #f4d03f;
+  color: #1e1e1e;
+  border: none;
+  padding: 12px 20px;
+  width: 100%;
+  border-radius: 8px;
+  font-size: 16px;
+  cursor: pointer;
+  margin-bottom: 10px;
+}
+
+.discount-btn:hover {
+  background-color: #f39c12;
+}
+
+.discount-note {
+  color: #bbb;
+  font-size: 14px;
+}
+
+.button-container {
+  display: flex;
+  justify-content: space-between;
+  width: 100%;
+  gap: 10px;
+}
+
+button {
+  padding: 5px 30px;
+  font-size: 16px;
+  font-weight: bold;
+  border-radius: 4px;
+  border: none;
+  cursor: pointer;
+  width:100%;
+}
+
+.back-btn {
+  background-color: #f4d03f;
+  color: #1e1e1e;
+}
+
+.pay-btn {
+  background-color: #f4d03f;
+  color: #1e1e1e;
+}
+
+button:hover {
+  background-color: #d1c100;
+}
+

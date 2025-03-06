@@ -3,16 +3,14 @@ package org.hotfilm.identityservice.ServiceImp;
 import org.hotfilm.identityservice.Mapper.SeatMapper;
 import org.hotfilm.identityservice.Model.Seat;
 import org.hotfilm.identityservice.Model.Seat.SeatStatus;
+import org.hotfilm.identityservice.ModelDTO.Request.SeatRequest;
 import org.hotfilm.identityservice.ModelDTO.Response.SeatResponse;
 import org.hotfilm.identityservice.Repository.SeatRepository;
 import org.hotfilm.identityservice.Service.SeatService;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
 
-import java.util.ArrayList;
-import java.util.HashSet;
-import java.util.List;
-import java.util.Set;
+import java.util.*;
 import java.util.stream.Collectors;
 
 @Service
@@ -41,7 +39,7 @@ public class SeatServiceImp implements SeatService {
         }
         for (int i = 0; i < row; i++) {
 
-            for (int j = 1; j <= col; j++) {
+            for (int j = 0; j < col; j++) {
                 System.out.println(keys[i] + "" + j);
                 Seat seat = new Seat();
                 seat.setSeatStatus(SeatStatus.AVAILABLE);
@@ -69,8 +67,9 @@ public class SeatServiceImp implements SeatService {
     }
 
     @Override
-    public Seat updateById(String seatId, Seat seat) {
-        seat.setSeatId(seatId);
-        return seatRepository.save(seat);
+    public SeatResponse updateById(String seatId, SeatRequest seatRequest) {
+        Optional<Seat> seat = seatRepository.findById(seatId);
+        seat.get().setSeatStatus(SeatStatus.RESERVED);
+        return seatMapper.toSeatResponse(seatRepository.save(seat.get()));
     }
 }

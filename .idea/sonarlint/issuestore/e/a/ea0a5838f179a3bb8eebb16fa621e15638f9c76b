@@ -1,0 +1,7 @@
+
+~
+java:S6813"BRemove this field injection and use constructor injection instead.(êæÄÞJ$867939fb-b406-452e-afc5-e2e2cb2e1d85
+’
+java:S1128"ORemove this unused import 'org.springframework.web.bind.annotation.GetMapping'.(‡¡‰Ø8”£¯ÍÖ2J$d8f13082-8c58-4abb-81d5-0b6ad7f9f0a0
+v
+java:S1128".Remove this unused import 'java.util.HashMap'.(™˜”€ùÿÿÿÿ8”£¯ÍÖ2J$a94ded29-f2d9-4341-bc39-6a4ea37491fd

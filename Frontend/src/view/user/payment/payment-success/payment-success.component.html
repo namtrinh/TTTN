@@ -1,0 +1,56 @@
+<body>
+<div class="order-container">
+  <div class="order-header">
+    <h1>Thông tin đơn hàng</h1>
+    <br>
+    <div class="status success">
+      <img class="icon-paymentSuccess" src="assets/payment-succss.png">
+      <span>Thanh toán thành công</span>
+    </div>
+  </div>
+  <div class="order-details">
+    <div class="detail-row">
+      <span class="label">Mã đơn hàng:</span>
+      <span class="value">{{ this.orderId }}</span>
+    </div>
+    <div class="detail-row">
+      <span class="label">Số tiền:</span>
+      <span class="value">{{ total_price | number:'1.0-0' }} VND</span>
+    </div>
+    <div class="detail-row">
+      <span class="label">Nhà cung cấp:</span>
+      <span class="value">{{partnerCode}}</span>
+    </div>
+    <div class="detail-row">
+      <span class="label">Số điện thoại:</span>
+      <span class="value">{{ dataPayment.user.phone }}</span>
+    </div>
+    <div class="detail-row">
+      <span class="label">email:</span>
+      <span class="value">{{ dataPayment.user.email }}</span>
+    </div>
+    <br>
+    <tr>
+      <th>Room</th>
+      <th>Seat</th>
+      <th>Amount</th>
+    </tr>
+    <tr>
+      <td>{{ dataPayment.room.roomName }}</td>
+      <td>@for (seat of dataPayment.seat; track $index) {
+        {{ seat.seatNumber }}
+      }</td>
+      <td>{{ dataPayment.seat.length }}</td>
+    </tr>
+    <br>
+    <div class="detail-row">
+      <span class="label">Thời gian thanh toán:</span>
+      <span class="value">{{ datePayment | date:'HH:mm:ss dd/MM/yyyy' }}</span>
+    </div>
+  </div>
+
+  <button class="btn-return" [routerLink]="['/home']">Return home</button>
+</div>
+</body>
+
+

@@ -1,13 +1,13 @@
 
-›	java:S120"ZRename this package name to match the regular expression '^[a-z_]+(\.[a-z_][a-z0-9_]*)*$'.(¤ÙÁ8–â«ØÕ2J$99e5df5c-2ac3-48b6-a5a3-2508ce0ab22b
-ˆ	java:S112("FDefine and throw a dedicated exception instead of using a generic one.(ç¯šœ8™â«ØÕ2J$212e0559-b5b6-439c-8e01-6beaf046f194
+›	java:S120"ZRename this package name to match the regular expression '^[a-z_]+(\.[a-z_][a-z0-9_]*)*$'.(¤ÙÁ8¤©ÖÔÖ2J$44abb120-2cbb-41dc-aa24-32334379283d
+
+java:S3655H"HCall "seat.isPresent()" or "!seat.isEmpty()" before accessing the value.(éè’Åúÿÿÿÿ8¨ŒÍÕÖ2J$6034b81d-e8e1-48f3-be2a-6c8fb3692493
+ˆ	java:S112&"FDefine and throw a dedicated exception instead of using a generic one.(ç¯šœ8¥©ÖÔÖ2J$02c76c93-17ac-4d5e-8858-d13425e781ac
 …
-java:S6813"BRemove this field injection and use constructor injection instead.(êæÄŞ8œâ«ØÕ2J$e05a33bc-aa3b-4e75-99a8-53404ce11aa5
+java:S6813"BRemove this field injection and use constructor injection instead.(êæÄŞ8¦©ÖÔÖ2J$fc6e1b14-2644-41f7-a95b-2085bb341930
 …
-java:S6813"BRemove this field injection and use constructor injection instead.(êæÄŞ8œâ«ØÕ2J$9fc33e45-24c2-431e-9b6b-d7ca5658f78d
+java:S6813"BRemove this field injection and use constructor injection instead.(êæÄŞ8¦©ÖÔÖ2J$1f6087eb-0ec8-47c9-8a63-cd9323075343
 ½
-java:S6204 "zReplace this usage of 'Stream.collect(Collectors.toList())' with 'Stream.toList()' and ensure that the list is unmodified.(ª™¨¹8 â«ØÕ2J$eb28be09-caf5-4ebf-82e8-a141085d69fe
-m	java:S106-"+Replace this use of System.out by a logger.(¦ü‚û8¥â«ØÕ2J$b274e27e-3b56-45b9-a5e5-94d3c335a451
-ƒ	java:S1252"<This block of commented-out lines of code should be removed.(ªã·¶ÿÿÿÿÿ8§â«ØÕ2J$69ebaaae-e384-42ec-991b-f23555e7b4a1
-s
-java:S1128"0Remove this unused import 'java.util.ArrayList'.(÷‰îƒ8©â«ØÕ2J$f350e54c-194d-41f8-8fd9-8fba8ac93f07
+java:S6204"zReplace this usage of 'Stream.collect(Collectors.toList())' with 'Stream.toList()' and ensure that the list is unmodified.(ª™¨¹8ª©ÖÔÖ2J$aa409695-5315-48d6-8973-da9700cb1bdf
+m	java:S106+"+Replace this use of System.out by a logger.(¦ü‚û8­©ÖÔÖ2J$40c4af3a-cf68-4705-a428-8f738ce2290a
+ƒ	java:S1250"<This block of commented-out lines of code should be removed.(ªã·¶ÿÿÿÿÿ8¯©ÖÔÖ2J$b1d01702-ed76-4452-9ef0-28abf8199844

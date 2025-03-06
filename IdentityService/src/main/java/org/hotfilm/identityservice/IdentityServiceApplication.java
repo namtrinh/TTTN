@@ -7,6 +7,7 @@ import com.google.zxing.common.BitMatrix;
 import com.google.zxing.qrcode.QRCodeWriter;
 import org.hotfilm.identityservice.Model.Room;
 import org.hotfilm.identityservice.Repository.RoomRepository;
+import org.hotfilm.identityservice.momo.service.GenerateOrderId;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.boot.SpringApplication;
 import org.springframework.boot.autoconfigure.SpringBootApplication;
@@ -24,9 +25,9 @@ import java.util.Arrays;
 @SpringBootApplication
 @EnableScheduling
 public class IdentityServiceApplication {
-    public static void main(String[] args) throws WriterException, IOException {
+    public static void main(String[] args){
         SpringApplication.run(IdentityServiceApplication.class, args);
-
-
     }
+
+
 }
