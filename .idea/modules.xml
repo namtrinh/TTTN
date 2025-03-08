@@ -2,7 +2,6 @@
 <project version="4">
   <component name="ProjectModuleManager">
     <modules>
-      <module fileurl="file://$PROJECT_DIR$/IdentityService/Backend.iml" filepath="$PROJECT_DIR$/IdentityService/Backend.iml" />
       <module fileurl="file://$PROJECT_DIR$/Frontend.iml" filepath="$PROJECT_DIR$/Frontend.iml" />
       <module fileurl="file://$PROJECT_DIR$/TTTN.iml" filepath="$PROJECT_DIR$/TTTN.iml" />
     </modules>

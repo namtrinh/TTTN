@@ -1,13 +1,12 @@
 
-¡	java:S120"ZRename this package name to match the regular expression '^[a-z_]+(\.[a-z_][a-z0-9_]*)*$'.(ÜÅñóúÿÿÿÿ8ÙØ¤¥×2J$6b57ed37-daf9-4ab8-ac87-0580e805ec2b
+¡	java:S120"ZRename this package name to match the regular expression '^[a-z_]+(\.[a-z_][a-z0-9_]*)*$'.(ÜÅñóúÿÿÿÿ8ÙØ¤¥×2J$45e413c6-b257-4ad4-bd87-63bd5f1a7a86
 …
-java:S6813"BRemove this field injection and use constructor injection instead.(êæÄŞ8ŞØ¤¥×2J$1391fbad-5b0a-4406-bb64-0e7e5816bc87
+java:S6813"BRemove this field injection and use constructor injection instead.(êæÄŞ8ŞØ¤¥×2J$0217e2a6-82ff-430a-a965-225a739c732f
 …
-java:S6813"BRemove this field injection and use constructor injection instead.(êæÄŞ8ŞØ¤¥×2J$db1849f4-3250-4943-a73b-831a36311d9e
+java:S6813"BRemove this field injection and use constructor injection instead.(êæÄŞ8ŞØ¤¥×2J$014c0127-53e9-40d8-a980-dd72228dd7e6
 ½
-java:S6204"zReplace this usage of 'Stream.collect(Collectors.toList())' with 'Stream.toList()' and ensure that the list is unmodified.(ª™¨¹8âØ¤¥×2J$bef6b389-df0b-4332-bacc-7822eeced08f
-m	java:S106%"+Replace this use of System.out by a logger.(Æ´ñÎ8¯ÿ²¥×2J$754f6e0e-b384-4142-9805-1d09666462d5
-m	java:S106&"+Replace this use of System.out by a logger.(ò‡ØÖ8„‡Ñ¥×2J$6560df01-409f-41b9-aa1a-f735b593e1db
-r	java:S106,"+Replace this use of System.out by a logger.(†¤‚üÿÿÿÿ8õ æ¥×2J$a2539034-b9f9-471c-8cb4-181bad284e7a
+java:S6204"zReplace this usage of 'Stream.collect(Collectors.toList())' with 'Stream.toList()' and ensure that the list is unmodified.(ª™¨¹8âØ¤¥×2J$3b304dcb-a86c-4c56-8c9e-7c9ec9788c68
+r	java:S106%"+Replace this use of System.out by a logger.(Ëˆ´üÿÿÿÿ8¯ÿ²¥×2J$a7a7bf2e-0125-4b3a-a320-d0053ffba77c
+r	java:S106,"+Replace this use of System.out by a logger.(†¤‚üÿÿÿÿ8“óˆ¦×2J$db95e057-41a2-4e89-8c54-0bcded854a7c
 w
-java:S1128"/Remove this unused import 'java.util.Optional'.(¨˜ëİüÿÿÿÿ8êØ¤¥×2J$78712e3f-09a2-4a55-bad4-400531bdfa31
+java:S1128"/Remove this unused import 'java.util.Optional'.(¨˜ëİüÿÿÿÿ8Â¼¦×2J$88ca3b30-4425-4528-959e-e7fa815212ae
