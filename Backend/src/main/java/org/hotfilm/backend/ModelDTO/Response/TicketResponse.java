@@ -7,6 +7,9 @@ import lombok.RequiredArgsConstructor;
 import lombok.Setter;
 import org.hotfilm.backend.Model.Order;
 import org.hotfilm.backend.Model.Ticket;
+import org.springframework.cglib.core.internal.LoadingCache;
+
+import java.time.LocalDateTime;
 
 @Getter
 @Setter
@@ -16,7 +19,7 @@ public class TicketResponse {
     private String ticketId;
     private String movieId;
     private String movieName;
-    private String showtime;
+    private LocalDateTime showtime;
     private String seatNumber;
     private String seatPrice;
 

@@ -13,6 +13,7 @@ import {TestComponent} from '../test/test.component';
 import {ShowtimeManageComponent} from '../view/manager/showtime-manage/showtime-manage.component';
 import {CheckoutInfComponent} from '../view/user/payment/checkout-inf/checkout-inf.component';
 import {PaymentSuccessComponent} from '../view/user/payment/payment-success/payment-success.component';
+import {TicketComponent} from '../view/ticket/ticket.component';
 
 export const routes: Routes = [
 
@@ -25,7 +26,7 @@ export const routes: Routes = [
   {path: 'home', component: HomeComponent},
   {path:'checkout', component:CheckoutInfComponent},
   {path:'payment-success', component:PaymentSuccessComponent},
-
+  {path:'ticket', component:TicketComponent},
 
   {path:'manage', component:ViewManageComponent, children: [
       {path:'movie', component:MovieManageComponent},

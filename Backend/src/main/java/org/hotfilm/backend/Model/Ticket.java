@@ -6,6 +6,8 @@ import lombok.Getter;
 import lombok.RequiredArgsConstructor;
 import lombok.Setter;
 
+import java.time.LocalDateTime;
+
 @Entity
 @Getter
 @Setter
@@ -18,10 +20,11 @@ public class Ticket {
     private String ticketId;
     private String movieId;
     private String movieName;
-    private String showtime;
+    private LocalDateTime showtime;
     private String seatNumber;
     private String seatPrice;
 
+    @Enumerated(EnumType.STRING)
     private TicketStatus ticketStatus;
 
     @OneToOne

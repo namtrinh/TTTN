@@ -1,6 +1,7 @@
 
 export class Order {
   orderId!: string
+  paymentId!:string
   name!: string;
   phone!: number
   email!: string

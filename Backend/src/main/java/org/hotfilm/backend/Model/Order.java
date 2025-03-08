@@ -15,11 +15,13 @@ public class Order {
     @Id
     @GeneratedValue(strategy = GenerationType.UUID)
     private String orderId;
-
+    private String paymentId;
     private String name;
     private String phone;
     private String email;
     private LocalDateTime orderDate;
+
+    @Enumerated(EnumType.STRING)
     private OrderStatus orderStatus;
     private int totalPrice;
     private String paymentMethod;

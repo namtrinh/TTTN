@@ -1,12 +1,10 @@
 
-¡	java:S120"ZRename this package name to match the regular expression '^[a-z_]+(\.[a-z_][a-z0-9_]*)*$'.(ÜÅñóúÿÿÿÿ8ÙØ¤¥×2J$45e413c6-b257-4ad4-bd87-63bd5f1a7a86
+¡	java:S120"ZRename this package name to match the regular expression '^[a-z_]+(\.[a-z_][a-z0-9_]*)*$'.(ÜÅñóúÿÿÿÿ8ÙØ¤¥×2J$780f73bc-01b3-459b-ae42-428a96714e1e
 …
-java:S6813"BRemove this field injection and use constructor injection instead.(êæÄŞ8ŞØ¤¥×2J$0217e2a6-82ff-430a-a965-225a739c732f
+java:S6813"BRemove this field injection and use constructor injection instead.(êæÄŞ8ŞØ¤¥×2J$16cce789-aee3-4596-8848-44bd4e3bece6
 …
-java:S6813"BRemove this field injection and use constructor injection instead.(êæÄŞ8ŞØ¤¥×2J$014c0127-53e9-40d8-a980-dd72228dd7e6
+java:S6813"BRemove this field injection and use constructor injection instead.(êæÄŞ8ŞØ¤¥×2J$d16e1496-5dd8-4962-81d4-9361969686bc
 ½
-java:S6204"zReplace this usage of 'Stream.collect(Collectors.toList())' with 'Stream.toList()' and ensure that the list is unmodified.(ª™¨¹8âØ¤¥×2J$3b304dcb-a86c-4c56-8c9e-7c9ec9788c68
-r	java:S106%"+Replace this use of System.out by a logger.(Ëˆ´üÿÿÿÿ8¯ÿ²¥×2J$a7a7bf2e-0125-4b3a-a320-d0053ffba77c
-r	java:S106,"+Replace this use of System.out by a logger.(†¤‚üÿÿÿÿ8“óˆ¦×2J$db95e057-41a2-4e89-8c54-0bcded854a7c
+java:S6204"zReplace this usage of 'Stream.collect(Collectors.toList())' with 'Stream.toList()' and ensure that the list is unmodified.(ª™¨¹8âØ¤¥×2J$16a4d975-9476-4882-aee6-b8e4cd49c829
 w
-java:S1128"/Remove this unused import 'java.util.Optional'.(¨˜ëİüÿÿÿÿ8Â¼¦×2J$88ca3b30-4425-4528-959e-e7fa815212ae
+java:S1128"/Remove this unused import 'java.util.Optional'.(¨˜ëİüÿÿÿÿ8ïÖ¤¦×2J$be5c1199-501a-46eb-a79a-c72c31359eab

@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Movie Ticket</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #f4f4f9;
+        }
+
+        .ticket-container {
+            width: 600px;
+            margin: 20px auto;
+            padding: 20px;
+            background-color: #fff;
+            border-radius: 8px;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+        }
+
+        .ticket-header {
+            text-align: center;
+            margin-bottom: 20px;
+        }
+
+        .ticket-header h1 {
+            margin: 0;
+            font-size: 24px;
+            font-weight: bold;
+            color: #333;
+        }
+
+        .ticket-body {
+            margin-top: 20px;
+            font-size: 16px;
+            color: #333;
+        }
+
+        .ticket-body p {
+            margin: 10px 0;
+        }
+
+        .ticket-footer {
+            text-align: center;
+            margin-top: 20px;
+        }
+
+        .ticket-footer img {
+            width: 150px;
+            height: 150px;
+        }
+
+        .ticket-footer p {
+            margin-top: 10px;
+            font-size: 14px;
+            color: #777;
+        }
+    </style>
+</head>
+<body>
+<div class="ticket-container">
+    <div class="ticket-header">
+        <h1>MovieFlix - Your Ticket</h1>
+        <p>Ticket ID: <span th:text="${ticketID}">TICKET123456</span></p>
+        <p>Issued To: <span th:text="${customerName}">John Doe</span></p>
+    </div>
+
+    <div class="ticket-body">
+        <p><strong>Movie:</strong> <span th:text="${movieName}">The Avengers</span></p>
+        <p><strong>Show Time:</strong> <span th:text="${showTime}">7:00 PM, March 10, 2025</span></p>
+        <p><strong>Theater:</strong> <span th:text="${theater}">Theater 1 - MovieFlix Cinema</span></p>
+        <p><strong>Seat:</strong> <span th:text="${seatNumber}">A12</span></p>
+        <p><strong>Price:</strong> <span th:text="${ticketPrice}">$15.00</span></p>
+        <p><strong>Email:</strong> <span th:text="${email}">john.doe@example.com</span></p>
+        <p><strong>Phone:</strong> <span th:text="${phone}">+1234567890</span></p>
+        <p><strong>Producer:</strong> <span th:text="${producer}">Marvel Studios</span></p>
+        <p><strong>Director:</strong> <span th:text="${director}">Joss Whedon</span></p>
+    </div>
+
+    <div class="ticket-footer">
+        <img th:src="@{${qrCodeImage}}" alt="QR Code" />
+        <p>Scan QR code to view ticket online.</p>
+    </div>
+</div>
+</body>
+</html>

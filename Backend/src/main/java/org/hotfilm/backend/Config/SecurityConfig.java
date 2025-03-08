@@ -47,7 +47,8 @@ public class SecurityConfig {
             "/order",
             "/order/**",
             "/ticket",
-            "/ticket/**"
+            "/ticket/**",
+            "/email/**"
     };
 
     private final String[] GET_PUBLIC = {

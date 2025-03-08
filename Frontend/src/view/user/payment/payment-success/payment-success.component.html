@@ -19,7 +19,7 @@
     </div>
     <div class="detail-row">
       <span class="label">Nhà cung cấp:</span>
-      <span class="value">{{partnerCode}}</span>
+      <span class="value">{{ partnerCode }}</span>
     </div>
     <div class="detail-row">
       <span class="label">Số điện thoại:</span>
@@ -52,5 +52,51 @@
   <button class="btn-return" [routerLink]="['/home']">Return home</button>
 </div>
 </body>
+
+@if (!showTicket) {
+  <div #ticketContent style="background-image: url('/assets/background-ticket.png'); width: 90mm; height: 170mm; padding: 20px;
+  box-shadow: 0 0 12px rgba(0, 0, 0, 0.2); font-family: Arial, sans-serif;
+   display: flex; flex-direction: column; align-items: center;">
+    <div style="font-size: 22px; font-weight: bold; color: #333; margin-bottom: 10px; text-align: center;">TICKET</div>
+
+    <div
+      style="width: 100%; margin-top: 8px; border-bottom: 1px dashed #000; padding-bottom: 10px; text-align: left;font-size: 14px;">
+      <strong>Khách Hàng:</strong><br>
+      <strong>Email:</strong> {{ dataPayment.user.email }}<br>
+      <strong>Phone:</strong> +84 {{ dataPayment.user.phone }}
+    </div>
+
+    <div
+      style="width: 100%; margin-top: 8px; border-bottom: 1px dashed #000; padding-bottom: 10px; text-align: left;font-size: 14px;">
+      <strong>CGV Vincom Phú Yên</strong><br>
+      Địa chỉ: 123 Lê Duẩn, TP Tuy Hòa, Phú Yên<br>
+      <strong>Website:</strong> www.cgv.vn
+    </div>
+
+    <div
+      style="width: 100%; margin-top: 8px; border-bottom: 1px dashed #000; padding-bottom: 10px; text-align: left;font-size: 14px;">
+      <strong>Phim:</strong> {{ dataPayment.movie.movieName }}<br>
+      <strong>Ngày và Giờ:</strong> {{ dataPayment.time.time_start }}<br>
+      <strong>Rạp:</strong> {{ dataPayment.room.roomName }}<br>
+      <strong>Loại Phòng:</strong>{{ dataPayment.room.roomType }}<br>
+      <strong>Chỗ Ngồi:</strong>
+    </div>
+
+    <div
+      style="width: 100%; margin-top: 8px; border-bottom: 1px dashed #000; padding-bottom: 10px; text-align: left;font-size: 14px;">
+      <strong>Phương Thức Thanh Toán:</strong>{{ partnerCode }}<br>
+      <strong>Thanh Toán:</strong> {{ total_price | number:'1.0-0' }} VND<br>
+      <strong>Ngày Thanh Toán:</strong> {{ datePayment }}
+    </div>
+
+    <div style="font-weight: bold; font-size: 16px; margin-top: 10px; text-align: center;">
+      Tổng tiền: <strong>{{ total_price | number:'1.0-0' }} VND</strong><br>
+      (Bao gồm thuế và phí dịch vụ)
+    </div>
+
+      <qrcode [qrdata]="ticket.ticketId" [width]="120" [errorCorrectionLevel]="'M'"></qrcode>
+  </div>
+}
+
 
 

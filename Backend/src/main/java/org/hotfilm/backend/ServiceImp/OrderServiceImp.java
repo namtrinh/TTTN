@@ -33,16 +33,10 @@ public class OrderServiceImp implements OrderService {
 
     @Override
     public OrderResponse save(OrderRequest orderRequest) {
-        Order order = orderMapper.toOrder(orderRequest);
-        System.out.println("get"+ orderRequest.getOrderDate());
-
-        String dateString = "2025-03-03 15:05:00";
         DateTimeFormatter formatter = DateTimeFormatter.ofPattern("yyyy-MM-dd HH:mm:ss");
-
-        LocalDateTime dateTime = LocalDateTime.parse(dateString, formatter);
-
-        System.out.println(dateTime);
-     order.setOrderDate(dateTime);
+        LocalDateTime dateTime = LocalDateTime.parse(orderRequest.getOrderDate(), formatter);
+        Order order = orderMapper.toOrder(orderRequest);
+        order.setOrderDate(dateTime);
         return orderMapper.toOrderResponse(orderRepository.save(order));
     }
 

@@ -1,16 +1,30 @@
 
 ¡	java:S120"ZRename this package name to match the regular expression '^[a-z_]+(\.[a-z_][a-z0-9_]*)*$'.(ÜÅñóúÿÿÿÿ8Àú¶ÔÕ2J$72b7526d-b3e6-4606-94a8-bb72d8f09213
-g	java:S112h"FDefine and throw a dedicated exception instead of using a generic one.(æÀö€øÿÿÿÿ8§Ã¦¡×2
+n
+java:S3655‰"PCall "showtime.isPresent()" or "!showtime.isEmpty()" before accessing the value.(ÿÒÛÙ8ûÁ€§×2
+m
+java:S3655"PCall "showtime.isPresent()" or "!showtime.isEmpty()" before accessing the value.(‰®Õ	8ıÁ€§×2
+n
+java:S3655"PCall "showtime.isPresent()" or "!showtime.isEmpty()" before accessing the value.(Ïà±8ıÁ€§×2
+n
+java:S3655’"PCall "showtime.isPresent()" or "!showtime.isEmpty()" before accessing the value.(ıÄêÄ8ıÁ€§×2
+n
+java:S3655‚"PCall "showtime.isPresent()" or "!showtime.isEmpty()" before accessing the value.(ÎÅÇÈ8ıÁ€§×2
+e
+java:S3655:"HCall "room.isPresent()" or "!room.isEmpty()" before accessing the value.(³¼Œù8ıÁ€§×2
+g	java:S112g"FDefine and throw a dedicated exception instead of using a generic one.(Ñó²ûıÿÿÿÿ8şÁ€§×2
 _
-java:S6813"BRemove this field injection and use constructor injection instead.(Ï…òÑ8ÛÈ¦¡×2
-d
-java:S6813!"BRemove this field injection and use constructor injection instead.(û¡’¾ıÿÿÿÿ8ÿÈ¦¡×2
+java:S6813"BRemove this field injection and use constructor injection instead.(êæÄŞ8ÿÁ€§×2
 _
-java:S6813#"BRemove this field injection and use constructor injection instead.(×ÀÇ8èÉ¦¡×2
+java:S6813 "BRemove this field injection and use constructor injection instead.(êæÄŞ8ÿÁ€§×2
 _
-java:S6813%"BRemove this field injection and use constructor injection instead.(ëÄ•ö8ÆÊ¦¡×2
-d
-java:S6813'"BRemove this field injection and use constructor injection instead.(œ„ Èûÿÿÿÿ8™Ë¦¡×2
+java:S6813""BRemove this field injection and use constructor injection instead.(êæÄŞ8ÿÁ€§×2
 _
-java:S6813)"BRemove this field injection and use constructor injection instead.(Ò¬³Ú8›Ë¦¡×2
-]	java:S125="<This block of commented-out lines of code should be removed.(Ö™Âüÿÿÿÿ8¡Ë¦¡×2
+java:S6813$"BRemove this field injection and use constructor injection instead.(êæÄŞ8ÿÁ€§×2
+_
+java:S6813&"BRemove this field injection and use constructor injection instead.(êæÄŞ8ÿÁ€§×2
+_
+java:S6813("BRemove this field injection and use constructor injection instead.(êæÄŞ8ÿÁ€§×2
+]	java:S125<"<This block of commented-out lines of code should be removed.(™ì»œşÿÿÿÿ8ŒÂ€§×2
+=	java:S131B""Add a default case to this switch.(°‚¤^8ŒÂ€§×2
+C	java:S131t""Add a default case to this switch.(÷‹¿¼şÿÿÿÿ8“Â€§×2

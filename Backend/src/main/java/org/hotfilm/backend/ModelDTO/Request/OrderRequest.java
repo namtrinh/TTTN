@@ -17,10 +17,11 @@ import java.time.LocalDateTime;
 public class OrderRequest {
 
     private String orderId;
+    private String paymentId;
     private String name;
     private String phone;
     private String email;
-    private LocalDateTime orderDate;
+    private String orderDate;
     private Order.OrderStatus orderStatus;
     private int totalPrice;
     private String paymentMethod;

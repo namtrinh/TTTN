@@ -1,6 +1,9 @@
 
-•	java:S120"ZRename this package name to match the regular expression '^[a-z_]+(\.[a-z_][a-z0-9_]*)*$'.(›£ùÑJ$bf8aaa69-e13f-4958-b29e-9a40443718e4
+•	java:S120"ZRename this package name to match the regular expression '^[a-z_]+(\.[a-z_][a-z0-9_]*)*$'.(›£ùÑJ$c3e3bc7d-b749-4993-b24b-12b4aa1a3a45
 R
-java:S1128"0Remove this unused import 'jakarta.persistence'.(Î«Ô§úÿÿÿÿ8òÉ£×2
-
-java:S1128"<Remove this unused import 'org.hotfilm.backend.Model.Order'.(÷Ê„°8¥õ£×2J$1d9a7552-db63-4181-8669-4ed458f5904f
+java:S1128"0Remove this unused import 'jakarta.persistence'.(Î«Ô§úÿÿÿÿ8¥¹¤§×2
+Y
+java:S1128"<Remove this unused import 'org.hotfilm.backend.Model.Order'.(÷Ê„°8¥¹¤§×2
+s
+java:S1128
+"QRemove this unused import 'org.springframework.cglib.core.internal.LoadingCache'.(ÎÒÄãÿÿÿÿÿ8¥¹¤§×2

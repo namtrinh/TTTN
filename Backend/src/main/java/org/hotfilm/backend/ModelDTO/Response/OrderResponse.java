@@ -15,6 +15,7 @@ import java.time.LocalDateTime;
 public class OrderResponse {
 
     private String orderId;
+    private String paymentId;
     private String name;
     private String phone;
     private String email;

@@ -1,0 +1,7 @@
+
+œ	java:S120"ZRename this package name to match the regular expression '^[a-z_]+(\.[a-z_][a-z0-9_]*)*$'.(Íˆ¨¹8à‘à©×2J$ae3b3fcc-894d-44a7-8867-c24ba3eee240
+…
+java:S6813"BRemove this field injection and use constructor injection instead.(êæÄÞ8¥£à©×2J$0866f631-cbcc-4add-92bc-a5e86b582a0f
+‚	java:S899 ";Do something with the "boolean" value returned by "delete".(¼·ážüÿÿÿÿ8«£à©×2J$95bfaaa1-7840-45f3-8305-8b754b985545
+–
+java:S4042 "NUse "java.nio.file.Files#delete" here for better messages on error conditions.(¼·ážüÿÿÿÿ8«£à©×2J$e4a87b78-66cc-4546-bd61-a6903acf36e5

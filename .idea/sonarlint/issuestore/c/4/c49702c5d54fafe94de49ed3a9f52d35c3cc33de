@@ -1,8 +1,8 @@
 
-œ	java:S120"ZRename this package name to match the regular expression '^[a-z_]+(\.[a-z_][a-z0-9_]*)*$'.(Íˆ¨¹8”êÁ£×2J$f264ef17-6a9d-4ff0-b5e5-3f75776eea13
+œ	java:S120"ZRename this package name to match the regular expression '^[a-z_]+(\.[a-z_][a-z0-9_]*)*$'.(Íˆ¨¹8½¡«×2J$5de077dc-00b8-4e25-ad2e-ccc92415ce2e
 …
-java:S6813"BRemove this field injection and use constructor injection instead.(êæÄŞ8˜êÁ£×2J$7ca4906f-76df-4199-b9a3-2d981524bd2d
-L
-java:S1128"/Remove this unused import 'com.cloudinary.Api'.(¹¼£¨8•¤§¤×2
-[
-java:S1128">Remove this unused import 'org.w3c.dom.stylesheets.LinkStyle'.(ÙÌ¾å8—¤§¤×2
+java:S6813"BRemove this field injection and use constructor injection instead.(êæÄŞ8¿¡«×2J$7f30d80d-6bc1-4688-ab0a-a493aaa3b4f5
+r
+java:S1128"/Remove this unused import 'com.cloudinary.Api'.(¹¼£¨8¼£«×2J$e2d29eeb-5cbe-4ff8-ab0f-f5401b8f0a0a
+
+java:S1128">Remove this unused import 'org.w3c.dom.stylesheets.LinkStyle'.(ÙÌ¾å8¼£«×2J$9648d039-1124-4ba9-a110-7833d3cd942f

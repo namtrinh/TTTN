@@ -1,9 +1,12 @@
 import {Component, OnInit} from '@angular/core';
 import {SharedDataService} from '../service/sharedata.service';
+import {QRCodeComponent} from 'angularx-qrcode';
 
 @Component({
   selector: 'app-test',
-  imports: [],
+  imports: [
+    QRCodeComponent
+  ],
   templateUrl: './test.component.html',
   standalone: true,
   styleUrl: './test.component.css'

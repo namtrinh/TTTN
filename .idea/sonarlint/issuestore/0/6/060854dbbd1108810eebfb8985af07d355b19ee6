@@ -1,0 +1,31 @@
+
+f	java:S117\"QRename this local variable to match the regular expression '^[a-z][a-zA-Z0-9]*$'.(ê¬½ó
+t	java:S120"ZRename this package name to match the regular expression '^[a-z_]+(\.[a-z_][a-z0-9_]*)*$'.(ÜÅñóúÿÿÿÿ
+C
+java:S5411:"(Use a primitive boolean expression here.(ÍÉç“ûÿÿÿÿ
+>
+java:S5411U"(Use a primitive boolean expression here.(‚âÏˆ
+C
+java:S5411]"(Use a primitive boolean expression here.(Æ¼…ùÿÿÿÿ
+C
+java:S5411j"(Use a primitive boolean expression here.(üºëåúÿÿÿÿ
+C
+java:S5411u"(Use a primitive boolean expression here.(ú’ªŠşÿÿÿÿ
+X
+java:S6813"BRemove this field injection and use constructor injection instead.(êæÄŞ
+X
+java:S6813 "BRemove this field injection and use constructor injection instead.(êæÄŞ
+X
+java:S6813#"BRemove this field injection and use constructor injection instead.(êæÄŞ
+S
+java:S11444"8Remove this unused private "UserServiceImp" constructor.(Å‰»øùÿÿÿÿ
+E	java:S106("+Replace this use of System.out by a logger.(Í½ôûıÿÿÿÿ
+I
+java:S11720".Remove this unused method parameter "hashKey".(ä¨¦µüÿÿÿÿ
+@	java:S106;"+Replace this use of System.out by a logger.(åÃŒâ
+@	java:S106@"+Replace this use of System.out by a logger.(¾¨Â€
+
+java:S6204H"zReplace this usage of 'Stream.collect(Collectors.toList())' with 'Stream.toList()' and ensure that the list is unmodified.(ª™¨¹
+@	java:S106W"+Replace this use of System.out by a logger.(¦ûĞ
+@	java:S106^"+Replace this use of System.out by a logger.(åÃŒâ
+@	java:S106a"+Replace this use of System.out by a logger.(¾¨Â€

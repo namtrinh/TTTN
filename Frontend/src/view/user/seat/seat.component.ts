@@ -90,9 +90,9 @@ export class SeatComponent {
   selectShowtime(time: any, room: any) {
     //FORMAT DATE NE ///////////////////////////////////////////////////////////////////////////////////////
     this.selectedSeats = []
-   // const formattedDate = new Date(this.date).toLocaleDateString('en-GB');
-  //  time.time_start = time.time_start + "  " + formattedDate
-   // console.log("time start", time.time_start)
+   const formattedDate = new Date(this.date).toLocaleDateString('en-GB');
+    time.time_start = time.time_start + " " + formattedDate
+    console.log("time start", time.time_start)
     this.showSeat = true
     this.inf_selected = {
       time: time,
