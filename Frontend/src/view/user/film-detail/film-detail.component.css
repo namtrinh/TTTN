@@ -3,8 +3,17 @@ body {
   margin: 0;
   padding: 0;
   background: linear-gradient(135deg, #8a2be2, #4b0082, #000000, #0066cc, #8a2be2);
-  color: #fff; /* Chữ trắng để nổi bật trên nền tối */
+  color: #fff;
 }
+
+.centered-iframe {
+  width: 70vw;
+  height: 500px;
+  display: block;
+  margin: 0 auto;
+  border-radius: 10px;
+}
+
 
 .container {
   width: 50%;

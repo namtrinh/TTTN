@@ -57,74 +57,74 @@
 
   </section>
 
-  <div class="screen">Màn Hình</div>
-  <div class="seating">
-    <br>
-    @for (room of rooms; track $index) {
+  @if (showSeat) {
 
-      @if (inf_selected?.room?.roomId === room.roomId && room.roomType == "STANDARD") {
-        <div class="room" id="STANDARD">
-          <h2>STANDARD Room</h2>
-          <div class="seats standard-room">
-            @for (seat of seats; track $index) {
-              <div class="seat" [ngClass]="{ selected: isSelected(seat), reserved: seat.seatStatus === 'RESERVED' }"
-                   (click)="seat.seatStatus !== 'RESERVED' ? toggleSeatSelection(seat): null">
-                {{ seat.seatNumber }}
-              </div>
-            }
-          </div>
-        </div>
-      }
+    <div class="seating">
+      <br>
+      @for (room of rooms; track $index) {
 
-      @if (inf_selected?.room?.roomId === room.roomId && room.roomType == "IMAX") {
-        <div class="room" id="IMAX">
-          <h2>IMAX Room</h2>
-          <div class="seats imax-room">
-            @for (seat of seats; track $index) {
-              <div class="seat" [ngClass]="{ selected: isSelected(seat), reserved: seat.seatStatus === 'RESERVED' }"
-                   (click)="seat.seatStatus !== 'RESERVED' ? toggleSeatSelection(seat): null">
-                {{ seat.seatNumber }}
-              </div>
-            }
+        @if (inf_selected?.room?.roomId === room.roomId && room.roomType == "STANDARD") {
+          <div class="room" id="STANDARD">
+            <h2>STANDARD Room</h2>
+            <div style="width: 100%; height: 50px; border-top: 15px solid white; border-radius: 200px 200px 0 0;"></div><br>
+            <div class="seats standard-room">
+              @for (seat of seats; track $index) {
+                <div class="seat" [ngClass]="{ selected: isSelected(seat), reserved: seat.seatStatus === 'RESERVED' }"
+                     (click)="seat.seatStatus !== 'RESERVED' ? toggleSeatSelection(seat): null">
+                  {{ seat.seatNumber }}
+                </div>
+              }
+            </div>
           </div>
-        </div>
-      }
+        }
 
-      @if (inf_selected?.room?.roomId === room.roomId && room.roomType == "COUPLE") {
-        <div class="room" id="COUPLE">
-          <h2>COUPLE Room</h2>
-          <div class="seats couple-room">
-            @for (seat of seats; track $index) {
-              <div class="seat" [ngClass]="{ selected: isSelected(seat), reserved: seat.seatStatus === 'RESERVED' }"
-                   (click)="seat.seatStatus !== 'RESERVED' ? toggleSeatSelection(seat): null">
-                {{ seat.seatNumber }}
-              </div>
-            }
+        @if (inf_selected?.room?.roomId === room.roomId && room.roomType == "IMAX") {
+          <div class="room" id="IMAX">
+            <h2>IMAX Room</h2>
+            <div style="width: 100%; height: 50px; border-top: 15px solid white; border-radius: 200px 200px 0 0;"></div><br>
+            <div class="seats imax-room">
+              @for (seat of seats; track $index) {
+                <div class="seat" [ngClass]="{ selected: isSelected(seat), reserved: seat.seatStatus === 'RESERVED' }"
+                     (click)="seat.seatStatus !== 'RESERVED' ? toggleSeatSelection(seat): null">
+                  {{ seat.seatNumber }}
+                </div>
+              }
+            </div>
           </div>
-        </div>
+        }
+
+        @if (inf_selected?.room?.roomId === room.roomId && room.roomType == "COUPLE") {
+          <div class="room" id="COUPLE">
+            <h2>COUPLE Room</h2>
+            <div style="width: 100%; height: 50px; border-top: 15px solid white; border-radius: 200px 200px 0 0;"></div><br>
+            <div class="seats couple-room">
+              @for (seat of seats; track $index) {
+                <div class="seat" [ngClass]="{ selected: isSelected(seat), reserved: seat.seatStatus === 'RESERVED' }"
+                     (click)="seat.seatStatus !== 'RESERVED' ? toggleSeatSelection(seat): null">
+                  {{ seat.seatNumber }}
+                </div>
+              }
+            </div>
+          </div>
+        }
       }
-    }
-    <br>
-    <div class="legend">
-      <div class="legend-item">
-        <div class="legend-color available"></div>
-        <span>Ghế trống</span>
-      </div>
-      <div class="legend-item">
-        <div class="legend-color selected"></div>
-        <span>Đã chọn</span>
-      </div>
-      <div class="legend-item">
-        <div class="legend-color reserved"></div>
-        <span>Đã đặt</span>
+      <br>
+      <div class="legend">
+        <div class="legend-item">
+          <div class="legend-color available"></div>
+          <span>Ghế trống</span>
+        </div>
+        <div class="legend-item">
+          <div class="legend-color selected"></div>
+          <span>Đã chọn</span>
+        </div>
+        <div class="legend-item">
+          <div class="legend-color reserved"></div>
+          <span>Đã đặt</span>
+        </div>
       </div>
     </div>
-
-    <button
-      style="margin-top: 20px; width: 100%; padding: 10px; font-size: 16px; background-color: #e50914; color: white; border: none; border-radius: 5px; cursor: pointer;">
-      Xác nhận ghế
-    </button>
-  </div>
+  }
 </div>
 
 @if (inf_selected) {

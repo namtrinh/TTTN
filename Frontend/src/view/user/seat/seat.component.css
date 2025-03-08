@@ -12,15 +12,6 @@ h1 {
   font-weight: bold;
 }
 
-.screen {
-  text-align: center;
-  background-color: #e50914;
-  color: #fff;
-  padding: 10px;
-  border-radius: 5px;
-  margin-bottom: 20px;
-}
-
 .seat:hover {
   background-color: #666;
 }
@@ -150,10 +141,12 @@ select:hover {
 .category {
   margin-bottom: 15px;
 }
+
 .category h3 {
   margin: 0 0 5px 0;
   font-size: 16px;
 }
+
 .btn {
   display: inline-block;
   background-color: transparent;
@@ -165,6 +158,7 @@ select:hover {
   font-size: 14px;
   border-radius: 5px;
 }
+
 .btn:hover {
   background-color: white;
   color: #662d91;
@@ -175,7 +169,7 @@ select:hover {
   height: 120px;
   color: white;
   width: 60%;
-  background-color: #1c1f2d;
+  background: linear-gradient(135deg, #4b0082, #4b0082, #000000, #0066cc, #8a2be2);
   padding: 10px;
   border-radius: 10px;
   display: flex;
@@ -225,21 +219,25 @@ select:hover {
   background-color: #f0f0f0; /* Thêm màu nền khi nút được chọn */
   color: #333; /* Thay đổi màu chữ khi chọn */
 }
+
 .ticket-container {
   color: white;
   text-align: right;
   padding: 20px;
   border-radius: 8px;
 }
+
 .ticket-container span {
   font-size: 14px;
   color: #ccc;
 }
+
 .ticket-container strong {
   font-size: 18px;
   font-weight: bold;
   color: white;
 }
+
 .book-button {
   display: block;
   background-color: #FFD700;
@@ -253,6 +251,7 @@ select:hover {
   cursor: pointer;
   font-size: 15px;
 }
+
 .book-button:hover {
   background-color: #e6c200;
 }

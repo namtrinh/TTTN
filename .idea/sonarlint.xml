@@ -3,7 +3,7 @@
   <component name="SonarLintProjectSettings">
     <option name="moduleMapping">
       <map>
-        <entry key="IdentityService" value="IdentityService" />
+        <entry key="Backend" value="IdentityService" />
       </map>
     </option>
   </component>

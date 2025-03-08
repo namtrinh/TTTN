@@ -46,6 +46,7 @@ export class SeatComponent {
   showPayment: boolean = false;
   selectedSeats!: Seat[];
   groupedShowtimes: any
+  showSeat:boolean = false
 
   getShowtime(date: string) {
     if (date && this.movie.movieId) {
@@ -92,7 +93,7 @@ export class SeatComponent {
    // const formattedDate = new Date(this.date).toLocaleDateString('en-GB');
   //  time.time_start = time.time_start + "  " + formattedDate
    // console.log("time start", time.time_start)
-
+    this.showSeat = true
     this.inf_selected = {
       time: time,
       room: room,
