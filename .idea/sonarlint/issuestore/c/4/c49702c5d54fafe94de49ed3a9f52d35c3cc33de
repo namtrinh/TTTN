@@ -1,0 +1,8 @@
+
+œ	java:S120"ZRename this package name to match the regular expression '^[a-z_]+(\.[a-z_][a-z0-9_]*)*$'.(Íˆ¨¹8”êÁ£×2J$f264ef17-6a9d-4ff0-b5e5-3f75776eea13
+…
+java:S6813"BRemove this field injection and use constructor injection instead.(êæÄÞ8˜êÁ£×2J$7ca4906f-76df-4199-b9a3-2d981524bd2d
+L
+java:S1128"/Remove this unused import 'com.cloudinary.Api'.(¹¼£¨8•¤§¤×2
+[
+java:S1128">Remove this unused import 'org.w3c.dom.stylesheets.LinkStyle'.(ÙÌ¾å8—¤§¤×2

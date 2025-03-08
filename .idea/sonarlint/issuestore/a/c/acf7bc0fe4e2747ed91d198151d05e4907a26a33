@@ -1,0 +1,6 @@
+
+š	java:S120"ZRename this package name to match the regular expression '^[a-z_]+(\.[a-z_][a-z0-9_]*)*$'.(ËšÇ”şÿÿÿÿJ$aa223f1d-2c9c-4caf-805c-48c6862ea94f
+x
+java:S1128"0Remove this unused import 'jakarta.persistence'.(Î«Ô§úÿÿÿÿ8ëú£×2J$05dd8393-c432-4ead-93cb-bfe696bfedcc
+
+java:S1128"<Remove this unused import 'org.hotfilm.backend.Model.Order'.(÷Ê„°8ëú£×2J$f214d28f-4bfb-43a9-b8b1-82f9de9a1d55

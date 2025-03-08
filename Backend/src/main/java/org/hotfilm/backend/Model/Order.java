@@ -27,7 +27,7 @@ public class Order {
     public Order(String number, String mail, String dddd, String s, int i) {
     }
 
-    private enum OrderStatus{
+    public enum OrderStatus{
     SUCCESS, CANCELLED
 }
 

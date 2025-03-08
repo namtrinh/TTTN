@@ -1,0 +1,12 @@
+
+”	java:S120"ZRename this package name to match the regular expression '^[a-z_]+(\.[a-z_][a-z0-9_]*)*$'.(‹Ì›WJ$11a3e436-cd5e-43c7-aa15-c4a09f831036
+–	java:S116""VRename this field "POST_PUBlIC" to match the regular expression '^[a-z][a-zA-Z0-9]*$'.(†‹¡‹şÿÿÿÿJ$736946be-4b26-4c21-8a3d-6cc81e879760
+	java:S1165"URename this field "GET_PUBLIC" to match the regular expression '^[a-z][a-zA-Z0-9]*$'.(˜êßÓJ$fef5ccf5-36dd-414a-b592-8052a7ab510c
+~
+java:S6813"BRemove this field injection and use constructor injection instead.(êæÄŞJ$f8d4b1ef-3edc-423a-bfdf-3dd514f406b0
+~
+java:S6813"BRemove this field injection and use constructor injection instead.(êæÄŞJ$49258e56-44a3-42be-9154-b6c751fdc38e
+–
+java:S3305 "ZInject this field value directly into "securityFilterChain", the only method that uses it.(’„ÑJ$229f50ac-062d-4da1-9e9f-37966e1b31b2
+–
+java:S3305"ZInject this field value directly into "securityFilterChain", the only method that uses it.(†’³ÖJ$519edd99-deb5-4bf6-9e15-b89fe8703c53

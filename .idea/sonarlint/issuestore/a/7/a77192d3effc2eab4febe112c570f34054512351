@@ -1,0 +1,13 @@
+
+¡	java:S120"ZRename this package name to match the regular expression '^[a-z_]+(\.[a-z_][a-z0-9_]*)*$'.(ÜÅñóúÿÿÿÿ8ÙØ¤¥×2J$6b57ed37-daf9-4ab8-ac87-0580e805ec2b
+…
+java:S6813"BRemove this field injection and use constructor injection instead.(êæÄŞ8ŞØ¤¥×2J$1391fbad-5b0a-4406-bb64-0e7e5816bc87
+…
+java:S6813"BRemove this field injection and use constructor injection instead.(êæÄŞ8ŞØ¤¥×2J$db1849f4-3250-4943-a73b-831a36311d9e
+½
+java:S6204"zReplace this usage of 'Stream.collect(Collectors.toList())' with 'Stream.toList()' and ensure that the list is unmodified.(ª™¨¹8âØ¤¥×2J$bef6b389-df0b-4332-bacc-7822eeced08f
+m	java:S106%"+Replace this use of System.out by a logger.(Æ´ñÎ8¯ÿ²¥×2J$754f6e0e-b384-4142-9805-1d09666462d5
+m	java:S106&"+Replace this use of System.out by a logger.(ò‡ØÖ8„‡Ñ¥×2J$6560df01-409f-41b9-aa1a-f735b593e1db
+r	java:S106,"+Replace this use of System.out by a logger.(†¤‚üÿÿÿÿ8õ æ¥×2J$a2539034-b9f9-471c-8cb4-181bad284e7a
+w
+java:S1128"/Remove this unused import 'java.util.Optional'.(¨˜ëİüÿÿÿÿ8êØ¤¥×2J$78712e3f-09a2-4a55-bad4-400531bdfa31

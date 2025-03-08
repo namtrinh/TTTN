@@ -11,8 +11,8 @@
     <groupId>org.hotfilm</groupId>
     <artifactId>Backend</artifactId>
     <version>0.0.1-SNAPSHOT</version>
-    <name>IdentityService</name>
-    <description>IdentityService</description>
+    <name>Backend</name>
+    <description>Backend</description>
     <url/>
     <licenses>
         <license/>
@@ -170,7 +170,7 @@
                         <manifest>
                             <addClasspath>true</addClasspath>
                             <classpathPrefix>lib/</classpathPrefix>
-                            <mainClass>org.hotfilm.backend.IdentityServiceApplication</mainClass>
+                            <mainClass>org.hotfilm.backend.BackendApplication</mainClass>
                         </manifest>
                     </archive>
                 </configuration>

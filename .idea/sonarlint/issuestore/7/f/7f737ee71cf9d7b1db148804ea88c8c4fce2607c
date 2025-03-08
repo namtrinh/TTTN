@@ -1,0 +1,6 @@
+
+•	java:S120"ZRename this package name to match the regular expression '^[a-z_]+(\.[a-z_][a-z0-9_]*)*$'.(Íˆ¨¹J$8d106bae-efba-4aa3-b913-23ca39768554
+…
+java:S6813"BRemove this field injection and use constructor injection instead.(êæÄÞ8ªïÂ£×2J$ca25628b-a59c-4f6a-a374-c1ba2d842b70
+b
+java:S1128"FRemove this unused import 'org.hotfilm.backend.Service.TicketService'.(À±Š?8ûó›¤×2
