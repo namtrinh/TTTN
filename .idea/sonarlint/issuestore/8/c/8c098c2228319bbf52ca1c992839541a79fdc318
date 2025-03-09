@@ -1,8 +1,0 @@
-
-m	java:S117""QRename this local variable to match the regular expression '^[a-z][a-zA-Z0-9]*$'.(ÌÕ™‚8ó÷€Ö2
-v	java:S120"ZRename this package name to match the regular expression '^[a-z_]+(\.[a-z_][a-z0-9_]*)*$'.(õ­¬¾8õ÷€Ö2
-|	java:S116"`Rename this field "TOKEN_EXPIRATION_TIME" to match the regular expression '^[a-z][a-zA-Z0-9]*$'.(í§¢Ÿ8þ÷€Ö2
-s	java:S116"WRename this field "MAX_REQUESTS" to match the regular expression '^[a-z][a-zA-Z0-9]*$'.(Ÿ£„Ñ8þ÷€Ö2
-y	java:S116"^Rename this field "REQUEST_WINDOW_TIME" to match the regular expression '^[a-z][a-zA-Z0-9]*$'.(õ­Ø#8þ÷€Ö2
->
-java:S1170"!Make this final field static too.(Ÿ£„Ñ8‚ž÷€Ö2

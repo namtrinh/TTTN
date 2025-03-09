@@ -1,7 +1,0 @@
-
-{	java:S120"ZRename this package name to match the regular expression '^[a-z_]+(\.[a-z_][a-z0-9_]*)*$'.(ÜÅñóúÿÿÿÿ8¼È‹«×2
-<
-java:S1640"Convert this Map to an EnumMap.(‡•çá8¾È‹«×2
-a	java:S112"FDefine and throw a dedicated exception instead of using a generic one.(˜š“%8¿È‹«×2
-W
-java:S1118":Add a private constructor to hide the implicit public one.(ð¾ÏÏ8ÂÈ‹«×2

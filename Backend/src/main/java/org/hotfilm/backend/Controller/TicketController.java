@@ -35,6 +35,14 @@ public class TicketController {
                 .build();
     }
 
+    @GetMapping(value = "/{ticketId}")
+    public ApiResponse<TicketResponse> findById(@PathVariable String ticketId){
+        return ApiResponse.<TicketResponse>builder()
+                .status(HttpStatus.OK)
+                .result(ticketService.findById(ticketId))
+                .build();
+    }
+
     @PutMapping(value = "/{ticketId}")
     public ApiResponse<TicketResponse> updateById(@PathVariable String ticketId, @RequestBody TicketRequest ticketRequest) {
         return ApiResponse.<TicketResponse>builder()

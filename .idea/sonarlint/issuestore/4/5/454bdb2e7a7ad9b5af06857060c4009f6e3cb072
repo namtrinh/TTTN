@@ -1,18 +1,0 @@
-
-¡	java:S120"ZRename this package name to match the regular expression '^[a-z_]+(\.[a-z_][a-z0-9_]*)*$'.(Û´¬áÿÿÿÿÿ8ßˆ‹¿Ó2J$133cd7ac-1a4d-48ff-8b61-91e9b873f7d9
-…
-java:S6813"BRemove this field injection and use constructor injection instead.(êæÄŞ8ş÷¬èÑ2J$cc3d9378-638e-46ca-b60f-a71d0eec2824
-L
-java:S1128"/Remove this unused import 'com.cloudinary.Api'.(¹¼£¨8‹èûÕ2
-]
-java:S1128";Remove this unused import 'lombok.RequiredArgsConstructor'.(ÑØúøÿÿÿÿ8ŒèûÕ2
-Y
-java:S1128"7Remove this unused import 'org.apache.coyote.Response'.(˜ÊŠşÿÿÿÿ8ŒèûÕ2
-c
-java:S1128"ARemove this unused import 'org.springframework.http.HttpMessage'.(ş÷Ìñıÿÿÿÿ8ŒèûÕ2
-f
-java:S1128"DRemove this unused import 'org.springframework.http.ResponseEntity'.(¶¯ø¦úÿÿÿÿ8ŒèûÕ2
-^
-java:S1128"ARemove this unused import 'javax.print.attribute.standard.Media'.(‰šäÁ8ŒèûÕ2
-L
-java:S1128"*Remove this unused import 'java.util.Map'.(¼è½Òşÿÿÿÿ8èûÕ2

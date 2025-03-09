@@ -1,0 +1,4 @@
+
+Atypescript:S125>"Remove this commented out code.(ê”çÙ8œÄàÉ×2
+Wtypescript:S1854E"4Remove this useless assignment to variable "seatId".(ÑäÁ8ÄàÉ×2
+Útypescript:S1874„"°'(next?: ((value: any) => void) | null | undefined, error?: ((error: any) => void) | null | undefined, complete?: (() => void) | null | undefined): Subscription' is deprecated.(èú¹«øÿÿÿÿ8ÄàÉ×2

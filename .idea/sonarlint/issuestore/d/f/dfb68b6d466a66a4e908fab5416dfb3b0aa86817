@@ -1,0 +1,5 @@
+
+ttypescript:S1128"&Remove this unused import of 'OnInit'.(ãá‹Ïúÿÿÿÿ8òí‰Ë×2J$d0356119-58ce-4344-9de5-f01305e50104
+typescript:S1128"1Remove this unused import of 'SharedDataService'.(¿ñêûÿÿÿÿ8óí‰Ë×2J$3b1da63a-925c-41cb-a495-a205693f5308
+{typescript:S1128"-Remove this unused import of 'BarcodeFormat'.(ÀÁ²áøÿÿÿÿ8¿¿Ë×2J$281030f6-dd6a-46ad-bce7-4b2e3c39fcaf
+¸typescript:S66062"jPrefer using nullish coalescing operator (`??`) instead of a logical or (`||`), as it is a safer operator.(’ø®†ûÿÿÿÿ8¨ÒË×2J$3a2bc275-8294-4313-99e4-22d54fa80f7e

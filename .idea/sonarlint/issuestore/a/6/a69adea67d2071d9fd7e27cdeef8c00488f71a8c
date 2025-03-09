@@ -1,8 +1,0 @@
-
-œ	java:S120"ZRename this package name to match the regular expression '^[a-z_]+(\.[a-z_][a-z0-9_]*)*$'.(ô¾µž8ÑÐ¨¹Ó2J$79d46331-e98e-455b-8ae4-5555d2d46604
-{
-java:S1874"3Remove this use of "setHostName"; it is deprecated.(¢ø¢çúÿÿÿÿ8þÑ¨¹Ó2J$72cd6edb-cdc1-4350-a539-c63d16a8fd5a
-r
-java:S1874"/Remove this use of "setPort"; it is deprecated.(žŸÃÞ8‚Ò¨¹Ó2J$178ca45a-a1da-48f7-bac7-5c5adc9cc924
-v
-java:S1874"3Remove this use of "setPassword"; it is deprecated.(Áí’É8‘Ò¨¹Ó2J$b8d302d2-33c8-4a30-b6a1-67dc0e260888

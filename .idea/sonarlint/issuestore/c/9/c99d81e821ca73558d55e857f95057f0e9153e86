@@ -1,20 +1,0 @@
-
-e
-java:S1128	"CRemove this unused import 'org.hotfilm.identityservice.Model.Room'.(¸ÇÛğıÿÿÿÿ8›Í©ÿÖ2
-n
-java:S1128
-"RRemove this unused import 'org.hotfilm.identityservice.Repository.RoomRepository'.(ÂÿÔ`8œÍ©ÿÖ2
-r
-java:S1128"URemove this unused import 'org.hotfilm.identityservice.momo.service.GenerateOrderId'.(›¼¦Ï8Í©ÿÖ2
-u
-java:S1128"SRemove this unused import 'org.springframework.beans.factory.annotation.Autowired'.(¡¸Îùÿÿÿÿ8Í©ÿÖ2
-m
-java:S1128"PRemove this unused import 'org.springframework.scheduling.annotation.Schedules'.(ãÉª•8ŸÍ©ÿÖ2
-F
-java:S1128")Remove this unused import 'java.io.File'.(†Ğ¥Å8 Í©ÿÖ2
-M
-java:S1128"0Remove this unused import 'java.nio.file.Paths'.(áè°¯8¡Í©ÿÖ2
-V
-java:S1128"4Remove this unused import 'java.time.LocalDateTime'.(æÃ§ƒüÿÿÿÿ8¨Í©ÿÖ2
-O
-java:S1128"-Remove this unused import 'java.util.Arrays'.(î–˜Éüÿÿÿÿ8«Í©ÿÖ2

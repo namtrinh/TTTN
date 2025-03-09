@@ -1,14 +1,0 @@
-
-œ	java:S120"ZRename this package name to match the regular expression '^[a-z_]+(\.[a-z_][a-z0-9_]*)*$'.(ô¾µ8òæÌÄ2J$8dbb90d6-a7f6-438f-92b8-243709fa60e8
-	java:S116#"VRename this field "POST_PUBlIC" to match the regular expression '^[a-z][a-zA-Z0-9]*$'.(†‹¡‹şÿÿÿÿ8‡çÌÄ2J$bfa6d56b-05ae-469f-a8bd-70f80e6fe025
-—	java:S1162"URename this field "GET_PUBLIC" to match the regular expression '^[a-z][a-zA-Z0-9]*$'.(˜êßÓ8ŠçÌÄ2J$6816456e-3b47-4863-b8a5-e7947acbfaf4
-…
-java:S6813"BRemove this field injection and use constructor injection instead.(êæÄŞ8çÌÄ2J$3059ab86-ae47-4049-b4a8-4fbd637ca45b
-…
-java:S6813 "BRemove this field injection and use constructor injection instead.(êæÄŞ8‘çÌÄ2J$9392cc9b-97bc-499e-ba69-d913aaa5ae69
-
-java:S3305!"ZInject this field value directly into "securityFilterChain", the only method that uses it.(’„Ñ8’çÌÄ2J$6dfc626e-f9e2-416d-a535-96cb59ec39ee
-
-java:S3305"ZInject this field value directly into "securityFilterChain", the only method that uses it.(†’³Ö8’çÌÄ2J$3a9756f7-7f9a-493d-82c3-e825a18a8efa
-À
-java:S1128"~Remove this unused import 'org.springframework.security.oauth2.server.resource.authentication.JwtGrantedAuthoritiesConverter'.(§¨ãi8—¸ğÌÄ2J$4b1642ee-15ea-4678-b43e-d35120f72703

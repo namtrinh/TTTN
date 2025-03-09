@@ -18,6 +18,9 @@ export class TicketService {
     return this.http.get<Ticket[]>(`${this.baseUrl}`)
   }
 
+  findById(id: string | null):Observable<Ticket>{
+    return this.http.get<Ticket>(`${this.baseUrl}/${id}`)
+  }
   createTicket(ticket: Ticket): Observable<Ticket> {
     return this.http.post<Ticket>(`${this.baseUrl}`, ticket)
   }

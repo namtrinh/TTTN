@@ -1,7 +1,0 @@
-
-”
-java:S20952"QUse try-with-resources or close this "CloseableHttpClient" in a "finally" clause.(¡Ë®ç8•ï˜ÍÖ2J$05361f79-184b-4b6b-9bcf-b211b7201f68
-†
-java:S1128">Remove this unused import 'java.security.InvalidKeyException'.(ì£ð»ÿÿÿÿÿ8¸ï˜ÍÖ2J$3e88151d-8aca-4af1-aa96-aeac137c2dbf
-‹
-java:S1128"CRemove this unused import 'java.security.NoSuchAlgorithmException'.(ŒòÍ¾þÿÿÿÿ8ºï˜ÍÖ2J$1b95ca30-d43b-4267-91d8-1418b09c0a2a

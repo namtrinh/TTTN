@@ -1,8 +1,0 @@
-
-¡	java:S120"ZRename this package name to match the regular expression '^[a-z_]+(\.[a-z_][a-z0-9_]*)*$'.(éÙ‹×úÿÿÿÿ8ûÚ¬×2J$0e321a26-e590-46f6-a68b-de8182da4e94
-™
-java:S2095"QUse try-with-resources or close this "PDPageContentStream" in a "finally" clause.(‡±®şûÿÿÿÿ8ï€–¬×2J$ae240013-f92b-49eb-86e3-4831411e170f
-
-java:S2095"HUse try-with-resources or close this "PDDocument" in a "finally" clause.(³’’ïøÿÿÿÿ8ï€–¬×2J$21299ae0-5892-422d-8018-acc159268c68
-	java:S107"=Method has 12 parameters, which is greater than 7 authorized.(‰¼ğã8í†¬×2J$9f2cf8d5-1acb-41c9-9d33-1c7f43e8ee45
-n	java:S106‰"+Replace this use of System.out by a logger.(ÑìİÃ8Ù‡¬×2J$4427b9ff-2801-486b-b3c1-5abb4137b200
