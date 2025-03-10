@@ -257,3 +257,11 @@ U
 %Frontend/src/service/email.service.ts,a\8\a886a46a0371cfcb9f118a6757adb9b4e4ee07c0
 \
 ,Frontend/src/view/ticket/ticket.component.ts,6\2\62aa5c73ff1973c69f23bf9cf6608972dec865d1
+k
+;Frontend/src/view/manager/checkin/checkin.component.spec.ts,4\c\4ce7a14b227dad641092ba3f1914a36c763b4da5
+h
+8Frontend/src/view/manager/checkin/checkin.component.html,9\1\9102e263f86f0264777142d81c9b87669e3154a7
+g
+7Frontend/src/view/manager/checkin/checkin.component.css,3\f\3fbad25899e147880f30b51fc5cbf5775f2dbf30
+f
+6Frontend/src/view/manager/checkin/checkin.component.ts,7\f\7fb5c302e569351a47eb962cb6c9bcd9bb236168

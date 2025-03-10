@@ -1,24 +1,17 @@
-import {Component, NgZone, OnInit} from '@angular/core';
-import {SharedDataService} from '../service/sharedata.service';
-import {QRCodeComponent} from 'angularx-qrcode';
-import {ZXingScannerModule} from '@zxing/ngx-scanner';
-import {BarcodeFormat} from '@zxing/library';
+import {Component, NgZone} from '@angular/core';
+import {Ticket} from '../../../model/ticket.model';
+import {TicketService} from '../../../service/ticket.service';
 import {Camera, CameraResultType} from '@capacitor/camera';
 import jsQR from 'jsqr';
-import {TicketService} from '../service/ticket.service';
-import {Ticket} from '../model/ticket.model';
 
 @Component({
-  selector: 'app-test',
-  imports: [
-    QRCodeComponent,
-    ZXingScannerModule
-  ],
-  templateUrl: './test.component.html',
+  selector: 'app-checkin',
+  imports: [],
+  templateUrl: './checkin.component.html',
   standalone: true,
-  styleUrl: './test.component.css'
+  styleUrl: './checkin.component.css'
 })
-export class TestComponent {
+export class CheckinComponent {
   scannedResult: string | null = null;
   scanErrorMessage: string | null = null;
   ticket:Ticket = new Ticket()
@@ -26,7 +19,6 @@ export class TestComponent {
   constructor(private ngZone: NgZone,
               private ticketService:TicketService) {}
 
-  // 📸 Chụp ảnh và quét QR
   async scanQRCode() {
     try {
       const image = await Camera.getPhoto({ resultType: CameraResultType.DataUrl });
@@ -67,7 +59,4 @@ export class TestComponent {
       alert(error.error.message)
     })
   }
-
-  // 🔦 Bật/tắt đèn flash
-
 }

@@ -1,10 +1,11 @@
 
-¡	java:S120"ZRename this package name to match the regular expression '^[a-z_]+(\.[a-z_][a-z0-9_]*)*$'.(ÜÅñóúÿÿÿÿ8“ª¡¬×2J$fb7272aa-1b98-4fad-b349-26226cb57976
-…
-java:S6813"BRemove this field injection and use constructor injection instead.(êæÄŞ8—ª¡¬×2J$1f8ffcef-a17e-4fab-91d7-2ae2251f24ea
-…
-java:S6813"BRemove this field injection and use constructor injection instead.(êæÄŞ8˜ª¡¬×2J$ffb816f1-5753-45fb-92ed-89195be2c451
-…
-java:S6813"BRemove this field injection and use constructor injection instead.(êæÄŞ8™ª¡¬×2J$3a5f6612-0f98-47fa-9d84-a5469e7bc26b
-½
-java:S6204$"zReplace this usage of 'Stream.collect(Collectors.toList())' with 'Stream.toList()' and ensure that the list is unmodified.(ª™¨¹8›ª¡¬×2J$55d19f57-c93f-453a-87a8-d9d22689115f
+{	java:S120"ZRename this package name to match the regular expression '^[a-z_]+(\.[a-z_][a-z0-9_]*)*$'.(ÜÅñóúÿÿÿÿ8•õó×2
+g	java:S112:"FDefine and throw a dedicated exception instead of using a generic one.(ÿĞ„éüÿÿÿÿ8›õó×2
+_
+java:S6813"BRemove this field injection and use constructor injection instead.(êæÄŞ8¢õó×2
+_
+java:S6813"BRemove this field injection and use constructor injection instead.(êæÄŞ8¢õó×2
+_
+java:S6813"BRemove this field injection and use constructor injection instead.(êæÄŞ8£õó×2
+—
+java:S6204$"zReplace this usage of 'Stream.collect(Collectors.toList())' with 'Stream.toList()' and ensure that the list is unmodified.(ª™¨¹8¬õó×2

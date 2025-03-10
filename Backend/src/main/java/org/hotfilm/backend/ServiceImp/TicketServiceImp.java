@@ -54,6 +54,9 @@ public class TicketServiceImp implements TicketService {
     @Override
     public TicketResponse updateById(String id, TicketRequest ticketRequest) {
         Ticket ticket = ticketRepository.findById(id).orElseThrow(() -> new RuntimeException("Ticket not found"));
+        if (ticket.getTicketStatus().equals(Ticket.TicketStatus.CHECK_IN)){
+            throw new RuntimeException("Ticket has been checkin before");
+        }
         ticket.setTicketStatus(Ticket.TicketStatus.CHECK_IN);
         return ticketMapper.toTicketResponse(ticketRepository.save(ticket));
     }

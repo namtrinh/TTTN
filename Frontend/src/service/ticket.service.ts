@@ -25,7 +25,7 @@ export class TicketService {
     return this.http.post<Ticket>(`${this.baseUrl}`, ticket)
   }
 
-  updateById(id:string, body:Ticket): Observable<Ticket>{
+  updateById(id: string | null, body: Ticket): Observable<Ticket>{
     return this.http.put<Ticket>(`${this.baseUrl}/${id}`, body)
   }
 }
