@@ -1,6 +1,6 @@
 import {Component, OnInit} from '@angular/core';
 import {SharedDataService} from '../../../../service/sharedata.service';
-import {DatePipe, DecimalPipe} from '@angular/common';
+import {DatePipe, DecimalPipe, NgClass} from '@angular/common';
 import {MomoPaymentService} from '../../../../service/payment.service';
 import {FormsModule} from '@angular/forms';
 
@@ -9,7 +9,8 @@ import {FormsModule} from '@angular/forms';
   imports: [
     DatePipe,
     DecimalPipe,
-    FormsModule
+    FormsModule,
+    NgClass
   ],
   templateUrl: './checkout-inf.component.html',
   standalone: true,
@@ -28,6 +29,7 @@ export class CheckoutInfComponent implements OnInit {
     phone: number | null;
     email: string;
   } = {name: '', phone: null, email: ''};
+  paymentMethod!: string;
 
 
   ngOnInit(): void {
@@ -35,6 +37,7 @@ export class CheckoutInfComponent implements OnInit {
       this.dataPayment = data
       console.log("share", data)
     })
+
   }
 
   showInfo(user: { name: string, phone: number | null, email: string }) {
@@ -49,7 +52,7 @@ export class CheckoutInfComponent implements OnInit {
   }
 
 
-  payment() {
+  paymentMoMo() {
     const data = {
       amount: this.dataPayment.room.roomPrice * this.dataPayment.seat.length,
       extraData: "",
@@ -60,4 +63,30 @@ export class CheckoutInfComponent implements OnInit {
       window.location.href = data.payUrl;
     })
   }
+
+  selectedPaymentMethod: string = '';
+
+  pay() {
+    switch (this.paymentMethod) {
+      case 'momo':
+        this.paymentMoMo();
+        break;
+      case 'domestic':
+        alert("this payment method is currently under development!")
+        break;
+      case 'international':
+        alert("this payment method is currently under development!")
+        break;
+      default:
+        this.selectedPaymentMethod = 'Chưa chọn phương thức thanh toán';
+    }
+  }
+
+  selectPaymentMethod(method: string) {
+    this.paymentMethod = method;
+  }
+
+  protected readonly alert = alert;
+
+
 }

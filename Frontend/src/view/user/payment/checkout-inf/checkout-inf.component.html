@@ -5,12 +5,12 @@
 
   @if (!showInf) {
     <div class="form-section">
-      <h4><strong>Thông Tin Khách Hàng</strong></h4>
+      <h4><strong>Customer Information</strong></h4>
       <form>
-        <label for="name">Họ và tên</label>
+        <label for="name">Name</label>
         <input type="text" id="name" name="name" [(ngModel)]="inf_customer.name" required>
 
-        <label for="phone">Số điện thoại</label>
+        <label for="phone">Phone Number</label>
         <input type="text" id="phone" name="phone" [(ngModel)]="inf_customer.phone" required>
 
         <label for="email">Email</label>
@@ -28,6 +28,7 @@
             Default checkbox
           </label>
         </div>
+        <br>
         <button type="submit" (click)="showInfo(inf_customer)" class="btn">Continutes</button>
       </form>
     </div>
@@ -35,39 +36,43 @@
 
   @if (showInf) {
     <div class="payment-options">
-      <div class="payment-method">
+      <h4><strong>Payment Method</strong></h4>
+
+      <div class="payment-method" (click)="selectPaymentMethod('momo')" [ngClass]= "{selected: paymentMethod === 'momo'}">
         <img src="./assets/momo.png" alt="Momo">
-        <span>Thanh toán qua Momo</span>
-      </div>
-      <div class="payment-method">
-        <img src="visa-icon.png" alt="Visa">
-        <span>Thanh toán qua Thẻ nội địa</span>
-      </div>
-      <div class="payment-method">
-        <img src="mastercard-icon.png" alt="MasterCard">
-        <span>Thanh toán qua thẻ quốc tế</span>
-      </div>
-      <div class="discount-code">
-        <button class="discount-btn">Chọn hoặc nhập mã giảm giá</button>
-        <p class="discount-note">Bạn đang có mã giảm giá</p>
+        <span>Payment via Momo</span>
       </div>
 
+      <div class="payment-method" (click)="selectPaymentMethod('domestic')" [ngClass]="{selected:paymentMethod === 'domestic'}">
+        <img src="./assets/visa.png" alt="Visa">
+        <span>Payment via Domestic card</span>
+      </div>
+
+      <div class="payment-method" (click)="selectPaymentMethod('international')" [ngClass]="{selected:paymentMethod === 'international'}">
+        <img src="./assets/visa.png" alt="MasterCard">
+        <span>Payment via International card</span>
+      </div>
+
+      <div class="discount-code" (click)="alert('this payment method is currently under development!')">
+        <button class="discount-btn">Select or enter coupons</button>
+        <p class="discount-note">You have a discount code ?</p>
+      </div>
+<br>
       <div class="button-container">
-        <button class="back-btn">Quay lại</button>
-        <button class="pay-btn" (click)="payment()">Thanh toán</button>
+        <button class="back-btn">Return</button>
+        <button class="pay-btn" (click)="pay()">Payment</button>
       </div>
     </div>
-
 
   }
 
   <div class="ticket-info">
-    <h4><strong>Thông Tin Về Phim</strong></h4>
+    <h4><strong>Movie information</strong></h4>
     <h5><strong>{{ dataPayment.movie.movieName }}</strong></h5>
     <p>Phim dành cho khán giả từ 18 tuổi trở lên</p>
     <p><strong>Cinestar Quốc Thanh (TPHCM)</strong></p>
     <p>271 Nguyễn Trãi, Phường Nguyễn Cư Trinh, Quận 1, TP.HCM</p>
-    <p>Thời gian: : {{ dataPayment.time.time_start }}</p>
+    <p>Showtime: : {{ dataPayment.time.time_start }}</p>
 
     <tr>
       <th>Showtime</th>

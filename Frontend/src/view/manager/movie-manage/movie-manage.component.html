@@ -1,16 +1,20 @@
-<div class="container">
-  <div class="card shadow-sm bg-dark text-white">
-    <div class="card-header text-white d-flex justify-content-between align-items-center">
-      <h2 class="h4 mb-0 fw-bold">Manage Film</h2>
+<div class="container mt-4">
+  <div class="card shadow-sm bg-light text-white">
+
+
+    <header>
+      <h1>Manage Movie</h1>
       <div class="form-help">
         <input type="text" [(ngModel)]="searchTerm" class="form-control" placeholder="Search film">
       </div>
       <button class="btn btn-light btn-sm add-btn fw-bold" data-bs-toggle="modal" data-bs-target="#exampleModal">+ Add
         new film
       </button>
-    </div>
+    </header>
+
+
     <div class="card-body">
-      <table class="table table-striped table-bordered table-hover table-dark">
+      <table class="table table-striped table-bordered table-hover table-light">
         <thead class="table-light text-dark">
         <tr class="fw-bold">
           <th>Movie Name</th>

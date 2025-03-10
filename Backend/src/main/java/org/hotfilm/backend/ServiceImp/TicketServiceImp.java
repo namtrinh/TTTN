@@ -38,12 +38,14 @@ public class TicketServiceImp implements TicketService {
 
     @Override
     public TicketResponse save(TicketRequest entity) {
-        DateTimeFormatter dateTimeFormatter = DateTimeFormatter.ofPattern("HH-mm a dd/MM/yyyy");
+        DateTimeFormatter dateTimeFormatter = DateTimeFormatter.ofPattern("hh-mm a dd/MM/yyyy");
         LocalDateTime localDateTime = LocalDateTime.parse(entity.getShowtime(), dateTimeFormatter);
         Ticket ticket = ticketMapper.toTicket(entity);
         ticket.setShowtime(localDateTime);
+
         return ticketMapper.toTicketResponse(ticketRepository.save(ticket));
     }
+
 
     @Override
     public TicketResponse findById(String string) {

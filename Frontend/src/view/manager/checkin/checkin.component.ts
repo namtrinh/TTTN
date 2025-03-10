@@ -3,10 +3,13 @@ import {Ticket} from '../../../model/ticket.model';
 import {TicketService} from '../../../service/ticket.service';
 import {Camera, CameraResultType} from '@capacitor/camera';
 import jsQR from 'jsqr';
+import {DatePipe} from '@angular/common';
 
 @Component({
   selector: 'app-checkin',
-  imports: [],
+  imports: [
+    DatePipe
+  ],
   templateUrl: './checkin.component.html',
   standalone: true,
   styleUrl: './checkin.component.css'
@@ -54,7 +57,7 @@ export class CheckinComponent {
   checkin(){
     this.ticketService.updateById(this.scannedResult, this.ticket).subscribe((data:any) =>{
       console.log(data.result)
-
+      alert("Checkin successfully!")
     }, error => {
       alert(error.error.message)
     })

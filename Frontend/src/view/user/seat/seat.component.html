@@ -1,6 +1,4 @@
 <div class="container">
-  <h1>Select Seat</h1>
-
   <!--
   <section class="branch-cities">
     <h2>Chọn chi nhánh thành phố</h2>
@@ -23,7 +21,7 @@
   </section>
   -->
   <section class="show-times">
-    <h2>Show Time</h2>
+    <h1>Show Time</h1>
     <form action="/submit-date" method="post" class="mb-3">
       <div class="form-group">
         <label for="birthday" class="form-label">-- Select Day --</label>
@@ -42,7 +40,7 @@
               <button class="btn"
                       [ngClass]="{selected:  inf_selected &&  inf_selected.time?.showtimeId === time.showtimeId}"
                       (click)="selectShowtime(time, room)">
-                {{ time.time_start }}
+                {{ time.time_start}}
               </button>
             }
           }
@@ -145,7 +143,7 @@
             Subtotal: {{ (inf_selected?.room?.roomPrice || 0) * (inf_selected?.seat?.length || 0) | number:'1.0-0' }}</strong>
         </div>
         @if (showPayment) {
-          <button class="book-button" [routerLink]="['/checkout']">BOOK NOW</button>
+          <button class="book-button" [routerLink]="['/checkout']" (click)="setTime()">BOOK NOW</button>
         }
       </div>
     </div>

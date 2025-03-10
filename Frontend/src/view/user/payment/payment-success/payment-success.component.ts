@@ -30,7 +30,7 @@ export class PaymentSuccessComponent implements OnInit {
               private activeRouter: ActivatedRoute,
               private orderService: OrderService,
               private ticketService: TicketService,
-              private http:HttpClient) {
+              private http: HttpClient) {
   }
 
   dataPayment: any
@@ -40,7 +40,8 @@ export class PaymentSuccessComponent implements OnInit {
   partnerCode!: string
   order: Order = new Order()
   ticket: Ticket = new Ticket()
-  showTicket:boolean = false
+  showTicket: boolean = false
+  messageMail!:string;
 
   ngOnInit(): void {
     this.activeRouter.queryParams.subscribe(params => {
@@ -59,9 +60,9 @@ export class PaymentSuccessComponent implements OnInit {
     this.createOrder()
     this.createTicket()
 
-  //  setTimeout(() => {
-   //   this.generateAndSendImage();
-  //  }, 5000);
+    setTimeout(() => {
+      this.generateAndSendImage();
+    }, 3000);
 
   }
 
@@ -94,6 +95,7 @@ export class PaymentSuccessComponent implements OnInit {
     this.ticket.seatNumber = this.dataPayment?.seat.map((seat: Seat) => seat.seatNumber).join(',');
     this.ticket.seatPrice = this.dataPayment?.room.roomPrice
     this.ticket.showtime = this.dataPayment?.time.time_start
+    console.log(this.ticket.showtime)
     this.ticketService.createTicket(this.ticket).subscribe((data: any) => {
       console.log("create ticket", data.result)
       this.ticket = data.result;
@@ -107,7 +109,7 @@ export class PaymentSuccessComponent implements OnInit {
   generateAndSendImage(): void {
     if (!this.ticketContent?.nativeElement) return console.error("Lỗi: Không tìm thấy ticketContent!");
 
-    html2canvas(this.ticketContent.nativeElement, {scale: 3, useCORS: true})
+    html2canvas(this.ticketContent.nativeElement, {scale: 2, useCORS: true})
       .then(canvas => this.sendEmail(new File([this.dataURLToBlob(canvas.toDataURL('image/png'))], 'ticket.png', {type: 'image/png'})))
       .catch(error => console.error("Lỗi khi tạo ảnh:", error));
   }
@@ -123,16 +125,17 @@ export class PaymentSuccessComponent implements OnInit {
 
   sendEmail(file: File): void {
     const formData = new FormData();
-    formData.append('to', 'cunnconn03@gmail.com');  // Thay bằng email người nhận
+    formData.append('to', this.dataPayment.user.email);
     formData.append('subject', 'Vé xem phim của bạn');
-    formData.append('body', 'Vé xem phim của bạn được đính kèm dưới dạng hình ảnh.');
+    formData.append('body', 'Vé xem phim của bạn nè');
     formData.append('file', file);
 
     this.http.post<any>('http://localhost:8080/email/send-with-attachment', formData)
       .subscribe(response => {
-        console.log('Email đã được gửi!', response);
-      }, error => {
-        console.error('Lỗi gửi email:', error);
-      });
+        console.log('Email đã được gửi!');
+        this.messageMail = 'Your ticket has been sent to your email!'
+      },error => {
+        this.messageMail = 'Your ticket has been sent to your email!'
+      })
   }
 }

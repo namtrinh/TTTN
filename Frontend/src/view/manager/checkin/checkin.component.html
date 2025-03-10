@@ -1,4 +1,7 @@
+
+
 <body>
+
 <div class="scanner-container">
   <button class="scan-button" (click)="scanQRCode()">📸 Quét mã QR</button>
 
@@ -11,12 +14,11 @@
     <div class="ticket-info">
       <h4>Thông tin vé xem phim:</h4>
       <p>Tên phim:<strong> {{ ticket.movieName }}</strong></p>
-      <p>Giờ chiếu:<strong> {{ ticket.showtime }}</strong></p>
+      <p>Giờ chiếu:<strong> {{ ticket.showtime | date:'HH:mm a dd/MM/yyyy'}}</strong></p>
       <p>Số ghế:<strong> {{ ticket.seatNumber }}</strong></p>
     </div>
 
     <button class="btn btn-primary" (click)="checkin()">CheckIn</button>
-
   }
 
   @if (scanErrorMessage) {

@@ -265,3 +265,7 @@ g
 7Frontend/src/view/manager/checkin/checkin.component.css,3\f\3fbad25899e147880f30b51fc5cbf5775f2dbf30
 f
 6Frontend/src/view/manager/checkin/checkin.component.ts,7\f\7fb5c302e569351a47eb962cb6c9bcd9bb236168
+y
+IFrontend/src/view/manager/dashboard-manage/dashboard-manage.component.css,6\9\69e79680b93cc7389a0421e5978d0ae7eb506399
+l
+<Frontend/src/view/user/payment/payment/payment.component.css,5\b\5b010f17d78963ee6e5f74223c0bb7fec6bf5db0
