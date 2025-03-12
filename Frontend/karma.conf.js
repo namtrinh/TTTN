@@ -23,6 +23,6 @@ module.exports = function(config) {
     logLevel: config.LOG_INFO,
     autoWatch: false,
     singleRun: true,
-    restartOnFileChange: true,
+    restartOnFileChange: false,
   });
 };
