@@ -8,31 +8,30 @@ on:
 
 jobs:
   build:
-
     runs-on: ubuntu-latest
 
     strategy:
       matrix:
         node-version: [18.x, 20.x, 22.x]
-        # See supported Node.js release schedule at https://nodejs.org/en/about/releases/
 
     steps:
-    - uses: actions/checkout@v4  # Bước đầu tiên: checkout mã nguồn vào repository.
-    
+    - uses: actions/checkout@v4  # Checkout mã nguồn vào thư mục gốc của repository.
+
     - name: Use Node.js ${{ matrix.node-version }}
       uses: actions/setup-node@v4
       with:
         node-version: ${{ matrix.node-version }}
         cache: 'npm'
 
-    - name: Change directory to Frontend
-      run: cd Frontend  # Chuyển vào thư mục Frontend
-    
-    - run: npm ci  # Cài đặt dependencies
-      working-directory: Frontend  # Đảm bảo npm ci được chạy trong thư mục Frontend
+    # Sử dụng working-directory để đảm bảo các lệnh npm được thực thi trong thư mục frontend.
+    - name: Install dependencies
+      run: npm ci
+      working-directory: Frontend  # Chạy npm ci trong thư mục frontend, nơi có package-lock.json.
 
-    - run: npm run build --if-present  # Build project nếu có lệnh build
-      working-directory: Frontend  # Đảm bảo build được thực hiện trong thư mục Frontend
+    - name: Build project
+      run: npm run build --if-present
+      working-directory: Frontend  # Build trong thư mục frontend.
 
-    - run: npm test  # Chạy các bài kiểm tra
-      working-directory: Frontend  # Đảm bảo tests chạy trong thư mục Frontend
+    - name: Run tests
+      run: npm test
+      working-directory: Frontend  # Chạy test trong thư mục frontend.
