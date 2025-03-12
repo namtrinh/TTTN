@@ -141,12 +141,8 @@ w
 GFrontend/src/view/user/payment/checkout-inf/checkout-inf.component.html,5\8\58f2705ed948ed159aed43e768122ee983bc29cd
 v
 FFrontend/src/view/user/payment/checkout-inf/checkout-inf.component.css,3\8\3874905158deb4262731081dc2907783769167b2
-m
-=Frontend/src/view/user/payment/payment/payment.component.html,9\8\98c9f8ffac5af638f355e80a19d81a7c994d9227
 W
 'Frontend/src/service/payment.service.ts,f\7\f74448fc3d355a5d5379236e05d9f6fe4d8a924a
-k
-;Frontend/src/view/user/payment/payment/payment.component.ts,1\5\154f2ce70eefe1f29745d7ad4c88e800b5b44749
 Y
 )Frontend/src/service/sharedata.service.ts,f\7\f7d362011aed1e0f9c5c8dfc97fd61b6a982759c
 N
@@ -249,16 +245,6 @@ y
 IBackend/src/main/java/org/hotfilm/backend/Controller/EmailController.java,c\c\ccaa1575e9bef5e2f0092d05fd84d122a4b1829f
 x
 HBackend/src/main/java/org/hotfilm/backend/ServiceImp/UserServiceImp.java,0\6\060854dbbd1108810eebfb8985af07d355b19ee6
-^
-.Frontend/src/view/ticket/ticket.component.html,6\0\6005a380bbe2d297cd194f18746b3a52e0bddec6
-]
--Frontend/src/view/ticket/ticket.component.css,d\9\d930a37855a827696f79b2ca8ce98d6bcd66b07b
-U
-%Frontend/src/service/email.service.ts,a\8\a886a46a0371cfcb9f118a6757adb9b4e4ee07c0
-\
-,Frontend/src/view/ticket/ticket.component.ts,6\2\62aa5c73ff1973c69f23bf9cf6608972dec865d1
-k
-;Frontend/src/view/manager/checkin/checkin.component.spec.ts,4\c\4ce7a14b227dad641092ba3f1914a36c763b4da5
 h
 8Frontend/src/view/manager/checkin/checkin.component.html,9\1\9102e263f86f0264777142d81c9b87669e3154a7
 g
@@ -267,5 +253,3 @@ f
 6Frontend/src/view/manager/checkin/checkin.component.ts,7\f\7fb5c302e569351a47eb962cb6c9bcd9bb236168
 y
 IFrontend/src/view/manager/dashboard-manage/dashboard-manage.component.css,6\9\69e79680b93cc7389a0421e5978d0ae7eb506399
-l
-<Frontend/src/view/user/payment/payment/payment.component.css,5\b\5b010f17d78963ee6e5f74223c0bb7fec6bf5db0
