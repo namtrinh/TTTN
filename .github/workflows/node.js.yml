@@ -16,7 +16,7 @@ jobs:
 
     steps:
     - uses: actions/checkout@v4
-    
+
     - name: Use Node.js ${{ matrix.node-version }}
       uses: actions/setup-node@v4
       with:
@@ -34,7 +34,8 @@ jobs:
         sudo apt-get install -y xvfb
         export DISPLAY=:99
         Xvfb :99 -screen 0 1280x1024x24 &
-      
+        sleep 3 # Đảm bảo Xvfb được khởi động hoàn toàn trước khi tiếp tục
+
     - name: Build the project
       run: npm run build --if-present
       working-directory: Frontend
