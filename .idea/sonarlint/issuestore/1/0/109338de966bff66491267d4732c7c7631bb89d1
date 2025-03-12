@@ -1,0 +1,6 @@
+
+Jtypescript:S1128"(Remove this unused import of 'DatePipe'.(è®08–êÁÂØ2
+Rtypescript:S1128"*Remove this unused import of 'RouterLink'.(Ã½ÿÿÿÿÿÿ8—êÁÂØ2
+Ttypescript:S1128",Remove this unused import of 'RouterOutlet'.(Ã½ÿÿÿÿÿÿ8—êÁÂØ2
+Ötypescript:S1874W"²'(next?: ((value: Movie) => void) | null | undefined, error?: ((error: any) => void) | null | undefined, complete?: (() => void) | null | undefined): Subscription' is deprecated.(€†Æ¼8—êÁÂØ2
+gtypescript:S6660r"?'If' statement should not be the only statement in 'else' block(£÷¼´üÿÿÿÿ8—êÁÂØ2

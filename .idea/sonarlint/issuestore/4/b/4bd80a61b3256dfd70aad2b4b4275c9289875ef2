@@ -1,0 +1,5 @@
+
+Ntypescript:S1128"&Remove this unused import of 'OnInit'.(´Üâ”ÿÿÿÿÿ8‡¿íÁØ2
+Ktypescript:S1128"(Remove this unused import of 'DatePipe'.(—«â8ˆ¿íÁØ2
+àtypescript:S18745"·'(next?: ((value: Showtime[]) => void) | null | undefined, error?: ((error: any) => void) | null | undefined, complete?: (() => void) | null | undefined): Subscription' is deprecated.(™Ë‘ ùÿÿÿÿ8ˆ¿íÁØ2
+×typescript:S1874m"³'(next?: ((value: Seat[]) => void) | null | undefined, error?: ((error: any) => void) | null | undefined, complete?: (() => void) | null | undefined): Subscription' is deprecated.(ŒÿÓª8ˆ¿íÁØ2
