@@ -345,3 +345,19 @@ Z
 *Frontend/src/modelDto/LoginRequest.spec.ts,b\1\b1a607d2c0d0b9538edcef53781a18afe8a523a2
 S
 #Frontend/src/modelDto/movie.spec.ts,8\6\8699d270ec689f573aaaa86df39ea5d199999e4f
+K
+Frontend/tsconfig.spec.json,9\2\92c599f49019cf85e66f610ba96fee397dc56f41
+J
+Frontend/tsconfig.app.json,f\2\f299122280ed2546929a1df3195226da5dc353f7
+F
+Frontend/tsconfig.json,e\c\ec8762ee5bc0a6ebd3363c83a67109bfd941489c
+P
+ Frontend/.vscode/extensions.json,5\6\56add0bdf9f289fffe5f176a222a4c72a4ae10b1
+L
+Frontend/.vscode/launch.json,0\0\004a990339877fb133f00f6486c45bed37c865f4
+K
+Frontend/.vscode/tasks.json,7\9\7941eee9241fc2d5a1a171edb78e66363cb5fe96
+G
+Frontend/karma.conf.js',5\f\5f9b306c7076da668c7f7dad5bb64745597cca32
+F
+Frontend/karma.conf.js,4\f\4f03e729d425c8361339c3f50ffb3930e4c7ec24
