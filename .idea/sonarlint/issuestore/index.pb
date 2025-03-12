@@ -337,3 +337,5 @@ K
 Frontend/.vscode/tasks.json,7\9\7941eee9241fc2d5a1a171edb78e66363cb5fe96
 F
 Frontend/karma.conf.js,4\f\4f03e729d425c8361339c3f50ffb3930e4c7ec24
+X
+(Frontend/src/auth/401/401.component.html,a\4\a4b8b2423742cbfc6cd2cf9df5f6d0746bc41d12
