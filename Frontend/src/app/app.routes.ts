@@ -4,12 +4,10 @@ import {LoginComponent} from '../auth/login/login.component';
 import {FilmDetailComponent} from '../view/user/film-detail/film-detail.component';
 import {RegisterComponent} from '../auth/register/register.component';
 import {_401Component} from '../auth/401/401.component';
-import {CustomCanActiveService} from '../service/CustomCanActive.service';
 import {ResetPasswordComponent} from '../auth/reset-password/reset-password.component';
 import {ViewManageComponent} from '../view/manager/view-manage/view-manage.component';
 import {MovieManageComponent} from '../view/manager/movie-manage/movie-manage.component';
 import {RoomManageComponent} from '../view/manager/room-manage/room-manage.component';
-import {TestComponent} from '../test/test.component';
 import {ShowtimeManageComponent} from '../view/manager/showtime-manage/showtime-manage.component';
 import {CheckoutInfComponent} from '../view/user/payment/checkout-inf/checkout-inf.component';
 import {PaymentSuccessComponent} from '../view/user/payment/payment-success/payment-success.component';
@@ -36,7 +34,6 @@ export const routes: Routes = [
 
   {path:'checkTicket',component:CheckinComponent},
 
-  {path: 'test', component: TestComponent},
 
 
   {path: '???', component: _401Component}

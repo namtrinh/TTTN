@@ -1,13 +1,12 @@
 import {Component, OnInit} from '@angular/core';
 import {SharedDataService} from '../../../../service/sharedata.service';
-import {DatePipe, DecimalPipe, NgClass} from '@angular/common';
+import {DecimalPipe, NgClass} from '@angular/common';
 import {MomoPaymentService} from '../../../../service/payment.service';
 import {FormsModule} from '@angular/forms';
 
 @Component({
   selector: 'app-checkout-inf',
   imports: [
-    DatePipe,
     DecimalPipe,
     FormsModule,
     NgClass

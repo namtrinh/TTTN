@@ -61,7 +61,7 @@
       <br>
       @for (room of rooms; track $index) {
 
-        @if (inf_selected?.room?.roomId === room.roomId && room.roomType == "STANDARD") {
+        @if (inf_selected.room?.roomId === room.roomId && room.roomType == "STANDARD") {
           <div class="room" id="STANDARD">
             <h2>STANDARD Room</h2>
             <div style="width: 100%; height: 50px; border-top: 15px solid white; border-radius: 200px 200px 0 0;"></div><br>
@@ -76,7 +76,7 @@
           </div>
         }
 
-        @if (inf_selected?.room?.roomId === room.roomId && room.roomType == "IMAX") {
+        @if (inf_selected.room?.roomId === room.roomId && room.roomType == "IMAX") {
           <div class="room" id="IMAX">
             <h2>IMAX Room</h2>
             <div style="width: 100%; height: 50px; border-top: 15px solid white; border-radius: 200px 200px 0 0;"></div><br>
@@ -91,7 +91,7 @@
           </div>
         }
 
-        @if (inf_selected?.room?.roomId === room.roomId && room.roomType == "COUPLE") {
+        @if (inf_selected.room?.roomId === room.roomId && room.roomType == "COUPLE") {
           <div class="room" id="COUPLE">
             <h2>COUPLE Room</h2>
             <div style="width: 100%; height: 50px; border-top: 15px solid white; border-radius: 200px 200px 0 0;"></div><br>
@@ -129,18 +129,18 @@
   <div class="inf-payment">
     <div class="movie-info">
       <p class="movie-title">CƯỚI MA (T18)</p>
-      <p class="cinema-name">Show room: {{ inf_selected?.room?.roomName }} - {{ inf_selected?.room?.roomType }}
+      <p class="cinema-name">Show room: {{ inf_selected.room?.roomName }} - {{ inf_selected.room?.roomType }}
         | @for (selectSeat of selectedSeats; track $index) {
           {{ selectSeat.seatNumber }} |
         }
-        {{ inf_selected?.time?.time_start }}</p>
+        {{ inf_selected.time?.time_start }}</p>
     </div>
     <div class="details">
       <div class="ticket-container">
 
         <div>
           <strong>
-            Subtotal: {{ (inf_selected?.room?.roomPrice || 0) * (inf_selected?.seat?.length || 0) | number:'1.0-0' }}</strong>
+            Subtotal: {{ (inf_selected.room?.roomPrice || 0) * (inf_selected.seat?.length || 0) | number:'1.0-0' }}</strong>
         </div>
         @if (showPayment) {
           <button class="book-button" [routerLink]="['/checkout']" (click)="setTime()">BOOK NOW</button>
