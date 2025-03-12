@@ -117,12 +117,6 @@ p
 @Frontend/src/view/manager/room-manage/room-manage.component.html,e\a\ea5d6c4b12959ebf34f74c9147852df592ad1658
 o
 ?Frontend/src/view/manager/room-manage/room-manage.component.css,9\e\9e7008225f214d8442b2644a0ef8a322a56eca0f
-S
-#Frontend/src/test/test.component.ts,d\f\dfb68b6d466a66a4e908fab5416dfb3b0aa86817
-U
-%Frontend/src/test/test.component.html,6\3\63e72a662420a92091b71afc5e6939ceca0742c3
-T
-$Frontend/src/test/test.component.css,f\8\f8b460b23f1104b2ad289bf644a021fcd635ab9c
 F
 Frontend/.editorconfig,8\d\8d06e3b655da95921311ede31f4734209d48465a
 x
@@ -253,10 +247,6 @@ f
 6Frontend/src/view/manager/checkin/checkin.component.ts,7\f\7fb5c302e569351a47eb962cb6c9bcd9bb236168
 y
 IFrontend/src/view/manager/dashboard-manage/dashboard-manage.component.css,6\9\69e79680b93cc7389a0421e5978d0ae7eb506399
-X
-(Frontend/src/app/hh/hh.component.spec.ts,2\b\2b55e3cfc9613729cfccbfe6a42e066b1c1f32e6
-\
-,Frontend/src/app/hehe/hehe.component.spec.ts,e\c\ecc745d0e1e866238a5fc4620a98f5e1d6028903
 V
 &Frontend/src/app/app.component.spec.ts,3\d\3d2c799e1de23e89f802d79896d4848bc1daec15
 [
@@ -267,8 +257,6 @@ e
 5Frontend/src/auth/register/register.component.spec.ts,a\1\a1140778ee050a716dbba3aa6e195b44b10269e6
 q
 AFrontend/src/auth/reset-password/reset-password.component.spec.ts,1\8\18028e517eacd6229d70a6e968246fbf3a0bf219
-X
-(Frontend/src/test/test.component.spec.ts,d\e\de45751200491eb30b1080fad6dbf5f41f8d35b4
 k
 ;Frontend/src/view/manager/checkin/checkin.component.spec.ts,4\c\4ce7a14b227dad641092ba3f1914a36c763b4da5
 }
@@ -295,8 +283,6 @@ b
 2Frontend/src/view/user/seat/seat.component.spec.ts,5\a\5a7a33dcb6bc4f8546e27eb4167131fe9298ced3
 V
 &Frontend/src/auth/401/401.component.ts,1\4\14f897251016e33a9892b620000210dcbe957029
-R
-"Frontend/src/app/a.service.spec.ts,9\0\901a4f1b5dc0d162c6cf156a89a969026afd21c2
 Y
 )Frontend/src/service/auth.service.spec.ts,9\3\93a776be4123232efd30cac6fe1f87e9925cd7ae
 d
@@ -319,14 +305,6 @@ Y
 +Frontend/src/service/ticket.service.spec.ts,d\4\d4fcb35b64d2328425669f41d51c3a1702da3ca1
 ]
 -Frontend/src/service/auth.interceptor.spec.ts,5\3\53b1bec992ca0cd2f9d2c46337858a8ad3cc7a4c
-X
-(Frontend/src/app/models/a/a.component.ts,d\4\d4aa1a27233ead5039759de0f6d9bcee58ab8855
-]
--Frontend/src/app/models/a/a.component.spec.ts,0\2\022d4b74078fd39c5fafe2cbef95c0d88e83c98e
-T
-$Frontend/src/app/models/user.spec.ts,2\f\2f0e40256ab4c75ea4c5aae29d7c6dcbbb59ad54
-O
-Frontend/src/app/models/user.ts,e\9\e91e4f7a182d26d3ea649b85169a07118538e820
 V
 &Frontend/src/model/movie.model.spec.ts,1\f\1f545554e17ccf0c27c40185fa2c2af658b3fb1e
 V
@@ -357,7 +335,3 @@ L
 Frontend/.vscode/launch.json,0\0\004a990339877fb133f00f6486c45bed37c865f4
 K
 Frontend/.vscode/tasks.json,7\9\7941eee9241fc2d5a1a171edb78e66363cb5fe96
-G
-Frontend/karma.conf.js',5\f\5f9b306c7076da668c7f7dad5bb64745597cca32
-F
-Frontend/karma.conf.js,4\f\4f03e729d425c8361339c3f50ffb3930e4c7ec24

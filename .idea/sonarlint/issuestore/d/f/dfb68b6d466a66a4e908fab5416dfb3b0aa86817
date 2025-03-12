@@ -1,6 +1,0 @@
-
-Ntypescript:S1128"&Remove this unused import of 'OnInit'.(ãá‹Ïúÿÿÿÿ8ï†¸ÅØ2
-Ytypescript:S1128"1Remove this unused import of 'SharedDataService'.(¿ñêûÿÿÿÿ8ï†¸ÅØ2
-Utypescript:S1128"-Remove this unused import of 'BarcodeFormat'.(ÀÁ²áøÿÿÿÿ8ï†¸ÅØ2
-’typescript:S66064"jPrefer using nullish coalescing operator (`??`) instead of a logical or (`||`), as it is a safer operator.(’ø®†ûÿÿÿÿ8ï†¸ÅØ2
-Ütypescript:S1874?"³'(next?: ((value: Ticket) => void) | null | undefined, error?: ((error: any) => void) | null | undefined, complete?: (() => void) | null | undefined): Subscription' is deprecated.(²Ï¶åýÿÿÿÿ8ï†¸ÅØ2
