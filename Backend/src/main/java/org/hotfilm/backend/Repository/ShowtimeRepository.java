@@ -40,4 +40,5 @@ public interface ShowtimeRepository extends JpaRepository<Showtime, String> {
             "    AND s1.time_end > :time_end\n" +
             "WHERE s2.showtime_id IS NOT NULL;\n", nativeQuery = true)
     List<Showtime> existsShowtime(LocalDateTime time_start, LocalDateTime time_end);
+
 }

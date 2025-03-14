@@ -1,0 +1,33 @@
+
+t	java:S120"ZRename this package name to match the regular expression '^[a-z_]+(\.[a-z_][a-z0-9_]*)*$'.(ÜÅñóúÿÿÿÿ
+J
+java:S54112"(Use a primitive boolean expression here.(ˆÁªşÿÿÿÿ8›ØÜ­Ù2
+C
+java:S5411]"(Use a primitive boolean expression here.(š±Œúøÿÿÿÿ
+C
+java:S5411p"(Use a primitive boolean expression here.(š±Œúøÿÿÿÿ
+>
+java:S5411z"(Use a primitive boolean expression here.(òéÈé
+[	java:S112I"FDefine and throw a dedicated exception instead of using a generic one.(ïï–ä
+X
+java:S6813"BRemove this field injection and use constructor injection instead.(êæÄŞ
+X
+java:S6813"BRemove this field injection and use constructor injection instead.(êæÄŞ
+X
+java:S6813"BRemove this field injection and use constructor injection instead.(êæÄŞ
+X
+java:S6813 "BRemove this field injection and use constructor injection instead.(êæÄŞ
+A
+java:S1144+"+Remove this unused private "setTTL" method.(‹‡İ¶
+
+java:S62047"zReplace this usage of 'Stream.collect(Collectors.toList())' with 'Stream.toList()' and ensure that the list is unmodified.(ª™¨¹
+S
+java:S16126"=Replace this lambda with method reference 'Room.class::cast'.(˜ò›ˆ
+=
+java:S19056"'Remove this unnecessary cast to "Room".(˜ò›ˆ
+
+java:S6204:"zReplace this usage of 'Stream.collect(Collectors.toList())' with 'Stream.toList()' and ensure that the list is unmodified.(ª™¨¹
+
+java:S6204B"zReplace this usage of 'Stream.collect(Collectors.toList())' with 'Stream.toList()' and ensure that the list is unmodified.(ª™¨¹
+7	java:S131K""Add a default case to this switch.(Áİ†§
+E	java:S106c"+Replace this use of System.out by a logger.(…µóÁûÿÿÿÿ

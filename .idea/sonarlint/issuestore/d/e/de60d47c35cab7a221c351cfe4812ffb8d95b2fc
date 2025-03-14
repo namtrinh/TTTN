@@ -1,0 +1,4 @@
+
+š	java:S120"ZRename this package name to match the regular expression '^[a-z_]+(\.[a-z_][a-z0-9_]*)*$'.(„Ã§€øÿÿÿÿJ$d8b28bbc-d06b-4451-abe8-24872f0b1391
+	java:S116"URename this field "time_start" to match the regular expression '^[a-z][a-zA-Z0-9]*$'.(Ÿøû»J$84085be0-618b-4803-9767-30dda7e60567
+“	java:S116"SRename this field "time_end" to match the regular expression '^[a-z][a-zA-Z0-9]*$'.(œĞÕ†úÿÿÿÿJ$45e58184-3e0f-42e2-9678-201055ce8bb9
