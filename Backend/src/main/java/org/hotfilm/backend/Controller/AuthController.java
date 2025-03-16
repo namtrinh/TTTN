@@ -12,6 +12,7 @@ import org.hotfilm.backend.Service.EmailService;
 import org.hotfilm.backend.Service.ResetPasswordService;
 import org.hotfilm.backend.Service.UserService;
 import org.springframework.beans.factory.annotation.Autowired;
+import org.springframework.beans.factory.annotation.Value;
 import org.springframework.http.HttpStatus;
 import org.springframework.web.bind.annotation.*;
 import java.text.ParseException;
@@ -35,6 +36,11 @@ public class AuthController {
 
     @Autowired
     private UserRepository userRepository;
+
+    @Value("${link.reset.password}")
+    private String linkResetPass;
+
+
 
     @PostMapping(value = "login")
     public ApiResponse<LoginResponse> login(@RequestBody UserRequest customer)  {
@@ -98,7 +104,7 @@ public class AuthController {
             String reset_key = UUID.randomUUID().toString();
             resetPasswordService.storeResetKey(email, reset_key);
 
-            String resetLink = "http://localhost:4200/reset-password?email=" + email + "&reset_key=" + reset_key;
+            String resetLink =  linkResetPass + "/reset-password?email=" + email + "&reset_key=" + reset_key;
             emailService.sendCodeToMail(email, "Reset your password", "Click this url to reset password: " + resetLink);
 
             return ApiResponse.<String>builder()

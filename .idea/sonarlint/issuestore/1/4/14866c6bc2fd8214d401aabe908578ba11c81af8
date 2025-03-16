@@ -1,16 +1,16 @@
 
-f	java:S117b"QRename this local variable to match the regular expression '^[a-z][a-zA-Z0-9]*$'.(¼ŞàÀ
-e	java:S117x"QRename this local variable to match the regular expression '^[a-z][a-zA-Z0-9]*$'.(ÍÑùD
-o	java:S120"ZRename this package name to match the regular expression '^[a-z_]+(\.[a-z_][a-z0-9_]*)*$'.(Íˆ¨¹
-[
-java:S1192^"FDefine a constant instead of duplicating this literal "false" 3 times.(‰üêa
-X
-java:S6813"BRemove this field injection and use constructor injection instead.(êæÄŞ
-X
-java:S6813"BRemove this field injection and use constructor injection instead.(êæÄŞ
-X
-java:S6813"BRemove this field injection and use constructor injection instead.(êæÄŞ
-X
-java:S6813!"BRemove this field injection and use constructor injection instead.(êæÄŞ
-X
-java:S6813$"BRemove this field injection and use constructor injection instead.(êæÄŞ
+“	java:S117h"QRename this local variable to match the regular expression '^[a-z][a-zA-Z0-9]*$'.(¼ŞàÀ8¬„±êÙ2J$6a26b5ec-f797-4b60-ab6d-1530b6270a36
+’	java:S117~"QRename this local variable to match the regular expression '^[a-z][a-zA-Z0-9]*$'.(ÍÑùD8¬„±êÙ2J$3be5e030-0a69-4932-ac69-5a90f06d6784
+œ	java:S120"ZRename this package name to match the regular expression '^[a-z_]+(\.[a-z_][a-z0-9_]*)*$'.(Íˆ¨¹8­„±êÙ2J$dc8a8a02-5eda-468a-9be7-d56e80987550
+ˆ
+java:S1192d"FDefine a constant instead of duplicating this literal "false" 3 times.(‰üêa8²„±êÙ2J$79ee6050-298e-4097-934e-d6937b5cb7c4
+…
+java:S6813"BRemove this field injection and use constructor injection instead.(êæÄŞ8µ„±êÙ2J$0c555ae0-993c-4984-8db6-6d32a9ca156d
+…
+java:S6813"BRemove this field injection and use constructor injection instead.(êæÄŞ8¶„±êÙ2J$6243524a-9464-4cbf-8097-ab1f9e3b21f5
+…
+java:S6813"BRemove this field injection and use constructor injection instead.(êæÄŞ8¶„±êÙ2J$f9309611-cbe3-4374-9a49-ca35981b01ef
+…
+java:S6813""BRemove this field injection and use constructor injection instead.(êæÄŞ8¶„±êÙ2J$d2c995ba-f7dd-475a-85a0-c0d840085d47
+…
+java:S6813%"BRemove this field injection and use constructor injection instead.(êæÄŞ8¶„±êÙ2J$81566c3e-3a1a-43f4-a4b4-355ce61189ef

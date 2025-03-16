@@ -4,6 +4,7 @@ import {Observable} from 'rxjs';
 import {Showtime} from '../model/showtime.model';
 import {Movie} from '../model/movie.model';
 import {Room, RoomType} from '../model/room.model';
+import {environment} from '../environments/environment';
 
 
 @Injectable({
@@ -11,7 +12,7 @@ import {Room, RoomType} from '../model/room.model';
 })
 
 export class ShowtimeService {
-  private baseUrl = "http://localhost:8080/showtime"
+  private baseUrl = environment.apiUrl + "/showtime"
 
   constructor(private http: HttpClient) {
   }

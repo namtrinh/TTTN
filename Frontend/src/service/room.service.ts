@@ -2,6 +2,7 @@ import {Injectable} from '@angular/core';
 import {HttpClient} from '@angular/common/http';
 import { Observable} from 'rxjs';
 import {Room} from '../model/room.model';
+import {environment} from '../environments/environment';
 
 
 @Injectable({
@@ -9,7 +10,7 @@ import {Room} from '../model/room.model';
 })
 
 export class RoomService {
-  private baseUrl = "http://localhost:8080/room"
+  private baseUrl = environment.apiUrl + "/room"
 
   constructor(private http: HttpClient) {
   }

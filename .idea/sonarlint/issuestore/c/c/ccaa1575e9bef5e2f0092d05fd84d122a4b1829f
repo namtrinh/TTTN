@@ -1,7 +1,7 @@
 
-œ	java:S120"ZRename this package name to match the regular expression '^[a-z_]+(\.[a-z_][a-z0-9_]*)*$'.(Íˆ¨¹8à‘à©×2J$ae3b3fcc-894d-44a7-8867-c24ba3eee240
+œ	java:S120"ZRename this package name to match the regular expression '^[a-z_]+(\.[a-z_][a-z0-9_]*)*$'.(Íˆ¨¹8à‘à©×2J$42dde62c-31f4-4fd8-b6ba-92049f00775e
 …
-java:S6813"BRemove this field injection and use constructor injection instead.(êæÄÞ8¥£à©×2J$0866f631-cbcc-4add-92bc-a5e86b582a0f
-‚	java:S899 ";Do something with the "boolean" value returned by "delete".(¼·ážüÿÿÿÿ8«£à©×2J$95bfaaa1-7840-45f3-8305-8b754b985545
+java:S6813"BRemove this field injection and use constructor injection instead.(êæÄÞ8¥£à©×2J$03114990-8b85-4a0b-a241-e9ff294f4c06
+‚	java:S899 ";Do something with the "boolean" value returned by "delete".(¼·ážüÿÿÿÿ8«£à©×2J$2798c79d-d2a3-44f5-bc95-a0624332b3be
 –
-java:S4042 "NUse "java.nio.file.Files#delete" here for better messages on error conditions.(¼·ážüÿÿÿÿ8«£à©×2J$e4a87b78-66cc-4546-bd61-a6903acf36e5
+java:S4042 "NUse "java.nio.file.Files#delete" here for better messages on error conditions.(¼·ážüÿÿÿÿ8«£à©×2J$df06c6c1-94cd-4e59-a62b-3fb728ab4d22

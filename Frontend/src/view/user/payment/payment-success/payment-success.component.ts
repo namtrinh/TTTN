@@ -11,6 +11,7 @@ import {Seat} from '../../../../model/seat.model';
 import html2canvas from 'html2canvas';
 import {HttpClient} from '@angular/common/http';
 import {QRCodeComponent} from 'angularx-qrcode';
+import {environment} from '../../../../environments/environment';
 
 @Component({
   selector: 'app-payment-success',
@@ -130,7 +131,7 @@ export class PaymentSuccessComponent implements OnInit {
     formData.append('body', 'Vé xem phim của bạn nè');
     formData.append('file', file);
 
-    this.http.post<any>('http://localhost:8080/email/send-with-attachment', formData)
+    this.http.post<any>( environment.apiUrl +'/email/send-with-attachment', formData)
       .subscribe(response => {
         console.log('Email đã được gửi!');
         this.messageMail = 'Your ticket has been sent to your email!'

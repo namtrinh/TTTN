@@ -2,6 +2,7 @@ import {Injectable} from '@angular/core';
 import {HttpClient} from '@angular/common/http';
 import { Observable} from 'rxjs';
 import {Ticket} from '../model/ticket.model';
+import {environment} from '../environments/environment';
 
 
 @Injectable({
@@ -9,7 +10,7 @@ import {Ticket} from '../model/ticket.model';
 })
 
 export class TicketService {
-  private baseUrl = "http://localhost:8080/ticket"
+  private baseUrl =environment.apiUrl + "/ticket"
 
   constructor(private http: HttpClient) {
   }

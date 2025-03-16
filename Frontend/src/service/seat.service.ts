@@ -5,6 +5,7 @@ import {Showtime} from '../model/showtime.model';
 import {Movie} from '../model/movie.model';
 import {Room, RoomType} from '../model/room.model';
 import {Seat} from '../model/seat.model';
+import {environment} from '../environments/environment';
 
 
 @Injectable({
@@ -12,7 +13,8 @@ import {Seat} from '../model/seat.model';
 })
 
 export class SeatService {
-  private baseUrl = "http://localhost:8080/seat"
+  private baseUrl = environment.apiUrl +"/seat"
+
 
   constructor(private http: HttpClient) {
   }

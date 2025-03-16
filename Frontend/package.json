@@ -25,6 +25,7 @@
     "@zxing/library": "^0.21.3",
     "@zxing/ngx-scanner": "^19.0.0",
     "angularx-qrcode": "^19.0.0",
+    "dotenv": "^16.4.7",
     "html2canvas": "^1.4.1",
     "html2pdf.js": "^0.10.3",
     "jspdf": "^3.0.0",
