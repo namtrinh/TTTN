@@ -4,6 +4,7 @@ body {
   background-color: #ffffff;
   color: #333;
   min-height: 95vh;
+  padding-top: 35px;
 }
 
 .container {

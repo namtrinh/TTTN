@@ -4,6 +4,9 @@ import {FormsModule} from '@angular/forms';
 import {MovieService} from '../../../service/movie.service';
 import {Movie, MovieStatus} from '../../../model/movie.model';
 import {RouterLink, RouterOutlet} from '@angular/router';
+import {tap} from 'rxjs';
+import {normalizeFileReplacements} from '@angular-devkit/build-angular/src/utils';
+import {filter} from 'rxjs/operators';
 
 @Component({
   selector: 'app-movie-manage',
@@ -145,4 +148,5 @@ export class MovieManageComponent implements OnInit {
   }
 
   protected readonly MovieStatus = MovieStatus;
+
 }
