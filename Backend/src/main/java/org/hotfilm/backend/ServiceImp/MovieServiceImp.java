@@ -11,6 +11,7 @@ import org.hotfilm.backend.Repository.MovieRepository;
 import org.hotfilm.backend.Service.CloudinaryService;
 import org.hotfilm.backend.Service.MovieService;
 import org.springframework.beans.factory.annotation.Autowired;
+import org.springframework.beans.factory.annotation.Value;
 import org.springframework.data.domain.*;
 import org.springframework.data.redis.core.HashOperations;
 import org.springframework.data.redis.core.RedisTemplate;

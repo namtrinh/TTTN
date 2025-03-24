@@ -1,12 +1,12 @@
 
-”	java:S120"ZRename this package name to match the regular expression '^[a-z_]+(\.[a-z_][a-z0-9_]*)*$'.(‹Ì›WJ$925b2d96-0e02-4376-b3d0-7a0f69c2320a
-–	java:S116""VRename this field "POST_PUBlIC" to match the regular expression '^[a-z][a-zA-Z0-9]*$'.(†‹¡‹şÿÿÿÿJ$787e6006-caeb-49c5-983e-8afda4183458
-	java:S1166"URename this field "GET_PUBLIC" to match the regular expression '^[a-z][a-zA-Z0-9]*$'.(˜êßÓJ$191bc41d-995f-4b9b-9f16-077042d8ed70
+”	java:S120"ZRename this package name to match the regular expression '^[a-z_]+(\.[a-z_][a-z0-9_]*)*$'.(‹Ì›WJ$d2f4ca62-d663-482c-ba66-048678972ec5
+–	java:S116""VRename this field "POST_PUBlIC" to match the regular expression '^[a-z][a-zA-Z0-9]*$'.(†‹¡‹şÿÿÿÿJ$d3aabea1-2df4-45d8-8e4d-60c96e713e83
+	java:S1166"URename this field "GET_PUBLIC" to match the regular expression '^[a-z][a-zA-Z0-9]*$'.(˜êßÓJ$40d17fc7-7fa9-44dd-b3fe-5a0a83f7d4d4
 ~
-java:S6813"BRemove this field injection and use constructor injection instead.(êæÄŞJ$49cbe109-956c-47a0-b404-8b1def1d7e3f
+java:S6813"BRemove this field injection and use constructor injection instead.(êæÄŞJ$5b170f42-72f1-426f-96b3-4d7c2a5f2303
 ~
-java:S6813"BRemove this field injection and use constructor injection instead.(êæÄŞJ$f8e3f465-79d7-489a-8db2-61668b2abcf1
+java:S6813"BRemove this field injection and use constructor injection instead.(êæÄŞJ$411d33c6-df5e-4997-8586-eea18ecda370
 –
-java:S3305 "ZInject this field value directly into "securityFilterChain", the only method that uses it.(’„ÑJ$29843c43-2728-45bb-bedd-fb6e98f37986
+java:S3305 "ZInject this field value directly into "securityFilterChain", the only method that uses it.(’„ÑJ$df5f3dfc-2308-4723-8319-21abfd0883cb
 –
-java:S3305"ZInject this field value directly into "securityFilterChain", the only method that uses it.(†’³ÖJ$8e58e5bd-72c9-485e-8eb7-c0867c28908b
+java:S3305"ZInject this field value directly into "securityFilterChain", the only method that uses it.(†’³ÖJ$8d08c6a1-bd79-4f0f-806e-deb51ec391f6

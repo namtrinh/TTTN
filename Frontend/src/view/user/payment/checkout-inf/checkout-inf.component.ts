@@ -3,14 +3,17 @@ import {SharedDataService} from '../../../../service/sharedata.service';
 import {DecimalPipe, NgClass} from '@angular/common';
 import {MomoPaymentService} from '../../../../service/payment.service';
 import {FormsModule} from '@angular/forms';
+import {RouterModule} from '@angular/router';
 
 @Component({
   selector: 'app-checkout-inf',
   imports: [
     DecimalPipe,
     FormsModule,
-    NgClass
+    NgClass,
+    RouterModule
   ],
+
   templateUrl: './checkout-inf.component.html',
   standalone: true,
   styleUrl: './checkout-inf.component.css'

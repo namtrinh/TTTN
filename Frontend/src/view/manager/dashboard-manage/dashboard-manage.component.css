@@ -1,0 +1,10 @@
+.container{
+  margin: 0;
+  padding: 0;
+  font-family: Arial, sans-serif;
+  background-color: #c9c5c5;
+  color: #dc0505;
+  height: 100vh;
+  width: 100vw;
+  z-index: 99999;
+}

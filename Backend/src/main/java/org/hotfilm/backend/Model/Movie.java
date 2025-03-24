@@ -40,7 +40,7 @@ public class Movie implements Serializable {
 
     private MovieStatus movieStatus;
 
-    @OneToMany(mappedBy = "movie", fetch = FetchType.EAGER)
+    @OneToMany(mappedBy = "movie", fetch = FetchType.LAZY)
     private Set<Showtime> showtimes;
 
     public enum MovieStatus{

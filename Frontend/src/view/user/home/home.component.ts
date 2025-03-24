@@ -23,6 +23,9 @@ export class HomeComponent implements OnInit{
 
   ngOnInit(): void {
     this.getAll();
+
+    const tokenKey = localStorage.getItem("auth_token")
+    console.log(tokenKey)
   }
 
   getAll(){

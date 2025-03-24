@@ -16,7 +16,7 @@ export class CustomCanActiveService implements CanActivate {
         const decodedToken = jwtDecode(token) as any;
         const userRole = decodedToken.scope;
         localStorage.setItem('user_Id',decodedToken.userId)
-
+        console.log(userRole);
         // Phân quyền bằng số
         switch (userRole) {
           case 'ADMIN':

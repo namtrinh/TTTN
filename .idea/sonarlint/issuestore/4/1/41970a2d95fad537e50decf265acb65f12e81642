@@ -1,8 +1,8 @@
 
-n	java:S120"ZRename this package name to match the regular expression '^[a-z_]+(\.[a-z_][a-z0-9_]*)*$'.(‹Ì›W
-N
-java:S1874"3Remove this use of "setHostName"; it is deprecated.(¢ø¢çúÿÿÿÿ
-E
-java:S1874"/Remove this use of "setPort"; it is deprecated.(žŸÃÞ
-I
-java:S1874"3Remove this use of "setPassword"; it is deprecated.(Áí’É
+”	java:S120"ZRename this package name to match the regular expression '^[a-z_]+(\.[a-z_][a-z0-9_]*)*$'.(‹Ì›WJ$2f8b2a5c-934d-4997-a396-0764ca65ad12
+t
+java:S1874"3Remove this use of "setHostName"; it is deprecated.(¢ø¢çúÿÿÿÿJ$8b6b1b6a-ad05-40bc-9bed-72bc8ec5bfd6
+k
+java:S1874"/Remove this use of "setPort"; it is deprecated.(žŸÃÞJ$b0115cbf-5365-45b5-9642-5aa9534afa70
+o
+java:S1874"3Remove this use of "setPassword"; it is deprecated.(Áí’ÉJ$3e7ee92b-923c-489a-ab18-3b528564c6b5
