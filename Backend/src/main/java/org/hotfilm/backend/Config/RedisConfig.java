@@ -27,7 +27,7 @@ public class RedisConfig {
        LettuceConnectionFactory lettuceConnectionFactory = new LettuceConnectionFactory();
        lettuceConnectionFactory.setHostName(host);
        lettuceConnectionFactory.setPort(port);
-       lettuceConnectionFactory.setPassword(password);
+    //   lettuceConnectionFactory.setPassword(password);
        return lettuceConnectionFactory;
     }
 

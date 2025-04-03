@@ -57,8 +57,8 @@ export class CheckoutInfComponent implements OnInit {
   paymentMoMo() {
     const data = {
       amount: this.dataPayment.room.roomPrice * this.dataPayment.seat.length,
-      extraData: "",
-      orderInfo: ""
+      extraData: "hehe",
+      orderInfo: "hehe"
 
     }
     this.paymentService.createOrder(data).subscribe((data: any) => {

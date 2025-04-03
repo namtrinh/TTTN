@@ -1,14 +1,14 @@
 
-vtypescript:S1128"-Remove this unused import of 'HomeComponent'.(ş¨ÁŸ8›ÂĞ³Ü2J$04ba3283-a54e-4a97-ab08-498f8e00eb33
-|typescript:S1128".Remove this unused import of 'LoginComponent'.(³Êåúÿÿÿÿ8ÈÊõ³Ü2J$b0621109-fd80-46fa-96d5-d85ce3061a75
-typescript:S1128"3Remove this unused import of 'FilmDetailComponent'.(¾‘Ï·ÿÿÿÿÿ8œÂĞ³Ü2J$b4bf0824-3dec-44d9-be81-e4f47a35de5c
-typescript:S1128"1Remove this unused import of 'RegisterComponent'.(ÚıÄµüÿÿÿÿ8ª°ë³Ü2J$46e5aa28-dcdc-448c-add6-c89191cfb6ff
-~typescript:S1128"6Remove this unused import of 'ResetPasswordComponent'.(ÈÒÇ	8âÿ³Ü2J$9e58f683-f2e8-4d87-96bc-b672438224a0
-|typescript:S1128"3Remove this unused import of 'ViewManageComponent'.(ììá®8œÂĞ³Ü2J$9f651064-a43d-4540-8125-62c24a4dde2c
-‚typescript:S1128	"4Remove this unused import of 'MovieManageComponent'.(ß¼¶îøÿÿÿÿ8œÂĞ³Ü2J$2ac016ae-0de5-418a-a784-49049e367ea0
-typescript:S1128
-"3Remove this unused import of 'RoomManageComponent'.(ä×ªÙüÿÿÿÿ8œÂĞ³Ü2J$0add67a3-e710-4cfc-9ac4-d5c35a53b26f
-…typescript:S1128"7Remove this unused import of 'ShowtimeManageComponent'.(ÙÇÒÄüÿÿÿÿ8œÂĞ³Ü2J$cdb11544-6d5b-412a-be69-bc0eed649cfc
-‚typescript:S1128"4Remove this unused import of 'CheckoutInfComponent'.(÷ì‡Şøÿÿÿÿ8ş›Ù³Ü2J$186409e8-ecf2-400d-b752-a0b93b4ee99c
-€typescript:S1128"7Remove this unused import of 'PaymentSuccessComponent'.(æİ8­‚ø³Ü2J$b7fa9227-e81f-48e0-a892-be5f6553c61a
-~typescript:S1128"0Remove this unused import of 'CheckinComponent'.(ñ½şÿÿÿÿ8œÂĞ³Ü2J$36721ec0-ba70-4f93-bdb0-7a7002233942
+Ptypescript:S1128"-Remove this unused import of 'HomeComponent'.(ş¨ÁŸ8ÆãÔßŞ2
+Vtypescript:S1128".Remove this unused import of 'LoginComponent'.(³Êåúÿÿÿÿ8ÇãÔßŞ2
+[typescript:S1128"3Remove this unused import of 'FilmDetailComponent'.(¾‘Ï·ÿÿÿÿÿ8ÇãÔßŞ2
+Ytypescript:S1128"1Remove this unused import of 'RegisterComponent'.(ÚıÄµüÿÿÿÿ8ÈãÔßŞ2
+Xtypescript:S1128"6Remove this unused import of 'ResetPasswordComponent'.(ÈÒÇ	8ÈãÔßŞ2
+Vtypescript:S1128"3Remove this unused import of 'ViewManageComponent'.(ììá®8ÈãÔßŞ2
+\typescript:S1128	"4Remove this unused import of 'MovieManageComponent'.(ß¼¶îøÿÿÿÿ8ÊãÔßŞ2
+[typescript:S1128
+"3Remove this unused import of 'RoomManageComponent'.(ä×ªÙüÿÿÿÿ8ÊãÔßŞ2
+_typescript:S1128"7Remove this unused import of 'ShowtimeManageComponent'.(ÙÇÒÄüÿÿÿÿ8ÊãÔßŞ2
+\typescript:S1128"4Remove this unused import of 'CheckoutInfComponent'.(÷ì‡Şøÿÿÿÿ8ËãÔßŞ2
+Ztypescript:S1128"7Remove this unused import of 'PaymentSuccessComponent'.(æİ8ËãÔßŞ2
+Xtypescript:S1128"0Remove this unused import of 'CheckinComponent'.(ñ½şÿÿÿÿ8ËãÔßŞ2

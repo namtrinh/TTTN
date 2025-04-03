@@ -366,8 +366,6 @@ TBackend/src/main/java/org/hotfilm/backend/ModelDTO/Response/MovieResponseDetail
 j
 :Backend/src/main/java/org/hotfilm/backend/Model/Movie.java,f\a\fa42b43ba53bb12a9eda0b436d4cc29897004d09
 Z
-*Frontend/src/view/user/seat/seat.routes.ts,2\7\27b711efe9bed895fc57523479a03ee1e7e96ca9
-Z
-*Frontend/src/view/user/seat/seat.config.ts,5\6\5688d3811c112b67181b376be81cb3713f25afee
-Z
 *Frontend/src/view/manager/manage.routes.ts,2\4\24d38b55b13bc9fb37b318ac734108272deeb7f7
+F
+Backend/.gitattributes,0\2\028d8d7fc68c4b5f6138f06482bb3f682f2dac00

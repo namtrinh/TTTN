@@ -28,8 +28,8 @@ public class CreateOrderPaymentService {
         json.put("amount", orderRequest.getAmount().toString());
         json.put("orderId", orderRequest.getOrderId());
         json.put("orderInfo", "Thanh toan don hang " + orderRequest.getOrderId());
-        json.put("returnUrl", MoMoConstant.REDIRECT_URL);
-        json.put("notifyUrl", MoMoConstant.NOTIFY_URL);
+        json.put("returnUrl", MoMoConstant.REDIRECT_URL.getBytes());
+       json.put("notifyUrl", MoMoConstant.NOTIFY_URL);
         json.put("requestType", MoMoConstant.REQUEST_TYPE);
 
         String data = "partnerCode=" + MoMoConstant.PARTNER_CODE
@@ -38,7 +38,7 @@ public class CreateOrderPaymentService {
                 + "&amount=" + json.get("amount")
                 + "&orderId=" + json.get("orderId")
                 + "&orderInfo=" + json.get("orderInfo")
-                + "&returnUrl=" + MoMoConstant.REDIRECT_URL
+                + "&returnUrl=" + MoMoConstant.REDIRECT_URL.getBytes()
                 + "&notifyUrl=" + MoMoConstant.NOTIFY_URL
                 + "&extraData=";
 

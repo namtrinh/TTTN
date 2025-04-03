@@ -9,7 +9,7 @@ export const routes: Routes = [
   {
     path: '', component: ViewManageComponent, canActivate: [CustomCanActiveService], data: {role: 1}, children: [
       {
-        path: 'a',
+        path: '',
         loadComponent: () => import('../manager/dashboard-manage/dashboard-manage.component').then(m => m.DashboardManageComponent)
       },
 
