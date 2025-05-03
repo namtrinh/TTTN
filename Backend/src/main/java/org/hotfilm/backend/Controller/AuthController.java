@@ -4,6 +4,7 @@ import com.nimbusds.jose.JOSEException;
 import com.nimbusds.jwt.SignedJWT;
 import jakarta.servlet.http.Cookie;
 import jakarta.servlet.http.HttpServletResponse;
+import lombok.experimental.NonFinal;
 import org.hotfilm.backend.Exception.AppException;
 import org.hotfilm.backend.Exception.ErrorCode;
 import org.hotfilm.backend.Mapper.UserMapper;
@@ -40,6 +41,7 @@ import java.security.spec.InvalidKeySpecException;
 import java.text.ParseException;
 import java.util.Base64;
 import java.util.UUID;
+import java.util.concurrent.TimeUnit;
 
 @RestController
 @RequestMapping(value = "auth")
@@ -62,6 +64,10 @@ public class AuthController {
 
     @Value("${link.reset.password}")
     private String linkResetPass;
+
+    @NonFinal
+    @Value("${jwt.refreshable-Duration}")
+    protected long REFRESHABLE_DURATION;
 
     @Autowired
     private AuthenticationManager authenticationManager;
@@ -124,6 +130,7 @@ public class AuthController {
         byte[] encrypted = cipher.doFinal(tokenId.getBytes());
         String jwtId = Base64.getEncoder().encodeToString(encrypted);
         hashOperations.put(HASHKEY_JWT, tokenId, token);
+        redisTemplate.expire(HASHKEY_JWT, REFRESHABLE_DURATION, TimeUnit.MILLISECONDS);
         Cookie cookie = new Cookie("jwt", jwtId);
         cookie.setHttpOnly(true);
         cookie.setSecure(false); // set false nếu chưa dùng HTTPS
