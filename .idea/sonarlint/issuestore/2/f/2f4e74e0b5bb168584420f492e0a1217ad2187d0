@@ -1,15 +1,74 @@
 
-‘	java:S117e"QRename this local variable to match the regular expression '^[a-z][a-zA-Z0-9]*$'.(¸¼üíùÿÿÿÿJ$aa4131c3-b45f-455c-a4b3-b6f03384b4bc
-š	java:S120"ZRename this package name to match the regular expression '^[a-z_]+(\.[a-z_][a-z0-9_]*)*$'.(éÙ‹×úÿÿÿÿJ$fa739441-e360-4293-925b-a282cc41e8e1
-“	java:S116)"SRename this field "SIGN_KEY" to match the regular expression '^[a-z][a-zA-Z0-9]*$'.(Ò¸¥ÌüÿÿÿÿJ$495528ed-69d5-471e-a09c-cb7eb9b2a1fd
-”	java:S116-"YRename this field "VALID_DURATION" to match the regular expression '^[a-z][a-zA-Z0-9]*$'.(ˆçï˜J$ca1f95fa-36e5-43da-8c95-3660b5705df7
-š	java:S1161"_Rename this field "REFRESHABLE_DURATION" to match the regular expression '^[a-z][a-zA-Z0-9]*$'.(µĞ²J$85c1570f-73a5-4abf-b87b-1dcff0120f0b
-~
-java:S68133"BRemove this field injection and use constructor injection instead.(êæÄŞJ$04d13668-b2eb-4f20-a724-dabbe31ab8fb
-~
-java:S68136"BRemove this field injection and use constructor injection instead.(êæÄŞJ$2675ea7d-2b2b-479f-930e-3e862385037a
-~
-java:S68139"BRemove this field injection and use constructor injection instead.(êæÄŞJ$7171f2bc-52fa-4bc6-8658-bcc4244a6eb8
-~
-java:S6813<"BRemove this field injection and use constructor injection instead.(êæÄŞJ$97015670-2647-4bc8-9038-9f98b753da26
-|	java:S125?"<This block of commented-out lines of code should be removed.(»ÈßşùÿÿÿÿJ$6f564e3e-604e-4c23-a2ff-d92c9b35c7ab
+˜	java:S117y"QRename this local variable to match the regular expression '^[a-z][a-zA-Z0-9]*$'.(¸¼üíùÿÿÿÿ8‰ñ¾©é2J$57bf876b-c793-4d31-be6e-c6b1bb668fd6
+¡	java:S120"ZRename this package name to match the regular expression '^[a-z_]+(\.[a-z_][a-z0-9_]*)*$'.(éÙ‹×úÿÿÿÿ8Šñ¾©é2J$2233005e-f7af-4079-98c1-43d40b4dc09d
+£
+java:S1104Q"[Make privateKeyValue a static final constant or non-public and provide accessors if needed.(Ÿ‹–•üÿÿÿÿ8ò¼šªé2J$7ccb53c4-752c-4c45-b1c1-033ac2f89f6a
+
+java:S1104T"ZMake publicKeyValue a static final constant or non-public and provide accessors if needed.(Ìùïƒ8ò¼šªé2J$ee34ed18-c69e-4eae-bec9-e473fee50ba2
+	java:S112¼"FDefine and throw a dedicated exception instead of using a generic one.(“ĞÎ•øÿÿÿÿ8ß®Æ«é2J$c01a2205-9fef-43e0-ae8d-635410490b8d
+ˆ	java:S112à"FDefine and throw a dedicated exception instead of using a generic one.(ÕÅ
+8ß®Æ«é2J$83e777f1-7c6f-4d74-842c-612714d1e8bb
+›	java:S116K"YRename this field "VALID_DURATION" to match the regular expression '^[a-z][a-zA-Z0-9]*$'.(ˆçï˜8Ÿñ¾©é2J$9636ca8b-4788-4c2f-b115-28ea36374672
+¡	java:S116O"_Rename this field "REFRESHABLE_DURATION" to match the regular expression '^[a-z][a-zA-Z0-9]*$'.(µĞ²8Ÿñ¾©é2J$b376179a-3ae3-4e63-9374-0fbe25a1976f
+…
+java:S6813@"BRemove this field injection and use constructor injection instead.(êæÄŞ8 ñ¾©é2J$e25a8554-5d20-4b0e-b3aa-a2c350f66c20
+…
+java:S6813Z"BRemove this field injection and use constructor injection instead.(êæÄŞ8 ñ¾©é2J$74f688ab-dff0-400a-a9fb-b9ec459581fb
+…
+java:S6813]"BRemove this field injection and use constructor injection instead.(êæÄŞ8¡ñ¾©é2J$09ee74ac-0b1b-4273-ada9-f59d151a538f
+…
+java:S6813`"BRemove this field injection and use constructor injection instead.(êæÄŞ8°‡İªé2J$27ca685a-0dc0-4ab2-a488-1eda2eb155e2
+œ
+java:S1450W"YRemove the "privateKey" field and declare it as a local variable in the relevant methods.(¦ò°©8¤ñ¾©é2J$c8fbb5b5-ebb3-4e94-bbd7-a74065d3aeb4
+Á
+java:S1130"xRemove the declaration of thrown exception 'com.nimbusds.jose.JOSEException', as it cannot be thrown from method's body.(ÉËıüùÿÿÿÿ8¦­Ç«é2J$cc38ab99-58b7-4910-8f0e-268a11556771
+È
+java:S1130"Remove the declaration of thrown exception 'java.security.NoSuchAlgorithmException', as it cannot be thrown from method's body.(ÉËıüùÿÿÿÿ8¦­Ç«é2J$60a828ce-4926-4eef-8bbb-d33d65cd939f
+Í
+java:S1130"ƒRemove the declaration of thrown exception 'java.security.spec.InvalidKeySpecException', as it cannot be thrown from method's body.(ÉËıüùÿÿÿÿ8¦­Ç«é2J$3ae31202-479f-40f9-8f9f-2f58da9cb43d
+n	java:S106Ô"+Replace this use of System.out by a logger.(”¾¹¢8ô®Æ«é2J$fd3f4fc3-dab4-4727-a25c-27f6ab83f7dc
+‡
+java:S1128"?Remove this unused import 'com.nimbusds.jose.crypto.MACSigner'.(’åÑäüÿÿÿÿ8ÿÓÅ«é2J$a97a58c8-5122-4c58-8ef2-46d2281caa17
+‰
+java:S1128"ARemove this unused import 'com.nimbusds.jose.crypto.MACVerifier'.(é‚òàşÿÿÿÿ8ÿÓÅ«é2J$8dd021ea-7a33-41cc-b0e1-99048378cd26
+€
+java:S1128
+"8Remove this unused import 'jakarta.servlet.http.Cookie'.(Ê‘¡¹úÿÿÿÿ8ÿÓÅ«é2J$2f2e2dcc-4a50-4ef6-9f4f-56fae8d43c96
+
+java:S1128"ERemove this unused import 'jakarta.servlet.http.HttpServletResponse'.(ÂÓÕÇÿÿÿÿÿ8ÿÓÅ«é2J$a92c4ea4-51c8-442a-8019-a8ba803383c6
+ˆ
+java:S1128"FRemove this unused import 'org.hotfilm.backend.Model.InvalidateToken'.(ĞÆ¨^8ÿÓÅ«é2J$ffad2e54-6141-42bb-8494-f8e435644026
+Ÿ
+java:S1128"WRemove this unused import 'org.hotfilm.backend.ModelDTO.Response.AuthenticateResponse'.(Ü¥šıÿÿÿÿ8ÿÓÅ«é2J$e0570d88-0505-4ff3-80ec-1bf24404dd11
+
+java:S1128"URemove this unused import 'org.hotfilm.backend.ModelDTO.Response.CheckTokenResponse'.(Ş¹™øÿÿÿÿ8ÿÓÅ«é2J$2554e2e3-529b-4ebb-8f70-b46e652aae60
+
+java:S1128"URemove this unused import 'org.hotfilm.backend.Repository.InvalidateTokenRepository'.(³ûüÿÿÿÿ8ÿÓÅ«é2J$ad821d95-2e6a-4820-acc3-bc5550fc438d
+´
+java:S1128"lRemove this unused import 'org.springframework.security.authentication.UsernamePasswordAuthenticationToken'.(ÖÆ„Ùüÿÿÿÿ8ÿÓÅ«é2J$7c0166ee-6d7e-4f36-9b24-4ef7d7ab84f9
+
+java:S1128 "MRemove this unused import 'org.springframework.security.core.Authentication'.(ñıÓ“8ÿÓÅ«é2J$b9dd067f-6772-4d2a-8648-51ef49fb628e
+Ÿ
+java:S1128!"\Remove this unused import 'org.springframework.security.core.context.SecurityContextHolder'.(ŒÄæë8ÿÓÅ«é2J$552b929d-cd85-46a0-93ab-04242876770c
+…
+java:S1128&"=Remove this unused import 'javax.crypto.BadPaddingException'.(ŒÚ¤øùÿÿÿÿ8ÿÓÅ«é2J$ea84ffe1-2367-49e4-82a3-07acec9f1a54
+x
+java:S1128'"0Remove this unused import 'javax.crypto.Cipher'.(ç‡‡³øÿÿÿÿ8ÿÓÅ«é2J$d24ce9eb-88e6-4219-ae2f-aa15823964c1
+‹
+java:S1128("CRemove this unused import 'javax.crypto.IllegalBlockSizeException'.(¸Äûÿÿÿÿ8€ÔÅ«é2J$5eb15654-1534-432a-885d-e46505b5d1df
+ˆ
+java:S1128)"@Remove this unused import 'javax.crypto.NoSuchPaddingException'.(âÆ×øÿÿÿÿÿ8€ÔÅ«é2J$f554bb77-f076-453d-9091-5526834aaa9d
+„
+java:S1128*"<Remove this unused import 'javax.crypto.spec.SecretKeySpec'.(¹«è•üÿÿÿÿ8€ÔÅ«é2J$9ec3992d-5b33-4116-b9c0-5c69cca33afd
+†
+java:S1128+">Remove this unused import 'java.security.InvalidKeyException'.(ì£ğ»ÿÿÿÿÿ8€ÔÅ«é2J$efd800bb-98f3-42b8-a634-3a8480d2417f
+|
+java:S1128."4Remove this unused import 'java.security.PublicKey'.(ºâú½üÿÿÿÿ8€ÔÅ«é2J$94eae83d-1be8-48ba-97b3-afa1096ce624
+}
+java:S11286":Remove this unused import 'java.time.temporal.ChronoUnit'.(Á…§8€ÔÅ«é2J$9925e7e1-9c6f-4ff0-b60c-dc49dba979f8
+w
+java:S11289"/Remove this unused import 'java.util.Optional'.(¨˜ëİüÿÿÿÿ8€ÔÅ«é2J$d928c2c2-4f7b-45e9-84d0-42aad5bdeddc
+z
+java:S1068B"2Remove this unused "hashOperations" private field.(ëã³óùÿÿÿÿ8ûı¾«é2J$8eaece19-19c1-4600-b684-6e36cfd631be
+
+java:S1068d"9Remove this unused "authenticationManager" private field.(’ûêøÿÿÿÿ8ûı¾«é2J$7e42a846-ef18-4afc-a737-645c3beb8143

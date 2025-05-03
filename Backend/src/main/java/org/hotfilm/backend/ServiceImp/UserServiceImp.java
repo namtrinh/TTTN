@@ -126,7 +126,7 @@ public class UserServiceImp implements UserService {
 
     @Override
     public void updatePasswordByEmail(UserRequest userRequest){
-        var user = customerRepository.findByEmail(userRequest.getEmail());
+        User user = customerRepository.findByEmail(userRequest.getEmail()).orElseThrow(() -> new AppException(ErrorCode.NOT_FOUND));
         if (user == null){
             throw new AppException(ErrorCode.NOT_FOUND);
         }

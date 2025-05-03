@@ -1,3 +1,3 @@
 
-}typescript:S1854G"4Remove this useless assignment to variable "seatId".(ÑäÁ8ßú’êÙ2J$a243598e-bdbc-41e2-b485-c4b7953dba9a
-€typescript:S1874‡"°'(next?: ((value: any) => void) | null | undefined, error?: ((error: any) => void) | null | undefined, complete?: (() => void) | null | undefined): Subscription' is deprecated.(èú¹«øÿÿÿÿ8àú’êÙ2J$a4ca0b14-fb14-4217-8725-0357f85d6419
+}typescript:S1854G"4Remove this useless assignment to variable "seatId".(ÑäÁ8ßú’êÙ2J$c643a845-c52a-4ccf-8016-f57ca370e387
+€typescript:S1874‡"°'(next?: ((value: any) => void) | null | undefined, error?: ((error: any) => void) | null | undefined, complete?: (() => void) | null | undefined): Subscription' is deprecated.(èú¹«øÿÿÿÿ8àú’êÙ2J$b4eb0bdf-e809-4623-9200-c1f79d64fbc9

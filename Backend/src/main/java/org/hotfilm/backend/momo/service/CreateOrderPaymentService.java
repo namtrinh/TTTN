@@ -4,22 +4,24 @@ import org.apache.http.client.methods.CloseableHttpResponse;
 import org.apache.http.client.methods.HttpPost;
 import org.apache.http.entity.StringEntity;
 import org.apache.http.impl.client.HttpClients;
-import org.cloudinary.json.JSONObject;
 import org.hotfilm.backend.momo.common.constants.MoMoConstant;
 import org.hotfilm.backend.momo.common.utils.MoMoHelper;
 import org.hotfilm.backend.momo.model.OrderRequestDTO;
+import org.json.JSONObject;
 import org.springframework.stereotype.Service;
 import org.apache.http.impl.client.CloseableHttpClient;
 
 import java.io.BufferedReader;
 import java.io.IOException;
 import java.io.InputStreamReader;
+import java.security.InvalidKeyException;
+import java.security.NoSuchAlgorithmException;
 import java.util.*;
 
 @Service
 public class CreateOrderPaymentService {
 
-    public Map<String, Object> createOrder(OrderRequestDTO orderRequest) throws IOException {
+    public Map<String, Object> createOrder(OrderRequestDTO orderRequest) throws NoSuchAlgorithmException, InvalidKeyException, IOException {
 
         JSONObject json = new JSONObject();
         json.put("partnerCode", MoMoConstant.PARTNER_CODE);
@@ -28,8 +30,8 @@ public class CreateOrderPaymentService {
         json.put("amount", orderRequest.getAmount().toString());
         json.put("orderId", orderRequest.getOrderId());
         json.put("orderInfo", "Thanh toan don hang " + orderRequest.getOrderId());
-        json.put("returnUrl", MoMoConstant.REDIRECT_URL.getBytes());
-       json.put("notifyUrl", MoMoConstant.NOTIFY_URL);
+        json.put("returnUrl", MoMoConstant.REDIRECT_URL);
+        json.put("notifyUrl", MoMoConstant.NOTIFY_URL);
         json.put("requestType", MoMoConstant.REQUEST_TYPE);
 
         String data = "partnerCode=" + MoMoConstant.PARTNER_CODE
@@ -38,7 +40,7 @@ public class CreateOrderPaymentService {
                 + "&amount=" + json.get("amount")
                 + "&orderId=" + json.get("orderId")
                 + "&orderInfo=" + json.get("orderInfo")
-                + "&returnUrl=" + MoMoConstant.REDIRECT_URL.getBytes()
+                + "&returnUrl=" + MoMoConstant.REDIRECT_URL
                 + "&notifyUrl=" + MoMoConstant.NOTIFY_URL
                 + "&extraData=";
 

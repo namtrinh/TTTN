@@ -15,34 +15,34 @@ export class MovieService{
   constructor(private http: HttpClient){}
 
   getTop4():Observable<MovieResponse[]>{
-    return this.http.get<MovieResponse[]>(`${this.baseUrl}`)
+    return this.http.get<MovieResponse[]>(`${this.baseUrl}`, {withCredentials: true})
   }
 
   getAll(page:number, size:number):Observable<Movie[]>{
     const params = new HttpParams()
       .set('page', page)
       .set('size', size)
-    return this.http.get<Movie[]>(`${this.baseUrl}/manage/movie`, { params})
+    return this.http.get<Movie[]>(`${this.baseUrl}/manage/movie`, { params, withCredentials: true})
   }
 
   createMovie(movie: FormData): Observable<any> {
-    return this.http.post<any>(`${this.baseUrl}`, movie); // Truyền trực tiếp FormData
+    return this.http.post<any>(`${this.baseUrl}`, movie, {withCredentials: true}); // Truyền trực tiếp FormData
   }
 
   deleteById(id:string){
-    return this.http.delete(`${this.baseUrl}/${id}`)
+    return this.http.delete(`${this.baseUrl}/${id}`,{withCredentials: true})
   }
 
   updateById(id:string, movie:FormData):Observable<any>{
-    return this.http.put<any>(`${this.baseUrl}/${id}`, movie)
+    return this.http.put<any>(`${this.baseUrl}/${id}`, movie,{withCredentials: true})
   }
 
   getById(movieId:string):Observable<Movie>{
-    return this.http.get<Movie>(`${this.baseUrl}/findById/${movieId}`)
+    return this.http.get<Movie>(`${this.baseUrl}/findById/${movieId}`,{withCredentials: true})
   }
 
   getByTitle(title:string):Observable<Movie>{
-    return this.http.get<Movie>(`${this.baseUrl}/findByTitle/${title}`)
+    return this.http.get<Movie>(`${this.baseUrl}/findByTitle/${title}`,{withCredentials: true})
   }
 }
 

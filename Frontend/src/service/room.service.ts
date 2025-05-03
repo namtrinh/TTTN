@@ -16,23 +16,23 @@ export class RoomService {
   }
 
   getAll(): Observable<Room[]> {
-    return this.http.get<Room[]>(`${this.baseUrl}`)
+    return this.http.get<Room[]>(`${this.baseUrl}`,{withCredentials: true})
   }
 
   createRoom(room: Room): Observable<Room> {
-    return this.http.post<Room>(`${this.baseUrl}`, room)
+    return this.http.post<Room>(`${this.baseUrl}`, room,{withCredentials: true})
   }
 
   deleteById(id: string) {
-    return this.http.delete(`${this.baseUrl}/${id}`)
+    return this.http.delete(`${this.baseUrl}/${id}`,{withCredentials: true})
   }
 
   updateById(id: string, body: Room): Observable<any> {
-    return this.http.put<any>(`${this.baseUrl}/${id}`, body)
+    return this.http.put<any>(`${this.baseUrl}/${id}`, body,{withCredentials: true})
   }
 
   getById(movieId: string): Observable<Room> {
-    return this.http.get<Room>(`${this.baseUrl}/${movieId}`)
+    return this.http.get<Room>(`${this.baseUrl}/${movieId}`,{withCredentials: true})
   }
 }
 

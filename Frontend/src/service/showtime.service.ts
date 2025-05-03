@@ -23,23 +23,23 @@ export class ShowtimeService {
       .set('showtime', time)
       .set('roomId', roomId)
       .set('movieId', movieId)
-    return this.http.get<Showtime[]>(`${this.baseUrl}`, {params})
+    return this.http.get<Showtime[]>(`${this.baseUrl}`, {params, withCredentials:true})
   }
 
   createShowtime(data: Showtime): Observable<Showtime> {
-    return this.http.post<Showtime>(`${this.baseUrl}`, data)
+    return this.http.post<Showtime>(`${this.baseUrl}`, data,{withCredentials: true})
   }
 
   deleteById(id: string) {
-    return this.http.delete(`${this.baseUrl}/${id}`)
+    return this.http.delete(`${this.baseUrl}/${id}`,{withCredentials: true})
   }
 
   updateById(id: string, data: Showtime): Observable<any> {
-    return this.http.put<any>(`${this.baseUrl}/${id}`, data)
+    return this.http.put<any>(`${this.baseUrl}/${id}`, data, {withCredentials:true})
   }
 
   getById(movieId: string): Observable<Showtime> {
-    return this.http.get<Showtime>(`${this.baseUrl}/${movieId}`)
+    return this.http.get<Showtime>(`${this.baseUrl}/${movieId}`,{withCredentials: true})
   }
 }
 

@@ -1,12 +1,13 @@
 
-”	java:S120"ZRename this package name to match the regular expression '^[a-z_]+(\.[a-z_][a-z0-9_]*)*$'.(‹Ì›WJ$d2f4ca62-d663-482c-ba66-048678972ec5
-–	java:S116""VRename this field "POST_PUBlIC" to match the regular expression '^[a-z][a-zA-Z0-9]*$'.(†‹¡‹şÿÿÿÿJ$d3aabea1-2df4-45d8-8e4d-60c96e713e83
-	java:S1166"URename this field "GET_PUBLIC" to match the regular expression '^[a-z][a-zA-Z0-9]*$'.(˜êßÓJ$40d17fc7-7fa9-44dd-b3fe-5a0a83f7d4d4
-~
-java:S6813"BRemove this field injection and use constructor injection instead.(êæÄŞJ$5b170f42-72f1-426f-96b3-4d7c2a5f2303
-~
-java:S6813"BRemove this field injection and use constructor injection instead.(êæÄŞJ$411d33c6-df5e-4997-8586-eea18ecda370
-–
-java:S3305 "ZInject this field value directly into "securityFilterChain", the only method that uses it.(’„ÑJ$df5f3dfc-2308-4723-8319-21abfd0883cb
-–
-java:S3305"ZInject this field value directly into "securityFilterChain", the only method that uses it.(†’³ÖJ$8d08c6a1-bd79-4f0f-806e-deb51ec391f6
+›	java:S120"ZRename this package name to match the regular expression '^[a-z_]+(\.[a-z_][a-z0-9_]*)*$'.(‹Ì›W8ƒ¾•©é2J$5af97447-0187-4f61-b55f-76678f2e3be3
+	java:S116"VRename this field "POST_PUBlIC" to match the regular expression '^[a-z][a-zA-Z0-9]*$'.(†‹¡‹şÿÿÿÿ8‡¾•©é2J$641755fc-0595-46ba-8b15-9139e9b413cf
+—	java:S116+"URename this field "GET_PUBLIC" to match the regular expression '^[a-z][a-zA-Z0-9]*$'.(˜êßÓ8ˆ¾•©é2J$5e5ee402-3d5e-44ca-b92b-978b7571f58a
+…
+java:S6813"BRemove this field injection and use constructor injection instead.(êæÄŞ8ˆ¾•©é2J$8b3b337e-ca35-4768-ae34-448c57955e1f
+¢
+java:S3305"ZInject this field value directly into "securityFilterChain", the only method that uses it.(¸ñÓèüÿÿÿÿ8Š¾•©é2J$0847da90-5739-4ea7-8341-df25c460fa2e
+ƒ	java:S125L"<This block of commented-out lines of code should be removed.(« º‚şÿÿÿÿ8‘¾•©é2J$d70f3454-8215-40c9-9ef1-553f1d1b783f
+ƒ	java:S125Y"<This block of commented-out lines of code should be removed.(ˆôš—şÿÿÿÿ8’¾•©é2J$376273c7-2cc9-4fb5-a18e-300f9d902544
+ƒ	java:S125]"<This block of commented-out lines of code should be removed.(ğê×˜şÿÿÿÿ8•¾•©é2J$1f4388e5-f2f3-4eee-9e43-906a13b6cbb8
+ƒ
+java:S1128";Remove this unused import 'lombok.RequiredArgsConstructor'.(ÑØúøÿÿÿÿ8œ§¦ªé2J$e33d7665-2925-4bc7-a145-feb7d0f46c58

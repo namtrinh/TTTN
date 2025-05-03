@@ -1,6 +1,13 @@
 package org.hotfilm.backend.Controller;
 
 import com.nimbusds.jose.JOSEException;
+import com.nimbusds.jwt.SignedJWT;
+import jakarta.servlet.http.Cookie;
+import jakarta.servlet.http.HttpServletResponse;
+import org.hotfilm.backend.Exception.AppException;
+import org.hotfilm.backend.Exception.ErrorCode;
+import org.hotfilm.backend.Mapper.UserMapper;
+import org.hotfilm.backend.Model.User;
 import org.hotfilm.backend.ModelDTO.Request.*;
 import org.hotfilm.backend.ModelDTO.Response.ApiResponse;
 import org.hotfilm.backend.ModelDTO.Response.AuthenticateResponse;
@@ -13,9 +20,25 @@ import org.hotfilm.backend.Service.ResetPasswordService;
 import org.hotfilm.backend.Service.UserService;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.beans.factory.annotation.Value;
+import org.springframework.data.redis.core.HashOperations;
+import org.springframework.data.redis.core.RedisTemplate;
 import org.springframework.http.HttpStatus;
+import org.springframework.security.authentication.AuthenticationManager;
+import org.springframework.security.authentication.UsernamePasswordAuthenticationToken;
+import org.springframework.security.core.Authentication;
+import org.springframework.security.core.context.SecurityContextHolder;
 import org.springframework.web.bind.annotation.*;
+
+import javax.crypto.BadPaddingException;
+import javax.crypto.Cipher;
+import javax.crypto.IllegalBlockSizeException;
+import javax.crypto.NoSuchPaddingException;
+import javax.crypto.spec.SecretKeySpec;
+import java.security.InvalidKeyException;
+import java.security.NoSuchAlgorithmException;
+import java.security.spec.InvalidKeySpecException;
 import java.text.ParseException;
+import java.util.Base64;
 import java.util.UUID;
 
 @RestController
@@ -40,10 +63,21 @@ public class AuthController {
     @Value("${link.reset.password}")
     private String linkResetPass;
 
+    @Autowired
+    private AuthenticationManager authenticationManager;
 
+    @Autowired
+    private RedisTemplate<String, String> redisTemplate;
+
+    private HashOperations<String, String, Object> hashOperations;
+
+    AuthController(RedisTemplate<String, String> redisTemplate) {
+        this.redisTemplate = redisTemplate;
+        this.hashOperations = this.redisTemplate.opsForHash();
+    }
 
     @PostMapping(value = "login")
-    public ApiResponse<LoginResponse> login(@RequestBody UserRequest customer)  {
+    public ApiResponse<LoginResponse> login(@RequestBody UserRequest customer){
         return ApiResponse.<LoginResponse>builder()
                 .status(HttpStatus.OK)
                 .message("A verifyCode has been sent to your email!")
@@ -52,7 +86,7 @@ public class AuthController {
     }
 
     @PostMapping(value = "register")
-    public ApiResponse<String> register(@RequestBody UserRequest customer){
+    public ApiResponse<String> register(@RequestBody UserRequest customer) {
         return ApiResponse.<String>builder()
                 .status(HttpStatus.OK)
                 .message("Your account has beent created successfully!")
@@ -61,31 +95,55 @@ public class AuthController {
     }
 
     @PostMapping(value = "/verify_code")
-    public ApiResponse<AuthenticateResponse> verifyAuthCode(
-            @RequestBody VerifyCodeRequest verifyCodeRequest) throws JOSEException {
-        AuthenticateResponse response = authService.verifyAuthCode(verifyCodeRequest);
-        return ApiResponse.<AuthenticateResponse>builder()
+    public ApiResponse<String> verifyAuthCode(
+            @RequestBody VerifyCodeRequest verifyCodeRequest, HttpServletResponse httpServletResponse) throws JOSEException, NoSuchPaddingException, IllegalBlockSizeException, NoSuchAlgorithmException, InvalidKeySpecException, BadPaddingException, InvalidKeyException, ParseException {
+
+        if (!authService.verifyAuthCode(verifyCodeRequest)){
+            throw new AppException(ErrorCode.NOT_FOUND);
+        }
+
+        User user = userRepository.findByEmail(verifyCodeRequest.getEmail()).orElseThrow(() -> new AppException(ErrorCode.NOT_FOUND));
+        Authentication authentication = authenticationManager.authenticate(
+                new UsernamePasswordAuthenticationToken(verifyCodeRequest.getEmail(), user.getPassword())
+        );
+        String token = authService.generationJwt(user);
+        SecurityContextHolder.getContext().setAuthentication(authentication);
+        System.out.print(token);
+
+        SignedJWT signedJWT = SignedJWT.parse(token);
+        String tokenId = signedJWT.getJWTClaimsSet().getJWTID();
+
+        String HASHKEY_JWT = "HASHKEY_JWT";
+
+        String secretKey = "1234567890123456";
+        SecretKeySpec secretKeySpec = new SecretKeySpec(secretKey.getBytes(), "AES");
+
+        Cipher cipher = Cipher.getInstance("AES/ECB/PKCS5PADDING");
+        cipher.init(Cipher.ENCRYPT_MODE, secretKeySpec);
+
+        byte[] encrypted = cipher.doFinal(tokenId.getBytes());
+        String jwtId = Base64.getEncoder().encodeToString(encrypted);
+        hashOperations.put(HASHKEY_JWT, tokenId, token);
+        Cookie cookie = new Cookie("jwt", jwtId);
+        cookie.setHttpOnly(true);
+        cookie.setSecure(false); // set false nếu chưa dùng HTTPS
+        cookie.setPath("/");
+        cookie.setMaxAge(24 * 60 * 60);
+        httpServletResponse.addCookie(cookie);
+
+
+        return ApiResponse.<String>builder()
                 .status(HttpStatus.OK)
                 .message("Your account has been successfully confirmed.")
-                .result(response)
+                .result("ok")
                 .build();
     }
 
     @PostMapping("/check_token")
-    public ApiResponse<CheckTokenResponse> authenticateToken(@RequestBody CheckTokenRequest checkTokenRequest)
+    public ApiResponse<Boolean> authenticateToken(@RequestBody String checkTokenRequest)
             throws ParseException, JOSEException {
-        var result = authService.checkToken(checkTokenRequest);
-        return ApiResponse.<CheckTokenResponse>builder()
-                .status(HttpStatus.OK)
-                .result(result)
-                .build();
-    }
-
-    @PostMapping("/refresh")
-    public ApiResponse<AuthenticateResponse> refreshToken(@RequestBody RefreshTokenRequest refreshTokenRequest)
-            throws ParseException, JOSEException {
-        var result = authService.refreshToken(refreshTokenRequest);
-        return ApiResponse.<AuthenticateResponse>builder()
+        var result = authService.isValidToken(checkTokenRequest);
+        return ApiResponse.<Boolean>builder()
                 .status(HttpStatus.OK)
                 .result(result)
                 .build();
@@ -93,7 +151,7 @@ public class AuthController {
 
     @PostMapping("/forgot-password")
     public ApiResponse<String> forgotPassword(@RequestParam String email) {
-      if (!userRepository.existsByEmail(email)){
+        if (!userRepository.existsByEmail(email)) {
             return ApiResponse.<String>builder()
                     .status(HttpStatus.OK)
                     .message("Couldn't find this email address")
@@ -104,7 +162,7 @@ public class AuthController {
             String reset_key = UUID.randomUUID().toString();
             resetPasswordService.storeResetKey(email, reset_key);
 
-            String resetLink =  linkResetPass + "/reset-password?email=" + email + "&reset_key=" + reset_key;
+            String resetLink = linkResetPass + "/reset-password?email=" + email + "&reset_key=" + reset_key;
             emailService.sendCodeToMail(email, "Reset your password", "Click this url to reset password: " + resetLink);
 
             return ApiResponse.<String>builder()
@@ -140,11 +198,5 @@ public class AuthController {
                 .message("Password has been updated successfully")
                 .result("true")
                 .build();
-    }
-
-    @PostMapping("/logout")
-    ApiResponse<Void> logout(@RequestBody LogoutRequest logoutRequest) throws ParseException, JOSEException {
-        authService.logout(logoutRequest);
-        return ApiResponse.<Void>builder().build();
     }
 }

@@ -1,18 +1,7 @@
 import {Routes} from '@angular/router';
-import {HomeComponent} from '../view/user/home/home.component';
-import {LoginComponent} from '../auth/login/login.component';
-import {FilmDetailComponent} from '../view/user/film-detail/film-detail.component';
-import {RegisterComponent} from '../auth/register/register.component';
+
 import {_401Component} from '../auth/401/401.component';
-import {ResetPasswordComponent} from '../auth/reset-password/reset-password.component';
-import {ViewManageComponent} from '../view/manager/view-manage/view-manage.component';
-import {MovieManageComponent} from '../view/manager/movie-manage/movie-manage.component';
-import {RoomManageComponent} from '../view/manager/room-manage/room-manage.component';
-import {ShowtimeManageComponent} from '../view/manager/showtime-manage/showtime-manage.component';
-import {CheckoutInfComponent} from '../view/user/payment/checkout-inf/checkout-inf.component';
-import {PaymentSuccessComponent} from '../view/user/payment/payment-success/payment-success.component';
-import {CheckinComponent} from '../view/manager/checkin/checkin.component';
-import {CustomCanActiveService} from '../service/CustomCanActive.service';
+
 
 export const routes: Routes = [
 
@@ -62,9 +51,7 @@ export const routes: Routes = [
 
   {
     path: 'manage',
-    loadChildren: () => import('../view/manager/manage.routes').then(m => m.routes),
-    canActivate: [CustomCanActiveService],
-    data: {role: 1}
+    loadChildren: () => import('../view/manager/manage.routes').then(m => m.routes)
   },
 
   {

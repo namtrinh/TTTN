@@ -131,7 +131,7 @@ export class PaymentSuccessComponent implements OnInit {
     formData.append('body', 'Vé xem phim của bạn nè');
     formData.append('file', file);
 
-    this.http.post<any>( environment.apiUrl +'/email/send-with-attachment', formData)
+    this.http.post<any>( environment.apiUrl +'/email/send-with-attachment', formData,{withCredentials:true} )
       .subscribe(response => {
         console.log('Email đã được gửi!');
         this.messageMail = 'Your ticket has been sent to your email!'

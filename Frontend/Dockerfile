@@ -21,6 +21,6 @@ COPY --from=build /app/dist/frontend/browser /usr/share/nginx/html
 
 EXPOSE 80
 
-sudo cp -r dist/frontend/browser /var/www/html/
-
-sudo cp -r dist/frontend/browser /usr/share/nginx/html
+#sudo cp -r dist/frontend/browser /var/www/html/
+#
+#sudo cp -r dist/frontend/browser /usr/share/nginx/html

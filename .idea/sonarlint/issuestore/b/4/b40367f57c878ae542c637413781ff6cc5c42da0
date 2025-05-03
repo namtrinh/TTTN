@@ -1,0 +1,23 @@
+
+“	java:S117;"QRename this local variable to match the regular expression '^[a-z][a-zA-Z0-9]*$'.(’‰8ÉÃ±«é2J$90f55f5f-eeec-49ad-aa4e-3e06f296256e
+›	java:S120"ZRename this package name to match the regular expression '^[a-z_]+(\.[a-z_][a-z0-9_]*)*$'.(‹Ì›W8ãÔ°«é2J$ea62c255-64c5-4615-a640-c14ac448520c
+	java:S112S"FDefine and throw a dedicated exception instead of using a generic one.(Ò‚Òéüÿÿÿÿ8æÔ°«é2J$581231f9-7728-48d2-8c08-9cf8bee70c1f
+	java:S112d"FDefine and throw a dedicated exception instead of using a generic one.(Ò‚Òéüÿÿÿÿ8æÔ°«é2J$92f916d9-0651-4090-9a70-444941d0a699
+…
+java:S6813%"BRemove this field injection and use constructor injection instead.(êæÄŞ8éÔ°«é2J$5d892d9e-0f14-4960-b7ed-f6584423690b
+…
+java:S6813'"BRemove this field injection and use constructor injection instead.(êæÄŞ8éÔ°«é2J$c1df8ed8-6d9e-4669-8374-bb19a27d927a
+…
+java:S6813*"BRemove this field injection and use constructor injection instead.(êæÄŞ8éÔ°«é2J$239f9004-f8d1-4ffc-afd1-e8dba8584c7e
+y
+java:S6437="6Revoke and change this password, as it is compromised.(—øâÖ8øÔ°«é2J$d1c5753a-e04d-4c3c-a452-9bc36701316e
+\
+java:S5542F"Use a secure cipher mode.(­ĞÉì8úÔ°«é2J$79f29ebe-7507-4be8-a8cb-add15244510e
+m	java:S106P"+Replace this use of System.out by a logger.(Å€³ğ8ÿÔ°«é2J$6e345e94-5ecf-41e7-b4e1-6f8e662cdd31
+p
+java:S1128	"SRemove this unused import 'org.hotfilm.backend.ModelDTO.Request.CheckTokenRequest'.(ÊÓõö8·Ş±«é2
+w
+java:S1128
+"URemove this unused import 'org.hotfilm.backend.ModelDTO.Response.CheckTokenResponse'.(Ş¹™øÿÿÿÿ8·Ş±«é2
+q
+java:S10684")Remove this unused "cache" private field.( ¥ü†üÿÿÿÿ8Õ°«é2J$06491508-b15c-4adc-a843-675e960fdc7c

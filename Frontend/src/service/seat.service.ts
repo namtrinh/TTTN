@@ -22,11 +22,11 @@ export class SeatService {
   getAll(showtimeId:string): Observable<Seat[]> {
     const params = new HttpParams()
       .set('showtimeId', showtimeId)
-    return this.http.get<Seat[]>(`${this.baseUrl}`, {params})
+    return this.http.get<Seat[]>(`${this.baseUrl}`, {params, withCredentials:true})
   }
 
   updateStatusSeat(seatId:string, body:Seat):Observable<Seat>{
-    return this.http.put<Seat>(`${this.baseUrl}/${seatId}`, body)
+    return this.http.put<Seat>(`${this.baseUrl}/${seatId}`, body,{withCredentials: true})
   }
 
 }

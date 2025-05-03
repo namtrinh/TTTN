@@ -9,6 +9,8 @@ import org.springframework.http.ResponseEntity;
 import org.springframework.web.bind.annotation.*;
 
 import java.io.IOException;
+import java.security.InvalidKeyException;
+import java.security.NoSuchAlgorithmException;
 import java.util.Map;
 
 @RestController
@@ -21,7 +23,7 @@ public class CreateOrderPaymentController {
     private GenerateOrderId generateOrderId;
 
     @PostMapping("/momo-payment")
-    public ResponseEntity<Map<String, Object>> momoPayment(@RequestBody OrderRequestDTO orderRequest) throws IOException {
+    public ResponseEntity<Map<String, Object>> momoPayment(@RequestBody OrderRequestDTO orderRequest) throws IOException, NoSuchAlgorithmException, InvalidKeyException {
 
         orderRequest.setOrderId(generateOrderId.generateOrderId());
         Map<String, Object> result = this.paymentService.createOrder(orderRequest);

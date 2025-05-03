@@ -25,37 +25,19 @@ export class AuthService {
   }
 
   verifyCode(email:string, authCode:number){
-    return this.http.post<any>(`${this.baseUrl}/verify_code`, {email, authCode})
+    return this.http.post<any>(`${this.baseUrl}/verify_code`, {email, authCode},{withCredentials: true})
   }
 
   forgotPassword(email: string) {
     const params = new HttpParams()
       .set('email', email);
-    return this.http.post(`${this.baseUrl}/forgot-password`, {}, { params });
+    return this.http.post(`${this.baseUrl}/forgot-password`, {withCredentials:true}, { params } );
   }
 
 
   resetPassword(email:string, password:string, seret_key: string) {
     const params = new HttpParams()
       .set("reset_key", seret_key);
-    return this.http.post(`${this.baseUrl}/reset-password`, {email, password}, {params})
+    return this.http.post(`${this.baseUrl}/reset-password`, {email, password}, {params, withCredentials:true}, )
   }
-
-  logout(token: string) {
-    return this.http.post(`${this.baseUrl}/logout`, {token})
-  }
-
-  refreshToken(token: string) {
-    return this.http.post(`${this.baseUrl}/refresh`, {token})
-  }
-
-  removeToken() {
-    localStorage.removeItem('auth_token')
-  }
-
-  getToken() {
-    return localStorage.getItem('auth_token')
-  }
-
-
 }

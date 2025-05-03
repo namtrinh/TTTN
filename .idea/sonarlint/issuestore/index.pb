@@ -369,3 +369,13 @@ Z
 *Frontend/src/view/manager/manage.routes.ts,2\4\24d38b55b13bc9fb37b318ac734108272deeb7f7
 F
 Backend/.gitattributes,0\2\028d8d7fc68c4b5f6138f06482bb3f682f2dac00
+m
+=Backend/src/main/java/org/hotfilm/backend/Config/JwtUtil.java,1\7\1747ca3d36c499663c913f634eaebb50a441f0b5
+}
+MBackend/src/main/java/org/hotfilm/backend/Config/JwtAuthenticationFilter.java,b\4\b40367f57c878ae542c637413781ff6cc5c42da0
+|
+LBackend/src/main/java/org/hotfilm/backend/Config/UserDetailsServiceImpl.java,7\b\7bd9314484526f8bd1c8a0444b67619dac1d5276
+ƒ
+SBackend/src/main/java/org/hotfilm/backend/ModelDTO/Response/CheckTokenResponse.java,e\d\ed0fe941bd87635c739f2ed1dcc124cbf7b5ccad
+…
+UBackend/src/main/java/org/hotfilm/backend/ModelDTO/Response/AuthenticateResponse.java,6\c\6c6f112e84b562f8c93beab7856e80873fb2a7a2

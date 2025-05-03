@@ -14,6 +14,6 @@ export class MomoPaymentService{
   private baseUrl:string = environment.apiUrl + "/api/v1"
 
   createOrder(body: { amount: number; extraData: string; orderInfo: string }):Observable<any>{
-     return this.http.post<any>(`${this.baseUrl}/momo-payment`, body)
+     return this.http.post<any>(`${this.baseUrl}/momo-payment`, body,{withCredentials: true})
   }
 }

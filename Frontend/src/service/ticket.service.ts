@@ -16,18 +16,18 @@ export class TicketService {
   }
 
   getAll(): Observable<Ticket[]> {
-    return this.http.get<Ticket[]>(`${this.baseUrl}`)
+    return this.http.get<Ticket[]>(`${this.baseUrl}`,{withCredentials: true})
   }
 
   findById(id: string | null):Observable<Ticket>{
-    return this.http.get<Ticket>(`${this.baseUrl}/${id}`)
+    return this.http.get<Ticket>(`${this.baseUrl}/${id}`,{withCredentials: true})
   }
   createTicket(ticket: Ticket): Observable<Ticket> {
-    return this.http.post<Ticket>(`${this.baseUrl}`, ticket)
+    return this.http.post<Ticket>(`${this.baseUrl}`, ticket,{withCredentials: true})
   }
 
   updateById(id: string | null, body: Ticket): Observable<Ticket>{
-    return this.http.put<Ticket>(`${this.baseUrl}/${id}`, body)
+    return this.http.put<Ticket>(`${this.baseUrl}/${id}`, body,{withCredentials: true})
   }
 }
 

@@ -1,2 +1,19 @@
 
-”	java:S120"ZRename this package name to match the regular expression '^[a-z_]+(\.[a-z_][a-z0-9_]*)*$'.(‹Ì›WJ$5141efe4-d638-474a-931a-ed6f2ae40ca6
+“	java:S1179"QRename this local variable to match the regular expression '^[a-z][a-zA-Z0-9]*$'.(’‰8¹÷ê¨é2J$543ed932-d21c-413b-b35e-e62f7cae8105
+‚
+java:S1598"¹This file "JwtAuthenticationEntryPoint.java" should be located in "com\example\demo" directory, not in "C:\My_Documents\KI_8\TTTN\TTTN\Backend\src\main\java\org\hotfilm\backend\Config".(Éãµüüÿÿÿÿ8¿÷ê¨é2J$5af40ee1-9fef-4c6f-9e5b-9b6197b174a1
+	java:S112Q"FDefine and throw a dedicated exception instead of using a generic one.(Ò‚Òéüÿÿÿÿ8¿÷ê¨é2J$1377b0ea-b912-4dd8-8162-bd97e93b0022
+	java:S112b"FDefine and throw a dedicated exception instead of using a generic one.(Ò‚Òéüÿÿÿÿ8¿÷ê¨é2J$955ca0b2-ff28-4f10-90fd-3f44cf3ab3d7
+…
+java:S6813#"BRemove this field injection and use constructor injection instead.(êæÄŞ8Ã÷ê¨é2J$9c452880-1775-4d16-b24c-d69e15d5cba4
+…
+java:S6813%"BRemove this field injection and use constructor injection instead.(êæÄŞ8Ã÷ê¨é2J$80ad318a-5cbe-42eb-89d7-1adc6d4acba4
+…
+java:S6813("BRemove this field injection and use constructor injection instead.(êæÄŞ8Ã÷ê¨é2J$16131374-061e-4213-8f1c-5680555c2c20
+y
+java:S6437;"6Revoke and change this password, as it is compromised.(—øâÖ8Í÷ê¨é2J$de8f77c2-701f-4d4c-a7da-5514cd2f8a00
+\
+java:S5542D"Use a secure cipher mode.(­ĞÉì8Î÷ê¨é2J$03699f00-2614-4441-91be-1c22adb3be3a
+m	java:S106N"+Replace this use of System.out by a logger.(Å€³ğ8Õ÷ê¨é2J$911059dc-97d9-47c2-994c-f2a48d64cbe7
+q
+java:S10682")Remove this unused "cache" private field.( ¥ü†üÿÿÿÿ8×÷ê¨é2J$298ae090-34ad-4f0d-8987-04a7d7d886e1

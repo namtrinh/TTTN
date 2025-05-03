@@ -1,13 +1,12 @@
 import {Routes} from '@angular/router';
 import {ViewManageComponent} from './view-manage/view-manage.component';
-import {CustomCanActiveService} from '../../service/CustomCanActive.service';
 import {MovieManageComponent} from './movie-manage/movie-manage.component';
 import {RoomManageComponent} from './room-manage/room-manage.component';
 import {ShowtimeManageComponent} from './showtime-manage/showtime-manage.component';
 
 export const routes: Routes = [
   {
-    path: '', component: ViewManageComponent, canActivate: [CustomCanActiveService], data: {role: 1}, children: [
+    path: '', component: ViewManageComponent, children: [
       {
         path: '',
         loadComponent: () => import('../manager/dashboard-manage/dashboard-manage.component').then(m => m.DashboardManageComponent)

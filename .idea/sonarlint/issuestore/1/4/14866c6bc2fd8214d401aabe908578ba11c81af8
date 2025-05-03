@@ -1,16 +1,32 @@
 
-“	java:S117h"QRename this local variable to match the regular expression '^[a-z][a-zA-Z0-9]*$'.(¼ŞàÀ8¬„±êÙ2J$6a26b5ec-f797-4b60-ab6d-1530b6270a36
-’	java:S117~"QRename this local variable to match the regular expression '^[a-z][a-zA-Z0-9]*$'.(ÍÑùD8¬„±êÙ2J$3be5e030-0a69-4932-ac69-5a90f06d6784
-œ	java:S120"ZRename this package name to match the regular expression '^[a-z_]+(\.[a-z_][a-z0-9_]*)*$'.(Íˆ¨¹8­„±êÙ2J$dc8a8a02-5eda-468a-9be7-d56e80987550
-ˆ
-java:S1192d"FDefine a constant instead of duplicating this literal "false" 3 times.(‰üêa8²„±êÙ2J$79ee6050-298e-4097-934e-d6937b5cb7c4
+“	java:S117t"QRename this local variable to match the regular expression '^[a-z][a-zA-Z0-9]*$'.(’‰8ÌüØ«é2J$6bc90dfd-8fac-4e22-a9b1-ad972399fe6f
+”	java:S117¢"QRename this local variable to match the regular expression '^[a-z][a-zA-Z0-9]*$'.(¼ŞàÀ8ÌüØ«é2J$9d78053e-6aaf-4aa0-8993-d3cffcc0d18b
+“	java:S117¸"QRename this local variable to match the regular expression '^[a-z][a-zA-Z0-9]*$'.(ÍÑùD8ÌüØ«é2J$c710aa9f-b411-4396-9a0a-334292015c80
+œ	java:S120"ZRename this package name to match the regular expression '^[a-z_]+(\.[a-z_][a-z0-9_]*)*$'.(Íˆ¨¹8ÌüØ«é2J$84c640d6-1472-4e9e-a5be-ccc0e60efb9e
+‰
+java:S1192"FDefine a constant instead of duplicating this literal "false" 3 times.(‰üêa8ÏüØ«é2J$df7442f1-5e70-4816-b80b-c39b8e60c383
 …
-java:S6813"BRemove this field injection and use constructor injection instead.(êæÄŞ8µ„±êÙ2J$0c555ae0-993c-4984-8db6-6d32a9ca156d
+java:S68130"BRemove this field injection and use constructor injection instead.(êæÄŞ8ĞüØ«é2J$780558ed-00de-4c88-ab02-c371e9a23393
 …
-java:S6813"BRemove this field injection and use constructor injection instead.(êæÄŞ8¶„±êÙ2J$6243524a-9464-4cbf-8097-ab1f9e3b21f5
+java:S68133"BRemove this field injection and use constructor injection instead.(êæÄŞ8ĞüØ«é2J$bc4e2597-8fb9-42be-a4a3-249a1b92a488
 …
-java:S6813"BRemove this field injection and use constructor injection instead.(êæÄŞ8¶„±êÙ2J$f9309611-cbe3-4374-9a49-ca35981b01ef
+java:S68136"BRemove this field injection and use constructor injection instead.(êæÄŞ8ĞüØ«é2J$ed73fb3b-81ca-4ad5-b101-101c96b8bdd4
 …
-java:S6813""BRemove this field injection and use constructor injection instead.(êæÄŞ8¶„±êÙ2J$d2c995ba-f7dd-475a-85a0-c0d840085d47
+java:S68139"BRemove this field injection and use constructor injection instead.(êæÄŞ8ÑüØ«é2J$ae2c6e8a-34dc-4010-8305-27eda59fb691
 …
-java:S6813%"BRemove this field injection and use constructor injection instead.(êæÄŞ8¶„±êÙ2J$81566c3e-3a1a-43f4-a4b4-355ce61189ef
+java:S6813<"BRemove this field injection and use constructor injection instead.(êæÄŞ8ÑüØ«é2J$8ea85374-e16e-4130-82e0-2694c0635461
+…
+java:S6813B"BRemove this field injection and use constructor injection instead.(êæÄŞ8ÑüØ«é2J$9791cce2-4a3d-47f3-b7ef-3ec8c7ad847c
+…
+java:S6813E"BRemove this field injection and use constructor injection instead.(êæÄŞ8ÑüØ«é2J$8b7a62c6-f144-4747-be73-58608a1cc033
+r	java:S106o"+Replace this use of System.out by a logger.(±–®õÿÿÿÿÿ8ÙüØ«é2J$9fdadb24-6773-4d36-9ae6-a7a6d2be8ef7
+y
+java:S6437w"6Revoke and change this password, as it is compromised.(—øâÖ8ÚüØ«é2J$016db757-8700-4bc5-96a6-b9cf9279969d
+\
+java:S5542y"Use a secure cipher mode.(­ĞÉì8ÚüØ«é2J$853f38a4-1d11-41b5-9709-144ad1f03a72
+Š
+java:S1128	"BRemove this unused import 'org.hotfilm.backend.Mapper.UserMapper'.(É›†şÿÿÿÿ8ë£Ù«é2J$d614653c-b8db-4d21-b812-512d4fe8b557
+Ÿ
+java:S1128"WRemove this unused import 'org.hotfilm.backend.ModelDTO.Response.AuthenticateResponse'.(Ü¥šıÿÿÿÿ8ë£Ù«é2J$0f36063a-7e87-4424-8f98-fc4e71d77388
+
+java:S1128"URemove this unused import 'org.hotfilm.backend.ModelDTO.Response.CheckTokenResponse'.(Ş¹™øÿÿÿÿ8ë£Ù«é2J$6afce655-697a-4a30-8f06-5aea49bc82f9
